@@ -519,3 +519,1325 @@
 				ORDER BY sort_order
 20061125.125741: Kategorie geschrieben: Kat 1.1
 20061125.125741: Kategorie geschrieben: Kat 1.2
+20061125.165422: Datenbankverbindung hergestellt
+20061125.165422: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.165422: Kategorie gefunden: Kat 1
+20061125.165422: Kategorie gefunden: Kat 2
+20061125.165422: Kategorie gefunden: Kat 3
+20061125.165422: Kategorie gefunden: Kat 1.2
+20061125.165422: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.165422: Kategorie geschrieben: Kat 1
+20061125.165422: Kategorie geschrieben: Kat 2
+20061125.165422: Kategorie geschrieben: Kat 3
+20061125.165422: Kategorie geschrieben: Kat 1.2
+20061125.170122: Datenbankverbindung hergestellt
+20061125.170122: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.170122: Kategorie gefunden: Kat 1
+20061125.170122: Kategorie gefunden: Kat 2
+20061125.170122: Kategorie gefunden: Kat 3
+20061125.170122: Kategorie gefunden: Kat 1.2
+20061125.170122: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.170122: Kategorie geschrieben: Kat 1
+20061125.170122: Kategorie geschrieben: Kat 2
+20061125.170122: Kategorie geschrieben: Kat 3
+20061125.170122: Kategorie geschrieben: Kat 1.2
+20061125.170128: Datenbankverbindung hergestellt
+20061125.170519: Datenbankverbindung hergestellt
+20061125.170519: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.170519: Kategorie gefunden: Kat 1
+20061125.170519: Kategorie gefunden: Kat 2
+20061125.170519: Kategorie gefunden: Kat 3
+20061125.170519: Kategorie gefunden: Kat 1.2
+20061125.170519: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.170519: Kategorie geschrieben: Kat 1
+20061125.170519: Kategorie geschrieben: Kat 2
+20061125.170519: Kategorie geschrieben: Kat 3
+20061125.170519: Kategorie geschrieben: Kat 1.2
+20061125.170534: Datenbankverbindung hergestellt
+20061125.170534: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.170534: Kategorie gefunden: Kat 1
+20061125.170534: Kategorie gefunden: Kat 2
+20061125.170534: Kategorie gefunden: Kat 3
+20061125.170534: Kategorie gefunden: Kat 1.2
+20061125.170534: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.170534: Kategorie geschrieben: Kat 1
+20061125.170534: Kategorie geschrieben: Kat 2
+20061125.170534: Kategorie geschrieben: Kat 3
+20061125.170534: Kategorie geschrieben: Kat 1.2
+20061125.170545: Datenbankverbindung hergestellt
+20061125.170545: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.170545: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.170545: Kategorie gefunden: Kat 1.1
+20061125.170545: Kategorie gefunden: Kat 1.2
+20061125.170545: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.170545: Kategorie geschrieben: Kat 1.1
+20061125.170545: Kategorie geschrieben: Kat 1.2
+20061125.170855: Datenbankverbindung hergestellt
+20061125.170855: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.170855: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.170855: Kategorie gefunden: Kat 1.1
+20061125.170855: Kategorie gefunden: Kat 1.2
+20061125.170855: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.170855: Kategorie geschrieben: Kat 1.1
+20061125.170855: Kategorie geschrieben: Kat 1.2
+20061125.170905: Datenbankverbindung hergestellt
+20061125.170905: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 5
+20061125.170905: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 5
+				ORDER BY sort_order
+20061125.170905: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 5
+				ORDER BY sort_order
+20061125.170905: Datenbankverbindung hergestellt
+20061125.170951: Datenbankverbindung hergestellt
+20061125.170951: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.170951: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.170951: Kategorie gefunden: Kat 1.1
+20061125.170951: Kategorie gefunden: Kat 1.2
+20061125.170951: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.170951: Kategorie geschrieben: Kat 1.1
+20061125.170951: Kategorie geschrieben: Kat 1.2
+20061125.171218: Datenbankverbindung hergestellt
+20061125.171218: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.171218: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.171218: Kategorie gefunden: Kat 1.1
+20061125.171218: Kategorie gefunden: Kat 1.2
+20061125.171218: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.171218: Kategorie geschrieben: Kat 1.1
+20061125.171218: Kategorie geschrieben: Kat 1.2
+20061125.171251: Datenbankverbindung hergestellt
+20061125.171251: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.171251: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.171251: Kategorie gefunden: Kat 1.1
+20061125.171251: Kategorie gefunden: Kat 1.2
+20061125.171251: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.171251: Kategorie geschrieben: Kat 1.1
+20061125.171251: Kategorie geschrieben: Kat 1.2
+20061125.171759: Datenbankverbindung hergestellt
+20061125.171759: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.171759: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.171759: Kategorie gefunden: Kat 1.1
+20061125.171759: Kategorie gefunden: Kat 1.2
+20061125.171759: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.171759: Kategorie geschrieben: Kat 1.1
+20061125.171759: Kategorie geschrieben: Kat 1.2
+20061125.171759: DB-Anfrage: SELECT
+					parent
+					FROM categories
+					WHERE categories_id = 1
+20061125.171834: Datenbankverbindung hergestellt
+20061125.171834: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.171834: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.171834: Kategorie gefunden: Kat 1.1
+20061125.171834: Kategorie gefunden: Kat 1.2
+20061125.171834: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.171834: Kategorie geschrieben: Kat 1.1
+20061125.171834: Kategorie geschrieben: Kat 1.2
+20061125.171834: DB-Anfrage: SELECT
+					parent
+					FROM categories
+					WHERE categories_id = 1
+20061125.172103: Datenbankverbindung hergestellt
+20061125.172103: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.172103: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.172103: Kategorie gefunden: Kat 1.1
+20061125.172103: Kategorie gefunden: Kat 1.2
+20061125.172103: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.172103: Kategorie geschrieben: Kat 1.1
+20061125.172103: Kategorie geschrieben: Kat 1.2
+20061125.172103: DB-Anfrage: SELECT
+					parent
+					FROM categories
+					WHERE categories_id = 1
+20061125.172107: Datenbankverbindung hergestellt
+20061125.172107: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.172107: Kategorie gefunden: Kat 1
+20061125.172107: Kategorie gefunden: Kat 2
+20061125.172107: Kategorie gefunden: Kat 3
+20061125.172107: Kategorie gefunden: Kat 1.2
+20061125.172107: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.172107: Kategorie geschrieben: Kat 1
+20061125.172107: Kategorie geschrieben: Kat 2
+20061125.172107: Kategorie geschrieben: Kat 3
+20061125.172107: Kategorie geschrieben: Kat 1.2
+20061125.172122: Datenbankverbindung hergestellt
+20061125.172122: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 3
+20061125.172122: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 3
+				ORDER BY sort_order
+20061125.172122: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 3
+				ORDER BY sort_order
+20061125.172122: DB-Anfrage: SELECT
+					parent
+					FROM categories
+					WHERE categories_id = 3
+20061125.172125: Datenbankverbindung hergestellt
+20061125.172125: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.172125: Kategorie gefunden: Kat 1
+20061125.172125: Kategorie gefunden: Kat 2
+20061125.172125: Kategorie gefunden: Kat 3
+20061125.172125: Kategorie gefunden: Kat 1.2
+20061125.172125: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.172125: Kategorie geschrieben: Kat 1
+20061125.172125: Kategorie geschrieben: Kat 2
+20061125.172125: Kategorie geschrieben: Kat 3
+20061125.172125: Kategorie geschrieben: Kat 1.2
+20061125.173830: Datenbankverbindung hergestellt
+20061125.173855: Datenbankverbindung hergestellt
+20061125.173856: Datenbankverbindung hergestellt
+20061125.173906: Datenbankverbindung hergestellt
+20061125.173936: Datenbankverbindung hergestellt
+20061125.174022: Datenbankverbindung hergestellt
+20061125.174046: Datenbankverbindung hergestellt
+20061125.174558: Datenbankverbindung hergestellt
+20061125.174610: Datenbankverbindung hergestellt
+20061125.174616: Datenbankverbindung hergestellt
+20061125.174616: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.174616: admin/categories.php:39: Kat 1
+20061125.174616: admin/categories.php:39: Kat 2
+20061125.174616: admin/categories.php:39: Kat 3
+20061125.174616: admin/categories.php:39: Kat 1.2
+20061125.174616: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.174616: admin/categories.php:69: Kat 1
+20061125.174616: admin/categories.php:69: Kat 2
+20061125.174616: admin/categories.php:69: Kat 3
+20061125.174616: admin/categories.php:69: Kat 1.2
+20061125.174616: admin/categories.php: Anzeige
+20061125.174620: Datenbankverbindung hergestellt
+20061125.174620: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.174620: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.174620: admin/categories.php:39: Kat 1.1
+20061125.174620: admin/categories.php:39: Kat 1.2
+20061125.174620: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.174620: admin/categories.php:69: Kat 1.1
+20061125.174620: admin/categories.php:69: Kat 1.2
+20061125.174620: admin/categories.php: Anzeige
+20061125.174710: Datenbankverbindung hergestellt
+20061125.174710: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.174710: admin/categories.php:39: Kat 1
+20061125.174710: admin/categories.php:39: Kat 2
+20061125.174710: admin/categories.php:39: Kat 3
+20061125.174710: admin/categories.php:39: Kat 1.2
+20061125.174710: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.174710: admin/categories.php:69: Kat 1
+20061125.174710: admin/categories.php:69: Kat 2
+20061125.174710: admin/categories.php:69: Kat 3
+20061125.174710: admin/categories.php:69: Kat 1.2
+20061125.174710: admin/categories.php: Anzeige
+20061125.174711: Datenbankverbindung hergestellt
+20061125.174800: Datenbankverbindung hergestellt
+20061125.174809: Datenbankverbindung hergestellt
+20061125.174914: Datenbankverbindung hergestellt
+20061125.175004: Datenbankverbindung hergestellt
+20061125.175159: Datenbankverbindung hergestellt
+20061125.175215: Datenbankverbindung hergestellt
+20061125.175237: Datenbankverbindung hergestellt
+20061125.175247: Datenbankverbindung hergestellt
+20061125.175249: Datenbankverbindung hergestellt
+20061125.175251: Datenbankverbindung hergestellt
+20061125.175251: admin/addCategory.php: action set
+20061125.175251: admin/addCategory.php: action=add
+20061125.175251: DB-Anfrage: INSERT INTO categories VALUES(
+				0,
+				Kat 5,
+				0,
+				on,
+				sgas,
+				9
+20061125.175408: Datenbankverbindung hergestellt
+20061125.175408: admin/addCategory.php: action set
+20061125.175408: admin/addCategory.php: action=add
+20061125.175408: DB-Anfrage: INSERT INTO categories VALUES(
+				0,
+				Kat 5,
+				0,
+				1,
+				sgas,
+				9
+20061125.175517: Datenbankverbindung hergestellt
+20061125.175517: admin/addCategory.php: action set
+20061125.175517: admin/addCategory.php: action=add
+20061125.175517: DB-Anfrage: INSERT INTO categories VALUES (
+				0,
+				Kat 5,
+				0,
+				1,
+				sgas,
+				9
+				)
+20061125.175609: Datenbankverbindung hergestellt
+20061125.175609: admin/addCategory.php: action set
+20061125.175609: admin/addCategory.php: action=add
+20061125.175609: DB-Anfrage: INSERT INTO categories VALUES (0,Kat 5,0,1,sgas,9)
+20061125.175658: Datenbankverbindung hergestellt
+20061125.175658: admin/addCategory.php: action set
+20061125.175658: admin/addCategory.php: action=add
+20061125.175658: DB-Anfrage: INSERT INTO categories VALUES (0,'Kat 5',0,1,'sgas',9)
+20061125.180239: Datenbankverbindung hergestellt
+20061125.180239: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.180239: admin/categories.php:39: Kat 1
+20061125.180239: admin/categories.php:39: Kat 2
+20061125.180239: admin/categories.php:39: Kat 3
+20061125.180239: admin/categories.php:39: Kat 1.2
+20061125.180239: admin/categories.php:39: Kat 5
+20061125.180239: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.180239: admin/categories.php:69: Kat 1
+20061125.180239: admin/categories.php:69: Kat 2
+20061125.180239: admin/categories.php:69: Kat 3
+20061125.180239: admin/categories.php:69: Kat 1.2
+20061125.180239: admin/categories.php:69: Kat 5
+20061125.180239: admin/categories.php: Anzeige
+20061125.180429: Datenbankverbindung hergestellt
+20061125.180429: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.180429: admin/categories.php:39: Kat 1
+20061125.180429: admin/categories.php:39: Kat 2
+20061125.180429: admin/categories.php:39: Kat 3
+20061125.180429: admin/categories.php:39: Kat 1.2
+20061125.180429: admin/categories.php:39: Kat 5
+20061125.180429: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.180429: admin/categories.php:69: Kat 1
+20061125.180429: admin/categories.php:69: Kat 2
+20061125.180429: admin/categories.php:69: Kat 3
+20061125.180429: admin/categories.php:69: Kat 1.2
+20061125.180429: admin/categories.php:69: Kat 5
+20061125.180429: admin/categories.php: Anzeige
+20061125.180431: Datenbankverbindung hergestellt
+20061125.180511: Datenbankverbindung hergestellt
+20061125.180540: Datenbankverbindung hergestellt
+20061125.180540: admin/addCategory.php: action set
+20061125.180540: admin/addCategory.php: action=edit
+20061125.180809: Datenbankverbindung hergestellt
+20061125.180809: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.180823: Datenbankverbindung hergestellt
+20061125.180823: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.180828: Datenbankverbindung hergestellt
+20061125.180843: Datenbankverbindung hergestellt
+20061125.180843: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.180920: Datenbankverbindung hergestellt
+20061125.180920: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.180921: Datenbankverbindung hergestellt
+20061125.180921: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.180927: Datenbankverbindung hergestellt
+20061125.180927: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.181127: Datenbankverbindung hergestellt
+20061125.181127: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.181140: Datenbankverbindung hergestellt
+20061125.181140: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061125.181146: Datenbankverbindung hergestellt
+20061125.181146: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.181146: admin/categories.php:39: Kat 1
+20061125.181146: admin/categories.php:39: Kat 2
+20061125.181146: admin/categories.php:39: Kat 3
+20061125.181146: admin/categories.php:39: Kat 1.2
+20061125.181146: admin/categories.php:39: Kat 5
+20061125.181146: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.181146: admin/categories.php:69: Kat 1
+20061125.181146: admin/categories.php:69: Kat 2
+20061125.181146: admin/categories.php:69: Kat 3
+20061125.181146: admin/categories.php:69: Kat 1.2
+20061125.181146: admin/categories.php:69: Kat 5
+20061125.181146: admin/categories.php: Anzeige
+20061125.181149: Datenbankverbindung hergestellt
+20061125.181149: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 7
+20061125.181154: Datenbankverbindung hergestellt
+20061125.181154: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.181154: admin/categories.php:39: Kat 1
+20061125.181154: admin/categories.php:39: Kat 2
+20061125.181154: admin/categories.php:39: Kat 3
+20061125.181154: admin/categories.php:39: Kat 1.2
+20061125.181154: admin/categories.php:39: Kat 5
+20061125.181154: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.181154: admin/categories.php:69: Kat 1
+20061125.181154: admin/categories.php:69: Kat 2
+20061125.181154: admin/categories.php:69: Kat 3
+20061125.181154: admin/categories.php:69: Kat 1.2
+20061125.181154: admin/categories.php:69: Kat 5
+20061125.181154: admin/categories.php: Anzeige
+20061125.181156: Datenbankverbindung hergestellt
+20061125.181156: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 6
+20061125.181156: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 6
+				ORDER BY sort_order
+20061125.181156: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 6
+				ORDER BY sort_order
+20061125.181156: admin/categories.php: Anzeige
+20061125.181200: Datenbankverbindung hergestellt
+20061125.181200: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.181200: admin/categories.php:39: Kat 1
+20061125.181200: admin/categories.php:39: Kat 2
+20061125.181200: admin/categories.php:39: Kat 3
+20061125.181200: admin/categories.php:39: Kat 1.2
+20061125.181200: admin/categories.php:39: Kat 5
+20061125.181200: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.181200: admin/categories.php:69: Kat 1
+20061125.181200: admin/categories.php:69: Kat 2
+20061125.181200: admin/categories.php:69: Kat 3
+20061125.181200: admin/categories.php:69: Kat 1.2
+20061125.181200: admin/categories.php:69: Kat 5
+20061125.181200: admin/categories.php: Anzeige
+20061125.181202: Datenbankverbindung hergestellt
+20061125.181202: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 6
+20061125.181907: Datenbankverbindung hergestellt
+20061125.181907: admin/addCategory.php: action set
+20061125.181907: admin/addCategory.php: action=edit
+20061125.181907: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.2',
+					active=1,
+					description='Beschreibung 1.2'
+					sort_order=,4
+					WHERE categories_id=6
+20061125.181948: Datenbankverbindung hergestellt
+20061125.181948: admin/addCategory.php: action set
+20061125.181948: admin/addCategory.php: action=edit
+20061125.181948: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.2',
+					active=1,
+					description='Beschreibung 1.2',
+					sort_order=4,
+					WHERE categories_id=6
+20061125.182056: Datenbankverbindung hergestellt
+20061125.182056: admin/addCategory.php: action set
+20061125.182056: admin/addCategory.php: action=edit
+20061125.182056: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.2',
+					active=1,
+					description='Beschreibung 1.2',
+					sort_order=4
+					WHERE categories_id=6
+20061125.182114: Datenbankverbindung hergestellt
+20061125.182114: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182114: admin/categories.php:39: Kat 1
+20061125.182114: admin/categories.php:39: Kat 2
+20061125.182114: admin/categories.php:39: Kat 3
+20061125.182114: admin/categories.php:39: Kat 1.2
+20061125.182114: admin/categories.php:39: Kat 5
+20061125.182114: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182114: admin/categories.php:69: Kat 1
+20061125.182114: admin/categories.php:69: Kat 2
+20061125.182114: admin/categories.php:69: Kat 3
+20061125.182114: admin/categories.php:69: Kat 1.2
+20061125.182114: admin/categories.php:69: Kat 5
+20061125.182114: admin/categories.php: Anzeige
+20061125.182152: Datenbankverbindung hergestellt
+20061125.182157: Datenbankverbindung hergestellt
+20061125.182157: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 6
+20061125.182157: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 6
+				ORDER BY sort_order
+20061125.182157: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 6
+				ORDER BY sort_order
+20061125.182157: admin/categories.php: Anzeige
+20061125.182200: Datenbankverbindung hergestellt
+20061125.182200: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182200: admin/categories.php:39: Kat 1
+20061125.182200: admin/categories.php:39: Kat 2
+20061125.182200: admin/categories.php:39: Kat 3
+20061125.182200: admin/categories.php:39: Kat 1.2
+20061125.182200: admin/categories.php:39: Kat 5
+20061125.182200: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182200: admin/categories.php:69: Kat 1
+20061125.182200: admin/categories.php:69: Kat 2
+20061125.182200: admin/categories.php:69: Kat 3
+20061125.182200: admin/categories.php:69: Kat 1.2
+20061125.182200: admin/categories.php:69: Kat 5
+20061125.182200: admin/categories.php: Anzeige
+20061125.182201: Datenbankverbindung hergestellt
+20061125.182201: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 6
+20061125.182637: Datenbankverbindung hergestellt
+20061125.182637: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182637: admin/categories.php:39: Kat 1
+20061125.182637: admin/categories.php:39: Kat 2
+20061125.182637: admin/categories.php:39: Kat 3
+20061125.182637: admin/categories.php:39: Kat 1.2
+20061125.182637: admin/categories.php:39: Kat 5
+20061125.182637: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182637: admin/categories.php:69: Kat 1
+20061125.182637: admin/categories.php:69: Kat 2
+20061125.182637: admin/categories.php:69: Kat 3
+20061125.182637: admin/categories.php:69: Kat 1.2
+20061125.182637: admin/categories.php:69: Kat 5
+20061125.182637: admin/categories.php: Anzeige
+20061125.182641: Datenbankverbindung hergestellt
+20061125.182641: admin/addCategory.php: get-action=delete
+20061125.182641: DB-Anfrage: DELETE FROM categories WHERE categories_id=
+20061125.182738: Datenbankverbindung hergestellt
+20061125.182738: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182738: admin/categories.php:39: Kat 1
+20061125.182738: admin/categories.php:39: Kat 2
+20061125.182738: admin/categories.php:39: Kat 3
+20061125.182738: admin/categories.php:39: Kat 5
+20061125.182738: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182738: admin/categories.php:69: Kat 1
+20061125.182738: admin/categories.php:69: Kat 2
+20061125.182738: admin/categories.php:69: Kat 3
+20061125.182738: admin/categories.php:69: Kat 5
+20061125.182738: admin/categories.php: Anzeige
+20061125.182741: Datenbankverbindung hergestellt
+20061125.182741: admin/addCategory.php: get-action=delete
+20061125.182741: DB-Anfrage: DELETE FROM categories WHERE categories_id=
+20061125.182744: Datenbankverbindung hergestellt
+20061125.182744: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182744: admin/categories.php:39: Kat 1
+20061125.182744: admin/categories.php:39: Kat 2
+20061125.182744: admin/categories.php:39: Kat 3
+20061125.182744: admin/categories.php:39: Kat 5
+20061125.182744: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182744: admin/categories.php:69: Kat 1
+20061125.182744: admin/categories.php:69: Kat 2
+20061125.182744: admin/categories.php:69: Kat 3
+20061125.182744: admin/categories.php:69: Kat 5
+20061125.182744: admin/categories.php: Anzeige
+20061125.182842: Datenbankverbindung hergestellt
+20061125.182842: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182842: admin/categories.php:39: Kat 1
+20061125.182842: admin/categories.php:39: Kat 2
+20061125.182842: admin/categories.php:39: Kat 3
+20061125.182842: admin/categories.php:39: Kat 5
+20061125.182842: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182842: admin/categories.php:69: Kat 1
+20061125.182842: admin/categories.php:69: Kat 2
+20061125.182842: admin/categories.php:69: Kat 3
+20061125.182842: admin/categories.php:69: Kat 5
+20061125.182842: admin/categories.php: Anzeige
+20061125.182846: Datenbankverbindung hergestellt
+20061125.182846: admin/addCategory.php: get-action=delete
+20061125.182846: DB-Anfrage: DELETE FROM categories WHERE categories_id=3
+20061125.182901: Datenbankverbindung hergestellt
+20061125.182901: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.182901: admin/categories.php:39: Kat 1
+20061125.182901: admin/categories.php:39: Kat 2
+20061125.182901: admin/categories.php:39: Kat 5
+20061125.182901: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.182901: admin/categories.php:69: Kat 1
+20061125.182901: admin/categories.php:69: Kat 2
+20061125.182901: admin/categories.php:69: Kat 5
+20061125.182901: admin/categories.php: Anzeige
+20061125.183412: Datenbankverbindung hergestellt
+20061125.183423: Datenbankverbindung hergestellt
+20061125.183423: admin/addProduct.php: get-action=none
+20061125.184402: Datenbankverbindung hergestellt
+20061125.184402: admin/addProduct.php: get-action=none
+20061125.184513: Datenbankverbindung hergestellt
+20061125.184529: Datenbankverbindung hergestellt
+20061125.184529: admin/addProduct.php: get-action=none
+20061125.184601: Datenbankverbindung hergestellt
+20061125.184601: admin/addCategory.php: action set
+20061125.184601: admin/addCategory.php: action=add
+20061125.184601: DB-Anfrage: INSERT INTO categories VALUES (0,'Prod 3',,0,'sdf',2)
+20061125.184706: Datenbankverbindung hergestellt
+20061125.184706: admin/addProduct.php: get-action=none
+20061125.184710: Datenbankverbindung hergestellt
+20061125.184710: admin/addCategory.php: action set
+20061125.184710: admin/addCategory.php: action=add
+20061125.184710: DB-Anfrage: INSERT INTO categories VALUES (0,'Prod 3',,0,'sdf',2)
+20061125.184833: Datenbankverbindung hergestellt
+20061125.184833: admin/addProduct.php: get-action=none
+20061125.184836: Datenbankverbindung hergestellt
+20061125.184836: admin/addCategory.php: action set
+20061125.184836: admin/addProduct.php: action=add
+20061125.184836: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.00',
+					'20061125.184836',
+					2)
+					
+20061125.184901: Datenbankverbindung hergestellt
+20061125.184901: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.184901: admin/categories.php:39: Kat 1
+20061125.184901: admin/categories.php:39: Kat 2
+20061125.184901: admin/categories.php:39: Kat 5
+20061125.184901: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.184901: admin/categories.php:69: Kat 1
+20061125.184901: admin/categories.php:69: Kat 2
+20061125.184901: admin/categories.php:69: Kat 5
+20061125.184901: admin/categories.php: Anzeige
+20061125.184941: Datenbankverbindung hergestellt
+20061125.184941: admin/addProduct.php: get-action=none
+20061125.184959: Datenbankverbindung hergestellt
+20061125.184959: admin/addCategory.php: action set
+20061125.184959: admin/addProduct.php: action=add
+20061125.184959: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'8',
+					'20.00',
+					'20061125:184959',
+					)
+					
+20061125.185038: Datenbankverbindung hergestellt
+20061125.185038: admin/addCategory.php: action set
+20061125.185038: admin/addProduct.php: action=add
+20061125.185038: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'8',
+					'20.00',
+					'20061125-185038',
+					)
+					
+20061125.185107: Datenbankverbindung hergestellt
+20061125.185107: admin/addCategory.php: action set
+20061125.185107: admin/addProduct.php: action=add
+20061125.185107: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'8',
+					'20.00',
+					'20061125185107',
+					)
+					
+20061125.185203: Datenbankverbindung hergestellt
+20061125.185203: admin/addCategory.php: action set
+20061125.185203: admin/addProduct.php: action=add
+20061125.185203: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'8',
+					'20.00',
+					'20061125185203',
+					0)
+					
+20061125.185316: Datenbankverbindung hergestellt
+20061125.185316: admin/addCategory.php: action set
+20061125.185316: admin/addProduct.php: action=add
+20061125.185316: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'8',
+					'20.00',
+					'20061125185316',
+					0)
+					
+20061125.185340: Datenbankverbindung hergestellt
+20061125.185340: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.185340: admin/categories.php:39: Kat 1
+20061125.185340: admin/categories.php:39: Kat 2
+20061125.185340: admin/categories.php:39: Kat 5
+20061125.185340: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.185340: admin/categories.php:69: Kat 1
+20061125.185340: admin/categories.php:69: Kat 2
+20061125.185340: admin/categories.php:69: Kat 5
+20061125.185340: admin/categories.php: Anzeige
+20061125.185636: Datenbankverbindung hergestellt
+20061125.185636: admin/addProduct.php: get-action=edit
+20061125.185636: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 5
+20061125.185727: Datenbankverbindung hergestellt
+20061125.185727: admin/addProduct.php: get-action=edit
+20061125.185727: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 5
+20061125.185748: Datenbankverbindung hergestellt
+20061125.185748: admin/addProduct.php: get-action=edit
+20061125.185748: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 5
+20061125.190103: Datenbankverbindung hergestellt
+20061125.190103: admin/addCategory.php: action set
+20061125.190103: admin/addProduct.php: action=edit
+20061125.190103: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					,
+					0,
+					0,
+					'sgfs',
+					'test',
+					'20',
+					'20.0000',
+					'20061125190103',
+					0)
+					
+20061125.190103: DB-Anfrage: UPDATE categories
+					deleted=1
+					where products_id=
+20061125.190131: Datenbankverbindung hergestellt
+20061125.190131: admin/addProduct.php: get-action=edit
+20061125.190131: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 5
+20061125.190202: Datenbankverbindung hergestellt
+20061125.190202: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.190202: admin/categories.php:39: Kat 1
+20061125.190202: admin/categories.php:39: Kat 2
+20061125.190202: admin/categories.php:39: Kat 5
+20061125.190202: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.190202: admin/categories.php:69: Kat 1
+20061125.190202: admin/categories.php:69: Kat 2
+20061125.190202: admin/categories.php:69: Kat 5
+20061125.190202: admin/categories.php: Anzeige
+20061125.190211: Datenbankverbindung hergestellt
+20061125.190211: admin/addProduct.php: get-action=edit
+20061125.190211: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 3
+20061125.190236: Datenbankverbindung hergestellt
+20061125.190236: admin/addProduct.php: get-action=edit
+20061125.190236: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 3
+20061125.190310: Datenbankverbindung hergestellt
+20061125.190310: admin/addProduct.php: get-action=edit
+20061125.190310: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 3
+20061125.190313: Datenbankverbindung hergestellt
+20061125.190313: admin/addProduct.php: get-action=edit
+20061125.190313: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 3
+20061125.190316: Datenbankverbindung hergestellt
+20061125.190316: admin/addCategory.php: action set
+20061125.190316: admin/addProduct.php: action=edit
+20061125.190316: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					3,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.0000',
+					'20061125190316',
+					2)
+					
+20061125.190316: DB-Anfrage: UPDATE categories
+					deleted=1
+					where products_id=3
+20061125.190453: Datenbankverbindung hergestellt
+20061125.190453: admin/addCategory.php: action set
+20061125.190453: admin/addProduct.php: action=edit
+20061125.190453: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					3,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.0000',
+					'20061125190453',
+					2)
+					
+20061125.190453: DB-Anfrage: UPDATE products
+					deleted=1
+					where products_id=3
+20061125.190615: Datenbankverbindung hergestellt
+20061125.190615: admin/addCategory.php: action set
+20061125.190615: admin/addProduct.php: action=edit
+20061125.190615: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					3,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.0000',
+					'20061125190615',
+					2)
+					
+20061125.190615: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=3
+20061125.190850: Datenbankverbindung hergestellt
+20061125.190850: admin/addCategory.php: action set
+20061125.190850: admin/addProduct.php: action=edit
+20061125.190850: DB-Anfrage: SELECT categories_id
+					FROM products
+					WHERE products_id=3
+20061125.190850: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.0000',
+					'20061125190850',
+					2)
+					
+20061125.190850: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=3
+20061125.190913: Datenbankverbindung hergestellt
+20061125.190913: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.190913: admin/categories.php:39: Kat 1
+20061125.190913: admin/categories.php:39: Kat 2
+20061125.190913: admin/categories.php:39: Kat 5
+20061125.190913: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.190913: admin/categories.php:69: Kat 1
+20061125.190913: admin/categories.php:69: Kat 2
+20061125.190913: admin/categories.php:69: Kat 5
+20061125.190913: admin/categories.php: Anzeige
+20061125.190916: Datenbankverbindung hergestellt
+20061125.190916: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.190916: admin/categories.php:39: Kat 1
+20061125.190916: admin/categories.php:39: Kat 2
+20061125.190916: admin/categories.php:39: Kat 5
+20061125.190916: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.190916: admin/categories.php:69: Kat 1
+20061125.190916: admin/categories.php:69: Kat 2
+20061125.190916: admin/categories.php:69: Kat 5
+20061125.190916: admin/categories.php: Anzeige
+20061125.190919: Datenbankverbindung hergestellt
+20061125.190919: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.190919: admin/categories.php:39: Kat 1
+20061125.190919: admin/categories.php:39: Kat 2
+20061125.190919: admin/categories.php:39: Kat 5
+20061125.190919: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.190919: admin/categories.php:69: Kat 1
+20061125.190919: admin/categories.php:69: Kat 2
+20061125.190919: admin/categories.php:69: Kat 5
+20061125.190919: admin/categories.php: Anzeige
+20061125.190922: Datenbankverbindung hergestellt
+20061125.190922: admin/addProduct.php: get-action=edit
+20061125.190922: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 9
+20061125.190925: Datenbankverbindung hergestellt
+20061125.190925: admin/addCategory.php: action set
+20061125.190925: admin/addProduct.php: action=edit
+20061125.190925: DB-Anfrage: SELECT categories_id
+					FROM products
+					WHERE products_id=9
+20061125.190925: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod 3',
+					0,
+					0,
+					0,
+					'sdf',
+					'test',
+					'6',
+					'10.0000',
+					'20061125190925',
+					2)
+					
+20061125.190925: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=9
+20061125.191032: Datenbankverbindung hergestellt
+20061125.191032: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.191032: admin/categories.php:39: Kat 1
+20061125.191032: admin/categories.php:39: Kat 2
+20061125.191032: admin/categories.php:39: Kat 5
+20061125.191032: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.191032: admin/categories.php:69: Kat 1
+20061125.191032: admin/categories.php:69: Kat 2
+20061125.191032: admin/categories.php:69: Kat 5
+20061125.191032: admin/categories.php: Anzeige
+20061125.191120: Datenbankverbindung hergestellt
+20061125.191120: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.191120: admin/categories.php:39: Kat 1
+20061125.191120: admin/categories.php:39: Kat 2
+20061125.191120: admin/categories.php:39: Kat 5
+20061125.191120: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.191120: admin/categories.php:69: Kat 1
+20061125.191120: admin/categories.php:69: Kat 2
+20061125.191120: admin/categories.php:69: Kat 5
+20061125.191121: admin/categories.php: Anzeige
+20061125.191124: Datenbankverbindung hergestellt
+20061125.191124: admin/addCategory.php: get-action=delete
+20061125.191124: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=
+20061125.191209: Datenbankverbindung hergestellt
+20061125.191209: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.191209: admin/categories.php:39: Kat 1
+20061125.191209: admin/categories.php:39: Kat 2
+20061125.191209: admin/categories.php:39: Kat 5
+20061125.191209: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.191209: admin/categories.php:69: Kat 1
+20061125.191209: admin/categories.php:69: Kat 2
+20061125.191209: admin/categories.php:69: Kat 5
+20061125.191209: admin/categories.php: Anzeige
+20061125.191213: Datenbankverbindung hergestellt
+20061125.191213: admin/addCategory.php: get-action=delete
+20061125.191213: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=
+20061125.191235: Datenbankverbindung hergestellt
+20061125.191235: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.191235: admin/categories.php:39: Kat 1
+20061125.191235: admin/categories.php:39: Kat 2
+20061125.191235: admin/categories.php:39: Kat 5
+20061125.191235: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.191235: admin/categories.php:69: Kat 1
+20061125.191235: admin/categories.php:69: Kat 2
+20061125.191235: admin/categories.php:69: Kat 5
+20061125.191235: admin/categories.php: Anzeige
+20061125.191238: Datenbankverbindung hergestellt
+20061125.191238: admin/addCategory.php: get-action=delete
+20061125.191238: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=10
+20061125.191329: Datenbankverbindung hergestellt
+20061125.191329: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.191329: admin/categories.php:39: Kat 1
+20061125.191329: admin/categories.php:39: Kat 2
+20061125.191329: admin/categories.php:39: Kat 5
+20061125.191329: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061125.191330: admin/categories.php:69: Kat 1
+20061125.191330: admin/categories.php:69: Kat 2
+20061125.191330: admin/categories.php:69: Kat 5
+20061125.191330: admin/categories.php: Anzeige

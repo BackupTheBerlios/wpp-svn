@@ -4,7 +4,7 @@ include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/categories.html","templates/frame.html",$lang["categories"]);
+$tpl = new TemplateEngine("templates/categories.html","templates/frame.html",$lang["admin_categories"]);
 
 if (isset($_GET['catID'])) {
 	$requestedCategory = $_GET['catID'];
@@ -21,8 +21,10 @@ if ($requestedCategory != 0) {
 				FROM categories
 				WHERE categories_id = ".$requestedCategory);
 	$category = DB_fetchArray($query);
+	$tpl->assign('parent', $category['parent']);
 } else {
 	$category = null;
+	$tpl->assign('parent',null);
 }
 
 //Kinder finden
@@ -35,9 +37,8 @@ $children = array();
 while ($line = DB_fetchArray($children_query)) {
 	$list = array(
 			"id" => $line['categories_id'],
-			"name" => $line['name'],
-			"parent" => $line['parent']);
-	$LOG->write('3',"Kategorie gefunden: ".$list['name']);
+			"name" => $line['name']);
+	$LOG->write('3',"admin/categories.php:39: ".$list['name']);
 	$children[] = $list;
 }
 
@@ -47,33 +48,33 @@ $products_query = DB_query("SELECT
 				*
 				FROM products
 				WHERE categories_id = ".$requestedCategory."
+				AND deleted = 0
 				ORDER BY sort_order");
 $products = array();
 while ($line = DB_fetchArray($products_query)) {
 	$list = array(
 			"id" => $line['products_id'],
 			"name" => $line['name'],
-			"parent" => $line['description']);
+			"description" => $line['description']);
 	$products[] = $list;
 }
 
-
+//Menu erstellen
 $menu = array();
 for ($i=0;$i<sizeof($children);$i++) {
 	$entry = array(
-			"type" => "cat",
+			"type" => "category",
 			"name" => $children[$i]["name"],
-			"link" => HTTP_HOSTNAME.WPP_ROOT."/admin/categories.php?catID=".$children[$i]["id"]
+			"id" => $children[$i]["id"],
 	);
-	$LOG->write('3',"Kategorie geschrieben: ".$entry['name']);
+	$LOG->write('3',"admin/categories.php:69: ".$entry['name']);
 	$menu[] = $entry;
 }
-
 for ($i=0;$i<sizeof($products);$i++) {
 	$entry = array(
-			"type" => "cat",
+			"type" => "product",
 			"name" => $products[$i]["name"],
-			"link" => HTTP_HOSTNAME.WPP_ROOT."/admin/categories.php?catID=".$products[$i]["id"]
+			"id" => $products[$i]["id"],
 	);
 	$menu[] = $entry;
 }
@@ -81,5 +82,7 @@ for ($i=0;$i<sizeof($products);$i++) {
 $tpl->assign('menu',$menu);
 
 $tpl->display();
+
+$LOG->write('3','admin/categories.php: Anzeige');
 
 ?>
