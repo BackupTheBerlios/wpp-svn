@@ -1,0 +1,88 @@
+<?php
+
+class TemplateEngine
+ {
+    var $TEMPLATE_DIR = './';
+  
+    var $PLUGIN_DIR = '.';
+  
+    var $TEMPLATE_VARS = array();
+    
+    var $frame;
+    var $template;
+    var $langData;
+  
+  	function templateEngine($template, $frame, $langData) {
+  		$this->frame = $frame;		//Rahmen
+  		$this->template = $template;	//Das Template, welches in den Rahmen eingebettet wird
+  		$this->langData = $langData;	//Array mit Sprachdaten
+  	}
+  
+    function setTemplateDir($tpl_dir)
+    {
+        if(!is_dir($tpl_dir)) {
+            exit('invalid template path');
+        }
+  
+        $this->TEMPLATE_DIR = $tpl_dir;
+    }
+  
+    function assign($key, $val=null)
+    {
+        $this->TEMPLATE_VARS[$key] = $val;
+    }
+  
+    function display()
+    {
+        //if(!is_file($this->TEMPLATE_DIR . $tpl_file)) {
+        //    exit('no such template file: ' . $tpl_file);
+        //}
+  
+        $_TPL = &$this->TEMPLATE_VARS;
+        $_CONTENT = &$this->template;
+        $_LANG = &$this->langData;
+  	
+        include($this->TEMPLATE_DIR . $this->frame);
+    }
+    
+    function setTemplate($template) 
+    {
+    	$this->template = $template;
+    }
+  
+    function setFrame($frame) 
+    {
+    	$this->frame = $frame;
+    }
+  
+    function setLangData($langData) 
+    {
+    	$this->langData = $langData;
+    }
+  
+    function tpl_func($func_name)
+    {
+        $func_file =
+        dirname(__FILE__) .  $this->PLUGIN_DIR . $func_name . '.php';
+  
+        if(!is_file($func_file)) {
+            exit('no such function: ' . $func_name);
+        }
+  
+        include_once($func_file);
+  
+        $code = "return $func_name(";
+        if(func_num_args() > 1) {
+            $args = array_slice(func_get_args(), 1);
+            for($x=0; $x<count($args); $x++) {
+                if($x>0) $code .= ',';
+                $code .= '$args[' . $x . ']';
+            }
+        }
+        $code .= ");";
+  
+        return eval($code);
+    }
+ }
+ 
+ ?>

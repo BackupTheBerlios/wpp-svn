@@ -1,0 +1,18 @@
+
+<table>
+	<? foreach($_TPL['menu'] as $line) { ?>
+	<TR>
+		<TD>
+			<a href="<?=$line['link']?>">
+				<?=$line['name']?>
+			</a>
+		</TD>
+	</TR>
+	<? } ?>
+</table>
+
+<a href="addCategory.php?catID=<?=$_TPL['catID']?>"><? echo $_LANG['addCategory'] ?></a>
+
+
+
+	

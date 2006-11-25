@@ -1,0 +1,25 @@
+<?php
+
+//echo LOG_LEVEL;
+
+class Log
+{
+
+	function write($loglevel,$message) {
+	
+		
+		if ($loglevel<=LOG_LEVEL) {
+			
+			$file = fopen(LOG_FILE,'a');
+			$date = date("Ymd.His");
+			
+			fwrite($file, $date.": ".$message."\n");
+		
+		}
+	
+	}
+
+
+}
+
+?>
