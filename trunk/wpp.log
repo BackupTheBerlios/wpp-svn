@@ -1,0 +1,521 @@
+20061125.110516: Datenbankverbindung hergestellt
+20061125.110516: DB-Anfrage: SELECT
+		*
+		FROM categories
+		WHERE categories_id = 1
+20061125.122405: Datenbankverbindung hergestellt
+20061125.122405: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122405: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122635: Datenbankverbindung hergestellt
+20061125.122635: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122635: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122637: Datenbankverbindung hergestellt
+20061125.122637: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122637: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122643: Datenbankverbindung hergestellt
+20061125.122643: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122643: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122643: Datenbankverbindung hergestellt
+20061125.122643: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122643: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122644: Datenbankverbindung hergestellt
+20061125.122644: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122644: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122706: Datenbankverbindung hergestellt
+20061125.122706: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122706: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122721: Datenbankverbindung hergestellt
+20061125.122721: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122721: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122835: Datenbankverbindung hergestellt
+20061125.122835: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122835: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.122837: Datenbankverbindung hergestellt
+20061125.122837: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.122837: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123029: Datenbankverbindung hergestellt
+20061125.123029: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123029: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123128: Datenbankverbindung hergestellt
+20061125.123128: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123128: Kategorie: Kat 1
+20061125.123128: Kategorie: Kat 2
+20061125.123128: Kategorie: Kat 3
+20061125.123128: Kategorie: Kat 1.2
+20061125.123128: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123510: Datenbankverbindung hergestellt
+20061125.123510: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123510: Kategorie gefunden: Kat 1
+20061125.123510: Kategorie gefunden: Kat 2
+20061125.123510: Kategorie gefunden: Kat 3
+20061125.123510: Kategorie gefunden: Kat 1.2
+20061125.123510: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123510: Kategorie geschrieben: Kat 1.2
+20061125.123510: Kategorie geschrieben: Kat 1.2
+20061125.123510: Kategorie geschrieben: Kat 1.2
+20061125.123510: Kategorie geschrieben: Kat 1.2
+20061125.123639: Datenbankverbindung hergestellt
+20061125.123639: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123639: Kategorie gefunden: Kat 1
+20061125.123639: Kategorie gefunden: Kat 2
+20061125.123639: Kategorie gefunden: Kat 3
+20061125.123639: Kategorie gefunden: Kat 1.2
+20061125.123639: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123639: Kategorie geschrieben: Kat 1
+20061125.123639: Kategorie geschrieben: Kat 2
+20061125.123639: Kategorie geschrieben: Kat 3
+20061125.123639: Kategorie geschrieben: Kat 1.2
+20061125.123912: Datenbankverbindung hergestellt
+20061125.123912: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123912: Kategorie gefunden: Kat 1
+20061125.123912: Kategorie gefunden: Kat 2
+20061125.123912: Kategorie gefunden: Kat 3
+20061125.123912: Kategorie gefunden: Kat 1.2
+20061125.123912: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123912: Kategorie geschrieben: Kat 1
+20061125.123912: Kategorie geschrieben: Kat 2
+20061125.123912: Kategorie geschrieben: Kat 3
+20061125.123912: Kategorie geschrieben: Kat 1.2
+20061125.123931: Datenbankverbindung hergestellt
+20061125.123931: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123931: Kategorie gefunden: Kat 1
+20061125.123931: Kategorie gefunden: Kat 2
+20061125.123931: Kategorie gefunden: Kat 3
+20061125.123931: Kategorie gefunden: Kat 1.2
+20061125.123931: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123931: Kategorie geschrieben: Kat 1
+20061125.123931: Kategorie geschrieben: Kat 2
+20061125.123931: Kategorie geschrieben: Kat 3
+20061125.123931: Kategorie geschrieben: Kat 1.2
+20061125.123932: Datenbankverbindung hergestellt
+20061125.123932: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123932: Kategorie gefunden: Kat 1
+20061125.123932: Kategorie gefunden: Kat 2
+20061125.123932: Kategorie gefunden: Kat 3
+20061125.123932: Kategorie gefunden: Kat 1.2
+20061125.123932: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123932: Kategorie geschrieben: Kat 1
+20061125.123932: Kategorie geschrieben: Kat 2
+20061125.123932: Kategorie geschrieben: Kat 3
+20061125.123932: Kategorie geschrieben: Kat 1.2
+20061125.123955: Datenbankverbindung hergestellt
+20061125.123955: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.123955: Kategorie gefunden: Kat 1
+20061125.123955: Kategorie gefunden: Kat 2
+20061125.123955: Kategorie gefunden: Kat 3
+20061125.123955: Kategorie gefunden: Kat 1.2
+20061125.123955: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.123955: Kategorie geschrieben: Kat 1
+20061125.123955: Kategorie geschrieben: Kat 2
+20061125.123955: Kategorie geschrieben: Kat 3
+20061125.123955: Kategorie geschrieben: Kat 1.2
+20061125.124109: Datenbankverbindung hergestellt
+20061125.124109: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.124109: Kategorie gefunden: Kat 1
+20061125.124109: Kategorie gefunden: Kat 2
+20061125.124109: Kategorie gefunden: Kat 3
+20061125.124109: Kategorie gefunden: Kat 1.2
+20061125.124109: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.124109: Kategorie geschrieben: Kat 1
+20061125.124109: Kategorie geschrieben: Kat 2
+20061125.124109: Kategorie geschrieben: Kat 3
+20061125.124109: Kategorie geschrieben: Kat 1.2
+20061125.124127: Datenbankverbindung hergestellt
+20061125.124127: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.124127: Kategorie gefunden: Kat 1
+20061125.124127: Kategorie gefunden: Kat 2
+20061125.124127: Kategorie gefunden: Kat 3
+20061125.124127: Kategorie gefunden: Kat 1.2
+20061125.124127: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.124127: Kategorie geschrieben: Kat 1
+20061125.124127: Kategorie geschrieben: Kat 2
+20061125.124127: Kategorie geschrieben: Kat 3
+20061125.124127: Kategorie geschrieben: Kat 1.2
+20061125.124355: Datenbankverbindung hergestellt
+20061125.124355: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061125.124355: Kategorie gefunden: Kat 1
+20061125.124355: Kategorie gefunden: Kat 2
+20061125.124355: Kategorie gefunden: Kat 3
+20061125.124355: Kategorie gefunden: Kat 1.2
+20061125.124355: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				ORDER BY sort_order
+20061125.124355: Kategorie geschrieben: Kat 1
+20061125.124355: Kategorie geschrieben: Kat 2
+20061125.124355: Kategorie geschrieben: Kat 3
+20061125.124355: Kategorie geschrieben: Kat 1.2
+20061125.124401: Datenbankverbindung hergestellt
+20061125.124401: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.124401: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.124401: Kategorie gefunden: Kat 1.1
+20061125.124401: Kategorie gefunden: Kat 1.2
+20061125.124401: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.124401: Kategorie geschrieben: Kat 1.1
+20061125.124401: Kategorie geschrieben: Kat 1.2
+20061125.124609: Datenbankverbindung hergestellt
+20061125.124609: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.124609: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.124609: Kategorie gefunden: Kat 1.1
+20061125.124609: Kategorie gefunden: Kat 1.2
+20061125.124609: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.124609: Kategorie geschrieben: Kat 1.1
+20061125.124609: Kategorie geschrieben: Kat 1.2
+20061125.125058: Datenbankverbindung hergestellt
+20061125.125058: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125058: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125058: Kategorie gefunden: Kat 1.1
+20061125.125058: Kategorie gefunden: Kat 1.2
+20061125.125058: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125058: Kategorie geschrieben: Kat 1.1
+20061125.125058: Kategorie geschrieben: Kat 1.2
+20061125.125059: Datenbankverbindung hergestellt
+20061125.125059: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125059: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125059: Kategorie gefunden: Kat 1.1
+20061125.125059: Kategorie gefunden: Kat 1.2
+20061125.125059: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125059: Kategorie geschrieben: Kat 1.1
+20061125.125059: Kategorie geschrieben: Kat 1.2
+20061125.125304: Datenbankverbindung hergestellt
+20061125.125304: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125304: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125304: Kategorie gefunden: Kat 1.1
+20061125.125304: Kategorie gefunden: Kat 1.2
+20061125.125304: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125304: Kategorie geschrieben: Kat 1.1
+20061125.125304: Kategorie geschrieben: Kat 1.2
+20061125.125342: Datenbankverbindung hergestellt
+20061125.125342: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125342: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125342: Kategorie gefunden: Kat 1.1
+20061125.125342: Kategorie gefunden: Kat 1.2
+20061125.125342: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125342: Kategorie geschrieben: Kat 1.1
+20061125.125342: Kategorie geschrieben: Kat 1.2
+20061125.125514: Datenbankverbindung hergestellt
+20061125.125514: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125514: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125514: Kategorie gefunden: Kat 1.1
+20061125.125514: Kategorie gefunden: Kat 1.2
+20061125.125514: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125514: Kategorie geschrieben: Kat 1.1
+20061125.125514: Kategorie geschrieben: Kat 1.2
+20061125.125723: Datenbankverbindung hergestellt
+20061125.125723: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125723: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125723: Kategorie gefunden: Kat 1.1
+20061125.125723: Kategorie gefunden: Kat 1.2
+20061125.125723: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125723: Kategorie geschrieben: Kat 1.1
+20061125.125723: Kategorie geschrieben: Kat 1.2
+20061125.125727: Datenbankverbindung hergestellt
+20061125.125727: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125727: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125727: Kategorie gefunden: Kat 1.1
+20061125.125727: Kategorie gefunden: Kat 1.2
+20061125.125727: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125727: Kategorie geschrieben: Kat 1.1
+20061125.125727: Kategorie geschrieben: Kat 1.2
+20061125.125732: Datenbankverbindung hergestellt
+20061125.125732: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125732: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125732: Kategorie gefunden: Kat 1.1
+20061125.125732: Kategorie gefunden: Kat 1.2
+20061125.125732: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125732: Kategorie geschrieben: Kat 1.1
+20061125.125732: Kategorie geschrieben: Kat 1.2
+20061125.125741: Datenbankverbindung hergestellt
+20061125.125741: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061125.125741: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061125.125741: Kategorie gefunden: Kat 1.1
+20061125.125741: Kategorie gefunden: Kat 1.2
+20061125.125741: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				ORDER BY sort_order
+20061125.125741: Kategorie geschrieben: Kat 1.1
+20061125.125741: Kategorie geschrieben: Kat 1.2
