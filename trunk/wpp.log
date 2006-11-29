@@ -1841,3 +1841,773 @@
 20061125.191330: admin/categories.php:69: Kat 2
 20061125.191330: admin/categories.php:69: Kat 5
 20061125.191330: admin/categories.php: Anzeige
+20061129.124418: Datenbankverbindung hergestellt
+20061129.124418: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.124418: DB-Anfrage akzeptiert
+20061129.124418: admin/categories.php:39: Kat 1
+20061129.124418: admin/categories.php:39: Kat 2
+20061129.124418: admin/categories.php:39: Kat 5
+20061129.124418: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.124418: DB-Anfrage akzeptiert
+20061129.124418: admin/categories.php:69: Kat 1
+20061129.124418: admin/categories.php:69: Kat 2
+20061129.124418: admin/categories.php:69: Kat 5
+20061129.124418: admin/categories.php: Anzeige
+20061129.124432: Datenbankverbindung hergestellt
+20061129.124432: admin/addCategory.php: get-action=edit
+20061129.124432: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061129.124432: DB-Anfrage akzeptiert
+20061129.124432: Weitergeleitet zu: categories.php?
+20061129.124928: Datenbankverbindung hergestellt
+20061129.124928: admin/addCategory.php: get-action=edit
+20061129.124928: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061129.124928: DB-Anfrage akzeptiert
+20061129.124928: Weitergeleitet zu: categories.php?
+20061129.125201: Datenbankverbindung hergestellt
+20061129.125201: admin/addCategory.php: get-action=edit
+20061129.125201: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061129.125201: DB-Anfrage akzeptiert
+20061129.125205: Datenbankverbindung hergestellt
+20061129.125205: admin/addCategory.php: action set
+20061129.125205: admin/addCategory.php: action=edit
+20061129.125205: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1',
+					active=1,
+					description='Beschreibung 1',
+					sort_order=1
+					WHERE categories_id=1
+20061129.125205: DB-Anfrage akzeptiert
+20061129.125205: Kategorie  bearbeitet
+20061129.125205: Weitergeleitet zu: categories.php?
+20061129.125808: Datenbankverbindung hergestellt
+20061129.125808: admin/addCategory.php: action set
+20061129.125808: admin/addCategory.php: action=edit
+20061129.125808: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1',
+					active=1,
+					description='Beschreibung 1',
+					sort_order=1
+					WHERE categories_id=1
+20061129.125808: DB-Anfrage akzeptiert
+20061129.125808: Kategorie  bearbeitet
+20061129.125808: Weitergeleitet zu: categories.php?
+20061129.125850: Datenbankverbindung hergestellt
+20061129.125850: admin/addCategory.php: action set
+20061129.125850: admin/addCategory.php: action=edit
+20061129.125850: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1',
+					active=1,
+					description='Beschreibung 1',
+					sort_order=1
+					WHERE categories_id=1
+20061129.125850: DB-Anfrage akzeptiert
+20061129.125850: Kategorie  bearbeitet
+20061129.125850: Weitergeleitet zu: /admin/categories.php?
+20061129.125850: Datenbankverbindung hergestellt
+20061129.125850: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.125850: DB-Anfrage akzeptiert
+20061129.125850: admin/categories.php:39: Kat 1
+20061129.125850: admin/categories.php:39: Kat 2
+20061129.125850: admin/categories.php:39: Kat 5
+20061129.125850: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.125850: DB-Anfrage akzeptiert
+20061129.125850: admin/categories.php:69: Kat 1
+20061129.125850: admin/categories.php:69: Kat 2
+20061129.125850: admin/categories.php:69: Kat 5
+20061129.125850: admin/categories.php: Anzeige
+20061129.125903: Datenbankverbindung hergestellt
+20061129.125903: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.125903: DB-Anfrage akzeptiert
+20061129.125903: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.125903: DB-Anfrage akzeptiert
+20061129.125903: admin/categories.php:39: Kat 1.1
+20061129.125903: admin/categories.php:39: Kat 1.2
+20061129.125903: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.125903: DB-Anfrage akzeptiert
+20061129.125903: admin/categories.php:69: Kat 1.1
+20061129.125903: admin/categories.php:69: Kat 1.2
+20061129.125903: admin/categories.php: Anzeige
+20061129.125923: Datenbankverbindung hergestellt
+20061129.125923: admin/addCategory.php: get-action=delete
+20061129.125923: DB-Anfrage: DELETE FROM categories WHERE categories_id=5
+20061129.125923: DB-Anfrage akzeptiert
+20061129.125923: Kategorie 5 gelöscht
+20061129.125923: Weitergeleitet zu: /admin/categories.php?
+20061129.125923: Datenbankverbindung hergestellt
+20061129.125923: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.125923: DB-Anfrage akzeptiert
+20061129.125923: admin/categories.php:39: Kat 1
+20061129.125923: admin/categories.php:39: Kat 2
+20061129.125923: admin/categories.php:39: Kat 5
+20061129.125923: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.125923: DB-Anfrage akzeptiert
+20061129.125923: admin/categories.php:69: Kat 1
+20061129.125923: admin/categories.php:69: Kat 2
+20061129.125923: admin/categories.php:69: Kat 5
+20061129.125923: admin/categories.php: Anzeige
+20061129.125926: Datenbankverbindung hergestellt
+20061129.125926: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.125926: DB-Anfrage akzeptiert
+20061129.125926: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.125926: DB-Anfrage akzeptiert
+20061129.125926: admin/categories.php:39: Kat 1.1
+20061129.125926: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.125926: DB-Anfrage akzeptiert
+20061129.125926: admin/categories.php:69: Kat 1.1
+20061129.125926: admin/categories.php: Anzeige
+20061129.130059: Datenbankverbindung hergestellt
+20061129.130059: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.130059: DB-Anfrage akzeptiert
+20061129.130059: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.130059: DB-Anfrage akzeptiert
+20061129.130059: admin/categories.php:39: Kat 1.1
+20061129.130059: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130059: DB-Anfrage akzeptiert
+20061129.130059: admin/categories.php:69: Kat 1.1
+20061129.130059: admin/categories.php: Anzeige
+20061129.130134: Datenbankverbindung hergestellt
+20061129.130134: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.130134: DB-Anfrage akzeptiert
+20061129.130134: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.130134: DB-Anfrage akzeptiert
+20061129.130134: admin/categories.php:39: Kat 1.1
+20061129.130134: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130134: DB-Anfrage akzeptiert
+20061129.130134: admin/categories.php:69: Kat 1.1
+20061129.130134: admin/categories.php: Anzeige
+20061129.130220: Datenbankverbindung hergestellt
+20061129.130220: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.130220: DB-Anfrage akzeptiert
+20061129.130220: admin/categories.php:39: Kat 1
+20061129.130220: admin/categories.php:39: Kat 2
+20061129.130220: admin/categories.php:39: Kat 5
+20061129.130220: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130220: DB-Anfrage akzeptiert
+20061129.130220: admin/categories.php:69: Kat 1
+20061129.130220: admin/categories.php:69: Kat 2
+20061129.130220: admin/categories.php:69: Kat 5
+20061129.130220: admin/categories.php: Anzeige
+20061129.130307: Datenbankverbindung hergestellt
+20061129.130307: admin/addCategory.php: get-action=delete
+20061129.130307: DB-Anfrage: DELETE FROM categories WHERE categories_id=7
+20061129.130307: DB-Anfrage akzeptiert
+20061129.130307: Kategorie 7 gelöscht
+20061129.130307: Weitergeleitet zu: /admin/categories.php?catID=0
+20061129.130307: Datenbankverbindung hergestellt
+20061129.130307: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.130307: DB-Anfrage akzeptiert
+20061129.130307: admin/categories.php:39: Kat 1
+20061129.130307: admin/categories.php:39: Kat 2
+20061129.130307: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130307: DB-Anfrage akzeptiert
+20061129.130307: admin/categories.php:69: Kat 1
+20061129.130307: admin/categories.php:69: Kat 2
+20061129.130307: admin/categories.php: Anzeige
+20061129.130313: Datenbankverbindung hergestellt
+20061129.130313: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.130313: DB-Anfrage akzeptiert
+20061129.130313: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.130313: DB-Anfrage akzeptiert
+20061129.130313: admin/categories.php:39: Kat 1.1
+20061129.130313: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130313: DB-Anfrage akzeptiert
+20061129.130313: admin/categories.php:69: Kat 1.1
+20061129.130313: admin/categories.php: Anzeige
+20061129.130316: Datenbankverbindung hergestellt
+20061129.130316: admin/addCategory.php: get-action=delete
+20061129.130316: DB-Anfrage: DELETE FROM categories WHERE categories_id=4
+20061129.130316: DB-Anfrage akzeptiert
+20061129.130316: Kategorie 4 gelöscht
+20061129.130316: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.130316: Datenbankverbindung hergestellt
+20061129.130316: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.130316: DB-Anfrage akzeptiert
+20061129.130316: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.130316: DB-Anfrage akzeptiert
+20061129.130316: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130316: DB-Anfrage akzeptiert
+20061129.130316: admin/categories.php: Anzeige
+20061129.130325: Datenbankverbindung hergestellt
+20061129.130325: admin/addProduct.php: get-action=edit
+20061129.130325: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 2
+20061129.130325: DB-Anfrage akzeptiert
+20061129.130329: Datenbankverbindung hergestellt
+20061129.130329: admin/addCategory.php: action set
+20061129.130329: admin/addProduct.php: action=edit
+20061129.130329: DB-Anfrage: SELECT categories_id
+					FROM products
+					WHERE products_id=2
+20061129.130329: DB-Anfrage akzeptiert
+20061129.130329: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'Prod. 2',
+					1,
+					0,
+					1,
+					'Beschreibung',
+					'test',
+					'10',
+					'10.0000',
+					'20061129130329',
+					1)
+					
+20061129.130329: DB-Anfrage akzeptiert
+20061129.130329: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=2
+20061129.130329: DB-Anfrage akzeptiert
+20061129.130749: Datenbankverbindung hergestellt
+20061129.130749: admin/addCategory.php: get-action=none
+20061129.130931: Datenbankverbindung hergestellt
+20061129.130931: admin/addCategory.php: action set
+20061129.130931: admin/addCategory.php: action=add
+20061129.130931: DB-Anfrage: INSERT INTO categories VALUES (0,'neue kategorie',1,1,'asdfasg',5)
+20061129.130931: DB-Anfrage akzeptiert
+20061129.130931: Kategorie 8 hinzugefügt
+20061129.130931: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.130931: Datenbankverbindung hergestellt
+20061129.130931: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.130931: DB-Anfrage akzeptiert
+20061129.130931: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.130931: DB-Anfrage akzeptiert
+20061129.130931: admin/categories.php:39: neue kategorie
+20061129.130931: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.130931: DB-Anfrage akzeptiert
+20061129.130931: admin/categories.php:69: neue kategorie
+20061129.130931: admin/categories.php: Anzeige
+20061129.130941: Datenbankverbindung hergestellt
+20061129.130941: admin/addCategory.php: get-action=edit
+20061129.130941: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 8
+20061129.130941: DB-Anfrage akzeptiert
+20061129.131012: Datenbankverbindung hergestellt
+20061129.131012: admin/addCategory.php: action set
+20061129.131012: admin/addCategory.php: action=edit
+20061129.131012: DB-Anfrage: UPDATE categories SET 
+					name='neue kategorie',
+					active=1,
+					description='asdfasg',
+					sort_order=5
+					WHERE categories_id=8
+20061129.131012: DB-Anfrage akzeptiert
+20061129.131012: Kategorie  bearbeitet
+20061129.131012: Weitergeleitet zu: /admin/categories.php?
+20061129.131012: Datenbankverbindung hergestellt
+20061129.131012: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.131012: DB-Anfrage akzeptiert
+20061129.131012: admin/categories.php:39: Kat 1
+20061129.131012: admin/categories.php:39: Kat 2
+20061129.131012: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131012: DB-Anfrage akzeptiert
+20061129.131012: admin/categories.php:69: Kat 1
+20061129.131012: admin/categories.php:69: Kat 2
+20061129.131012: admin/categories.php: Anzeige
+20061129.131019: Datenbankverbindung hergestellt
+20061129.131019: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131019: DB-Anfrage akzeptiert
+20061129.131019: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131019: DB-Anfrage akzeptiert
+20061129.131019: admin/categories.php:39: neue kategorie
+20061129.131019: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131019: DB-Anfrage akzeptiert
+20061129.131019: admin/categories.php:69: neue kategorie
+20061129.131019: admin/categories.php: Anzeige
+20061129.131055: Datenbankverbindung hergestellt
+20061129.131055: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131055: DB-Anfrage akzeptiert
+20061129.131055: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131055: DB-Anfrage akzeptiert
+20061129.131055: admin/categories.php:39: neue kategorie
+20061129.131055: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131055: DB-Anfrage akzeptiert
+20061129.131055: admin/categories.php:69: neue kategorie
+20061129.131055: admin/categories.php: Anzeige
+20061129.131100: Datenbankverbindung hergestellt
+20061129.131100: admin/addCategory.php: get-action=edit
+20061129.131100: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 8
+20061129.131100: DB-Anfrage akzeptiert
+20061129.131206: Datenbankverbindung hergestellt
+20061129.131206: admin/addCategory.php: get-action=edit
+20061129.131206: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 8
+20061129.131206: DB-Anfrage akzeptiert
+20061129.131303: Datenbankverbindung hergestellt
+20061129.131303: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131303: DB-Anfrage akzeptiert
+20061129.131303: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131303: DB-Anfrage akzeptiert
+20061129.131303: admin/categories.php:39: neue kategorie
+20061129.131303: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131303: DB-Anfrage akzeptiert
+20061129.131303: admin/categories.php:69: neue kategorie
+20061129.131303: admin/categories.php: Anzeige
+20061129.131307: Datenbankverbindung hergestellt
+20061129.131307: admin/addCategory.php: get-action=edit
+20061129.131307: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 8
+20061129.131307: DB-Anfrage akzeptiert
+20061129.131321: Datenbankverbindung hergestellt
+20061129.131321: admin/addCategory.php: action set
+20061129.131321: admin/addCategory.php: action=edit
+20061129.131321: DB-Anfrage: UPDATE categories SET 
+					name='neue kategorie',
+					active=1,
+					description='asdfasg',
+					sort_order=5
+					WHERE categories_id=8
+20061129.131321: DB-Anfrage akzeptiert
+20061129.131321: Kategorie  bearbeitet
+20061129.131321: Weitergeleitet zu: /admin/categories.php?
+20061129.131321: Datenbankverbindung hergestellt
+20061129.131321: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061129.131321: DB-Anfrage akzeptiert
+20061129.131321: admin/categories.php:39: Kat 1
+20061129.131321: admin/categories.php:39: Kat 2
+20061129.131321: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131321: DB-Anfrage akzeptiert
+20061129.131321: admin/categories.php:69: Kat 1
+20061129.131321: admin/categories.php:69: Kat 2
+20061129.131321: admin/categories.php: Anzeige
+20061129.131400: Datenbankverbindung hergestellt
+20061129.131400: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131400: DB-Anfrage akzeptiert
+20061129.131400: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131400: DB-Anfrage akzeptiert
+20061129.131400: admin/categories.php:39: neue kategorie
+20061129.131400: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131400: DB-Anfrage akzeptiert
+20061129.131400: admin/categories.php:69: neue kategorie
+20061129.131400: admin/categories.php: Anzeige
+20061129.131403: Datenbankverbindung hergestellt
+20061129.131403: admin/addCategory.php: get-action=edit
+20061129.131403: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 8
+20061129.131403: DB-Anfrage akzeptiert
+20061129.131405: Datenbankverbindung hergestellt
+20061129.131405: admin/addCategory.php: action set
+20061129.131405: admin/addCategory.php: action=edit
+20061129.131405: DB-Anfrage: UPDATE categories SET 
+					name='neue kategorie',
+					active=1,
+					description='asdfasg',
+					sort_order=5
+					WHERE categories_id=8
+20061129.131405: DB-Anfrage akzeptiert
+20061129.131405: Kategorie  bearbeitet
+20061129.131405: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.131405: Datenbankverbindung hergestellt
+20061129.131405: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131405: DB-Anfrage akzeptiert
+20061129.131405: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131405: DB-Anfrage akzeptiert
+20061129.131405: admin/categories.php:39: neue kategorie
+20061129.131405: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131405: DB-Anfrage akzeptiert
+20061129.131405: admin/categories.php:69: neue kategorie
+20061129.131405: admin/categories.php: Anzeige
+20061129.131444: Datenbankverbindung hergestellt
+20061129.131444: admin/addProduct.php: get-action=none
+20061129.131500: Datenbankverbindung hergestellt
+20061129.131500: admin/addProduct.php: action set
+20061129.131500: admin/addProduct.php: action=add
+20061129.131500: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'p3',
+					,
+					0,
+					0,
+					'sdfag',
+					'test',
+					'33',
+					'25.00',
+					'20061129131500',
+					3)
+					
+20061129.131500: Fehler DB-Anfrage: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+					0,
+					0,
+					'sdfag',
+					'test',
+					'33',
+					'25.00',
+					'20061' at line 4
+20061129.131500: Produkt 0 hinzugefügt
+20061129.131500: Weitergeleitet zu: /admin/categories.php?catID=
+20061129.131500: Datenbankverbindung hergestellt
+20061129.131500: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 
+				ORDER BY sort_order
+20061129.131500: Fehler DB-Anfrage: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY sort_order' at line 5
+20061129.131500: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131500: Fehler DB-Anfrage: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND deleted = 0
+				ORDER BY sort_order' at line 5
+20061129.131500: admin/categories.php: Anzeige
+20061129.131710: Datenbankverbindung hergestellt
+20061129.131710: admin/addProduct.php: get-action=none
+20061129.131743: Datenbankverbindung hergestellt
+20061129.131743: admin/addProduct.php: action set
+20061129.131743: admin/addProduct.php: action=add
+20061129.131743: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'p3',
+					1,
+					0,
+					0,
+					'sdfag',
+					'test',
+					'33',
+					'25.00',
+					'20061129131743',
+					3)
+					
+20061129.131743: DB-Anfrage akzeptiert
+20061129.131743: Produkt 12 hinzugefügt
+20061129.131743: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.131743: Datenbankverbindung hergestellt
+20061129.131743: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131743: DB-Anfrage akzeptiert
+20061129.131743: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131743: DB-Anfrage akzeptiert
+20061129.131743: admin/categories.php:39: neue kategorie
+20061129.131743: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131743: DB-Anfrage akzeptiert
+20061129.131743: admin/categories.php:69: neue kategorie
+20061129.131743: admin/categories.php: Anzeige
+20061129.131858: Datenbankverbindung hergestellt
+20061129.131858: admin/addProduct.php: get-action=edit
+20061129.131858: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 12
+20061129.131858: DB-Anfrage akzeptiert
+20061129.131936: Datenbankverbindung hergestellt
+20061129.131936: admin/addProduct.php: action set
+20061129.131936: admin/addProduct.php: action=edit
+20061129.131936: DB-Anfrage: SELECT categories_id
+					FROM products
+					WHERE products_id=12
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: DB-Anfrage: INSERT INTO products VALUES (
+					0,
+					'p3',
+					1,
+					0,
+					0,
+					'sdfag',
+					'test',
+					'33',
+					'25.0000',
+					'20061129131936',
+					3)
+					
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: DB-Anfrage: UPDATE products SET
+					deleted=1
+					where products_id=12
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: Produkt 0 geändert
+20061129.131936: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.131936: Datenbankverbindung hergestellt
+20061129.131936: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: admin/categories.php:39: neue kategorie
+20061129.131936: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.131936: DB-Anfrage akzeptiert
+20061129.131936: admin/categories.php:69: neue kategorie
+20061129.131936: admin/categories.php: Anzeige
+20061129.132219: Datenbankverbindung hergestellt
+20061129.132219: admin/addCategory.php: get-action=none
+20061129.132234: Datenbankverbindung hergestellt
+20061129.132234: admin/addCategory.php: action set
+20061129.132234: admin/addCategory.php: action=add
+20061129.132234: DB-Anfrage: INSERT INTO categories VALUES (0,'k5',1,0,'fjgähdn',3)
+20061129.132234: DB-Anfrage akzeptiert
+20061129.132234: Kategorie 9 hinzugefügt
+20061129.132234: Weitergeleitet zu: /admin/categories.php?catID=1
+20061129.132234: Datenbankverbindung hergestellt
+20061129.132234: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061129.132234: DB-Anfrage akzeptiert
+20061129.132234: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061129.132234: DB-Anfrage akzeptiert
+20061129.132234: admin/categories.php:39: k5
+20061129.132234: admin/categories.php:39: neue kategorie
+20061129.132234: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061129.132234: DB-Anfrage akzeptiert
+20061129.132234: admin/categories.php:69: k5
+20061129.132234: admin/categories.php:69: neue kategorie
+20061129.132234: admin/categories.php: Anzeige
