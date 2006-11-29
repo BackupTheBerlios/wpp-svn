@@ -19,7 +19,13 @@ function DB_query($query) {
 	
 	$LOG = new Log();
 	$LOG->write('2','DB-Anfrage: '.$query);
-	return mysql_query($query);
+	$answer = mysql_query($query);
+	if (mysql_errno()) {
+		$LOG->write('2','Fehler DB-Anfrage: '.mysql_error());
+	} else {
+		$LOG->write('3','DB-Anfrage akzeptiert');
+	}
+	return $answer;
 	
 }
 

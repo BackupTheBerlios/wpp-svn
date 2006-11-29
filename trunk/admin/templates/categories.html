@@ -24,7 +24,7 @@
 				</a>
 			</TD>
 			<TD>
-				<a href="addCategory?action=delete&catID=<?=$line['id']?>">
+				<a href="addCategory?action=delete&catID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>">
 					<?=$_LANG['delete'] ?>
 				</a>
 			</TD>
@@ -46,7 +46,7 @@
 				</a>
 			</TD>
 			<TD>
-				<a href="addProduct.php?action=delete&pID=<?=$line['id']?>">
+				<a href="addProduct.php?action=delete&pID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>">
 					<?=$_LANG['delete'] ?>
 				</a>
 			</TD>

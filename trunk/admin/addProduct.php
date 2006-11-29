@@ -8,7 +8,7 @@ $tpl = new TemplateEngine("templates/addProduct.html","templates/frame.html",$la
 
 if (isset($_POST['action'])) {
 
-	$LOG->write('3', 'admin/addCategory.php: action set');
+	$LOG->write('3', 'admin/addProduct.php: action set');
 	
 	if ($_POST['action']=='add') {
 		$LOG->write('3', 'admin/addProduct.php: action=add');
@@ -33,6 +33,10 @@ if (isset($_POST['action'])) {
 					'".$createtime."',
 					".$sortorder.")
 					");
+		$LOG->write('2', 'Produkt '.mysql_insert_id().' hinzugefügt');
+	
+		$parent = $_POST['ID'];
+		redirectURI('/admin/categories.php','catID='.$parent);
 	}
 	
 	elseif ($_POST['action']=='edit') {
@@ -68,6 +72,10 @@ if (isset($_POST['action'])) {
 					deleted=1
 					where products_id=".$_POST['ID']);
 		
+		$LOG->write('2', 'Produkt '.$_POST['ID'].' geändert, neue ID='.mysql_insert_id());
+	
+		$parent = $cat;
+		redirectURI('/admin/categories.php','catID='.$parent);		
 	}
 	
 } elseif ($_GET['action']=='edit') {
@@ -102,13 +110,16 @@ if (isset($_POST['action'])) {
 					deleted=1
 					where products_id=".$_GET['pID']);
 		
-		
+	$LOG->write('2', 'Produkt '.$_GET['pID'].' gelöscht');
+	
+	$parent = $_GET['parent'];
+	redirectURI('/admin/categories.php','catID='.$parent);
 
 } else {
 
 	$LOG->write('3', 'admin/addProduct.php: get-action=none');
 
-	$ID = $_GET['pID'];
+	$ID = $_GET['catID'];
 	$tpl->assign('ID',$ID);
 	$tpl->assign('action','add');
 	$tpl->display();
