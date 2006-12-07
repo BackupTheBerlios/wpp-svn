@@ -134,3 +134,8 @@ INSERT INTO categories VALUES(0,'Kat 1.2',1,1,'Beschreibung 1.2',2);
 INSERT INTO categories VALUES(0,'Kat 1.2',0,1,'Beschreibung 1.2',4);
 INSERT INTO products VALUES(0,'Prod. 1',1,0,1,'Beschreibung','kein Bild',10,10.00,20061125,1);
 INSERT INTO products VALUES(0,'Prod. 1',1,0,1,'Beschreibung','kein Bild',10,10.00,20061125,1);
+INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,0,1,'','','','','','','','','','','','','','');
+INSERT INTO roles VALUES(0,'admin',1,1,1);
+INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,1,'','','','','','','','','','','','','','');
+INSERT INTO roles VALUES(0,'customer',1,0,1);
+INSERT INTO users VALUES(0,'peter','müller','test','studium@luzip.de',2,1,1,'','','','','','','','','','','','','','');

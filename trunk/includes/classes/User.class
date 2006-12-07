@@ -1,0 +1,103 @@
+<?php
+
+//include(WPP_BASE.WPP_ROOT.'/includes/functions/db.inc');
+
+class User {
+
+	var $read = 0;
+	var $write = 0;
+	var $purchase = 0;
+	var $role = null;
+	
+	var $name = null;
+	var $lastname = null;
+	var $email = null;
+	var $id = null;
+	
+	function restore($id) {
+	
+		$LOG = new Log();
+		$user_query = DB_query("SELECT
+					*
+					FROM users
+					WHERE users_id = '".$id."'");
+		if (mysql_num_rows($user_query)==1) {
+			
+			$userdata = DB_fetchArray($user_query);
+			//Get user information
+			$this->id = $userdata['users_id'];
+			$this->name = $userdata['name'];	
+			$this->lastname = $userdata['lastname'];
+			$this->email = $userdata['email'];
+			
+			$LOG->write('3','Nutzername :'.$this->name);
+			
+			//Get permissions
+			$perm_query = DB_query("SELECT 
+						*
+						FROM roles
+						WHERE role_id = ".$userdata['role_id']);
+			$perm = DB_fetchArray($perm_query);
+			$this->read = $perm['read'];
+			$this->write = $perm['write'];
+			$this->purchase = $perm['purchase'];
+			
+			$LOG->write('3','Berechtigungen :'.$this->read.$this->write.$this->purchase);
+			$LOG->write('3','Benutzer wiederhergestellt:'.$this->name);
+		} else {
+			$LOG->write('3','Benutzer konnte nicht wiederhergestellt werden');
+		}
+	}
+	
+	function login($sign, $password) {
+		$LOG = new Log();
+		
+		$user_query = DB_query("SELECT
+					*
+					FROM users
+					WHERE name = '".$sign."'
+					AND password = '".$password."'");
+		if (mysql_num_rows($user_query)==1) {
+			$userdata = DB_fetchArray($user_query);
+			//Get user information
+			$this->id = $userdata['users_id'];
+			$this->name = $userdata['name'];	
+			$this->lastname = $userdata['lastname'];
+			$this->email = $userdata['email'];
+			
+			$LOG->write('2','Benutzer angemeldet :'.$this->name);	
+			
+			//Get permissions
+			$perm_query = DB_query("SELECT 
+						*
+						FROM roles
+						WHERE role_id = ".$userdata['role_id']);
+			$perm = DB_fetchArray($perm_query);
+			$this->read = $perm['read'];
+			$this->write = $perm['write'];
+			$this->purchase = $perm['purchase'];
+			
+			$_SESSION['user']=$this->id;
+			$LOG->write('2','Benutzer angemeldet: '.$this->name);
+			
+			return true;
+			
+		} else {
+			$LOG->write('2','Benutzer konnte nicht angemeldet werden: '.$sign);
+			return false;
+		}
+	}
+	
+	function logout() {
+		$LOG = new Log();
+		unset($_SESSION['user']);
+		$LOG->write('2','Benutzer abgemeldet: '.$this->name);
+		session_destroy();
+	}
+	
+	
+	
+	
+}
+
+?>

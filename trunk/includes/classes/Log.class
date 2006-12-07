@@ -13,7 +13,7 @@ class Log
 			$file = fopen(LOG_FILE,'a');
 			$date = date("Ymd.His");
 			
-			fwrite($file, $date.": ".$message."\n");
+			fwrite($file, $date.":".$loglevel.": ".$message."\n");
 		
 		}
 	

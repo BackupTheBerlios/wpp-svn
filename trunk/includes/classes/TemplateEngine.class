@@ -12,7 +12,7 @@ class TemplateEngine
     var $template;
     var $langData;
   
-  	function templateEngine($template, $frame, $langData) {
+	function templateEngine($template, $frame, $langData) {
   		$this->frame = $frame;		//Rahmen
   		$this->template = $template;	//Das Template, welches in den Rahmen eingebettet wird
   		$this->langData = $langData;	//Array mit Sprachdaten
