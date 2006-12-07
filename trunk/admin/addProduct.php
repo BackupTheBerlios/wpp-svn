@@ -2,6 +2,7 @@
 
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
+include('functions/image.inc');
 
 $user = restoreUser();
 if (!checkUser($user,1,1,0)) {
@@ -18,7 +19,9 @@ if (isset($_POST['action'])) {
 	if ($_POST['action']=='add') {
 		$LOG->write('3', 'admin/addProduct.php: action=add');
 		
-		$image_uri = 'test';
+		$image = $_FILE['image'];
+		$image_uri = uploadImage($image);
+		
 		$createtime = date("YmdHis");
 		
 		if ($_POST['active']=='on') {$active=1;}
@@ -47,7 +50,9 @@ if (isset($_POST['action'])) {
 	elseif ($_POST['action']=='edit') {
 		$LOG->write('3', 'admin/addProduct.php: action=edit');
 		
-		$image_uri = 'test';
+		$image = $_FILE['image'];
+		$image_uri = uploadImage($image);
+		
 		$createtime = date("YmdHis");
 		//Auflösen der Kategorie-ID
 		$cat_query = DB_query("SELECT categories_id
