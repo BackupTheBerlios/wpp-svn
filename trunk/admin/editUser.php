@@ -75,7 +75,6 @@ if (isset($_POST['action'])) {
 				u.email,
 				r.name as rolename,
 				u.role_id,
-				u.deletable,
 				u.active,
 				u.bill_name,
 				u.bill_street,
@@ -102,7 +101,6 @@ if (isset($_POST['action'])) {
 	$tpl->assign('rolename',$userdata['rolename']);
 	$tpl->assign('role_id',$userdata['role_id']);
 	$tpl->assign('active',$userdata['active']);
-	$tpl->assign('deletable',$userdata['deletable']);
 	$tpl->assign('bill_name',$userdata['bill_name']);
 	$tpl->assign('bill_street',$userdata['bill_street']);
 	$tpl->assign('bill_postcode',$userdata['bill_postcode']);
@@ -139,7 +137,7 @@ if (isset($_POST['action'])) {
 	$LOG->write('3', 'admin/editUser.php: get-action=delete');
 	
 
-	DB_query("DELETE FROM users WHERE users_id=".$_GET['uID']." AND deletable=1");
+	DB_query("DELETE FROM users WHERE users_id=".$_GET['uID']);
 		
 	$LOG->write('2', 'Nutzer '.$_GET['uID'].' gelöscht');
 	

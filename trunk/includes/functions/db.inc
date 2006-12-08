@@ -18,7 +18,7 @@ function DB_connect($username, $password, $hostname, $port, $dbname) {
 function DB_query($query) {
 	
 	$LOG = new Log();
-	$LOG->write('2','DB-Anfrage: '.$query);
+	$LOG->write('3','DB-Anfrage: '.$query);
 	$answer = mysql_query($query);
 	if (mysql_errno()) {
 		$LOG->write('2','Fehler DB-Anfrage: '.mysql_error());

@@ -17,7 +17,7 @@ $users_query = DB_query("SELECT
 				u.name,
 				u.lastname,
 				r.name as rolename,
-				u.deletable,
+				r.deletable,
 				u.active
 				FROM users u, roles r
 				WHERE u.role_id=r.role_id");

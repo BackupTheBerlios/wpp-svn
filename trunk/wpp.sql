@@ -29,6 +29,7 @@ CREATE TABLE `roles` (
   `read` tinyint(1) default 0,
   `write` tinyint(1) default 0,
   `purchase` tinyint(1) default 0,
+  `deletable` tinyint(1) default 0,
   PRIMARY KEY  (`role_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -40,7 +41,6 @@ CREATE TABLE `users` (
   `password` char(255) NOT NULL,
   `email` char(255) NOT NULL,
   `role_id` int NOT NULL,
-  `deletable` tinyint(1) default 0,
   `active` tinyint(1) default 0,
   `bill_name` char(255) NOT NULL,
   `bill_street` char(255) NOT NULL,
@@ -67,7 +67,8 @@ CREATE TABLE `products` (
   `deleted` tinyint(1) NOT NULL,
   `active` tinyint(1) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `image` char(255) NOT NULL,
+  `image_big` char(255) NOT NULL,
+  `image_small` char(255) NOT NULL,
   `stock` int(10) NOT NULL,
   `price` decimal(15,4) NOT NULL,
   `create_time` datetime NOT NULL,
@@ -99,7 +100,7 @@ CREATE TABLE `orders` (
 
 DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE `order_items` (
-  `order_items_id` int(11) NOT NULL auto_increment,
+  `order_items_id` int(11) NOT NULL,
   `products_id` int(11) NOT NULL,
   `count` int(11) NOT NULL,
   PRIMARY KEY  (`order_items_id`,`products_id`)
@@ -132,10 +133,22 @@ INSERT INTO categories VALUES(0,'Kat 3',0,1,'Beschreibung 3',3);
 INSERT INTO categories VALUES(0,'Kat 1.1',1,1,'Beschreibung 1.1',1);
 INSERT INTO categories VALUES(0,'Kat 1.2',1,1,'Beschreibung 1.2',2);
 INSERT INTO categories VALUES(0,'Kat 1.2',0,1,'Beschreibung 1.2',4);
-INSERT INTO products VALUES(0,'Prod. 1',1,0,1,'Beschreibung','kein Bild',10,10.00,20061125,1);
-INSERT INTO products VALUES(0,'Prod. 1',1,0,1,'Beschreibung','kein Bild',10,10.00,20061125,1);
-INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,0,1,'','','','','','','','','','','','','','');
-INSERT INTO roles VALUES(0,'admin',1,1,1);
-INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,1,'','','','','','','','','','','','','','');
-INSERT INTO roles VALUES(0,'customer',1,0,1);
-INSERT INTO users VALUES(0,'peter','müller','test','studium@luzip.de',2,1,1,'','','','','','','','','','','','','','');
+
+INSERT INTO products VALUES(0,'Prod. 1',1,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 2',1,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 3',2,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 4',2,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 5',2,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 6',3,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 7',4,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 8',5,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+INSERT INTO products VALUES(0,'Prod. 9',5,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
+
+INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,1,'','','','','','','','','','','','','','');
+INSERT INTO roles VALUES(0,'admin',1,1,1,0);
+INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
+INSERT INTO roles VALUES(0,'customer',1,0,1,1);
+INSERT INTO users VALUES(0,'peter','mller','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
+
+INSERT INTO orders VALUES(0,20061201,1,2,20061203,1);
+INSERT INTO order_items VALUES(1,2,5);

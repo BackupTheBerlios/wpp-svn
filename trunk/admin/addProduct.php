@@ -2,7 +2,7 @@
 
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
-include('functions/image.inc');
+include('includes/image.inc');
 
 $user = restoreUser();
 if (!checkUser($user,1,1,0)) {
@@ -36,6 +36,7 @@ if (isset($_POST['action'])) {
 					".$active.",
 					'".$_POST['description']."',
 					'".$image_uri."',
+					'',
 					'".$_POST['stock']."',
 					'".$_POST['price']."',
 					'".$createtime."',
@@ -73,6 +74,7 @@ if (isset($_POST['action'])) {
 					".$active.",
 					'".$_POST['description']."',
 					'".$image_uri."',
+					'',
 					'".$_POST['stock']."',
 					'".$_POST['price']."',
 					'".$createtime."',
