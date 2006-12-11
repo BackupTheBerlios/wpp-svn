@@ -4,7 +4,7 @@ include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
 $user = restoreUser();
-if (!checkUser($user,1,1,0)) {
+if ($user ==null || !$user->checkPermissions(1,1)) {
 	redirectURI("/admin/login.php","camefrom=categories.php");
 }
 

@@ -26,10 +26,12 @@ DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles` (
   `role_id` int(11) NOT NULL auto_increment,
   `name` varchar(64) NOT NULL,
-  `read` tinyint(1) default 0,
-  `write` tinyint(1) default 0,
+  `read_content` tinyint(1) default 0,
+  `write_content` tinyint(1) default 0,
   `purchase` tinyint(1) default 0,
   `deletable` tinyint(1) default 0,
+  `read_orders` tinyint(1) default 0,
+  `write_orders` tinyint(1) default 0,
   PRIMARY KEY  (`role_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -91,7 +93,6 @@ DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `orders_id` int(11) NOT NULL auto_increment,
   `date` datetime NOT NULL,
-  `order_items_id` int(11) NOT NULL,
   `users_id` int(11) NOT NULL,
   `shipping_date` datetime NOT NULL,
   `shipped` tinyint(1) NOT NULL,
@@ -100,10 +101,10 @@ CREATE TABLE `orders` (
 
 DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE `order_items` (
-  `order_items_id` int(11) NOT NULL,
+  `orders_id` int(11) NOT NULL,
   `products_id` int(11) NOT NULL,
   `count` int(11) NOT NULL,
-  PRIMARY KEY  (`order_items_id`,`products_id`)
+  PRIMARY KEY  (`orders_id`,`products_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS `basket`;
@@ -144,11 +145,13 @@ INSERT INTO products VALUES(0,'Prod. 7',4,0,1,'Beschreibung','kein Bild','Kein B
 INSERT INTO products VALUES(0,'Prod. 8',5,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
 INSERT INTO products VALUES(0,'Prod. 9',5,0,1,'Beschreibung','kein Bild','Kein Bild',10,10.00,20061125,1);
 
+INSERT INTO roles VALUES(0,'admin',1,1,1,0,1,1);
+INSERT INTO roles VALUES(0,'customer',1,0,1,1,0,0);
+INSERT INTO roles VALUES(0,'order_manager',1,0,0,0,1,1);
+
 INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,1,'','','','','','','','','','','','','','');
-INSERT INTO roles VALUES(0,'admin',1,1,1,0);
 INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
-INSERT INTO roles VALUES(0,'customer',1,0,1,1);
 INSERT INTO users VALUES(0,'peter','mller','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
 
-INSERT INTO orders VALUES(0,20061201,1,2,20061203,1);
+INSERT INTO orders VALUES(0,20061201,2,20061203,1);
 INSERT INTO order_items VALUES(1,2,5);

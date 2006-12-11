@@ -59,7 +59,8 @@ $lang = array(
 		"submit" => "Änderungen übernehmen",
 		"reset" => "Abbrechen",
 		"admin" => "Administrator",
-		"customer" => "Kunde"
+		"customer" => "Kunde",
+		"order_manager" => "Bestellung"
 	)
 
 );

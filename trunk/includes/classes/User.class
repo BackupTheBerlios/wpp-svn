@@ -4,9 +4,12 @@
 
 class User {
 
-	var $read = 0;
-	var $write = 0;
+	var $read_content = 0;
+	var $write_content = 0;
 	var $purchase = 0;
+	var $read_orders = 0;
+	var $write_orders = 0;
+	
 	var $role = null;
 	
 	var $name = null;
@@ -38,9 +41,12 @@ class User {
 						FROM roles
 						WHERE role_id = ".$userdata['role_id']);
 			$perm = DB_fetchArray($perm_query);
-			$this->read = $perm['read'];
-			$this->write = $perm['write'];
+			$this->read_orders = $perm['read_orders'];
+			$this->write_orders = $perm['write_orders'];
 			$this->purchase = $perm['purchase'];
+			$this->write_content = $perm['write_content'];
+			$this->read_content = $perm['read_content'];
+			
 			
 			$LOG->write('3','Berechtigungen :'.$this->read.$this->write.$this->purchase);
 			$LOG->write('3','Benutzer wiederhergestellt:'.$this->name);
@@ -95,9 +101,19 @@ class User {
 		session_destroy();
 	}
 	
+	function checkPermissions($read_content=0,$write_content=0,$purchase=0,$read_orders=0,$write_orders=0) {
+
+	if ($this->read_content>=$read &&
+		 $this->write_content>=$write && 
+		 $this->purchase>=$purchase &&
+		 $this->read_orders>=$read_orders &&
+		 $this->write_orders>=$write_orders) {
+		return true;
+	} else {
+		return false;
+	}
 	
-	
-	
+	}
 }
 
 ?>
