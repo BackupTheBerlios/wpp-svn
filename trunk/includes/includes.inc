@@ -10,7 +10,8 @@ include('functions/db.inc');
 include('functions/http.inc');
 include('functions/session.inc');
 include('functions/permissions.inc');
-
+include('functions/user.inc');
+include('functions/valueCheck.inc');
 
 
 

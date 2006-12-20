@@ -29,29 +29,7 @@ if (isset($_POST['action'])) {
 	elseif ($_POST['action']=='edit') {
 		$LOG->write('3', 'admin/editUser.php: action=edit');
 		
-		if ($_POST['active']=='on') {$active=1;}
-		else {$active=0;}
-		DB_query("UPDATE users SET 
-				name='".$_POST['name']."',
-				lastname='".$_POST['lastname']."',
-				email='".$_POST['email']."',
-				role_id='".$_POST['role_id']."',
-				active=".$active.",
-				bill_name='".$_POST['bill_name']."',
-				bill_street='".$_POST['bill_street']."',
-				bill_postcode='".$_POST['bill_postcode']."',
-				bill_city='".$_POST['bill_city']."',
-				bill_state='".$_POST['bil_state']."',
-				ship_name='".$_POST['ship_name']."',
-				ship_street='".$_POST['ship_street']."',
-				ship_postcode='".$_POST['ship_postcode']."',
-				ship_city='".$_POST['ship_city']."',
-				ship_state='".$_POST['ship_state']."',
-				bank_name='".$_POST['bank_name']."',
-				bank_iban='".$_POST['bank_iban']."',
-				bank_number='".$_POST['bank_number']."',
-				bank_account='".$_POST['bank_account']."'
-				WHERE users_id=".$_POST['uID']);
+		editUser();
 		
 		$LOG->write('2', 'Kategorie '.$_GET['catID'].' bearbeitet');
 		redirectURI('/admin/users.php');
@@ -136,9 +114,8 @@ if (isset($_POST['action'])) {
 
 	$LOG->write('3', 'admin/editUser.php: get-action=delete');
 	
-
-	DB_query("DELETE FROM users WHERE users_id=".$_GET['uID']);
-		
+	deleteUser();
+	
 	$LOG->write('2', 'Nutzer '.$_GET['uID'].' gelöscht');
 	
 	redirectURI('/admin/users.php');

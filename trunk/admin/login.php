@@ -17,8 +17,7 @@ if (isset($_POST['action'])) {
 		$sign = $_POST['sign'];
 		$forward = $_POST['camefrom'];
 		
-		$user = new User();
-		$login = $user->login($sign, $password);
+		$login = loginUser($sign, $password);
 		
 		if ($login && $forward!='') {
 			redirectURI('/admin/'.$forward);
@@ -33,8 +32,7 @@ if (isset($_POST['action'])) {
 elseif (isset($_GET['action'])) {
 
 	if ($_GET['action']=='logout') {
-		$user = restoreUser();
-		$user->logout();
+		logoutUser();
 		redirectURI('/admin/index.php');
 	}
 
@@ -54,18 +52,5 @@ else {
 
 	$tpl->display();
 }
-
-
-/*
-
-$user = new User();
-
-$login = $user->login('andre','test');
-
-if ($login) {
-$_SESSION['ufile:///mnt/Projekte/Studium/Webprogramming/Projekt/wpp/admin/login.phpser']=$user->id;
-echo $_SESSION['user'];
-}
-*/
 
 ?>

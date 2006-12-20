@@ -9630,3 +9630,388 @@
 					FROM users
 					WHERE users_id = 2
 20061211.221808:3: DB-Anfrage akzeptiert
+20061220.143656:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143656:3: startApplication.php:13:Sprache: de
+20061220.143656:3: startApplication.php:16:Session gestartet
+20061220.143656:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143656:2: session.inc:16:Kein Benutzer angemeldet
+20061220.143656:2: Weitergeleitet zu: /admin/login.php?camefrom=categories.php
+20061220.143656:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143656:3: startApplication.php:13:Sprache: de
+20061220.143656:3: startApplication.php:16:Session gestartet
+20061220.143705:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143705:3: startApplication.php:13:Sprache: de
+20061220.143705:3: startApplication.php:16:Session gestartet
+20061220.143705:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'andre'
+					AND password = 'test'
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:2: Benutzer angemeldet :andre
+20061220.143705:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:2: Benutzer angemeldet: andre
+20061220.143705:2: Weitergeleitet zu: /admin/categories.php?
+20061220.143705:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143705:3: startApplication.php:13:Sprache: de
+20061220.143705:3: startApplication.php:16:Session gestartet
+20061220.143705:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143705:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:3: Nutzername :andre
+20061220.143705:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:3: Berechtigungen :1
+20061220.143705:3: Benutzer wiederhergestellt:andre
+20061220.143705:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143705:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:3: admin/categories.php:39: Kat 1
+20061220.143705:3: admin/categories.php:39: Kat 2
+20061220.143705:3: admin/categories.php:39: Kat 3
+20061220.143705:3: admin/categories.php:39: Kat 1.2
+20061220.143705:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061220.143705:3: DB-Anfrage akzeptiert
+20061220.143705:3: admin/categories.php:69: Kat 1
+20061220.143705:3: admin/categories.php:69: Kat 2
+20061220.143705:3: admin/categories.php:69: Kat 3
+20061220.143705:3: admin/categories.php:69: Kat 1.2
+20061220.143705:3: admin/categories.php: Anzeige
+20061220.143709:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143709:3: startApplication.php:13:Sprache: de
+20061220.143709:3: startApplication.php:16:Session gestartet
+20061220.143709:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143709:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143709:3: DB-Anfrage akzeptiert
+20061220.143709:3: Nutzername :andre
+20061220.143709:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143709:3: DB-Anfrage akzeptiert
+20061220.143709:3: Berechtigungen :1
+20061220.143709:3: Benutzer wiederhergestellt:andre
+20061220.143709:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143709:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20061220.143709:3: DB-Anfrage akzeptiert
+20061220.143712:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143712:3: startApplication.php:13:Sprache: de
+20061220.143712:3: startApplication.php:16:Session gestartet
+20061220.143712:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143712:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143712:3: DB-Anfrage akzeptiert
+20061220.143712:3: Nutzername :andre
+20061220.143712:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143712:3: DB-Anfrage akzeptiert
+20061220.143712:3: Berechtigungen :1
+20061220.143712:3: Benutzer wiederhergestellt:andre
+20061220.143712:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143712:3: admin/editUser.php: get-action=edit
+20061220.143712:3: DB-Anfrage: SELECT
+				u.name,
+				u.lastname,
+				u.email,
+				r.name as rolename,
+				u.role_id,
+				u.active,
+				u.bill_name,
+				u.bill_street,
+				u.bill_postcode,
+				u.bill_city,
+				u.bill_state,
+				u.ship_name,
+				u.ship_street,
+				u.ship_postcode,
+				u.ship_city,
+				u.ship_state,
+				u.bank_name,
+				u.bank_iban,
+				u.bank_number,
+				u.bank_account
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+				AND u.users_id = 2
+20061220.143712:3: DB-Anfrage akzeptiert
+20061220.143712:3: DB-Anfrage: SELECT
+					role_id,
+					name
+					FROM roles
+20061220.143712:3: DB-Anfrage akzeptiert
+20061220.143715:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143715:3: startApplication.php:13:Sprache: de
+20061220.143715:3: startApplication.php:16:Session gestartet
+20061220.143715:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143715:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143715:3: Nutzername :andre
+20061220.143715:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143715:3: Berechtigungen :1
+20061220.143715:3: Benutzer wiederhergestellt:andre
+20061220.143715:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143715:3: admin/editUser.php: action set
+20061220.143715:3: admin/editUser.php: action=edit
+20061220.143715:3: DB-Anfrage: UPDATE users SET 
+			name='hans',
+			lastname='meier',
+			email='studium@luzip.de',
+			role_id='2',
+			active=0,
+			bill_name='',
+			bill_street='',
+			bill_postcode='',
+			bill_city='',
+			bill_state='',
+			ship_name='',
+			ship_street='',
+			ship_postcode='',
+			ship_city='',
+			ship_state='',
+			bank_name='',
+			bank_iban='',
+			bank_number='',
+			bank_account=''
+			WHERE users_id=2
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143715:2: Kategorie  bearbeitet
+20061220.143715:2: Weitergeleitet zu: /admin/users.php?
+20061220.143715:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143715:3: startApplication.php:13:Sprache: de
+20061220.143715:3: startApplication.php:16:Session gestartet
+20061220.143715:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143715:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143715:3: Nutzername :andre
+20061220.143715:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143715:3: Berechtigungen :1
+20061220.143715:3: Benutzer wiederhergestellt:andre
+20061220.143715:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143715:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20061220.143715:3: DB-Anfrage akzeptiert
+20061220.143718:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143718:3: startApplication.php:13:Sprache: de
+20061220.143718:3: startApplication.php:16:Session gestartet
+20061220.143718:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143718:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143718:3: DB-Anfrage akzeptiert
+20061220.143718:3: Nutzername :andre
+20061220.143718:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143718:3: DB-Anfrage akzeptiert
+20061220.143718:3: Berechtigungen :1
+20061220.143718:3: Benutzer wiederhergestellt:andre
+20061220.143718:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143718:3: admin/editUser.php: get-action=edit
+20061220.143718:3: DB-Anfrage: SELECT
+				u.name,
+				u.lastname,
+				u.email,
+				r.name as rolename,
+				u.role_id,
+				u.active,
+				u.bill_name,
+				u.bill_street,
+				u.bill_postcode,
+				u.bill_city,
+				u.bill_state,
+				u.ship_name,
+				u.ship_street,
+				u.ship_postcode,
+				u.ship_city,
+				u.ship_state,
+				u.bank_name,
+				u.bank_iban,
+				u.bank_number,
+				u.bank_account
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+				AND u.users_id = 2
+20061220.143718:3: DB-Anfrage akzeptiert
+20061220.143718:3: DB-Anfrage: SELECT
+					role_id,
+					name
+					FROM roles
+20061220.143718:3: DB-Anfrage akzeptiert
+20061220.143733:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143733:3: startApplication.php:13:Sprache: de
+20061220.143733:3: startApplication.php:16:Session gestartet
+20061220.143733:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143733:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143733:3: Nutzername :andre
+20061220.143733:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143733:3: Berechtigungen :1
+20061220.143733:3: Benutzer wiederhergestellt:andre
+20061220.143733:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143733:3: admin/editUser.php: action set
+20061220.143733:3: admin/editUser.php: action=edit
+20061220.143733:3: DB-Anfrage: UPDATE users SET 
+			name='hans',
+			lastname='meier',
+			email='studium@luzip.de',
+			role_id='2',
+			active=0,
+			bill_name='',
+			bill_street='',
+			bill_postcode='05542',
+			bill_city='',
+			bill_state='',
+			ship_name='',
+			ship_street='',
+			ship_postcode='',
+			ship_city='',
+			ship_state='',
+			bank_name='',
+			bank_iban='',
+			bank_number='',
+			bank_account=''
+			WHERE users_id=2
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143733:2: Kategorie  bearbeitet
+20061220.143733:2: Weitergeleitet zu: /admin/users.php?
+20061220.143733:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143733:3: startApplication.php:13:Sprache: de
+20061220.143733:3: startApplication.php:16:Session gestartet
+20061220.143733:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143733:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143733:3: Nutzername :andre
+20061220.143733:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143733:3: Berechtigungen :1
+20061220.143733:3: Benutzer wiederhergestellt:andre
+20061220.143733:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143733:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20061220.143733:3: DB-Anfrage akzeptiert
+20061220.143737:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061220.143737:3: startApplication.php:13:Sprache: de
+20061220.143737:3: startApplication.php:16:Session gestartet
+20061220.143737:3: session.inc:8:Versuche User wiederherzustellen
+20061220.143737:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061220.143737:3: DB-Anfrage akzeptiert
+20061220.143737:3: Nutzername :andre
+20061220.143737:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061220.143737:3: DB-Anfrage akzeptiert
+20061220.143737:3: Berechtigungen :1
+20061220.143737:3: Benutzer wiederhergestellt:andre
+20061220.143737:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061220.143737:3: admin/editUser.php: get-action=edit
+20061220.143737:3: DB-Anfrage: SELECT
+				u.name,
+				u.lastname,
+				u.email,
+				r.name as rolename,
+				u.role_id,
+				u.active,
+				u.bill_name,
+				u.bill_street,
+				u.bill_postcode,
+				u.bill_city,
+				u.bill_state,
+				u.ship_name,
+				u.ship_street,
+				u.ship_postcode,
+				u.ship_city,
+				u.ship_state,
+				u.bank_name,
+				u.bank_iban,
+				u.bank_number,
+				u.bank_account
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+				AND u.users_id = 2
+20061220.143737:3: DB-Anfrage akzeptiert
+20061220.143737:3: DB-Anfrage: SELECT
+					role_id,
+					name
+					FROM roles
+20061220.143737:3: DB-Anfrage akzeptiert
