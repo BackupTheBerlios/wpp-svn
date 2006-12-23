@@ -1,0 +1,32 @@
+
+<table>
+
+	<? foreach ($_TPL['users'] as $line) { ?>
+		<TR>
+
+			<TD>
+				<?=$line['name']?> <?=$line['lastname']?>
+			</TD>
+			<TD>
+				<a href="editUser.php?action=edit&uID=<?=$line['id']?>">
+					<?=$_LANG['edit'] ?>
+				</a>
+			</TD>
+			<TD>
+				<? if ($line['deletable']==1) { ?>
+					<a href="editUser.php?action=delete&uID=<?=$line['id']?>">
+						<?=$_LANG['delete'] ?>
+					</a>
+				<? } ?>
+			</TD>
+		
+		</TR>
+	<? } ?>
+
+
+</table>
+
+
+
+
+	

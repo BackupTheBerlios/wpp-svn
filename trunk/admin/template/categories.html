@@ -1,0 +1,87 @@
+
+<h1><?=$_LANG['categories']?></h1>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
+
+	<TR>
+		<TD class="heading_cell">
+			<?=$_LANG['type']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['name']?>
+		</TD>
+		<TD class="heading_cell" colspan="2">
+			<?=$_LANG['options']?>
+		</TD>
+	</TR>
+
+	<? if ($_TPL['parent']!=null) { ?>
+		<TR>
+			<TD>
+				<a href="categories.php?catID=<?=$_TPL['parent']?>" class="menu"><?=$_LANG['parentDirectory']?></a>
+			</TD>
+		</TR>
+	<? } ?>
+	<? $i=0;foreach ($_TPL['menu'] as $line) { ?>
+	<? $i++;if ($i%2==0) {$class="even";} else {$class="odd";} ?>
+	<? if ($line['type']==='category') { ?>
+		<TR>
+			<TD class="<?=$class?>">
+				C
+			</TD>
+			<TD class="<?=$class?>">
+				<? if ($line['active']==1) { ?>
+					<a href="categories.php?catID=<?=$line['id']?>" class="menu">
+						<?=$line['name']?>
+					</a>
+				<? } else { ?>
+					<a href="categories.php?catID=<?=$line['id']?>" class="menu_inactive">
+						<?=$line['name']?>
+					</a>
+				<? } ?>
+			</TD>
+			<TD class="<?=$class?>">
+				<a href="addCategory.php?action=edit&catID=<?=$line['id']?>" class="option">
+					<?=$_LANG['edit'] ?>
+				</a>
+			</TD>
+			<TD class="<?=$class?>">
+				<a href="addCategory.php?action=delete&catID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>" class="option">
+					<?=$_LANG['delete'] ?>
+				</a>
+			</TD>
+		
+		</TR>
+	<? } elseif ($line['type']==='product')  { ?>
+		<TR>
+			<TD class="<?=$class?>">
+				P
+			</TD>
+			<TD class="<?=$class?>">
+				<a href="products.php?pID=<?=$line['id']?>" class="menu">
+					<?=$line['name']?>
+				</a>
+			</TD>
+			<TD class="<?=$class?>">
+				<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="option">
+					<?=$_LANG['edit'] ?>
+				</a>
+			</TD>
+			<TD class="<?=$class?>">
+				<a href="addProduct.php?action=delete&pID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>" class="option">
+					<?=$_LANG['delete'] ?>
+				</a>
+			</TD>
+		
+		</TR>
+	<? } ?>
+	<? } ?>
+	
+	<TR>
+		<TD colspan="4">
+			<a href="addCategory.php?catID=<?=$_TPL['catID']?>" class="menu"><?=$_LANG['addCategory'] ?></a>
+			<a href="addProduct.php?catID=<?=$_TPL['catID']?>" class="menu"><?=$_LANG['addProduct'] ?></a>
+		</TD>
+	</TR>
+
+</table>

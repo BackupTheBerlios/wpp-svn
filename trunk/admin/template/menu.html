@@ -1,0 +1,27 @@
+<!-- Menüliste -->
+
+<? include('../lang/lang_de.php');
+   $LANG = $lang['admin_menu']; ?>
+
+<table class="menu_table">
+	<TR>
+		<TD>
+			<a href="categories.php" class="menu"><?=$LANG['category']?></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<a href="users.php" class="menu"><?=$LANG['users']?></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<a href="orders.php" class="menu"><?=$LANG['orders']?></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<a href="login.php?action=logout" class="menu"><?=$LANG['logout']?></a>
+		</TD>
+	</TR>
+</table>

@@ -1,12 +1,23 @@
 <?
 
 $lang = array(
+	"admin_menu" => array(
+		"category" => "Kategorien",
+		"users" => "Benutzer",
+		"orders" => "Bestellungen",
+		"logout" => "Abmelden"
+	),
 	"admin_categories" => array(
+		"categories" => "Kategorien und Produkte",
 		"addCategory" => "Kategorie hinzufügen",
 		"addProduct" => "Produkt hinzufügen",
 		"edit" => "Bearbeiten",
 		"delete" => "Löschen",
-		"parentDirectory" => ".."
+		"parentDirectory" => "..",
+		"category" => "Kategorie",
+		"type" => "Typ",
+		"name" => "Beschreibung",
+		"options" => "Optionen"
 	),
 	"admin_addCategories" => array(
 		"name" => "Name",

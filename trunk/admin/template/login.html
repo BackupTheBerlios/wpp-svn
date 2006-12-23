@@ -1,0 +1,36 @@
+<?=$_LANG['admin_login']?>
+
+<form action="login.php" method="post">
+<input type="hidden" name="camefrom" value="<?=$_TPL['cf']?>">
+<input type="hidden" name="action" value="login">
+<TABLE>
+	<TR>
+		<TD>
+			<?=$_LANG['name']?>
+		</TD>
+		<TD>
+			<input type="string" name="sign" />
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['password']?>
+		</TD>
+		<TD>
+			<input type="string" name="password" />
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+		</TD>
+		<TD>
+			<input type="submit" name="login" />
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan="2">
+			<?=$_LANG[$_TPL['error']]?>
+		</TD>
+	</TR>
+</TABLE>
+</form>

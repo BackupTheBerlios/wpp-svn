@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/editUser.html","templates/frame.html",$lang["admin_users"]);
+$tpl = new TemplateEngine("template/editUser.html","template/frame.html",$lang["admin_users"]);
 
 if (isset($_POST['action'])) {
 

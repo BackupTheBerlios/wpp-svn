@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/addCategory.html","templates/frame.html",$lang["admin_addCategories"]);
+$tpl = new TemplateEngine("template/addCategory.html","template/frame.html",$lang["admin_addCategories"]);
 
 if (isset($_POST['action'])) {
 

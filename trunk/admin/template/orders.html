@@ -1,0 +1,28 @@
+
+<table>
+
+	<? foreach ($_TPL['orders'] as $line) { ?>
+		<TR>
+
+			<TD>
+				<a href="editOrder.php?id=<?=$line['id']?>">
+					<?=$line['id']?>
+				</a>
+			</TD>
+			<TD>
+				<?=$line['username']?>
+			</TD>
+			<TD>
+				<?=$line['shipping_date']?>
+			</TD>
+		
+		</TR>
+	<? } ?>
+
+
+</table>
+
+
+
+
+	

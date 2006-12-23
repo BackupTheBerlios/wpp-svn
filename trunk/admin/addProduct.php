@@ -10,7 +10,7 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/addProduct.html","templates/frame.html",$lang["admin_addProduct"]);
+$tpl = new TemplateEngine("template/addProduct.html","template/frame.html",$lang["admin_addProduct"]);
 
 if (isset($_POST['action'])) {
 

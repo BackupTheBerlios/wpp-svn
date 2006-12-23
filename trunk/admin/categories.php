@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/categories.html","templates/frame.html",$lang["admin_categories"]);
+$tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["admin_categories"]);
 
 if (isset($_GET['catID'])) {
 	$requestedCategory = $_GET['catID'];
@@ -71,6 +71,7 @@ for ($i=0;$i<sizeof($children);$i++) {
 			"type" => "category",
 			"name" => $children[$i]["name"],
 			"id" => $children[$i]["id"],
+			"active" => $children[$i]["active"]
 	);
 	$LOG->write('3',"admin/categories.php:69: ".$entry['name']);
 	$menu[] = $entry;
@@ -80,6 +81,7 @@ for ($i=0;$i<sizeof($products);$i++) {
 			"type" => "product",
 			"name" => $products[$i]["name"],
 			"id" => $products[$i]["id"],
+			"active" => $children[$i]["active"]
 	);
 	$menu[] = $entry;
 }

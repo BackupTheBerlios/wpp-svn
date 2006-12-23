@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/users.html","templates/frame.html",$lang["admin_users"]);
+$tpl = new TemplateEngine("template/users.html","template/frame.html",$lang["admin_users"]);
 
 //Alle Nutzer finden
 $users_query = DB_query("SELECT

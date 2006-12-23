@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(0,0,0,1,0)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/orders.html","templates/frame.html",$lang["admin_orders"]);
+$tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["admin_orders"]);
 
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT

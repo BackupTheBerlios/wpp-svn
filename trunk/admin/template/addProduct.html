@@ -1,0 +1,72 @@
+<form action="addProduct.php" method="post">
+<input type="hidden" value="<?=$_TPL['action']?>" name="action">
+<input type="hidden" value="<?=$_TPL['ID']?>" name="ID">
+<table>
+	<TR>
+		<TD>
+			<?=$_LANG['name']?>
+		</TD>
+		<TD>
+			<input type="string" name="name" value="<?=$_TPL['name']?>">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['description']?>
+		</TD>
+		<TD>
+			<textarea name="description"><?=$_TPL['description']?></textarea>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['sort_order']?>
+		</TD>
+		<TD>
+			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['active']?>
+		</TD>
+		<TD>
+			<? if ($_TPL['active']=='1') { ?>
+				<input type="checkbox" name="active" checked=checked>
+			<? } else { ?>
+				<input type="checkbox" name="active">
+			<? } ?>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['image']?>
+		</TD>
+		<TD>
+			<input type="file" name="image">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['stock']?>
+		</TD>
+		<TD>
+			<input type="string" name="stock" value="<?=$_TPL['stock']?>">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<?=$_LANG['price']?>
+		</TD>
+		<TD>
+			<input type="string" name="price" value="<?=$_TPL['price']?>">
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan="2">
+			<input type="submit" value="<?=$_LANG['submit']?>">
+			<input type="reset" value="<?=$_LANG['reset']?>">
+		</TD>
+	</TR>
+</table>
+</form>

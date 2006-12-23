@@ -6,7 +6,7 @@ include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/login.html","templates/frame_login.html",$lang["admin_login"]);
+$tpl = new TemplateEngine("template/login.html","template/frame_login.html",$lang["admin_login"]);
 
 
 if (isset($_POST['action'])) {

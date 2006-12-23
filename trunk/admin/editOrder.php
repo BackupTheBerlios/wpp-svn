@@ -9,7 +9,7 @@ if ($user ==null || !$user->checkPermissions(0,0,0,1,0)) {
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("templates/editOrder.html","templates/frame.html",$lang["admin_orders"]);
+$tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["admin_orders"]);
 
 
 $order_id = $_GET['id'];
