@@ -17,7 +17,7 @@ $lang = array(
 		"category" => "Kategorie",
 		"type" => "Typ",
 		"name" => "Beschreibung",
-		"options" => "Optionen"
+		"options" => "Optionen"		
 	),
 	"admin_addCategories" => array(
 		"editCategorie" => "Kategorie bearbeiten",
@@ -26,7 +26,10 @@ $lang = array(
 		"active" => "Aktiviert?",
 		"sort_order" => "Sortierungsreihenfolge",
 		"submit" => "Ändern",
-		"reset" => "Abbrechen"
+		"reset" => "Abbrechen",
+		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
+		"desc_error" => "Bitte geben Sie eine gültige Beschreibung ein!",
+		"sort_error" => "Bitte geben Sie eine gültige Zahl ein!"
 	),
 	"admin_addProduct" => array(
 		"name" => "Name",
@@ -37,7 +40,11 @@ $lang = array(
 		"reset" => "Abbrechen",
 		"image" => "Bild",
 		"stock" => "Lagerbestand",
-		"price" => "Preis"
+		"price" => "Preis",
+		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
+		"desc_error" => "Bitte geben Sie eine gültige Beschreibung ein!",
+		"price_error" => "Bitte geben Sie einen gültigen Preis ein!",
+		"stock_error" => "Bitte geben Sie eine gültige Zahl ein!"
 	),
 	"admin_login" => array(
 		"admin_login" => "Administratoren-Login",

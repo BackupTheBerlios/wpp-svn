@@ -21,11 +21,20 @@ if (isset($_POST['action'])) {
 		if ($_POST['active']=='on') {$active=1;}
 		else {$active=0;}
 		
-		checkInput($_POST['name'], 'string');
-		checkInput($_POST['description'], 'string');
-		checkInput($_POST['sort_order'], 'int');
+		if ($_POST['sort_order'] == '') {$sort_order = 0;}
+		else {$sort_order=$_POST['sort_order'];}
 		
-		DB_query("INSERT INTO categories VALUES (0,'".$_POST['name']."',".$_POST['catID'].",".$active.",'".$_POST['description']."',".$_POST['sort_order'].")");
+		if (!checkInput($_POST['name'], 'string')) { redirectURI('/admin/addCategory.php','action=add&catID='.$_POST['catID'].'&error=name_error'); }
+		if (!checkInput($_POST['description'], 'string')) { redirectURI('/admin/addCategories.php','action=add&catID='.$_POST['catID'].'&error=desc_error'); }
+		if (!checkInput($sort_order, 'int')) { redirectURI('/admin/addCategory.php','action=edit&catID='.$_POST['catID'].'&error=sort_error'); }
+		
+		DB_query("INSERT INTO categories 
+				VALUES (0,
+					'".$_POST['name']."',
+					".$_POST['catID'].",
+					".$active.",
+					'".$_POST['description']."',
+					".$sort_order.")");
 		
 		$LOG->write('2', 'Kategorie '.mysql_insert_id().' hinzugefügt');
 		redirectURI('/admin/categories.php','catID='.$_POST['catID']);
@@ -37,15 +46,18 @@ if (isset($_POST['action'])) {
 		if ($_POST['active']=='on') {$active=1;}
 		else {$active=0;}
 		
-		checkInput($_POST['name'], 'string');
-		checkInput($_POST['description'], 'string');
-		checkInput($_POST['sort_order'], 'int');
+		if ($_POST['sort_order'] == '') {$sort_order = 0;}
+		else {$sort_order=$_POST['sort_order'];}
+		
+		if (!checkInput($_POST['name'], 'string')) { redirectURI('/admin/addCategory.php','action=edit&catID='.$_POST['catID'].'&error=name_error'); }
+		if (!checkInput($_POST['description'], 'string')) { redirectURI('/admin/addCategory.php','action=edit&catID='.$_POST['catID'].'&error=desc_error'); }
+		if (!checkInput($sort_order, 'int')) { redirectURI('/admin/addCategory.php','action=edit&catID='.$_POST['catID'].'&error=sort_error'); }
 		
 		DB_query("UPDATE categories SET 
 					name='".$_POST['name']."',
 					active=".$active.",
 					description='".$_POST['description']."',
-					sort_order=".$_POST['sort_order']."
+					sort_order=".$sort_order."
 					WHERE categories_id=".$_POST['catID']);
 		
 		$LOG->write('2', 'Kategorie '.$_GET['catID'].' bearbeitet');
@@ -74,6 +86,7 @@ if (isset($_POST['action'])) {
 	$tpl->assign('sort_order',$category['sort_order']);
 	$tpl->assign('active',$category['active']);
 	$tpl->assign('parent',$category['parent']);
+	$tpl->assign('error',$_GET['error']);
 	
 	$tpl->display();
 	
@@ -96,6 +109,8 @@ if (isset($_POST['action'])) {
 	$catID = $_GET['catID'];
 	$tpl->assign('catID',$catID);
 	$tpl->assign('action','add');
+	$tpl->assign('error',$_GET['error']);
+	
 	$tpl->display();
 }
 

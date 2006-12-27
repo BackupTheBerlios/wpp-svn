@@ -65,6 +65,13 @@
 			<input type="string" name="price" value="<?=$_TPL['price']?>" class="string">
 		</TD>
 	</TR>
+	<? if ($_TPL['error']!='') { ?>
+	<TR>
+		<TD class="errorbox" colspan="2">
+			<?=$_LANG[$_TPL['error']]?>
+		</TD>
+	</TR>
+	<? } ?>
 	<TR>
 		<TD colspan="2" class="optionbox">
 			<? if ($_TPL['deleted']!=1) { ?>

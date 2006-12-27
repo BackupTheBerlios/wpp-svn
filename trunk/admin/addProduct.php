@@ -19,10 +19,10 @@ if (isset($_POST['action'])) {
 	if ($_POST['action']=='add') {
 		$LOG->write('3', 'admin/addProduct.php: action=add');
 		
-		checkInput($_POST['name'], 'string');
-		checkInput($_POST['description'], 'string');
-		checkInput($_POST['stock'], 'int');
-		checkInput($_POST['price'], 'price');
+		if (!checkInput($_POST['name'], 'string')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=name_error');}
+		if (!checkInput($_POST['description'], 'string')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=desc_error');}
+		if (!checkInput($_POST['stock'], 'int')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=stock_error');}
+		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=price_error');}
 		
 		$image = $_FILE['image'];
 		$image_uri = uploadImage($image);
@@ -62,10 +62,11 @@ if (isset($_POST['action'])) {
 					WHERE products_id = ".$_POST['ID']);
 		$cat = DB_fetchArray($cat_query);
 		
-		checkInput($_POST['name'], 'string');
-		checkInput($_POST['description'], 'string');
-		checkInput($_POST['stock'], 'int');
-		checkInput($_POST['price'], 'price');
+		
+		if (!checkInput($_POST['name'], 'string')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=name_error');}
+		if (!checkInput($_POST['description'], 'string')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=desc_error');}
+		if (!checkInput($_POST['stock'], 'int')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=stock_error');}
+		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=price_error');}
 		
 		$image = $_FILE['image'];
 		$image_uri = uploadImage($image);
@@ -125,7 +126,7 @@ if (isset($_POST['action'])) {
 	$tpl->assign('stock',$product['stock']);
 	$tpl->assign('price',$product['price']);
 	$tpl->assign('deleted',$product['deleted']);
-	
+	$tpl->assign('error',$_GET['error']);
 	
 	$tpl->display();
 	
@@ -149,6 +150,8 @@ if (isset($_POST['action'])) {
 	$ID = $_GET['catID'];
 	$tpl->assign('ID',$ID);
 	$tpl->assign('action','add');
+	$tpl->assign('error',$_GET['error']);
+	
 	$tpl->display();
 }
 

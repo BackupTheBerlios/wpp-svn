@@ -21540,3 +21540,1272 @@
 				FROM users
 				WHERE users_id = 2
 20061226.185258:3: DB-Anfrage akzeptiert
+20061227.093602:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.093602:3: startApplication.php:13:Sprache: de
+20061227.093602:3: startApplication.php:16:Session gestartet
+20061227.093602:3: session.inc:8:Versuche User wiederherzustellen
+20061227.093602:2: session.inc:16:Kein Benutzer angemeldet
+20061227.093602:2: Weitergeleitet zu: /admin/login.php?camefrom=categories.php
+20061227.095358:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.095359:3: startApplication.php:13:Sprache: de
+20061227.095359:3: startApplication.php:16:Session gestartet
+20061227.095359:3: session.inc:8:Versuche User wiederherzustellen
+20061227.095359:2: session.inc:16:Kein Benutzer angemeldet
+20061227.095359:2: Weitergeleitet zu: /admin/login.php?camefrom=categories.php
+20061227.104516:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104516:3: startApplication.php:13:Sprache: de
+20061227.104516:3: startApplication.php:16:Session gestartet
+20061227.104516:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104516:2: session.inc:16:Kein Benutzer angemeldet
+20061227.104516:2: Weitergeleitet zu: /admin/login.php?camefrom=categories.php
+20061227.104516:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104516:3: startApplication.php:13:Sprache: de
+20061227.104516:3: startApplication.php:16:Session gestartet
+20061227.104523:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104523:3: startApplication.php:13:Sprache: de
+20061227.104523:3: startApplication.php:16:Session gestartet
+20061227.104523:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'andre'
+					AND password = 'test'
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:2: Benutzer angemeldet :andre
+20061227.104523:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:2: Benutzer angemeldet: andre
+20061227.104523:2: Weitergeleitet zu: /admin/categories.php?
+20061227.104523:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104523:3: startApplication.php:13:Sprache: de
+20061227.104523:3: startApplication.php:16:Session gestartet
+20061227.104523:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104523:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:3: Nutzername :andre
+20061227.104523:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:3: Berechtigungen :1
+20061227.104523:3: Benutzer wiederhergestellt:andre
+20061227.104523:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104523:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:3: admin/categories.php:39: Kat 1
+20061227.104523:3: admin/categories.php:39: Kat 2
+20061227.104523:3: admin/categories.php:39: Kat 3
+20061227.104523:3: admin/categories.php:39: Kat 1.2
+20061227.104523:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.104523:3: DB-Anfrage akzeptiert
+20061227.104523:3: admin/categories.php:69: Kat 1
+20061227.104523:3: admin/categories.php:69: Kat 2
+20061227.104523:3: admin/categories.php:69: Kat 3
+20061227.104523:3: admin/categories.php:69: Kat 1.2
+20061227.104523:3: admin/categories.php: Anzeige
+20061227.104719:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104719:3: startApplication.php:13:Sprache: de
+20061227.104719:3: startApplication.php:16:Session gestartet
+20061227.104719:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104719:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104719:3: DB-Anfrage akzeptiert
+20061227.104719:3: Nutzername :andre
+20061227.104719:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104719:3: DB-Anfrage akzeptiert
+20061227.104719:3: Berechtigungen :1
+20061227.104719:3: Benutzer wiederhergestellt:andre
+20061227.104719:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104719:3: admin/addCategory.php: get-action=edit
+20061227.104719:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 1
+20061227.104719:3: DB-Anfrage akzeptiert
+20061227.104750:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104750:3: startApplication.php:13:Sprache: de
+20061227.104750:3: startApplication.php:16:Session gestartet
+20061227.104750:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104750:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: Nutzername :andre
+20061227.104750:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: Berechtigungen :1
+20061227.104750:3: Benutzer wiederhergestellt:andre
+20061227.104750:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104750:3: admin/addCategory.php: action set
+20061227.104750:3: admin/addCategory.php: action=edit
+20061227.104750:2: Weitergeleitet zu: /admin/categories.php?catID=1&error=name_error
+20061227.104750:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104750:3: startApplication.php:13:Sprache: de
+20061227.104750:3: startApplication.php:16:Session gestartet
+20061227.104750:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104750:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: Nutzername :andre
+20061227.104750:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: Berechtigungen :1
+20061227.104750:3: Benutzer wiederhergestellt:andre
+20061227.104750:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104750:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: admin/categories.php:39: Kat 1.1
+20061227.104750:3: admin/categories.php:39: Kat 1.2
+20061227.104750:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.104750:3: DB-Anfrage akzeptiert
+20061227.104750:3: admin/categories.php:69: Kat 1.1
+20061227.104750:3: admin/categories.php:69: Kat 1.2
+20061227.104750:3: admin/categories.php: Anzeige
+20061227.104832:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104832:3: startApplication.php:13:Sprache: de
+20061227.104832:3: startApplication.php:16:Session gestartet
+20061227.104832:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104832:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104832:3: DB-Anfrage akzeptiert
+20061227.104832:3: Nutzername :andre
+20061227.104832:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104832:3: DB-Anfrage akzeptiert
+20061227.104832:3: Berechtigungen :1
+20061227.104832:3: Benutzer wiederhergestellt:andre
+20061227.104832:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104832:3: admin/addCategory.php: get-action=edit
+20061227.104832:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.104832:3: DB-Anfrage akzeptiert
+20061227.104839:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104839:3: startApplication.php:13:Sprache: de
+20061227.104839:3: startApplication.php:16:Session gestartet
+20061227.104839:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104839:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104839:3: DB-Anfrage akzeptiert
+20061227.104839:3: Nutzername :andre
+20061227.104839:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104839:3: DB-Anfrage akzeptiert
+20061227.104839:3: Berechtigungen :1
+20061227.104839:3: Benutzer wiederhergestellt:andre
+20061227.104839:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104839:3: admin/addCategory.php: action set
+20061227.104839:3: admin/addCategory.php: action=edit
+20061227.104839:2: Weitergeleitet zu: /admin/addCategories.php?action=edit&catID=4&error=name_error
+20061227.104859:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104859:3: startApplication.php:13:Sprache: de
+20061227.104859:3: startApplication.php:16:Session gestartet
+20061227.104859:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104859:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104859:3: DB-Anfrage akzeptiert
+20061227.104859:3: Nutzername :andre
+20061227.104859:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104859:3: DB-Anfrage akzeptiert
+20061227.104859:3: Berechtigungen :1
+20061227.104859:3: Benutzer wiederhergestellt:andre
+20061227.104859:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104859:3: admin/addCategory.php: get-action=edit
+20061227.104859:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.104859:3: DB-Anfrage akzeptiert
+20061227.104903:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104903:3: startApplication.php:13:Sprache: de
+20061227.104903:3: startApplication.php:16:Session gestartet
+20061227.104903:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104903:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104903:3: DB-Anfrage akzeptiert
+20061227.104903:3: Nutzername :andre
+20061227.104903:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104903:3: DB-Anfrage akzeptiert
+20061227.104903:3: Berechtigungen :1
+20061227.104903:3: Benutzer wiederhergestellt:andre
+20061227.104903:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104903:3: admin/addCategory.php: action set
+20061227.104903:3: admin/addCategory.php: action=edit
+20061227.104903:2: Weitergeleitet zu: /admin/addCategory.php?action=edit&catID=4&error=name_error
+20061227.104903:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104903:3: startApplication.php:13:Sprache: de
+20061227.104903:3: startApplication.php:16:Session gestartet
+20061227.104903:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104903:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104903:3: DB-Anfrage akzeptiert
+20061227.104903:3: Nutzername :andre
+20061227.104903:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104903:3: DB-Anfrage akzeptiert
+20061227.104903:3: Berechtigungen :1
+20061227.104903:3: Benutzer wiederhergestellt:andre
+20061227.104903:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104903:3: admin/addCategory.php: get-action=edit
+20061227.104903:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.104903:3: DB-Anfrage akzeptiert
+20061227.104908:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104908:3: startApplication.php:13:Sprache: de
+20061227.104908:3: startApplication.php:16:Session gestartet
+20061227.104908:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104908:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104908:3: DB-Anfrage akzeptiert
+20061227.104908:3: Nutzername :andre
+20061227.104908:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104908:3: DB-Anfrage akzeptiert
+20061227.104908:3: Berechtigungen :1
+20061227.104908:3: Benutzer wiederhergestellt:andre
+20061227.104908:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104908:3: admin/addCategory.php: action set
+20061227.104908:3: admin/addCategory.php: action=edit
+20061227.104908:2: Weitergeleitet zu: /admin/addCategory.php?action=edit&catID=4&error=name_error
+20061227.104908:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104908:3: startApplication.php:13:Sprache: de
+20061227.104908:3: startApplication.php:16:Session gestartet
+20061227.104908:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104908:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104908:3: DB-Anfrage akzeptiert
+20061227.104908:3: Nutzername :andre
+20061227.104908:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104908:3: DB-Anfrage akzeptiert
+20061227.104908:3: Berechtigungen :1
+20061227.104908:3: Benutzer wiederhergestellt:andre
+20061227.104908:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104908:3: admin/addCategory.php: get-action=edit
+20061227.104908:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.104908:3: DB-Anfrage akzeptiert
+20061227.104912:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104912:3: startApplication.php:13:Sprache: de
+20061227.104912:3: startApplication.php:16:Session gestartet
+20061227.104912:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104912:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104912:3: DB-Anfrage akzeptiert
+20061227.104912:3: Nutzername :andre
+20061227.104912:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104912:3: DB-Anfrage akzeptiert
+20061227.104912:3: Berechtigungen :1
+20061227.104912:3: Benutzer wiederhergestellt:andre
+20061227.104912:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104912:3: admin/addCategory.php: action set
+20061227.104912:3: admin/addCategory.php: action=edit
+20061227.104912:2: Weitergeleitet zu: /admin/addCategory.php?action=edit&catID=4&error=name_error
+20061227.104912:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.104912:3: startApplication.php:13:Sprache: de
+20061227.104912:3: startApplication.php:16:Session gestartet
+20061227.104912:3: session.inc:8:Versuche User wiederherzustellen
+20061227.104912:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.104912:3: DB-Anfrage akzeptiert
+20061227.104912:3: Nutzername :andre
+20061227.104912:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.104912:3: DB-Anfrage akzeptiert
+20061227.104912:3: Berechtigungen :1
+20061227.104912:3: Benutzer wiederhergestellt:andre
+20061227.104912:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.104912:3: admin/addCategory.php: get-action=edit
+20061227.104912:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.104912:3: DB-Anfrage akzeptiert
+20061227.105226:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105226:3: startApplication.php:13:Sprache: de
+20061227.105226:3: startApplication.php:16:Session gestartet
+20061227.105226:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105226:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: Nutzername :andre
+20061227.105226:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: Berechtigungen :1
+20061227.105226:3: Benutzer wiederhergestellt:andre
+20061227.105226:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105226:3: admin/addCategory.php: action set
+20061227.105226:3: admin/addCategory.php: action=edit
+20061227.105226:3: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.1',
+					active=1,
+					description='Beschreibung 1.1',
+					sort_order=1
+					WHERE categories_id=4
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:2: Kategorie  bearbeitet
+20061227.105226:2: Weitergeleitet zu: /admin/categories.php?catID=1
+20061227.105226:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105226:3: startApplication.php:13:Sprache: de
+20061227.105226:3: startApplication.php:16:Session gestartet
+20061227.105226:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105226:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: Nutzername :andre
+20061227.105226:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: Berechtigungen :1
+20061227.105226:3: Benutzer wiederhergestellt:andre
+20061227.105226:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105226:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: admin/categories.php:39: Kat 1.1
+20061227.105226:3: admin/categories.php:39: Kat 1.2
+20061227.105226:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.105226:3: DB-Anfrage akzeptiert
+20061227.105226:3: admin/categories.php:69: Kat 1.1
+20061227.105226:3: admin/categories.php:69: Kat 1.2
+20061227.105226:3: admin/categories.php: Anzeige
+20061227.105229:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105229:3: startApplication.php:13:Sprache: de
+20061227.105229:3: startApplication.php:16:Session gestartet
+20061227.105229:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105229:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105229:3: DB-Anfrage akzeptiert
+20061227.105229:3: Nutzername :andre
+20061227.105229:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105229:3: DB-Anfrage akzeptiert
+20061227.105229:3: Berechtigungen :1
+20061227.105229:3: Benutzer wiederhergestellt:andre
+20061227.105229:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105229:3: admin/addCategory.php: get-action=edit
+20061227.105229:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.105229:3: DB-Anfrage akzeptiert
+20061227.105233:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105233:3: startApplication.php:13:Sprache: de
+20061227.105233:3: startApplication.php:16:Session gestartet
+20061227.105233:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105233:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105233:3: DB-Anfrage akzeptiert
+20061227.105233:3: Nutzername :andre
+20061227.105233:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105233:3: DB-Anfrage akzeptiert
+20061227.105233:3: Berechtigungen :1
+20061227.105233:3: Benutzer wiederhergestellt:andre
+20061227.105233:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105233:3: admin/addCategory.php: action set
+20061227.105233:3: admin/addCategory.php: action=edit
+20061227.105233:2: Weitergeleitet zu: /admin/addCategory.php?action=edit&catID=4&error=name_error
+20061227.105233:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105233:3: startApplication.php:13:Sprache: de
+20061227.105233:3: startApplication.php:16:Session gestartet
+20061227.105233:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105233:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105233:3: DB-Anfrage akzeptiert
+20061227.105233:3: Nutzername :andre
+20061227.105233:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105233:3: DB-Anfrage akzeptiert
+20061227.105233:3: Berechtigungen :1
+20061227.105233:3: Benutzer wiederhergestellt:andre
+20061227.105233:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105233:3: admin/addCategory.php: get-action=edit
+20061227.105233:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.105233:3: DB-Anfrage akzeptiert
+20061227.105244:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105244:3: startApplication.php:13:Sprache: de
+20061227.105244:3: startApplication.php:16:Session gestartet
+20061227.105244:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105244:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105244:3: DB-Anfrage akzeptiert
+20061227.105244:3: Nutzername :andre
+20061227.105244:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105244:3: DB-Anfrage akzeptiert
+20061227.105244:3: Berechtigungen :1
+20061227.105244:3: Benutzer wiederhergestellt:andre
+20061227.105244:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105244:3: admin/addCategory.php: action set
+20061227.105244:3: admin/addCategory.php: action=edit
+20061227.105244:2: Weitergeleitet zu: /admin/addCategory.php?action=edit&catID=4&error=desc_error
+20061227.105244:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105244:3: startApplication.php:13:Sprache: de
+20061227.105244:3: startApplication.php:16:Session gestartet
+20061227.105244:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105244:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105244:3: DB-Anfrage akzeptiert
+20061227.105244:3: Nutzername :andre
+20061227.105244:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105244:3: DB-Anfrage akzeptiert
+20061227.105244:3: Berechtigungen :1
+20061227.105244:3: Benutzer wiederhergestellt:andre
+20061227.105244:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105244:3: admin/addCategory.php: get-action=edit
+20061227.105244:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.105244:3: DB-Anfrage akzeptiert
+20061227.105250:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105250:3: startApplication.php:13:Sprache: de
+20061227.105250:3: startApplication.php:16:Session gestartet
+20061227.105250:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105250:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: Nutzername :andre
+20061227.105250:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: Berechtigungen :1
+20061227.105250:3: Benutzer wiederhergestellt:andre
+20061227.105250:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105250:3: admin/addCategory.php: action set
+20061227.105250:3: admin/addCategory.php: action=edit
+20061227.105250:3: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.1',
+					active=1,
+					description='Beschreibung 1.1',
+					sort_order=
+					WHERE categories_id=4
+20061227.105250:2: Fehler DB-Anfrage: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE categories_id=4' at line 6
+20061227.105250:2: Kategorie  bearbeitet
+20061227.105250:2: Weitergeleitet zu: /admin/categories.php?catID=1
+20061227.105250:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105250:3: startApplication.php:13:Sprache: de
+20061227.105250:3: startApplication.php:16:Session gestartet
+20061227.105250:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105250:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: Nutzername :andre
+20061227.105250:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: Berechtigungen :1
+20061227.105250:3: Benutzer wiederhergestellt:andre
+20061227.105250:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105250:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: admin/categories.php:39: Kat 1.1
+20061227.105250:3: admin/categories.php:39: Kat 1.2
+20061227.105250:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.105250:3: DB-Anfrage akzeptiert
+20061227.105250:3: admin/categories.php:69: Kat 1.1
+20061227.105250:3: admin/categories.php:69: Kat 1.2
+20061227.105250:3: admin/categories.php: Anzeige
+20061227.105252:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105252:3: startApplication.php:13:Sprache: de
+20061227.105252:3: startApplication.php:16:Session gestartet
+20061227.105252:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105252:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105252:3: DB-Anfrage akzeptiert
+20061227.105252:3: Nutzername :andre
+20061227.105252:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105252:3: DB-Anfrage akzeptiert
+20061227.105252:3: Berechtigungen :1
+20061227.105252:3: Benutzer wiederhergestellt:andre
+20061227.105252:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105252:3: admin/addCategory.php: get-action=edit
+20061227.105252:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.105252:3: DB-Anfrage akzeptiert
+20061227.105325:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105325:3: startApplication.php:13:Sprache: de
+20061227.105325:3: startApplication.php:16:Session gestartet
+20061227.105325:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105325:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: Nutzername :andre
+20061227.105325:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: Berechtigungen :1
+20061227.105325:3: Benutzer wiederhergestellt:andre
+20061227.105325:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105325:3: admin/addCategory.php: action set
+20061227.105325:3: admin/addCategory.php: action=edit
+20061227.105325:3: DB-Anfrage: UPDATE categories SET 
+					name='Kat 1.1',
+					active=1,
+					description='Beschreibung 1.1',
+					sort_order=0
+					WHERE categories_id=4
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:2: Kategorie  bearbeitet
+20061227.105325:2: Weitergeleitet zu: /admin/categories.php?catID=1
+20061227.105325:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105325:3: startApplication.php:13:Sprache: de
+20061227.105325:3: startApplication.php:16:Session gestartet
+20061227.105325:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105325:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: Nutzername :andre
+20061227.105325:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: Berechtigungen :1
+20061227.105325:3: Benutzer wiederhergestellt:andre
+20061227.105325:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105325:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: admin/categories.php:39: Kat 1.1
+20061227.105325:3: admin/categories.php:39: Kat 1.2
+20061227.105325:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.105325:3: DB-Anfrage akzeptiert
+20061227.105325:3: admin/categories.php:69: Kat 1.1
+20061227.105325:3: admin/categories.php:69: Kat 1.2
+20061227.105325:3: admin/categories.php: Anzeige
+20061227.105328:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105328:3: startApplication.php:13:Sprache: de
+20061227.105328:3: startApplication.php:16:Session gestartet
+20061227.105328:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105328:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105328:3: DB-Anfrage akzeptiert
+20061227.105328:3: Nutzername :andre
+20061227.105328:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105328:3: DB-Anfrage akzeptiert
+20061227.105328:3: Berechtigungen :1
+20061227.105328:3: Benutzer wiederhergestellt:andre
+20061227.105328:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105328:3: admin/addCategory.php: get-action=edit
+20061227.105328:3: DB-Anfrage: SELECT
+					*
+					FROM categories
+					WHERE categories_id = 4
+20061227.105328:3: DB-Anfrage akzeptiert
+20061227.105513:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105513:3: startApplication.php:13:Sprache: de
+20061227.105513:3: startApplication.php:16:Session gestartet
+20061227.105513:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105513:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105513:3: DB-Anfrage akzeptiert
+20061227.105513:3: Nutzername :andre
+20061227.105513:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105513:3: DB-Anfrage akzeptiert
+20061227.105513:3: Berechtigungen :1
+20061227.105513:3: Benutzer wiederhergestellt:andre
+20061227.105513:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105513:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.105513:3: DB-Anfrage akzeptiert
+20061227.105513:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.105513:3: DB-Anfrage akzeptiert
+20061227.105513:3: admin/categories.php:39: Kat 1.1
+20061227.105513:3: admin/categories.php:39: Kat 1.2
+20061227.105513:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.105513:3: DB-Anfrage akzeptiert
+20061227.105513:3: admin/categories.php:69: Kat 1.1
+20061227.105513:3: admin/categories.php:69: Kat 1.2
+20061227.105513:3: admin/categories.php: Anzeige
+20061227.105516:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105516:3: startApplication.php:13:Sprache: de
+20061227.105516:3: startApplication.php:16:Session gestartet
+20061227.105516:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105516:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105516:3: DB-Anfrage akzeptiert
+20061227.105516:3: Nutzername :andre
+20061227.105516:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105516:3: DB-Anfrage akzeptiert
+20061227.105516:3: Berechtigungen :1
+20061227.105516:3: Benutzer wiederhergestellt:andre
+20061227.105516:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105516:3: admin/addCategory.php: get-action=none
+20061227.105516:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105516:3: startApplication.php:13:Sprache: de
+20061227.105516:3: startApplication.php:16:Session gestartet
+20061227.105516:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105516:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105516:3: DB-Anfrage akzeptiert
+20061227.105516:3: Nutzername :andre
+20061227.105516:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105516:3: DB-Anfrage akzeptiert
+20061227.105516:3: Berechtigungen :1
+20061227.105516:3: Benutzer wiederhergestellt:andre
+20061227.105516:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105516:3: admin/addCategory.php: get-action=none
+20061227.105914:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105914:3: startApplication.php:13:Sprache: de
+20061227.105914:3: startApplication.php:16:Session gestartet
+20061227.105914:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105914:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105914:3: DB-Anfrage akzeptiert
+20061227.105914:3: Nutzername :andre
+20061227.105914:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105914:3: DB-Anfrage akzeptiert
+20061227.105914:3: Berechtigungen :1
+20061227.105914:3: Benutzer wiederhergestellt:andre
+20061227.105914:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105914:3: admin/addCategory.php: action set
+20061227.105914:3: admin/addCategory.php: action=add
+20061227.105914:2: Weitergeleitet zu: /admin/addCategory.php?action=add&catID=1&error=name_error
+20061227.105914:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.105914:3: startApplication.php:13:Sprache: de
+20061227.105914:3: startApplication.php:16:Session gestartet
+20061227.105914:3: session.inc:8:Versuche User wiederherzustellen
+20061227.105914:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.105914:3: DB-Anfrage akzeptiert
+20061227.105914:3: Nutzername :andre
+20061227.105914:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.105914:3: DB-Anfrage akzeptiert
+20061227.105914:3: Berechtigungen :1
+20061227.105914:3: Benutzer wiederhergestellt:andre
+20061227.105914:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.105914:3: admin/addCategory.php: get-action=none
+20061227.110048:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110048:3: startApplication.php:13:Sprache: de
+20061227.110048:3: startApplication.php:16:Session gestartet
+20061227.110048:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110048:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110048:3: DB-Anfrage akzeptiert
+20061227.110048:3: Nutzername :andre
+20061227.110048:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110048:3: DB-Anfrage akzeptiert
+20061227.110048:3: Berechtigungen :1
+20061227.110048:3: Benutzer wiederhergestellt:andre
+20061227.110048:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110048:3: admin/addCategory.php: get-action=none
+20061227.110049:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110049:3: startApplication.php:13:Sprache: de
+20061227.110049:3: startApplication.php:16:Session gestartet
+20061227.110049:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110049:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110049:3: DB-Anfrage akzeptiert
+20061227.110049:3: Nutzername :andre
+20061227.110049:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110049:3: DB-Anfrage akzeptiert
+20061227.110049:3: Berechtigungen :1
+20061227.110049:3: Benutzer wiederhergestellt:andre
+20061227.110049:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110049:3: admin/addCategory.php: get-action=none
+20061227.110237:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110237:3: startApplication.php:13:Sprache: de
+20061227.110237:3: startApplication.php:16:Session gestartet
+20061227.110237:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110237:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110237:3: DB-Anfrage akzeptiert
+20061227.110237:3: Nutzername :andre
+20061227.110237:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110237:3: DB-Anfrage akzeptiert
+20061227.110237:3: Berechtigungen :1
+20061227.110237:3: Benutzer wiederhergestellt:andre
+20061227.110237:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110237:3: admin/addCategory.php: get-action=none
+20061227.110359:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110359:3: startApplication.php:13:Sprache: de
+20061227.110359:3: startApplication.php:16:Session gestartet
+20061227.110359:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110359:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110359:3: DB-Anfrage akzeptiert
+20061227.110359:3: Nutzername :andre
+20061227.110359:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110359:3: DB-Anfrage akzeptiert
+20061227.110359:3: Berechtigungen :1
+20061227.110359:3: Benutzer wiederhergestellt:andre
+20061227.110359:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110359:3: admin/addCategory.php: get-action=none
+20061227.110407:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110407:3: startApplication.php:13:Sprache: de
+20061227.110407:3: startApplication.php:16:Session gestartet
+20061227.110407:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110407:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110407:3: DB-Anfrage akzeptiert
+20061227.110407:3: Nutzername :andre
+20061227.110407:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110407:3: DB-Anfrage akzeptiert
+20061227.110407:3: Berechtigungen :1
+20061227.110407:3: Benutzer wiederhergestellt:andre
+20061227.110407:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110407:3: admin/addCategory.php: get-action=none
+20061227.110614:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110614:3: startApplication.php:13:Sprache: de
+20061227.110614:3: startApplication.php:16:Session gestartet
+20061227.110614:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110614:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110614:3: DB-Anfrage akzeptiert
+20061227.110614:3: Nutzername :andre
+20061227.110614:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110614:3: DB-Anfrage akzeptiert
+20061227.110614:3: Berechtigungen :1
+20061227.110614:3: Benutzer wiederhergestellt:andre
+20061227.110614:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110614:3: admin/addCategory.php: get-action=none
+20061227.110616:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110616:3: startApplication.php:13:Sprache: de
+20061227.110616:3: startApplication.php:16:Session gestartet
+20061227.110616:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110616:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110616:3: DB-Anfrage akzeptiert
+20061227.110616:3: Nutzername :andre
+20061227.110616:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110616:3: DB-Anfrage akzeptiert
+20061227.110616:3: Berechtigungen :1
+20061227.110616:3: Benutzer wiederhergestellt:andre
+20061227.110616:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110616:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.110616:3: DB-Anfrage akzeptiert
+20061227.110616:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.110616:3: DB-Anfrage akzeptiert
+20061227.110616:3: admin/categories.php:39: Kat 1.1
+20061227.110616:3: admin/categories.php:39: Kat 1.2
+20061227.110616:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.110616:3: DB-Anfrage akzeptiert
+20061227.110616:3: admin/categories.php:69: Kat 1.1
+20061227.110616:3: admin/categories.php:69: Kat 1.2
+20061227.110616:3: admin/categories.php: Anzeige
+20061227.110620:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110620:3: startApplication.php:13:Sprache: de
+20061227.110620:3: startApplication.php:16:Session gestartet
+20061227.110620:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110620:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110620:3: DB-Anfrage akzeptiert
+20061227.110620:3: Nutzername :andre
+20061227.110620:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110620:3: DB-Anfrage akzeptiert
+20061227.110620:3: Berechtigungen :1
+20061227.110620:3: Benutzer wiederhergestellt:andre
+20061227.110620:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110620:3: admin/addProduct.php: get-action=none
+20061227.110950:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110950:3: startApplication.php:13:Sprache: de
+20061227.110950:3: startApplication.php:16:Session gestartet
+20061227.110950:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110950:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110950:3: DB-Anfrage akzeptiert
+20061227.110950:3: Nutzername :andre
+20061227.110950:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110950:3: DB-Anfrage akzeptiert
+20061227.110950:3: Berechtigungen :1
+20061227.110950:3: Benutzer wiederhergestellt:andre
+20061227.110950:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110950:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20061227.110950:3: DB-Anfrage akzeptiert
+20061227.110950:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20061227.110950:3: DB-Anfrage akzeptiert
+20061227.110950:3: admin/categories.php:39: Kat 1.1
+20061227.110950:3: admin/categories.php:39: Kat 1.2
+20061227.110950:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20061227.110950:3: DB-Anfrage akzeptiert
+20061227.110950:3: admin/categories.php:69: Kat 1.1
+20061227.110950:3: admin/categories.php:69: Kat 1.2
+20061227.110950:3: admin/categories.php: Anzeige
+20061227.110953:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.110953:3: startApplication.php:13:Sprache: de
+20061227.110953:3: startApplication.php:16:Session gestartet
+20061227.110953:3: session.inc:8:Versuche User wiederherzustellen
+20061227.110953:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.110953:3: DB-Anfrage akzeptiert
+20061227.110953:3: Nutzername :andre
+20061227.110953:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.110953:3: DB-Anfrage akzeptiert
+20061227.110953:3: Berechtigungen :1
+20061227.110953:3: Benutzer wiederhergestellt:andre
+20061227.110953:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.110953:3: admin/addProduct.php: get-action=edit
+20061227.110953:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13
+20061227.110953:3: DB-Anfrage akzeptiert
+20061227.111124:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111124:3: startApplication.php:13:Sprache: de
+20061227.111124:3: startApplication.php:16:Session gestartet
+20061227.111124:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111124:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111124:3: DB-Anfrage akzeptiert
+20061227.111124:3: Nutzername :andre
+20061227.111124:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111124:3: DB-Anfrage akzeptiert
+20061227.111124:3: Berechtigungen :1
+20061227.111124:3: Benutzer wiederhergestellt:andre
+20061227.111124:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111124:3: admin/addProduct.php: action set
+20061227.111124:3: admin/addProduct.php: action=edit
+20061227.111124:3: DB-Anfrage: SELECT *
+					FROM products
+					WHERE products_id = 13
+20061227.111124:3: DB-Anfrage akzeptiert
+20061227.111124:2: Weitergeleitet zu: /admin/addProduct.php?action=edit&pID=13error=name_error
+20061227.111124:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111124:3: startApplication.php:13:Sprache: de
+20061227.111124:3: startApplication.php:16:Session gestartet
+20061227.111124:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111124:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111124:3: DB-Anfrage akzeptiert
+20061227.111124:3: Nutzername :andre
+20061227.111124:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111124:3: DB-Anfrage akzeptiert
+20061227.111124:3: Berechtigungen :1
+20061227.111124:3: Benutzer wiederhergestellt:andre
+20061227.111124:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111124:3: admin/addProduct.php: get-action=edit
+20061227.111124:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13error=name_error
+20061227.111124:2: Fehler DB-Anfrage: Unknown column '13error' in 'where clause'
+20061227.111207:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111207:3: startApplication.php:13:Sprache: de
+20061227.111207:3: startApplication.php:16:Session gestartet
+20061227.111207:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111207:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111207:3: DB-Anfrage akzeptiert
+20061227.111207:3: Nutzername :andre
+20061227.111207:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111207:3: DB-Anfrage akzeptiert
+20061227.111207:3: Berechtigungen :1
+20061227.111207:3: Benutzer wiederhergestellt:andre
+20061227.111207:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111207:3: admin/addProduct.php: get-action=edit
+20061227.111207:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13error=name_error
+20061227.111207:2: Fehler DB-Anfrage: Unknown column '13error' in 'where clause'
+20061227.111211:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111211:3: startApplication.php:13:Sprache: de
+20061227.111211:3: startApplication.php:16:Session gestartet
+20061227.111211:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111211:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111211:3: DB-Anfrage akzeptiert
+20061227.111211:3: Nutzername :andre
+20061227.111211:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111211:3: DB-Anfrage akzeptiert
+20061227.111211:3: Berechtigungen :1
+20061227.111211:3: Benutzer wiederhergestellt:andre
+20061227.111211:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111211:3: admin/addProduct.php: get-action=edit
+20061227.111211:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13
+20061227.111211:3: DB-Anfrage akzeptiert
+20061227.111216:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111216:3: startApplication.php:13:Sprache: de
+20061227.111216:3: startApplication.php:16:Session gestartet
+20061227.111216:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111216:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111216:3: Nutzername :andre
+20061227.111216:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111216:3: Berechtigungen :1
+20061227.111216:3: Benutzer wiederhergestellt:andre
+20061227.111216:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111216:3: admin/addProduct.php: action set
+20061227.111216:3: admin/addProduct.php: action=edit
+20061227.111216:3: DB-Anfrage: SELECT *
+					FROM products
+					WHERE products_id = 13
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111216:2: Weitergeleitet zu: /admin/addProduct.php?action=edit&pID=13&error=name_error
+20061227.111216:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111216:3: startApplication.php:13:Sprache: de
+20061227.111216:3: startApplication.php:16:Session gestartet
+20061227.111216:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111216:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111216:3: Nutzername :andre
+20061227.111216:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111216:3: Berechtigungen :1
+20061227.111216:3: Benutzer wiederhergestellt:andre
+20061227.111216:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111216:3: admin/addProduct.php: get-action=edit
+20061227.111216:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13
+20061227.111216:3: DB-Anfrage akzeptiert
+20061227.111333:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111345:3: startApplication.php:8:Datenbankverbindung hergestellt
+20061227.111345:3: startApplication.php:13:Sprache: de
+20061227.111345:3: startApplication.php:16:Session gestartet
+20061227.111345:3: session.inc:8:Versuche User wiederherzustellen
+20061227.111345:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '1'
+20061227.111345:3: DB-Anfrage akzeptiert
+20061227.111345:3: Nutzername :andre
+20061227.111345:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20061227.111345:3: DB-Anfrage akzeptiert
+20061227.111345:3: Berechtigungen :1
+20061227.111345:3: Benutzer wiederhergestellt:andre
+20061227.111345:2: session.inc:13:Wiederhergestellter Benutzer: andre
+20061227.111345:3: admin/addProduct.php: get-action=edit
+20061227.111345:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 13
+20061227.111345:3: DB-Anfrage akzeptiert

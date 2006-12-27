@@ -42,6 +42,13 @@
 			<? } ?>
 		</TD>
 	</TR>
+	<? if ($_TPL['error']!='') { ?>
+	<TR>
+		<TD class="errorbox" colspan="2">
+			<?=$_LANG[$_TPL['error']]?>
+		</TD>
+	</TR>
+	<? } ?>
 	<TR>
 		<TD colspan="2" class="optionbox">
 			<input type="submit" value="<?=$_LANG['submit']?>" class="button">

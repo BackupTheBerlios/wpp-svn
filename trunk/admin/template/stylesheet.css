@@ -98,6 +98,12 @@ td.optionbox {
 	border-top: 1px solid #b6beda;
 }
 
+td.errorbox {
+	text-align: center;
+	font-size: 12px;
+	color: #AE1232;
+}
+
 /* content */
 td.content_cell {
 	vertical-align: top;

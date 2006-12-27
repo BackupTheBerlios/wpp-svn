@@ -7,16 +7,18 @@ function editUser() {
 	checkInput($_POST['email'],'email');
 	checkInput($_POST['role_id'],'int');
 	checkInput($_POST['bill_name'],'string');
+	checkInput($_POST['bill_street'],'street');
 	checkInput($_POST['bill_postcode'],'plz');
 	checkInput($_POST['bill_city'],'string');
 	checkInput($_POST['bill_state'],'string');
 	checkInput($_POST['ship_name'],'string');
+	checkInput($_POST['ship_street'],'street');
 	checkInput($_POST['ship_postcode'],'plz');
 	checkInput($_POST['ship_city'],'string');
 	checkInput($_POST['ship_state'],'string');
 	checkInput($_POST['bank_name'],'string');
 	checkInput($_POST['bank_iban'],'blz');
-	checkInput($_POST['bank_number'],'int');
+	checkInput($_POST['bank_number'],'banknum');
 	checkInput($_POST['bank_account'],'string');
 	
 	if ($_POST['active']=='on') {$active=1;}
