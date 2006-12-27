@@ -2,6 +2,23 @@
 
 function editUser() {
 
+	checkInput($_POST['name'],'string');
+	checkInput($_POST['lastname'],'string');
+	checkInput($_POST['email'],'email');
+	checkInput($_POST['role_id'],'int');
+	checkInput($_POST['bill_name'],'string');
+	checkInput($_POST['bill_postcode'],'plz');
+	checkInput($_POST['bill_city'],'string');
+	checkInput($_POST['bill_state'],'string');
+	checkInput($_POST['ship_name'],'string');
+	checkInput($_POST['ship_postcode'],'plz');
+	checkInput($_POST['ship_city'],'string');
+	checkInput($_POST['ship_state'],'string');
+	checkInput($_POST['bank_name'],'string');
+	checkInput($_POST['bank_iban'],'blz');
+	checkInput($_POST['bank_number'],'int');
+	checkInput($_POST['bank_account'],'string');
+	
 	if ($_POST['active']=='on') {$active=1;}
 	else {$active=0;}
 	DB_query("UPDATE users SET 
@@ -14,7 +31,7 @@ function editUser() {
 			bill_street='".$_POST['bill_street']."',
 			bill_postcode='".$_POST['bill_postcode']."',
 			bill_city='".$_POST['bill_city']."',
-			bill_state='".$_POST['bil_state']."',
+			bill_state='".$_POST['bill_state']."',
 			ship_name='".$_POST['ship_name']."',
 			ship_street='".$_POST['ship_street']."',
 			ship_postcode='".$_POST['ship_postcode']."',
@@ -45,6 +62,12 @@ function loginUser($sign, $password) {
 function logoutUser() {
 		$user = restoreUser();
 		$user->logout();
+}
+
+function addUser() {
+
+DB_query("INSERT INTO categories VALUES (0,'".$_POST['name']."',".$_POST['catID'].",".$active.",'".$_POST['description']."',".$_POST['sort_order'].")");
+
 }
 
 ?>

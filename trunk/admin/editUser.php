@@ -20,7 +20,8 @@ if (isset($_POST['action'])) {
 		
 		if ($_POST['active']=='on') {$active=1;}
 		else {$active=0;}
-		DB_query("INSERT INTO categories VALUES (0,'".$_POST['name']."',".$_POST['catID'].",".$active.",'".$_POST['description']."',".$_POST['sort_order'].")");
+		
+		addUser();
 		
 		$LOG->write('2', 'Kategorie '.mysql_insert_id().' hinzugefügt');
 		redirectURI('/admin/categories.php','catID='.$_POST['catID']);

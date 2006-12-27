@@ -20,6 +20,7 @@ $lang = array(
 		"options" => "Optionen"
 	),
 	"admin_addCategories" => array(
+		"editCategorie" => "Kategorie bearbeiten",
 		"name" => "Name",
 		"description" => "Beschreibung",
 		"active" => "Aktiviert?",
@@ -42,7 +43,8 @@ $lang = array(
 		"admin_login" => "Administratoren-Login",
 		"name" => "Ihr Name",
 		"password" => "Ihr Passwort",
-		"failed" => "Anmeldung fehlgeschlagen"
+		"failed" => "Anmeldung fehlgeschlagen",
+		"login" => "Anmelden"
 	),
 	"admin_users" =>array(
 		"edit" => "Bearbeiten",
@@ -71,9 +73,28 @@ $lang = array(
 		"reset" => "Abbrechen",
 		"admin" => "Administrator",
 		"customer" => "Kunde",
-		"order_manager" => "Bestellung"
+		"order_manager" => "Bestellung",
+		"userlist" => "Benutzer",
+		"editUser" => "Benutzer bearbeiten",
+		"bill-data" => "Rechnungsdaten",
+		"ship-data" => "Versanddaten",
+		"user-data" => "Benutzerdaten"
+	),
+	"admin_orders" => array(
+		"orders" => "Bestellungen",
+		"number" => "Nr.",
+		"name" => "Kundenname",
+		"order-date" => "Bestelldatum",
+		"shipping-date" => "Lieferdatum",
+		"order-details" => "Details zur Bestellung",
+		"user" => "Besteller",
+		"products" => "Bestellte Artikel",
+		"product" => "Produkt",
+		"count" => "Anzahl",
+		"price" => "Einzelpreis",
+		"price-total" => "Gesamtpreis"
+		
 	)
-
 );
 
 ?>

@@ -19,6 +19,11 @@ if (isset($_POST['action'])) {
 	if ($_POST['action']=='add') {
 		$LOG->write('3', 'admin/addProduct.php: action=add');
 		
+		checkInput($_POST['name'], 'string');
+		checkInput($_POST['description'], 'string');
+		checkInput($_POST['stock'], 'int');
+		checkInput($_POST['price'], 'price');
+		
 		$image = $_FILE['image'];
 		$image_uri = uploadImage($image);
 		
@@ -28,6 +33,7 @@ if (isset($_POST['action'])) {
 		else {$active=0;}
 		if ($_POST['sort_order']=='') {$sortorder=0;}
 		else {$sortorder=$_POST['sort_order'];}
+		
 		DB_query("INSERT INTO products VALUES (
 					0,
 					'".$_POST['name']."',
@@ -51,15 +57,22 @@ if (isset($_POST['action'])) {
 	elseif ($_POST['action']=='edit') {
 		$LOG->write('3', 'admin/addProduct.php: action=edit');
 		
+		$cat_query = DB_query("SELECT *
+					FROM products
+					WHERE products_id = ".$_POST['ID']);
+		$cat = DB_fetchArray($cat_query);
+		
+		checkInput($_POST['name'], 'string');
+		checkInput($_POST['description'], 'string');
+		checkInput($_POST['stock'], 'int');
+		checkInput($_POST['price'], 'price');
+		
 		$image = $_FILE['image'];
 		$image_uri = uploadImage($image);
 		
 		$createtime = date("YmdHis");
+		
 		//Auflösen der Kategorie-ID
-		$cat_query = DB_query("SELECT categories_id
-					FROM products
-					WHERE products_id=".$_POST['ID']);
-		$cat = DB_fetchArray($cat_query);
 		$cat = $cat['categories_id'];
 		
 		if ($_POST['active']=='on') {$active=1;}
@@ -111,6 +124,8 @@ if (isset($_POST['action'])) {
 	$tpl->assign('active',$product['active']);
 	$tpl->assign('stock',$product['stock']);
 	$tpl->assign('price',$product['price']);
+	$tpl->assign('deleted',$product['deleted']);
+	
 	
 	$tpl->display();
 	

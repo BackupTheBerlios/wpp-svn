@@ -1,30 +1,30 @@
-<?=$_LANG['admin_login']?>
+<h1><?=$_LANG['admin_login']?></h1>
 
 <form action="login.php" method="post">
 <input type="hidden" name="camefrom" value="<?=$_TPL['cf']?>">
 <input type="hidden" name="action" value="login">
-<TABLE>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
+
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['name']?>
 		</TD>
-		<TD>
-			<input type="string" name="sign" />
+		<TD class="odd">
+			<input type="string" name="sign" class="string"/>
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['password']?>
 		</TD>
-		<TD>
-			<input type="string" name="password" />
+		<TD class="odd">
+			<input type="string" name="password" class="string"/>
 		</TD>
 	</TR>
 	<TR>
-		<TD>
-		</TD>
-		<TD>
-			<input type="submit" name="login" />
+		<TD class="optionbox" colspan="2">
+			<input type="submit" name="login" class="button" value="<?=$_LANG['login']?>" />
 		</TD>
 	</TR>
 	<TR>

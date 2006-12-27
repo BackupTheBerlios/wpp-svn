@@ -1,11 +1,90 @@
-<TABLE>
+<h1><?=$_LANG['order-details']?> <?=$_TPL['orderid']?></h1>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
 
 	<TR>
-		<TD>
-			<?=$_TPL['order']['orders_id']?>
+		<TD class="heading_cell">
+			<?=$_LANG['order-date']?>
 		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['shipping-date']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_TPL['orderDate']?>
+		</TD>
+		<TD class="odd">
+			<?=$_TPL['shippingDate']?>
+		</TD>
+	</TR>
+</table>
+<br />
+<table class="content_table" cellpadding="0" cellspacing="0">
+
+	<TR>
+		<TD class="chapter_heading" colspan="4">
+			<?=$_LANG['products']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="heading_cell">
+			<?=$_LANG['count']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['name']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['price']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['price-total']?>
+		</TD>
+	</TR>
+	
+	<? $i=0;foreach ($_TPL['items'] as $line) { ?>
+	<? $i++;if ($i%2==0) {$class="even";} else {$class="odd";} ?>
+	<TR>
+		<TD class="<?=$class?>">
+			<?=$line['count']?>x
+		</TD>
+		<TD class="<?=$class?>">
+			<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="menu">
+				<?=$line['name']?>
+			</a>
+		</TD>
+		<TD class="<?=$class?>">
+			<?=$line['price']?>
+		</TD>
+		<TD class="<?=$class?>">
+			<?=$line['price_total']?>
+		</TD>
+		
+	</TR>
+	<? } ?>
+	
+	<TR>
+		<TD class="price-all" colspan="3">
+			<?=$_LANG['price-total']?>
+		</TD>
+		<TD class="price-all">
+			<?=$_TPL['price_all']?>
+		</TD>
+	</TR>
+</table>
+<br >
+<table class="content_table" cellpadding="0" cellspacing="0">
+
+	<TR>
+		<TD class="chapter_heading">
+			<?=$_LANG['user']?>
+		</TD>
+	</TR>
+	<TR>
 		<TD>
-			<?=$_TPL['user']['name']?> <?=$_TPL['user']['lastname']?>
+			<a href="editUser.php?action=edit&uID=<?=$line['id']?>" class="menu">
+				<?=$_TPL['user']['name']?> <?=$_TPL['user']['lastname']?>
+			</a>
 		</TD>
 	</TR>
 </TABLE>

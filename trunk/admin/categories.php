@@ -42,7 +42,8 @@ $children = array();
 while ($line = DB_fetchArray($children_query)) {
 	$list = array(
 			"id" => $line['categories_id'],
-			"name" => $line['name']);
+			"name" => $line['name'],
+			"active" => $line['active']);
 	$LOG->write('3',"admin/categories.php:39: ".$list['name']);
 	$children[] = $list;
 }
@@ -60,7 +61,8 @@ while ($line = DB_fetchArray($products_query)) {
 	$list = array(
 			"id" => $line['products_id'],
 			"name" => $line['name'],
-			"description" => $line['description']);
+			"description" => $line['description'],
+			"active" => $line['active']);
 	$products[] = $list;
 }
 
@@ -81,7 +83,7 @@ for ($i=0;$i<sizeof($products);$i++) {
 			"type" => "product",
 			"name" => $products[$i]["name"],
 			"id" => $products[$i]["id"],
-			"active" => $children[$i]["active"]
+			"active" => $products[$i]["active"]
 	);
 	$menu[] = $entry;
 }

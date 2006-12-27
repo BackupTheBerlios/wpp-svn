@@ -2,8 +2,16 @@
 /* common */
 td.even {
 	background-color: #D5DFFF;
+	vertical-align: top;
+	font-size: 12px;
+	padding-top: 3px;
 }
 
+td.odd {
+	vertical-align: top;
+	font-size: 12px;
+	padding-top: 3px;
+}
 
 /* frame */
 
@@ -13,6 +21,16 @@ body {
 
 table.frame_table {
 	height: 100%;
+}
+
+table.table_login {
+	height: 100%;
+	width: 100%;
+}
+
+td.cell_login {
+	vertical-align: middle;
+	text-align: center;
 }
 
 /* Menu */
@@ -40,9 +58,33 @@ a.menu:hover {
 	font-family: verdana;
 }
 
+a.menu_inactive:active {
+	color: #7D7D7D;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+a.menu_inactive:link {
+	color: #7D7D7D;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+a.menu_inactive:visited {
+	color: #7D7D7D;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+a.menu_inactive:hover {
+	color: #880000;
+	text-decoration: none;
+	font-family: verdana;
+}
+
 td.menu_cell {
 	width: 200px;
-	border-right: 1px solid #D5DFFF;
+	border-right: 1px solid #b6beda;
 	vertical-align: top;
 }
 
@@ -50,13 +92,21 @@ table.menu_table {
 	width: 100%;
 }
 
+td.optionbox {
+	padding-top: 10px;
+	text-align: right;
+	border-top: 1px solid #b6beda;
+}
+
 /* content */
 td.content_cell {
 	vertical-align: top;
+	width: 500px;
 }
 
 table.content_table {
 	border: 1px solid #b6beda;
+	width: 500px;
 }
 
 td.heading_cell {
@@ -65,6 +115,16 @@ td.heading_cell {
 	font-weight: bold;
 	font-size: 12px;
 	border-bottom: 1px solid #B6BEDA;
+}
+
+td.chapter_heading {
+	background-color: #d5dfff;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 12px;
+	border-bottom: 1px solid #b6beda;
+	border-top: 1px solid #b6beda;
+	padding-top: 5px;
 }
 
 a.option:active {
@@ -93,4 +153,39 @@ a.option:hover {
 	text-decoration: none;
 	font-family: verdana;
 	font-size: 10px;
+}
+
+/*inputs*/
+input.string {
+	width: 300px;
+	font-size: 10px;
+}
+
+textarea {
+	width: 300px;
+	font-size: 10px;
+}
+
+input.checkbox {
+	font-size: 8px;
+}
+
+input.button {
+	font-size: 12px;
+	background-color: #d5dfff;
+	border: 1px solid #d6deba;
+}
+
+select {
+	font-size: 10px;
+	width: 300px;
+}
+
+td.price-all {
+	font-size: 14px;
+	padding-top: 3px;
+	background-color: #d5dfff;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
 }

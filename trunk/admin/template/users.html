@@ -1,20 +1,22 @@
 
-<table>
+<h1><?=$_LANG['userlist']?></h1>
 
-	<? foreach ($_TPL['users'] as $line) { ?>
+<table class="content_table" cellpadding="0" cellspacing="0">
+
+	<? $i=0;foreach ($_TPL['users'] as $line) { ?>
+	<? $i++;if ($i%2==1) {$class="even";} else {$class="odd";} ?>
 		<TR>
 
-			<TD>
+			<TD class="<?=$class?>">
+				
 				<?=$line['name']?> <?=$line['lastname']?>
 			</TD>
-			<TD>
-				<a href="editUser.php?action=edit&uID=<?=$line['id']?>">
+			<TD class="<?=$class?>">
+				<a href="editUser.php?action=edit&uID=<?=$line['id']?>" class="option">
 					<?=$_LANG['edit'] ?>
 				</a>
-			</TD>
-			<TD>
 				<? if ($line['deletable']==1) { ?>
-					<a href="editUser.php?action=delete&uID=<?=$line['id']?>">
+					<a href="editUser.php?action=delete&uID=<?=$line['id']?>" class="option">
 						<?=$_LANG['delete'] ?>
 					</a>
 				<? } ?>

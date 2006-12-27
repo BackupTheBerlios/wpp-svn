@@ -1,19 +1,38 @@
+<h1><?=$_LANG['orders']?></h1>
 
-<table>
+<table class="content_table" cellpadding="0" cellspacing="0">
 
-	<? foreach ($_TPL['orders'] as $line) { ?>
+	<TR>
+		<TD class="heading_cell">
+			<?=$_LANG['number']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['name']?>
+		</TD>
+		<TD class="heading_cell" colspan="2">
+			<?=$_LANG['order-date']?>
+		</TD>
+	</TR>
+
+
+	<? $i=0;foreach ($_TPL['orders'] as $line) { ?>
+	<? $i++;if ($i%2==0) {$class="even";} else {$class="odd";} ?>
 		<TR>
 
-			<TD>
-				<a href="editOrder.php?id=<?=$line['id']?>">
+			<TD class="<?=$class?>">
+				<a href="editOrder.php?id=<?=$line['id']?>" class="menu">
 					<?=$line['id']?>
 				</a>
 			</TD>
-			<TD>
-				<?=$line['username']?>
+			<TD class="<?=$class?>">
+				<a href="editOrder.php?id=<?=$line['id']?>" class="menu">
+					<?=$line['username']?>
+				</a>
 			</TD>
-			<TD>
-				<?=$line['shipping_date']?>
+			<TD class="<?=$class?>">
+				<a href="editOrder.php?id=<?=$line['id']?>" class="menu">
+					<?=$line['shipping_date']?>
+				</a>
 			</TD>
 		
 		</TR>

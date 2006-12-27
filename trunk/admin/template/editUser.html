@@ -1,43 +1,54 @@
+<h1><?=$_LANG['editUser']?></h1>
+
 <form action="editUser.php" method="post">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['uID']?>" name="uID">
 
-<table>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
 	<TR>
-		<TD>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['user-data']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
 			<?=$_LANG['name']?>
 		</TD>
-		<TD>
-			<input type="string" name="name" value="<?=$_TPL['name']?>">
+		<TD class="odd">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['lastname']?>
 		</TD>
-		<TD>
-			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>">
+		<TD class="even">
+			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['active']?>
 		</TD>
-		<TD>
-			<? if (!$_TPL['role_id']=='1') { ?>
+		<TD class="odd">
+			<? if (!($_TPL['role_id']=='1')) { ?>
 				<? if ($_TPL['active']=='1') { ?>
-					<input type="checkbox" name="active" checked=checked>
+					<input type="checkbox" name="active" checked=checked class="checkbox">
 				<? } else { ?>
-					<input type="checkbox" name="active">
+					<input type="checkbox" name="active" class="checkbox">
 				<? } ?>
+			<? } else { ?>
+				<input type="checkbox" checked="checked" disabled="true" class="checkbox">
 			<? } ?>
+			<?=$_TPL['role_id']?>
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['rolename']?>
 		</TD>
-		<TD>
+		<TD class="even">
 			<select name="role_id">
 			<? foreach ($_TPL['roleslist'] as $line) { ?>
 				<? if ($line['id']==$_TPL['role_id']) { ?>
@@ -50,130 +61,141 @@
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['email']?>
 		</TD>
-		<TD>
-			<input type="string" name="email" value="<?=$_TPL['email']?>">
+		<TD class="odd">
+			<input type="string" name="email" value="<?=$_TPL['email']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['bill-data']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
 			<?=$_LANG['bill_name']?>
 		</TD>
-		<TD>
-			<input type="string" name="bill_name" value="<?=$_TPL['bill_name']?>">
+		<TD class="odd">
+			<input type="string" name="bill_name" value="<?=$_TPL['bill_name']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['bill_street']?>
 		</TD>
-		<TD>
-			<input type="string" name="bill_street" value="<?=$_TPL['bill_street']?>">
+		<TD class="even">
+			<input type="string" name="bill_street" value="<?=$_TPL['bill_street']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['bill_postcode']?>
 		</TD>
-		<TD>
-			<input type="string" name="bill_postcode" value="<?=$_TPL['bill_postcode']?>">
+		<TD class="odd">
+			<input type="string" name="bill_postcode" value="<?=$_TPL['bill_postcode']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['bill_city']?>
 		</TD>
-		<TD>
-			<input type="string" name="bill_city" value="<?=$_TPL['bill_city']?>">
+		<TD class="even">
+			<input type="string" name="bill_city" value="<?=$_TPL['bill_city']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['bill_state']?>
 		</TD>
-		<TD>
-			<input type="string" name="bill_state" value="<?=$_TPL['bill_state']?>">
+		<TD class="odd">
+			<input type="string" name="bill_state" value="<?=$_TPL['bill_state']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['ship-data']?>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD class="odd">
 			<?=$_LANG['ship_name']?>
 		</TD>
-		<TD>
-			<input type="string" name="ship_name" value="<?=$_TPL['ship_name']?>">
+		<TD class="odd">
+			<input type="string" name="ship_name" value="<?=$_TPL['ship_name']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['ship_street']?>
 		</TD>
-		<TD>
-			<input type="string" name="ship_street" value="<?=$_TPL['ship_street']?>">
+		<TD class="even">
+			<input type="string" name="ship_street" value="<?=$_TPL['ship_street']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['ship_postcode']?>
 		</TD>
-		<TD>
-			<input type="string" name="ship_postcode" value="<?=$_TPL['ship_postcode']?>">
+		<TD class="odd">
+			<input type="string" name="ship_postcode" value="<?=$_TPL['ship_postcode']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['ship_city']?>
 		</TD>
-		<TD>
-			<input type="string" name="ship_city" value="<?=$_TPL['ship_city']?>">
+		<TD class="even">
+			<input type="string" name="ship_city" value="<?=$_TPL['ship_city']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['ship_state']?>
 		</TD>
-		<TD>
-			<input type="string" name="ship_state" value="<?=$_TPL['ship_state']?>">
+		<TD class="odd">
+			<input type="string" name="ship_state" value="<?=$_TPL['ship_state']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['bank_number']?>
 		</TD>
-		<TD>
-			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>">
+		<TD class="even">
+			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['bank_iban']?>
 		</TD>
-		<TD>
-			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>">
+		<TD class="odd">
+			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['bank_name']?>
 		</TD>
-		<TD>
-			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>">
+		<TD class="even">
+			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['bank_account']?>
 		</TD>
-		<TD>
-			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>">
+		<TD class="odd">
+			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string">
 		</TD>
 	</TR>
 	
 	<TR>
-		<TD colspan="2">
-			<input type="submit" value="<?=$_LANG['submit']?>">
-			<input type="reset" value="<?=$_LANG['reset']?>">
+		<TD colspan="2" class="optionbox">
+			<input type="submit" value="<?=$_LANG['submit']?>" class="button">
+			<input type="button" value="<?=$_LANG['reset']?>" class="button" onclick="javascript:history.back();">
 		</TD>
 	</TR>
 </table>

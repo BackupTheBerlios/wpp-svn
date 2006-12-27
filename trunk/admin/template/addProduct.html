@@ -1,71 +1,78 @@
+<h1><?=$_LANG['editProduct']?></h1>
+
 <form action="addProduct.php" method="post">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['ID']?>" name="ID">
-<table>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['name']?>
 		</TD>
-		<TD>
-			<input type="string" name="name" value="<?=$_TPL['name']?>">
+		<TD class="even">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['description']?>
 		</TD>
-		<TD>
+		<TD class="odd">
 			<textarea name="description"><?=$_TPL['description']?></textarea>
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['sort_order']?>
 		</TD>
-		<TD>
-			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>">
+		<TD class="even">
+			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['active']?>
 		</TD>
-		<TD>
+		<TD class="odd">
 			<? if ($_TPL['active']=='1') { ?>
-				<input type="checkbox" name="active" checked=checked>
+				<input type="checkbox" name="active" checked=checked class="checkbox">
 			<? } else { ?>
-				<input type="checkbox" name="active">
+				<input type="checkbox" name="active" class="checkbox">
 			<? } ?>
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['image']?>
 		</TD>
-		<TD>
+		<TD class="even">
 			<input type="file" name="image">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="odd">
 			<?=$_LANG['stock']?>
 		</TD>
-		<TD>
-			<input type="string" name="stock" value="<?=$_TPL['stock']?>">
+		<TD class="odd">
+			<input type="string" name="stock" value="<?=$_TPL['stock']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD>
+		<TD class="even">
 			<?=$_LANG['price']?>
 		</TD>
-		<TD>
-			<input type="string" name="price" value="<?=$_TPL['price']?>">
+		<TD class="even">
+			<input type="string" name="price" value="<?=$_TPL['price']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD colspan="2">
-			<input type="submit" value="<?=$_LANG['submit']?>">
-			<input type="reset" value="<?=$_LANG['reset']?>">
+		<TD colspan="2" class="optionbox">
+			<? if ($_TPL['deleted']!=1) { ?>
+				<input type="submit" value="<?=$_LANG['submit']?>" class="button">
+			<? } else { ?>
+				<input type="submit" value="<?=$_LANG['submit']?>" class="button" disabled="true">
+			<? } ?>
+			<input type="button" value="<?=$_LANG['reset']?>" class="button" onclick="javascript:history.back();">
 		</TD>
 	</TR>
 </table>

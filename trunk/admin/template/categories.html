@@ -30,7 +30,7 @@
 				C
 			</TD>
 			<TD class="<?=$class?>">
-				<? if ($line['active']==1) { ?>
+				<? if ($line['active']=='1') { ?>
 					<a href="categories.php?catID=<?=$line['id']?>" class="menu">
 						<?=$line['name']?>
 					</a>
@@ -44,8 +44,6 @@
 				<a href="addCategory.php?action=edit&catID=<?=$line['id']?>" class="option">
 					<?=$_LANG['edit'] ?>
 				</a>
-			</TD>
-			<TD class="<?=$class?>">
 				<a href="addCategory.php?action=delete&catID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>" class="option">
 					<?=$_LANG['delete'] ?>
 				</a>
@@ -58,16 +56,20 @@
 				P
 			</TD>
 			<TD class="<?=$class?>">
-				<a href="products.php?pID=<?=$line['id']?>" class="menu">
-					<?=$line['name']?>
-				</a>
+				<? if ($line['active']=='1') { ?>
+					<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="menu">
+						<?=$line['name']?>
+					</a>
+				<? } else { ?>
+					<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="menu_inactive">
+						<?=$line['name']?>
+					</a>
+				<? } ?>
 			</TD>
 			<TD class="<?=$class?>">
 				<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="option">
 					<?=$_LANG['edit'] ?>
 				</a>
-			</TD>
-			<TD class="<?=$class?>">
 				<a href="addProduct.php?action=delete&pID=<?=$line['id']?>&parent=<?=$_TPL['catID']?>" class="option">
 					<?=$_LANG['delete'] ?>
 				</a>
@@ -78,9 +80,9 @@
 	<? } ?>
 	
 	<TR>
-		<TD colspan="4">
-			<a href="addCategory.php?catID=<?=$_TPL['catID']?>" class="menu"><?=$_LANG['addCategory'] ?></a>
-			<a href="addProduct.php?catID=<?=$_TPL['catID']?>" class="menu"><?=$_LANG['addProduct'] ?></a>
+		<TD colspan="4" class="optionbox">
+			<a href="addCategory.php?catID=<?=$_TPL['catID']?>" class="menu"><input type="button" class="button" value="<?=$_LANG['addCategory'] ?>"></a>
+			<a href="addProduct.php?catID=<?=$_TPL['catID']?>" class="menu"><input type="button" class="button" value="<?=$_LANG['addProduct'] ?>"></a>
 		</TD>
 	</TR>
 

@@ -20,7 +20,9 @@ $order_query = DB_query("SELECT
 				FROM orders
 				WHERE orders_id = ".$order_id);
 $order = DB_fetchArray($order_query);
-$tpl->assign('order',$order);
+$tpl->assign('orderDate',$order['date']);
+$tpl->assign('shippingDate', $order['shipping_date']);
+$tpl->assign('orderid', $order_id);
 
 //Alle bestellten Artikel finden
 $items_query = DB_query("SELECT
@@ -28,6 +30,7 @@ $items_query = DB_query("SELECT
 				FROM order_items
 				WHERE orders_id = ".$order_id);
 $items = array();
+$price_all = 0;
 while ($item = DB_fetchArray($items_query)) {
 	$product_query = DB_query("SELECT
 					*
@@ -35,12 +38,16 @@ while ($item = DB_fetchArray($items_query)) {
 					WHERE products_id = ".$item['products_id']);
 	$product = DB_fetchArray($product_query);
 	$items[] = array(
+			"id" => $product['products_id'],
 			"name" => $product['name'],
 			"price" => $product['price'],
-			"count" => $item['count']
+			"count" => $item['count'],
+			"price_total" => $product['price']*$item['count']
 			);
+	$price_all += $product['price']*$item['count'];
 }
 $tpl->assign('items',$items);
+$tpl->assign('price_all', $price_all);
 
 //Daten zum Nuter
 $user_query = DB_query("SELECT
