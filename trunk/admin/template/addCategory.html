@@ -11,7 +11,7 @@
 			<?=$_LANG['name']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -19,7 +19,7 @@
 			<?=$_LANG['description']?>
 		</TD>
 		<TD class="odd">
-			<textarea name="description"><?=$_TPL['description']?></textarea>
+			<textarea name="description" onblur="javascript:checkInput(this,'string');"><?=$_TPL['description']?></textarea>
 		</TD>
 	</TR>
 		<TR>
@@ -27,7 +27,7 @@
 			<?=$_LANG['sort_order']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string">
+			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string" onblur="javascript:checkInput(this,'int');">
 		</TD>
 	</TR>
 	<TR>

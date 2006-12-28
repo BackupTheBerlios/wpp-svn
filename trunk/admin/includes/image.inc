@@ -7,6 +7,7 @@ function uploadImage($image) {
 	$LOG =new Log();
 
 	$img_dir = WPP_BASE.WPP_ROOT."/media/product_images";
+	$img_uri = HTTP_HOSTNAME.WPP_ROOT."/media/product_images";
 	$LOG->write('3','Bild: '.$image['tmp_name']);
 	
 	$info = getimagesize($image['tmp_name']);
@@ -19,7 +20,7 @@ function uploadImage($image) {
 	if (move_uploaded_file($image['tmp_name'],$img_dir."/".$image['name'])) {
 		$LOG->write('2','Bild hochgeladen: '.$img_dir."/".$image['name']);
 		//chmod($img_dir."/".$image['name'],755);
-		return $img_dir."/".$image['name'];
+		return $img_uri."/".$image['name'];
 	} else {
 		$LOG->write('2','Fehler beim Hochladen eines Bildes'.$image['error']);
 		return null;

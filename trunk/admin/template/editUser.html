@@ -16,7 +16,7 @@
 			<?=$_LANG['name']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" onblur="javascript:checkInput(this,'int');">
 		</TD>
 	</TR>
 	<TR>
@@ -24,7 +24,7 @@
 			<?=$_LANG['lastname']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string">
+			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -41,7 +41,6 @@
 			<? } else { ?>
 				<input type="checkbox" checked="checked" disabled="true" class="checkbox">
 			<? } ?>
-			<?=$_TPL['role_id']?>
 		</TD>
 	</TR>
 	<TR>
@@ -65,7 +64,7 @@
 			<?=$_LANG['email']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="email" value="<?=$_TPL['email']?>" class="string">
+			<input type="string" name="email" value="<?=$_TPL['email']?>" class="string" onblur="javascript:checkInput(this,'email');">
 		</TD>
 	</TR>
 	<TR>
@@ -78,7 +77,7 @@
 			<?=$_LANG['bill_name']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bill_name" value="<?=$_TPL['bill_name']?>" class="string">
+			<input type="string" name="bill_name" value="<?=$_TPL['bill_name']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -86,7 +85,7 @@
 			<?=$_LANG['bill_street']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bill_street" value="<?=$_TPL['bill_street']?>" class="string">
+			<input type="string" name="bill_street" value="<?=$_TPL['bill_street']?>" class="string" onblur="javascript:checkInput(this,'street');">
 		</TD>
 	</TR>
 	<TR>
@@ -94,7 +93,7 @@
 			<?=$_LANG['bill_postcode']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bill_postcode" value="<?=$_TPL['bill_postcode']?>" class="string">
+			<input type="string" name="bill_postcode" value="<?=$_TPL['bill_postcode']?>" class="string" onblur="javascript:checkInput(this,'plz');">
 		</TD>
 	</TR>
 	<TR>
@@ -102,7 +101,7 @@
 			<?=$_LANG['bill_city']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bill_city" value="<?=$_TPL['bill_city']?>" class="string">
+			<input type="string" name="bill_city" value="<?=$_TPL['bill_city']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -110,7 +109,7 @@
 			<?=$_LANG['bill_state']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bill_state" value="<?=$_TPL['bill_state']?>" class="string">
+			<input type="string" name="bill_state" value="<?=$_TPL['bill_state']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -124,7 +123,7 @@
 			<?=$_LANG['ship_name']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="ship_name" value="<?=$_TPL['ship_name']?>" class="string">
+			<input type="string" name="ship_name" value="<?=$_TPL['ship_name']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -132,7 +131,7 @@
 			<?=$_LANG['ship_street']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="ship_street" value="<?=$_TPL['ship_street']?>" class="string">
+			<input type="string" name="ship_street" value="<?=$_TPL['ship_street']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -140,7 +139,7 @@
 			<?=$_LANG['ship_postcode']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="ship_postcode" value="<?=$_TPL['ship_postcode']?>" class="string">
+			<input type="string" name="ship_postcode" value="<?=$_TPL['ship_postcode']?>" class="string" onblur="javascript:checkInput(this,'plz');">
 		</TD>
 	</TR>
 	<TR>
@@ -148,7 +147,7 @@
 			<?=$_LANG['ship_city']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="ship_city" value="<?=$_TPL['ship_city']?>" class="string">
+			<input type="string" name="ship_city" value="<?=$_TPL['ship_city']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -156,7 +155,7 @@
 			<?=$_LANG['ship_state']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="ship_state" value="<?=$_TPL['ship_state']?>" class="string">
+			<input type="string" name="ship_state" value="<?=$_TPL['ship_state']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -164,7 +163,7 @@
 			<?=$_LANG['bank_number']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string">
+			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string" onblur="javascript:checkInput(this,'banknum');">
 		</TD>
 	</TR>
 	<TR>
@@ -172,7 +171,7 @@
 			<?=$_LANG['bank_iban']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string">
+			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string" onblur="javascript:checkInput(this,'blz');">
 		</TD>
 	</TR>
 	<TR>
@@ -180,7 +179,7 @@
 			<?=$_LANG['bank_name']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string">
+			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<TR>
@@ -188,7 +187,7 @@
 			<?=$_LANG['bank_account']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string">
+			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string" onblur="javascript:checkInput(this,'string');">
 		</TD>
 	</TR>
 	<? if ($_TPL['error']!='') { ?>

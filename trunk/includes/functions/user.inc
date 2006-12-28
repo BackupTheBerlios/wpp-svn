@@ -2,7 +2,7 @@
 
 function editUser() {
 
-	checkInput($_POST['name'],'string');
+	if (!checkInput($_POST['name'],'string')) { redirectURI('/..'.$_SERVER['PHP_SELF'],$_SERVER['']);}
 	checkInput($_POST['lastname'],'string');
 	checkInput($_POST['email'],'email');
 	checkInput($_POST['role_id'],'int');

@@ -14,11 +14,9 @@
 		<TD class="odd">
 			<?=$_TPL['orderDate']?>
 		</TD>
-		<TD class="odd">
+		<TD class="odd" id="sd">
 			<? if ($_TPL['shippingDate']=='' && $_TPL['can_change']==1) { ?>
-				<form action="editOrder.php?id=<?=$_TPL['orderid']?>" method="post">
-					<input type="submit" value="<?=$_LANG['ordershipped']?>" name="ordershipped">
-				</form>
+				<input type="button" value="<?=$_LANG['ordershipped']?>" onclick="javascript:setShippingDate('<?=$_TPL['orderid']?>');" id="sdb">
 			<? } else { ?>
 				<?=$_TPL['shippingDate']?>
 			<? } ?>

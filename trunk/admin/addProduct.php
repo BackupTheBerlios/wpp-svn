@@ -24,10 +24,10 @@ if (isset($_POST['action'])) {
 		if (!checkInput($_POST['stock'], 'int')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=stock_error');}
 		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=price_error');}
 		
-		$image1 = $_FILE['image_small'];
+		$image1 = $_FILES['image_small'];
 		$image_uri_1 = uploadImage($image1);
 		
-		$image2 = $_FILE['image_big'];
+		$image2 = $_FILES['image_big'];
 		$image_uri_2 = uploadImage($image2);
 		
 		$createtime = formatDate();
@@ -73,10 +73,10 @@ if (isset($_POST['action'])) {
 		
 		$LOG->write('3',sizeof($_FILE));
 		
-		$image1 = $_FILE['image_small'];
+		$image1 = $_FILES['image_small'];
 		$image_uri_1 = uploadImage($image1);
 		
-		$image2 = $_FILE['image_big'];
+		$image2 = $_FILES['image_big'];
 		$image_uri_2 = uploadImage($image2);
 		
 		$createtime = formatDate();
