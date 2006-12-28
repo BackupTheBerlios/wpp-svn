@@ -24,10 +24,13 @@ if (isset($_POST['action'])) {
 		if (!checkInput($_POST['stock'], 'int')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=stock_error');}
 		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=add&catID='.$_POST['ID'].'&error=price_error');}
 		
-		$image = $_FILE['image'];
-		$image_uri = uploadImage($image);
+		$image1 = $_FILE['image_small'];
+		$image_uri_1 = uploadImage($image1);
 		
-		$createtime = date("YmdHis");
+		$image2 = $_FILE['image_big'];
+		$image_uri_2 = uploadImage($image2);
+		
+		$createtime = formatDate();
 		
 		if ($_POST['active']=='on') {$active=1;}
 		else {$active=0;}
@@ -41,8 +44,8 @@ if (isset($_POST['action'])) {
 					0,
 					".$active.",
 					'".$_POST['description']."',
-					'".$image_uri."',
-					'',
+					'".$image_uri_1."',
+					'".$image_uri_2."',
 					'".$_POST['stock']."',
 					'".$_POST['price']."',
 					'".$createtime."',
@@ -68,10 +71,15 @@ if (isset($_POST['action'])) {
 		if (!checkInput($_POST['stock'], 'int')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=stock_error');}
 		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=price_error');}
 		
-		$image = $_FILE['image'];
-		$image_uri = uploadImage($image);
+		$LOG->write('3',sizeof($_FILE));
 		
-		$createtime = date("YmdHis");
+		$image1 = $_FILE['image_small'];
+		$image_uri_1 = uploadImage($image1);
+		
+		$image2 = $_FILE['image_big'];
+		$image_uri_2 = uploadImage($image2);
+		
+		$createtime = formatDate();
 		
 		//Auflösen der Kategorie-ID
 		$cat = $cat['categories_id'];
@@ -87,8 +95,8 @@ if (isset($_POST['action'])) {
 					0,
 					".$active.",
 					'".$_POST['description']."',
-					'".$image_uri."',
-					'',
+					'".$image_uri_1."',
+					'".$image_uri_2."',
 					'".$_POST['stock']."',
 					'".$_POST['price']."',
 					'".$createtime."',
@@ -123,6 +131,8 @@ if (isset($_POST['action'])) {
 	$tpl->assign('description',$product['description']);
 	$tpl->assign('sort_order',$product['sort_order']);
 	$tpl->assign('active',$product['active']);
+	$tpl->assign('image_small',$product['image_small']);
+	$tpl->assign('image_big',$product['image_big']);
 	$tpl->assign('stock',$product['stock']);
 	$tpl->assign('price',$product['price']);
 	$tpl->assign('deleted',$product['deleted']);

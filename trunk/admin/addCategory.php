@@ -101,7 +101,6 @@ if (isset($_POST['action'])) {
 	$parent = $_GET['parent'];
 	redirectURI('/admin/categories.php','catID='.$parent);
 
-
 } else {
 
 	$LOG->write('3', 'admin/addCategory.php: get-action=none');

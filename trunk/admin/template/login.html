@@ -19,7 +19,12 @@
 			<?=$_LANG['password']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="password" class="string"/>
+			<input type="password" name="password" class="string"/>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan="2" class="errorbox">
+			<?=$_LANG[$_TPL['error']]?>
 		</TD>
 	</TR>
 	<TR>
@@ -27,10 +32,6 @@
 			<input type="submit" name="login" class="button" value="<?=$_LANG['login']?>" />
 		</TD>
 	</TR>
-	<TR>
-		<TD colspan="2">
-			<?=$_LANG[$_TPL['error']]?>
-		</TD>
-	</TR>
+	
 </TABLE>
 </form>

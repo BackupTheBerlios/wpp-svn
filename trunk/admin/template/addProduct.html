@@ -1,6 +1,6 @@
 <h1><?=$_LANG['editProduct']?></h1>
 
-<form action="addProduct.php" method="post">
+<form action="addProduct.php" method="post" enctype="multipart/form-data">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['ID']?>" name="ID">
 
@@ -43,25 +43,43 @@
 	</TR>
 	<TR>
 		<TD class="even">
-			<?=$_LANG['image']?>
+			<?=$_LANG['image_small']?>
 		</TD>
 		<TD class="even">
-			<input type="file" name="image">
+			<input type="file" name="image_small">
+			<? if ($_TPL['image_small']!='') { ?>
+				<a href="<?=$_TPL['image_small']?>" class="menu">
+					<?$_LANG['view']?>
+				</a>
+			<? } ?>
 		</TD>
 	</TR>
 	<TR>
 		<TD class="odd">
-			<?=$_LANG['stock']?>
+			<?=$_LANG['image_big']?>
 		</TD>
 		<TD class="odd">
+			<input type="file" name="image_big">
+			<? if ($_TPL['image_big']!='') { ?>
+				<a href="<?=$_TPL['image_big']?>" class="menu">
+					<?$_LANG['view']?>
+				</a>
+			<? } ?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['stock']?>
+		</TD>
+		<TD class="even">
 			<input type="string" name="stock" value="<?=$_TPL['stock']?>" class="string">
 		</TD>
 	</TR>
 	<TR>
-		<TD class="even">
+		<TD class="odd">
 			<?=$_LANG['price']?>
 		</TD>
-		<TD class="even">
+		<TD class="odd">
 			<input type="string" name="price" value="<?=$_TPL['price']?>" class="string">
 		</TD>
 	</TR>

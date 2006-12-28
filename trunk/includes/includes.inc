@@ -12,7 +12,7 @@ include('functions/session.inc');
 include('functions/permissions.inc');
 include('functions/user.inc');
 include('functions/valueCheck.inc');
-
+include('functions/format.inc');
 
 
 

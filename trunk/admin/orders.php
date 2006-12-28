@@ -4,8 +4,8 @@ include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
 $user = restoreUser();
-if ($user ==null || !$user->checkPermissions(0,0,0,1,0)) {
-	redirectURI("/admin/login.php","camefrom=users.php");
+if ($user == null || !$user->checkPermissions(0,0,0,1,0)) {
+	redirectURI("/admin/login.php","camefrom=orders.php");
 }
 
 $LOG = new Log();

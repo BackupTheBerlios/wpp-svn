@@ -5,7 +5,7 @@ include('../includes/startApplication.php');
 
 $user = restoreUser();
 if ($user ==null || !$user->checkPermissions(0,0,0,1,0)) {
-	redirectURI("/admin/login.php","camefrom=users.php");
+	redirectURI("/admin/login.php","camefrom=editOrder.php");
 }
 
 $LOG = new Log();
@@ -13,6 +13,16 @@ $tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang[
 
 
 $order_id = $_GET['id'];
+
+if (isset($_POST['ordershipped'])) {
+	
+	$shipping_date = formatDate();
+	DB_query("UPDATE orders SET
+			shipping_date = '".$shipping_date."'
+			WHERE orders_id = ".$order_id);
+
+}
+
 
 //Alle Details zu der Bestellung finden
 $order_query = DB_query("SELECT
@@ -40,14 +50,14 @@ while ($item = DB_fetchArray($items_query)) {
 	$items[] = array(
 			"id" => $product['products_id'],
 			"name" => $product['name'],
-			"price" => $product['price'],
+			"price" => formatPrice($product['price']),
 			"count" => $item['count'],
-			"price_total" => $product['price']*$item['count']
+			"price_total" => formatPrice($product['price']*$item['count'])
 			);
 	$price_all += $product['price']*$item['count'];
 }
 $tpl->assign('items',$items);
-$tpl->assign('price_all', $price_all);
+$tpl->assign('price_all', formatPrice($price_all));
 
 //Daten zum Nuter
 $user_query = DB_query("SELECT

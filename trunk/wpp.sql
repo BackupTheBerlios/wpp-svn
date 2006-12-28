@@ -69,8 +69,8 @@ CREATE TABLE `products` (
   `deleted` tinyint(1) NOT NULL,
   `active` tinyint(1) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `image_big` char(255) NOT NULL,
   `image_small` char(255) NOT NULL,
+  `image_big` char(255) NOT NULL,
   `stock` int(10) NOT NULL,
   `price` decimal(15,4) NOT NULL,
   `create_time` datetime NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE `orders` (
   `orders_id` int(11) NOT NULL auto_increment,
   `date` datetime NOT NULL,
   `users_id` int(11) NOT NULL,
-  `shipping_date` datetime NOT NULL,
+  `shipping_date` datetime,
   `shipped` tinyint(1) NOT NULL,
   PRIMARY KEY  (`orders_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -153,5 +153,9 @@ INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,1,'','',
 INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
 INSERT INTO users VALUES(0,'peter','mller','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
 
-INSERT INTO orders VALUES(0,20061201,2,20061203,1);
+INSERT INTO orders VALUES(0,20061201123456,2,20061203123456,1);
 INSERT INTO order_items VALUES(1,2,5);
+INSERT INTO orders VALUES(0,20061227,2,NULL,2);
+INSERT INTO order_items VALUES(2,2,3);
+INSERT INTO order_items VALUES(2,4,1);
+INSERT INTO order_items VALUES(2,6,2);

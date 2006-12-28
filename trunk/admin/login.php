@@ -23,8 +23,10 @@ if (isset($_POST['action'])) {
 			redirectURI('/admin/'.$forward);
 		} elseif ($login && $forward=='') {
 			redirectURI('/admin/index.php');
-		} else {
+		} elseif (!$login && $forward!='') {
 			redirectURI('/admin/login.php','error=failed&camefrom='.$forward);
+		} else {
+			redirectURI('/admin/login.php','error=failed');
 		}
 	}
 

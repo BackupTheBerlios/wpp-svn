@@ -38,13 +38,15 @@ $lang = array(
 		"sort_order" => "Sortierungsreihenfolge",
 		"submit" => "Ändern",
 		"reset" => "Abbrechen",
-		"image" => "Bild",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
 		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
 		"desc_error" => "Bitte geben Sie eine gültige Beschreibung ein!",
 		"price_error" => "Bitte geben Sie einen gültigen Preis ein!",
-		"stock_error" => "Bitte geben Sie eine gültige Zahl ein!"
+		"stock_error" => "Bitte geben Sie eine gültige Zahl ein!",
+		"view" => "Ansehen"
 	),
 	"admin_login" => array(
 		"admin_login" => "Administratoren-Login",
@@ -99,8 +101,8 @@ $lang = array(
 		"product" => "Produkt",
 		"count" => "Anzahl",
 		"price" => "Einzelpreis",
-		"price-total" => "Gesamtpreis"
-		
+		"price-total" => "Gesamtpreis",
+		"ordershipped" => "Bestellung versandt"
 	)
 );
 
