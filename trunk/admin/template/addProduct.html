@@ -1,6 +1,6 @@
 <h1><?=$_LANG['editProduct']?></h1>
 
-<form action="addProduct.php" method="post" enctype="multipart/form-data">
+<form action="addProduct.php" method="post" enctype="multipart/form-data" onsubmit="return checkInputs();">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['ID']?>" name="ID">
 
@@ -10,7 +10,7 @@
 			<?=$_LANG['name']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" onblur="javascript:checkInput(this,'string');">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" id="name">
 		</TD>
 	</TR>
 	<TR>
@@ -18,7 +18,7 @@
 			<?=$_LANG['description']?>
 		</TD>
 		<TD class="odd">
-			<textarea name="description" onblur="javascript:checkInput(this,'string');"><?=$_TPL['description']?></textarea>
+			<textarea name="description" id="description"><?=$_TPL['description']?></textarea>
 		</TD>
 	</TR>
 	<TR>
@@ -26,7 +26,7 @@
 			<?=$_LANG['sort_order']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string" onblur="javascript:checkInput(this,'int');">
+			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string" id="sort_order">
 		</TD>
 	</TR>
 	<TR>
@@ -72,7 +72,7 @@
 			<?=$_LANG['stock']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="stock" value="<?=$_TPL['stock']?>" class="string" onblur="javascript:checkInput(this,'int');">
+			<input type="string" name="stock" value="<?=$_TPL['stock']?>" class="string" id="stock">
 		</TD>
 	</TR>
 	<TR>
@@ -80,16 +80,13 @@
 			<?=$_LANG['price']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="price" value="<?=$_TPL['price']?>" class="string" onblur="javascript:checkInput(this,'price');">
+			<input type="string" name="price" value="<?=$_TPL['price']?>" class="string" id="price">
 		</TD>
 	</TR>
-	<? if ($_TPL['error']!='') { ?>
 	<TR>
-		<TD class="errorbox" colspan="2">
-			<?=$_LANG[$_TPL['error']]?>
+		<TD class="errorbox" colspan="2" id="errorbox">
 		</TD>
 	</TR>
-	<? } ?>
 	<TR>
 		<TD colspan="2" class="optionbox">
 			<? if ($_TPL['deleted']!=1) { ?>
@@ -102,3 +99,12 @@
 	</TR>
 </table>
 </form>
+
+<script language="JavaScript">
+	fields = new Array(new Array('name','string'),
+				new Array('description','string'),
+				new Array('sort_order','int'),
+				new Array('price','price'),
+				new Array('stock','int'));
+
+</script>

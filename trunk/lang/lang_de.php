@@ -103,6 +103,13 @@ $lang = array(
 		"price" => "Einzelpreis",
 		"price-total" => "Gesamtpreis",
 		"ordershipped" => "Bestellung versandt"
+	),
+	"admin_errmsgs" => array(
+		"name" => "Bitte geben Sie einen gültigen Namen ein!",
+		"description" => "Bitte geben Sie eine gültige Beschreibung ein!",
+		"price" => "Bitte geben Sie einen gültigen Preis ein!",
+		"stock" => "Bitte geben Sie eine gültige Anzahl ein!",
+		"sort_order" => "Bitte geben Sie eine gültige Sortierzahl ein!"
 	)
 );
 

@@ -1,6 +1,6 @@
 <h1><?=$_LANG['editCategorie']?></h1>
-
-<form action="addCategory.php" method="post">
+<!--addCategory.php-->
+<form action="addCategory.php" method="post" onsubmit="return checkInputs();">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['catID']?>" name="catID">
 <input type="hidden" value="<?=$_TPL['parent']?>" name="parent">
@@ -11,7 +11,7 @@
 			<?=$_LANG['name']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" onblur="javascript:checkInput(this,'string');">
+			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" id="name">
 		</TD>
 	</TR>
 	<TR>
@@ -19,7 +19,7 @@
 			<?=$_LANG['description']?>
 		</TD>
 		<TD class="odd">
-			<textarea name="description" onblur="javascript:checkInput(this,'string');"><?=$_TPL['description']?></textarea>
+			<textarea name="description" id="description"><?=$_TPL['description']?></textarea>
 		</TD>
 	</TR>
 		<TR>
@@ -27,7 +27,7 @@
 			<?=$_LANG['sort_order']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string" onblur="javascript:checkInput(this,'int');">
+			<input type="string" name="sort_order" value="<?=$_TPL['sort_order']?>" class="string" id="sort_order">
 		</TD>
 	</TR>
 	<TR>
@@ -42,13 +42,10 @@
 			<? } ?>
 		</TD>
 	</TR>
-	<? if ($_TPL['error']!='') { ?>
 	<TR>
-		<TD class="errorbox" colspan="2">
-			<?=$_LANG[$_TPL['error']]?>
+		<TD class="errorbox" colspan="2" id="errorbox">
 		</TD>
 	</TR>
-	<? } ?>
 	<TR>
 		<TD colspan="2" class="optionbox">
 			<input type="submit" value="<?=$_LANG['submit']?>" class="button">
@@ -57,3 +54,10 @@
 	</TR>
 </table>
 </form>
+
+<script language="JavaScript">
+	fields = new Array(new Array('name','string'),
+				new Array('description','string'),
+				new Array('sort_order','int'));
+
+</script>
