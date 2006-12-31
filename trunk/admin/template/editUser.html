@@ -24,7 +24,7 @@
 			<?=$_LANG['lastname']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string" id="name">
+			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string" id="lastname">
 		</TD>
 	</TR>
 	<TR>
@@ -163,7 +163,7 @@
 			<?=$_LANG['bank_number']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string" onblur="javascript:checkInput(this,'banknum');">
+			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string" id="bank_number">
 		</TD>
 	</TR>
 	<TR>
@@ -171,7 +171,7 @@
 			<?=$_LANG['bank_iban']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string" onblur="javascript:checkInput(this,'blz');">
+			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string" id="bank_iban">
 		</TD>
 	</TR>
 	<TR>
@@ -179,7 +179,7 @@
 			<?=$_LANG['bank_name']?>
 		</TD>
 		<TD class="even">
-			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string" onblur="javascript:checkInput(this,'string');">
+			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string" id="bank_name">
 		</TD>
 	</TR>
 	<TR>
@@ -187,16 +187,13 @@
 			<?=$_LANG['bank_account']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string" onblur="javascript:checkInput(this,'string');">
+			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string" id="bank_account">
 		</TD>
 	</TR>
-	<? if ($_TPL['error']!='') { ?>
 	<TR>
 		<TD class="errorbox" colspan="2">
-			<?=$_LANG[$_TPL['error']]?>
 		</TD>
 	</TR>
-	<? } ?>
 	<TR>
 		<TD colspan="2" class="optionbox">
 			<input type="submit" value="<?=$_LANG['submit']?>" class="button">
@@ -205,3 +202,23 @@
 	</TR>
 </table>
 </form>
+<script language="JavaScript">
+	fields = new Array(new Array('name','string'),
+				new Array('lastname','string'),
+				new Array('email','email'),
+				new Array('bill_name','string'),
+				new Array('bill_street','string'),
+				new Array('bill_postcode','int'),
+				new Array('bill_city','string'),
+				new Array('bill_state','string'),
+				new Array('ship_name','string'),
+				new Array('ship_street','string'),
+				new Array('ship_postcode','int'),
+				new Array('ship_city','string'),
+				new Array('ship_state','string'),
+				new Array('bank_name','string'),
+				new Array('bank_account','string'),
+				new Array('bank_number','banknum'),
+				new Array('bank_iban','blz'));
+
+</script>
