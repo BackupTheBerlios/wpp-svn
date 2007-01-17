@@ -1,13 +1,29 @@
 
 /* common */
 td.even {
-	background-color: #D5DFFF;
+	background-color: #e6f4ff;
 	vertical-align: top;
 	font-size: 12px;
 	padding-top: 3px;
 }
 
 td.odd {
+	background-color: #ddeeff;
+	vertical-align: top;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+/* Kategorien: */
+td.cat_even {
+	background-color: #99bbdd;
+	vertical-align: top;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+td.cat_odd {
+	background-color: #89afd5;
 	vertical-align: top;
 	font-size: 12px;
 	padding-top: 3px;
@@ -84,6 +100,7 @@ a.menu_inactive:hover {
 
 td.menu_cell {
 	width: 200px;
+	height: 100%;
 	border-right: 1px solid #b6beda;
 	vertical-align: top;
 }
@@ -91,6 +108,16 @@ td.menu_cell {
 table.menu_table {
 	width: 100%;
 }
+
+td.title_cell {
+	heigth: 120px;
+	vertical-align: top;
+}
+
+table.title_table {
+	width: 100%;
+}
+
 
 td.optionbox {
 	padding-top: 10px;
@@ -194,4 +221,15 @@ td.price-all {
 	text-align: left;
 	font-style: italic;
 	font-weight: bold;
+}
+
+span.pre_comma {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+span.post_comma {
+	font-size: 10px;
+	text-decoration:underline;
+	vertical-align:super;
 }

@@ -1,5 +1,6 @@
 <?php
 
+
 include('config/configuration.conf');
 
 include('classes/Log.class');
@@ -13,9 +14,6 @@ include('functions/permissions.inc');
 include('functions/user.inc');
 include('functions/valueCheck.inc');
 include('functions/format.inc');
-
-
-
 
 
 ?>

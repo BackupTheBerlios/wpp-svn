@@ -10,7 +10,7 @@ class User {
 	var $read_orders = 0;
 	var $write_orders = 0;
 	
-	var $role = null;
+	var $role = null;	// speichert noch einmal die Rollen-ID
 	
 	var $name = null;
 	var $lastname = null;
@@ -35,6 +35,8 @@ class User {
 			
 			$LOG->write('3','Nutzername :'.$this->name);
 			
+			$this->role = $userdata['role_id']; // zusätzlich auch die Rollen-ID speichern
+
 			//Get permissions
 			$perm_query = DB_query("SELECT 
 						*
@@ -73,6 +75,8 @@ class User {
 			
 			$LOG->write('2','Benutzer angemeldet :'.$this->name);	
 			
+			$this->role = $userdata['role_id']; // zusätzlich auch die Rollen-ID speichern
+
 			//Get permissions
 			$perm_query = DB_query("SELECT 
 						*
@@ -85,9 +89,9 @@ class User {
 			
 			$_SESSION['user']=$this->id;
 			$LOG->write('2','Benutzer angemeldet: '.$this->name);
-			
+
 			return true;
-			
+
 		} else {
 			$LOG->write('2','Benutzer konnte nicht angemeldet werden: '.$sign);
 			return false;
@@ -101,18 +105,21 @@ class User {
 		session_destroy();
 	}
 	
+	// wahrscheinlich nicht korrekt:
 	function checkPermissions($read_content=0,$write_content=0,$purchase=0,$read_orders=0,$write_orders=0) {
-
-	if ($this->read_content>=$read &&
-		 $this->write_content>=$write && 
-		 $this->purchase>=$purchase &&
-		 $this->read_orders>=$read_orders &&
-		 $this->write_orders>=$write_orders) {
-		return true;
-	} else {
-		return false;
+		if ($this->read_content>=$read_content &&
+			$this->write_content>=$write_content && 
+			$this->purchase>=$purchase &&
+			$this->read_orders>=$read_orders &&
+			$this->write_orders>=$write_orders) {
+			return true;
+		} else {
+			return false;
+		}
 	}
-	
+
+	function getRole(){
+		return $this->role;
 	}
 }
 

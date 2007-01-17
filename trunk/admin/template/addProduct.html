@@ -47,11 +47,9 @@
 		</TD>
 		<TD class="even">
 			<input type="file" name="image_small">
-			<? if ($_TPL['image_small']!='') { ?>
-				<a href="<?=$_TPL['image_small']?>" class="menu">
-					<?=$_LANG['view']?>
-				</a>
-			<? } ?>
+			<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
+				<img src="<?=$_TPL['image_small']?>">
+			<? } ?> TODO: LEEREN-Button
 		</TD>
 	</TR>
 	<TR>
@@ -60,11 +58,9 @@
 		</TD>
 		<TD class="odd">
 			<input type="file" name="image_big">
-			<? if ($_TPL['image_big']!='') { ?>
-				<a href="<?=$_TPL['image_big']?>" class="menu">
-					<?=$_LANG['view']?>
-				</a>
-			<? } ?>
+			<? if ($_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
+				<img src="<?=$_TPL['image_big']?>">
+			<? } ?> TODO: LEEREN-Button
 		</TD>
 	</TR>
 	<TR>

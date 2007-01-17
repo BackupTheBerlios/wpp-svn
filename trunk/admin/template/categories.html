@@ -22,12 +22,13 @@
 			</TD>
 		</TR>
 	<? } ?>
-	<? $i=0;foreach ($_TPL['menu'] as $line) { ?>
-	<? $i++;if ($i%2==0) {$class="even";} else {$class="odd";} ?>
-	<? if ($line['type']==='category') { ?>
+	<?	$i=0;foreach ($_TPL['menu'] as $line) { ?>
+	<?	$i++;
+	if ($line['type']==='category') { 
+		if ($i%2==0) {$class="cat_even";} else {$class="cat_odd";}?>
 		<TR>
 			<TD class="<?=$class?>">
-				C
+				<?=$_LANG['category'] ?>
 			</TD>
 			<TD class="<?=$class?>">
 				<? if ($line['active']=='1') { ?>
@@ -50,10 +51,11 @@
 			</TD>
 		
 		</TR>
-	<? } elseif ($line['type']==='product')  { ?>
+	<? } elseif ($line['type']==='product')  { 
+		if ($i%2==0) {$class="even";} else {$class="odd";}?>		
 		<TR>
 			<TD class="<?=$class?>">
-				P
+				<?=$_LANG['product'] ?>
 			</TD>
 			<TD class="<?=$class?>">
 				<? if ($line['active']=='1') { ?>

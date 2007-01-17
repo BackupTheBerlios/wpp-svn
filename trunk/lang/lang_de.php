@@ -9,12 +9,13 @@ $lang = array(
 	),
 	"admin_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		"addCategory" => "Kategorie hinzufügen",
-		"addProduct" => "Produkt hinzufügen",
+		"addCategory" => "Kategorie hinzuf&uuml;gen",
+		"addProduct" => "Produkt hinzuf&uuml;gen",
 		"edit" => "Bearbeiten",
-		"delete" => "Löschen",
+		"delete" => "L&ouml;schen",
 		"parentDirectory" => "..",
 		"category" => "Kategorie",
+		"product" => "Produkt",
 		"type" => "Typ",
 		"name" => "Beschreibung",
 		"options" => "Optionen"		
@@ -25,27 +26,27 @@ $lang = array(
 		"description" => "Beschreibung",
 		"active" => "Aktiviert?",
 		"sort_order" => "Sortierungsreihenfolge",
-		"submit" => "Ändern",
+		"submit" => "&Auml;ndern",
 		"reset" => "Abbrechen",
-		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
-		"desc_error" => "Bitte geben Sie eine gültige Beschreibung ein!",
-		"sort_error" => "Bitte geben Sie eine gültige Zahl ein!"
+		"name_error" => "Bitte geben Sie einen g&uuml;ltigen Namen ein!",
+		"desc_error" => "Bitte geben Sie eine g&uuml;ltige Beschreibung ein!",
+		"sort_error" => "Bitte geben Sie eine g&uuml;ltige Zahl ein!"
 	),
 	"admin_addProduct" => array(
 		"name" => "Name",
 		"description" => "Beschreibung",
 		"active" => "Aktiviert?",
 		"sort_order" => "Sortierungsreihenfolge",
-		"submit" => "Ändern",
+		"submit" => "&Auml;ndern",
 		"reset" => "Abbrechen",
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
-		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
-		"desc_error" => "Bitte geben Sie eine gültige Beschreibung ein!",
-		"price_error" => "Bitte geben Sie einen gültigen Preis ein!",
-		"stock_error" => "Bitte geben Sie eine gültige Zahl ein!",
+		"name_error" => "Bitte geben Sie einen g&uuml;ltigen Namen ein!",
+		"desc_error" => "Bitte geben Sie eine g&uuml;ltige Beschreibung ein!",
+		"price_error" => "Bitte geben Sie einen g&uuml;ltigen Preis ein!",
+		"stock_error" => "Bitte geben Sie eine g&uuml;ltige Zahl ein!",
 		"view" => "Ansehen"
 	),
 	"admin_login" => array(
@@ -57,7 +58,7 @@ $lang = array(
 	),
 	"admin_users" =>array(
 		"edit" => "Bearbeiten",
-		"delete" => "Nutzer löschen",
+		"delete" => "Nutzer l&ouml;schen",
 		"name" => "Name",
 		"lastname" => "Nachname",
 		"email" => "eMail-Adresse",
@@ -78,7 +79,7 @@ $lang = array(
 		"bank_iban" => "BLZ",
 		"bank_number" => "Kontonummer",
 		"bank_account" => "Kontoinhaber",
-		"submit" => "Änderungen übernehmen",
+		"submit" => "&Auml;nderungen &uuml;bernehmen",
 		"reset" => "Abbrechen",
 		"admin" => "Administrator",
 		"customer" => "Kunde",
@@ -105,12 +106,115 @@ $lang = array(
 		"ordershipped" => "Bestellung versandt"
 	),
 	"admin_errmsgs" => array(
-		"name" => "Bitte geben Sie einen gültigen Namen ein!",
-		"description" => "Bitte geben Sie eine gültige Beschreibung ein!",
-		"price" => "Bitte geben Sie einen gültigen Preis ein!",
-		"stock" => "Bitte geben Sie eine gültige Anzahl ein!",
-		"sort_order" => "Bitte geben Sie eine gültige Sortierzahl ein!"
+		"name" => "Bitte geben Sie einen g&uuml;ltigen Namen ein!",
+		"description" => "Bitte geben Sie eine g&uuml;ltige Beschreibung ein!",
+		"price" => "Bitte geben Sie einen g&uuml;ltigen Preis ein!",
+		"stock" => "Bitte geben Sie eine g&uuml;ltige Anzahl ein!",
+		"sort_order" => "Bitte geben Sie eine g&uuml;ltige Sortierzahl ein!"
+	),
+	"admin_title" => array(
+		"title_img" => "images/title.jpg",
+		"hello" => "Hallo, ",
+		"you_are_administrator" => "Sie sind Administrator"
+	),
+
+/*___________________________________________________________________
+
+	VIEWER:
+  ___________________________________________________________________
+*/
+	"viewer_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		//"addCategory" => "Kategorie hinzuf&uuml;gen",
+		//"addProduct" => "Produkt hinzuf&uuml;gen",
+		//"edit" => "Bearbeiten",
+		//"delete" => "L&ouml;schen",
+		"parentDirectory" => "..",
+		"category" => "Kategorie",
+		//"type" => "Typ",
+		"name" => "Beschreibung",
+		//"options" => "Optionen"		
+	),
+	"viewer_viewProduct" => array(
+		"name" => "Name",
+		"description" => "Beschreibung",
+		//"active" => "Aktiviert?",
+		//"sort_order" => "Sortierungsreihenfolge",
+		//"submit" => "&Auml;ndern",
+		//"reset" => "Abbrechen",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
+		"stock" => "Lagerbestand",
+		"price" => "Preis",
+		//"view" => "Ansehen"
+	),
+	"viewer_menu" => array(
+		"category" => "Kategorien",
+		"login" => "Anmelden"
+	),
+	"viewer_title" => array(
+		"title_img" => "images/title.jpg",
+		"not_logged_in" => "Sie sind nicht angemeldet.",
+		"registration" => "Registrieren Sie sich."
+	),
+/*___________________________________________________________________
+
+	USER:
+  ___________________________________________________________________
+*/
+	"user_menu" => array(
+		"category" => "Kategorien",
+		"users" => "Benutzer",
+		"orders" => "Bestellungen",
+		"logout" => "Abmelden"
+	),
+	"user_title" => array(
+		"title_img" => "images/title.jpg"		,
+		"hello" => "Hallo, "
+	),
+	"user_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		"addCategory" => "Kategorie hinzuf&uuml;gen",
+		"addProduct" => "Produkt hinzuf&uuml;gen",
+		"edit" => "Bearbeiten",
+		"delete" => "L&ouml;schen",
+		"parentDirectory" => "..",
+		"category" => "Kategorie",
+		"type" => "Typ",
+		"name" => "Beschreibung",
+		"options" => "Optionen"		
+	),
+	"user_login" => array(
+		"user_login" => "Login",
+		"name" => "Ihr Name",
+		"password" => "Ihr Passwort",
+		"failed" => "Anmeldung fehlgeschlagen",
+		"login" => "Anmelden"
+	),
+	"user_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		//"addCategory" => "Kategorie hinzuf&uuml;gen",
+		//"addProduct" => "Produkt hinzuf&uuml;gen",
+		//"edit" => "Bearbeiten",
+		//"delete" => "L&ouml;schen",
+		"parentDirectory" => "..",
+		"category" => "Kategorie",
+		//"type" => "Typ",
+		"name" => "Beschreibung",
+		//"options" => "Optionen"		
+	),
+	"user_viewProduct" => array(
+		"name" => "Name",
+		"description" => "Beschreibung",
+		//"active" => "Aktiviert?",
+		//"sort_order" => "Sortierungsreihenfolge",
+		//"submit" => "&Auml;ndern",
+		//"reset" => "Abbrechen",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
+		"stock" => "Lagerbestand",
+		"price" => "Preis",
+		//"view" => "Ansehen"
 	)
 );
-
 ?>

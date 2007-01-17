@@ -29,7 +29,7 @@ if (isset($_POST['action'])) {
 		
 		$image2 = $_FILES['image_big'];
 		$image_uri_2 = uploadImage($image2);
-		
+
 		$createtime = formatDate();
 		
 		if ($_POST['active']=='on') {$active=1;}
@@ -72,12 +72,24 @@ if (isset($_POST['action'])) {
 		if (!checkInput($_POST['price'], 'price')) {redirectURI('/admin/addProduct.php','action=edit&pID='.$_POST['ID'].'&error=price_error');}
 		
 		$LOG->write('3',sizeof($_FILE));
-		
 		$image1 = $_FILES['image_small'];
-		$image_uri_1 = uploadImage($image1);
-		
+
+		// Wenn Image-Auswahl leer bleibt, so wird altes Bild in DB behalten und nicht geleert.
+		// Sonst keine Änderungen im Produkt ohne Neuauswahl des Bildes möglich.
+		if($image1['name']!=""){
+			$image_uri_1 = uploadImage($image1);
+		}
+		else{
+			$image_uri_1 = $cat['image_small'];
+		}
+
 		$image2 = $_FILES['image_big'];
-		$image_uri_2 = uploadImage($image2);
+		if($image2['name']!=""){
+			$image_uri_2 = uploadImage($image2);
+		}	
+		else{
+			$image_uri_2 = $cat['image_big'];
+		}
 		
 		$createtime = formatDate();
 		
@@ -88,6 +100,7 @@ if (isset($_POST['action'])) {
 		else {$active=0;}
 		if ($_POST['sort_order']=='') {$sortorder=0;}
 		else {$sortorder=$_POST['sort_order'];}
+
 		DB_query("INSERT INTO products VALUES (
 					0,
 					'".$_POST['name']."',
@@ -109,7 +122,7 @@ if (isset($_POST['action'])) {
 		$LOG->write('2', 'Produkt '.$_POST['ID'].' geändert, neue ID='.mysql_insert_id());
 	
 		$parent = $cat;
-		redirectURI('/admin/categories.php','catID='.$parent);		
+//		redirectURI('/admin/categories.php','catID='.$parent);		
 	}
 	
 } elseif ($_GET['action']=='edit') {

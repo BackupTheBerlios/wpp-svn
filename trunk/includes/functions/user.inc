@@ -57,8 +57,14 @@ function loginUser($sign, $password) {
 		
 		$user = new User();
 		$login = $user->login($sign, $password);
-		
-		return $login;
+
+		if($login){
+			//will lieber gleich das ganze User-Objekt zurückgeben
+			return $user;
+		}
+		else{
+			return null;
+		}
 	}
 
 function logoutUser() {

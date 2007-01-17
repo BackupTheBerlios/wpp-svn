@@ -3,10 +3,16 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
+// ----------- Sonderbehandlung der categories.php gegen Zyklen
 $user = restoreUser();
-if ($user ==null || !$user->checkPermissions(1,1)) {
-	redirectURI("/admin/login.php","camefrom=categories.php");
+
+if ($user !=null && $user->getRole()==2) {	//wenn wiederhergestellter "USER", dann auf eingeloggte User-Seite
+	redirectURI("/user/categories.php","camefrom=categories.php");
 }
+if ($user ==null) {	// wenn nur "VIEWER" dann zum View
+	redirectURI("/viewer/categories.php","camefrom=categories.php");
+}
+// -----------
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["admin_categories"]);
@@ -89,6 +95,8 @@ for ($i=0;$i<sizeof($products);$i++) {
 }
 
 $tpl->assign('menu',$menu);
+$tpl->assign('user_name',$user->name);
+$tpl->assign('user_lastname',$user->lastname);
 
 $tpl->display();
 

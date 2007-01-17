@@ -2,6 +2,8 @@
 
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
+include('../includes/functions/verifyaccess.inc');
 
-redirectURI('/admin/categories.php');
+redirectURI('/viewer/categories.php');
+
 ?>

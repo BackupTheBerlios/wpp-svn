@@ -15,5 +15,7 @@ $LOG->write('3','startApplication.php:13:Sprache: de');
 session_start();
 $LOG->write('3','startApplication.php:16:Session gestartet');
 
+// noch anpassen an erkannte Sprache...:
+//$_SESSION['lang']="de";
 
 ?>

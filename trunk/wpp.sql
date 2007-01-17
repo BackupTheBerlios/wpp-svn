@@ -72,7 +72,7 @@ CREATE TABLE `products` (
   `image_small` char(255) NOT NULL,
   `image_big` char(255) NOT NULL,
   `stock` int(10) NOT NULL,
-  `price` decimal(15,4) NOT NULL,
+  `price` decimal(15,2) NOT NULL,
   `create_time` datetime NOT NULL,
   `sort_order` int(10) NOT NULL,
   PRIMARY KEY  (`products_id`)
