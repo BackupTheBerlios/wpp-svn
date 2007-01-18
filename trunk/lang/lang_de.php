@@ -108,13 +108,28 @@ $lang = array(
 	),
 	"admin_errmsgs" => array(
 		"name" => "Bitte geben Sie einen g&uuml;ltigen Namen ein!",
+		"lastname" => "Bitte geben Sie einen g&uuml;ltigen Namen ein!",
 		"description" => "Bitte geben Sie eine g&uuml;ltige Beschreibung ein!",
+		"email" => "Bitte geben Sie eine gültige eMail-Adresse ein!",
 		"price" => "Bitte geben Sie einen g&uuml;ltigen Preis ein!",
 		"stock" => "Bitte geben Sie eine g&uuml;ltige Anzahl ein!",
-		"sort_order" => "Bitte geben Sie eine g&uuml;ltige Sortierzahl ein!"
+		"sort_order" => "Bitte geben Sie eine g&uuml;ltige Sortierzahl ein!",
+		"bank_name" => "Bitte geben Sie einen gültigen Namen ein!",
+		"bank_account" => "Bitte geben Sie einen gültigen Namen ein!",
+		"bank_iban" => "Bitte geben Sie eine gültige Bankleitzahl ein!",
+		"bank_number" => "Bitte geben Sie eine gültige Kontonummer ein!",
+		"ship_name" => "Bitte geben Sie einen gültigen Namen ein!",
+		"ship_street" => "Bitte geben Sie eine gültige Adresse ein!",
+		"ship_postcode" => "Bitte geben Sie eine gültige Postleitzahl ein!",
+		"ship_city" => "Bitte geben Sie einen gültigen Namen ein!",
+		"ship_state" => "Bitte geben Sie einen gültigen Namen ein!",
+		"bill_name" => "Bitte geben Sie einen gültigen Namen ein!",
+		"bill_street" => "Bitte geben Sie eine gültige Adresse ein!",
+		"bill_postcode" => "Bitte geben Sie eine gültige Postleitzahl ein!",
+		"bill_city" => "Bitte geben Sie einen gültigen Namen ein!",
+		"bill_state" => "Bitte geben Sie einen gültigen Namen ein!"
 	),
 	"admin_title" => array(
-		"title_img" => "images/title.jpg",
 		"hello" => "Hallo, ",
 		"you_are_administrator" => "Sie sind Administrator"
 	),

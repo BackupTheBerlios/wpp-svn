@@ -2,7 +2,7 @@
 
 function editUser() {
 
-	if (!checkInput($_POST['name'],'string')) { redirectURI('/..'.$_SERVER['PHP_SELF'],$_SERVER['']);}
+	checkInput($_POST['name'],'string');
 	checkInput($_POST['lastname'],'string');
 	checkInput($_POST['email'],'email');
 	checkInput($_POST['role_id'],'int');
@@ -74,7 +74,7 @@ function logoutUser() {
 
 function addUser() {
 	
-	if (!checkInput($_POST['name'],'string')) { redirectURI('/..'.$_SERVER['PHP_SELF'],$_SERVER['']);}
+	checkInput($_POST['name'],'string');
 	checkInput($_POST['lastname'],'string');
 	checkInput($_POST['email'],'email');
 	checkInput($_POST['role_id'],'int');
@@ -100,9 +100,11 @@ function addUser() {
 			0,
 			'".$_POST['name']."',
 			'".$_POST['lastname']."',
+			'',
 			'".$_POST['email']."',
 			'".$_POST['role_id']."',
-			'".$_POST['bill_name'].",
+			".$active.",
+			'".$_POST['bill_name']."',
 			'".$_POST['bill_street']."',
 			'".$_POST['bill_postcode']."',
 			'".$_POST['bill_city']."',
@@ -112,9 +114,9 @@ function addUser() {
 			'".$_POST['ship_postcode']."',
 			'".$_POST['ship_city']."',
 			'".$_POST['ship_state']."',
-			'".$_POST['bank_name']."',
-			'".$_POST['bank_iban']."',
 			'".$_POST['bank_number']."',
+			'".$_POST['bank_iban']."',
+			'".$_POST['bank_name']."',
 			'".$_POST['bank_account']."')
 			");
 

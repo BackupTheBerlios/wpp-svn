@@ -23,8 +23,8 @@ if (isset($_POST['action'])) {
 		
 		addUser();
 		
-		$LOG->write('2', 'Kategorie '.mysql_insert_id().' hinzugefügt');
-		redirectURI('/admin/categories.php','catID='.$_POST['catID']);
+		$LOG->write('2', 'Nutzer '.mysql_insert_id().' hinzugefügt');
+		redirectURI('/admin/users.php');
 	}
 	
 	elseif ($_POST['action']=='edit') {
@@ -32,7 +32,7 @@ if (isset($_POST['action'])) {
 		
 		editUser();
 		
-		$LOG->write('2', 'Kategorie '.$_GET['catID'].' bearbeitet');
+		$LOG->write('2', 'Nutzer '.$_GET['catID'].' bearbeitet');
 		redirectURI('/admin/users.php');
 		
 	}
@@ -120,8 +120,22 @@ if (isset($_POST['action'])) {
 	$LOG->write('2', 'Nutzer '.$_GET['uID'].' gelöscht');
 	
 	redirectURI('/admin/users.php');
+	
 } elseif ($_GET['action']=='add') {
 
+	//Alle Rollen
+	$roles_query = DB_query("SELECT
+					role_id,
+					name
+					FROM roles");
+	$roles = array();
+	while ($role = DB_fetchArray($roles_query)) {
+		$roles[] = array(
+			"id" => $role['role_id'],
+			"name" => $role['name']);
+	}
+	$tpl->assign('roleslist',$roles);
+	
 
 	$tpl->assign('action','add');
 	$tpl->display();
