@@ -1,0 +1,17 @@
+<!-- Titel-Frame -->
+
+<? include('../lang/lang_de.php');
+   $LANG = $lang['admin_title']; ?>
+
+<table class="title_table">
+	<TR>
+		<TD>
+			<a href="../viewer/index.php"><img src="<?=$LANG['title_img']?>"></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<? echo $LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!<span style='position:relative; left: 50px;'>".$LANG['you_are_administrator']."</span>";?> 
+		</TD>
+	</TR>
+</table>
