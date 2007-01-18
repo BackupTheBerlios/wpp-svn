@@ -3,6 +3,8 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
+include('../includes/functions/verifyadmin.inc');
+/*
 // ----------- Sonderbehandlung der categories.php gegen Zyklen
 $user = restoreUser();
 
@@ -13,6 +15,7 @@ if ($user ==null) {	// wenn nur "VIEWER" dann zum View
 	redirectURI("/viewer/categories.php","camefrom=categories.php");
 }
 // -----------
+*/
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["admin_categories"]);
