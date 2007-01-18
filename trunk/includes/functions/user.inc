@@ -73,8 +73,50 @@ function logoutUser() {
 }
 
 function addUser() {
-
-DB_query("INSERT INTO categories VALUES (0,'".$_POST['name']."',".$_POST['catID'].",".$active.",'".$_POST['description']."',".$_POST['sort_order'].")");
+	
+	if (!checkInput($_POST['name'],'string')) { redirectURI('/..'.$_SERVER['PHP_SELF'],$_SERVER['']);}
+	checkInput($_POST['lastname'],'string');
+	checkInput($_POST['email'],'email');
+	checkInput($_POST['role_id'],'int');
+	checkInput($_POST['bill_name'],'string');
+	checkInput($_POST['bill_street'],'street');
+	checkInput($_POST['bill_postcode'],'plz');
+	checkInput($_POST['bill_city'],'string');
+	checkInput($_POST['bill_state'],'string');
+	checkInput($_POST['ship_name'],'string');
+	checkInput($_POST['ship_street'],'street');
+	checkInput($_POST['ship_postcode'],'plz');
+	checkInput($_POST['ship_city'],'string');
+	checkInput($_POST['ship_state'],'string');
+	checkInput($_POST['bank_name'],'string');
+	checkInput($_POST['bank_iban'],'blz');
+	checkInput($_POST['bank_number'],'banknum');
+	checkInput($_POST['bank_account'],'string');
+	
+	if ($_POST['active']=='on') {$active=1;}
+	else {$active=0;}
+	
+	DB_query("INSERT INTO users VALUES (
+			0,
+			'".$_POST['name']."',
+			'".$_POST['lastname']."',
+			'".$_POST['email']."',
+			'".$_POST['role_id']."',
+			'".$_POST['bill_name'].",
+			'".$_POST['bill_street']."',
+			'".$_POST['bill_postcode']."',
+			'".$_POST['bill_city']."',
+			'".$_POST['bill_state']."',
+			'".$_POST['ship_name']."',
+			'".$_POST['ship_street']."',
+			'".$_POST['ship_postcode']."',
+			'".$_POST['ship_city']."',
+			'".$_POST['ship_state']."',
+			'".$_POST['bank_name']."',
+			'".$_POST['bank_iban']."',
+			'".$_POST['bank_number']."',
+			'".$_POST['bank_account']."')
+			");
 
 }
 

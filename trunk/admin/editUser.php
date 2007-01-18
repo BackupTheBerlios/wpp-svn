@@ -120,7 +120,13 @@ if (isset($_POST['action'])) {
 	$LOG->write('2', 'Nutzer '.$_GET['uID'].' gelöscht');
 	
 	redirectURI('/admin/users.php');
+} elseif ($_GET['action']=='add') {
 
+
+	$tpl->assign('action','add');
+	$tpl->display();
+	
 }
+
 
 ?>

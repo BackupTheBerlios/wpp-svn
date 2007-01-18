@@ -59,6 +59,7 @@ $lang = array(
 	"admin_users" =>array(
 		"edit" => "Bearbeiten",
 		"delete" => "Nutzer l&ouml;schen",
+		"add" => "Nutzer hinzufügen",
 		"name" => "Name",
 		"lastname" => "Nachname",
 		"email" => "eMail-Adresse",
