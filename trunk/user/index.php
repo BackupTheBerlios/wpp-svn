@@ -1,9 +1,10 @@
 <?php
 	include('../includes/includes.inc');
 	include('../includes/startApplication.php');	// anscheinend ist include_db nicht wirklich nützlich, oder?
-	include('../includes/functions/verifyaccess.inc');
 
-redirectURI("/viewer/categories.php","camefrom=categories.php");
+	include('../includes/functions/verifyuser.inc');
+
+redirectURI("/user/categories.php");
 
 /*
 $LOG = new Log();
