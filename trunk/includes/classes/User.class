@@ -83,9 +83,11 @@ class User {
 						FROM roles
 						WHERE role_id = ".$userdata['role_id']);
 			$perm = DB_fetchArray($perm_query);
-			$this->read = $perm['read'];
-			$this->write = $perm['write'];
+			$this->read_orders = $perm['read_orders'];
+			$this->write_orders = $perm['write_orders'];
 			$this->purchase = $perm['purchase'];
+			$this->write_content = $perm['write_content'];
+			$this->read_content = $perm['read_content'];
 			
 			$_SESSION['user']=$this->id;
 			$LOG->write('2','Benutzer angemeldet: '.$this->name);

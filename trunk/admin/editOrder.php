@@ -3,13 +3,13 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
-include('../includes/functions/verifyadmin.inc');
-/*
+//include('../includes/functions/verifyadmin.inc');
+
 $user = restoreUser();
 if ($user ==null || !$user->checkPermissions(0,0,0,1,0)) {
 	redirectURI("/admin/login.php","camefrom=editOrder.php");
 }
-*/
+
 $LOG = new Log();
 $tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["admin_orders"]);
 
