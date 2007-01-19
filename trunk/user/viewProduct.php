@@ -3,7 +3,13 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
-include('../includes/functions/verifyuser.inc');
+//include('../includes/functions/verifyuser.inc');
+
+$user = restoreUser();
+if ($user ==null || !$user->checkPermissions(1)) {
+	redirectURI("/viewer/index.php");
+}
+
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/viewProduct.html","template/frame.html",$lang["user_viewProduct"]);
@@ -35,4 +41,4 @@ $tpl->display();
 
 
 
-?>
+?>file:///mnt/Projekte/Studium/Webprogramming/Projekt/wpp/user/viewProduct.php

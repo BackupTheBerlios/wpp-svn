@@ -3,19 +3,13 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
-include('../includes/functions/verifyadmin.inc');
-/*
-// ----------- Sonderbehandlung der categories.php gegen Zyklen
-$user = restoreUser();
+//include('../includes/functions/verifyadmin.inc');
 
-if ($user !=null && $user->getRole()==2) {	//wenn wiederhergestellter "USER", dann auf eingeloggte User-Seite
-	redirectURI("/user/categories.php","camefrom=categories.php");
+
+$user = restoreUser();
+if ($user ==null || !$user->checkPermissions(1,1)) {
+	redirectURI("/admin/login.php","camefrom=categories.php");
 }
-if ($user ==null) {	// wenn nur "VIEWER" dann zum View
-	redirectURI("/viewer/categories.php","camefrom=categories.php");
-}
-// -----------
-*/
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["admin_categories"]);

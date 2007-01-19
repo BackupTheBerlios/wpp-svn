@@ -4,13 +4,13 @@ include('../includes/includes.inc');
 include('../includes/startApplication.php');
 include('includes/image.inc');
 
-include('../includes/functions/verifyadmin.inc');
-/*
+//include('../includes/functions/verifyadmin.inc');
+
 $user = restoreUser();
 if ($user ==null || !$user->checkPermissions(1,1)) {
 	redirectURI("/admin/login.php","camefrom=categories.php");
 }
-*/
+
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/addProduct.html","template/frame.html",$lang["admin_addProduct"]);

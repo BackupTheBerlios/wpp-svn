@@ -3,7 +3,7 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
-include('../includes/functions/verifyviewer.inc');
+//include('../includes/functions/verifyviewer.inc');
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["viewer_categories"]);
