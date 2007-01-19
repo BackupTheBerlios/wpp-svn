@@ -58,10 +58,10 @@
 			</a>
 		</TD>
 		<TD class="<?=$class?>">
-			<?=$line['price']?>
+			<?=formatPrice($line['price'])?>
 		</TD>
 		<TD class="<?=$class?>">
-			<?=$line['price_total']?>
+			<?=formatPrice($line['price_total'])?>
 		</TD>
 		
 	</TR>
@@ -72,7 +72,7 @@
 			<?=$_LANG['price-total']?>
 		</TD>
 		<TD class="price-all">
-			<?=$_TPL['price_all']?>
+			<?=formatPrice($_TPL['price_all'])?>
 		</TD>
 	</TR>
 </table>
