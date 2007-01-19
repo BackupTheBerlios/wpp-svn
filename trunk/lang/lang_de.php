@@ -130,6 +130,7 @@ $lang = array(
 		"bill_state" => "Bitte geben Sie einen gültigen Namen ein!"
 	),
 	"admin_title" => array(
+		"title_img" => "images/title.jpg",
 		"hello" => "Hallo, ",
 		"you_are_administrator" => "Sie sind Administrator"
 	),

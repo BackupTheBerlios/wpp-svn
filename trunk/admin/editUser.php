@@ -3,6 +3,8 @@
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
 
+include('../includes/functions/verifyadmin.inc');
+
 $user = restoreUser();
 if ($user ==null || !$user->checkPermissions(1,1)) {
 	redirectURI("/admin/login.php","camefrom=users.php");

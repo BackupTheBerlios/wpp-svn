@@ -25,7 +25,7 @@
 	<?	$i=0;foreach ($_TPL['menu'] as $line) { ?>
 	<?	$i++;
 	if ($line['type']==='category') { 
-		if ($i%2==0) {$class="even";} else {$class="odd";}?>
+		if ($i%2==0) {$class="cat_even";} else {$class="cat_odd";}?>
 		<TR>
 			<TD class="<?=$class?>">
 				<?=$_LANG['category'] ?>

@@ -83268,3 +83268,2230 @@
 				FROM users u, roles r
 				WHERE u.role_id=r.role_id
 20070118.211048:3: DB-Anfrage akzeptiert
+20070119.120141:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120141:3: startApplication.php:13:Sprache: de
+20070119.120141:3: startApplication.php:16:Session gestartet
+20070119.120141:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120141:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120141:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120141:3: DB-Anfrage akzeptiert
+20070119.120141:3: viewer/categories.php:39: Kat 1
+20070119.120141:3: viewer/categories.php:39: Kat 2
+20070119.120141:3: viewer/categories.php:39: Kat 3
+20070119.120141:3: viewer/categories.php:39: Kat 1.2
+20070119.120141:3: viewer/categories.php:39: Fernseher
+20070119.120141:3: viewer/categories.php:39: Desktop-PCs
+20070119.120141:3: viewer/categories.php:39: Radios
+20070119.120141:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120141:3: DB-Anfrage akzeptiert
+20070119.120141:3: viewer/categories.php:69: Kat 1
+20070119.120141:3: viewer/categories.php:69: Kat 2
+20070119.120141:3: viewer/categories.php:69: Kat 3
+20070119.120141:3: viewer/categories.php:69: Kat 1.2
+20070119.120141:3: viewer/categories.php:69: Fernseher
+20070119.120141:3: viewer/categories.php:69: Desktop-PCs
+20070119.120141:3: viewer/categories.php:69: Radios
+20070119.120141:3: viewer/categories.php: Anzeige
+20070119.120147:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120147:3: startApplication.php:13:Sprache: de
+20070119.120147:3: startApplication.php:16:Session gestartet
+20070119.120147:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120147:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120147:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120147:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120147:3: startApplication.php:13:Sprache: de
+20070119.120147:3: startApplication.php:16:Session gestartet
+20070119.120147:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120147:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120147:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120147:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120147:3: startApplication.php:13:Sprache: de
+20070119.120147:3: startApplication.php:16:Session gestartet
+20070119.120147:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120147:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120147:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120147:3: DB-Anfrage akzeptiert
+20070119.120147:3: viewer/categories.php:39: Kat 1
+20070119.120147:3: viewer/categories.php:39: Kat 2
+20070119.120147:3: viewer/categories.php:39: Kat 3
+20070119.120147:3: viewer/categories.php:39: Kat 1.2
+20070119.120147:3: viewer/categories.php:39: Fernseher
+20070119.120147:3: viewer/categories.php:39: Desktop-PCs
+20070119.120147:3: viewer/categories.php:39: Radios
+20070119.120147:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120147:3: DB-Anfrage akzeptiert
+20070119.120147:3: viewer/categories.php:69: Kat 1
+20070119.120147:3: viewer/categories.php:69: Kat 2
+20070119.120147:3: viewer/categories.php:69: Kat 3
+20070119.120147:3: viewer/categories.php:69: Kat 1.2
+20070119.120147:3: viewer/categories.php:69: Fernseher
+20070119.120147:3: viewer/categories.php:69: Desktop-PCs
+20070119.120147:3: viewer/categories.php:69: Radios
+20070119.120147:3: viewer/categories.php: Anzeige
+20070119.120430:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120430:3: startApplication.php:13:Sprache: de
+20070119.120430:3: startApplication.php:16:Session gestartet
+20070119.120430:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120430:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120430:3: startApplication.php:13:Sprache: de
+20070119.120430:3: startApplication.php:16:Session gestartet
+20070119.120430:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120430:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120430:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120430:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120430:3: startApplication.php:13:Sprache: de
+20070119.120430:3: startApplication.php:16:Session gestartet
+20070119.120430:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120430:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120430:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120430:3: DB-Anfrage akzeptiert
+20070119.120430:3: viewer/categories.php:39: Kat 1
+20070119.120430:3: viewer/categories.php:39: Kat 2
+20070119.120430:3: viewer/categories.php:39: Kat 3
+20070119.120430:3: viewer/categories.php:39: Kat 1.2
+20070119.120430:3: viewer/categories.php:39: Fernseher
+20070119.120430:3: viewer/categories.php:39: Desktop-PCs
+20070119.120430:3: viewer/categories.php:39: Radios
+20070119.120430:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120430:3: DB-Anfrage akzeptiert
+20070119.120430:3: viewer/categories.php:69: Kat 1
+20070119.120430:3: viewer/categories.php:69: Kat 2
+20070119.120430:3: viewer/categories.php:69: Kat 3
+20070119.120430:3: viewer/categories.php:69: Kat 1.2
+20070119.120430:3: viewer/categories.php:69: Fernseher
+20070119.120430:3: viewer/categories.php:69: Desktop-PCs
+20070119.120430:3: viewer/categories.php:69: Radios
+20070119.120430:3: viewer/categories.php: Anzeige
+20070119.120434:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120434:3: startApplication.php:13:Sprache: de
+20070119.120434:3: startApplication.php:16:Session gestartet
+20070119.120434:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120434:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120434:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 2
+20070119.120434:3: DB-Anfrage akzeptiert
+20070119.120434:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 2
+				ORDER BY sort_order
+20070119.120434:3: DB-Anfrage akzeptiert
+20070119.120434:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 2
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120434:3: DB-Anfrage akzeptiert
+20070119.120434:3: viewer/categories.php: Anzeige
+20070119.120434:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120434:3: startApplication.php:13:Sprache: de
+20070119.120434:3: startApplication.php:16:Session gestartet
+20070119.120434:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120434:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120434:3: viewer/viewProduct.php
+20070119.120434:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE products_id = 4
+20070119.120434:3: DB-Anfrage akzeptiert
+20070119.120437:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120437:3: startApplication.php:13:Sprache: de
+20070119.120437:3: startApplication.php:16:Session gestartet
+20070119.120437:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120437:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120437:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120437:3: DB-Anfrage akzeptiert
+20070119.120437:3: viewer/categories.php:39: Kat 1
+20070119.120437:3: viewer/categories.php:39: Kat 2
+20070119.120437:3: viewer/categories.php:39: Kat 3
+20070119.120437:3: viewer/categories.php:39: Kat 1.2
+20070119.120437:3: viewer/categories.php:39: Fernseher
+20070119.120437:3: viewer/categories.php:39: Desktop-PCs
+20070119.120437:3: viewer/categories.php:39: Radios
+20070119.120437:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120437:3: DB-Anfrage akzeptiert
+20070119.120437:3: viewer/categories.php:69: Kat 1
+20070119.120437:3: viewer/categories.php:69: Kat 2
+20070119.120437:3: viewer/categories.php:69: Kat 3
+20070119.120437:3: viewer/categories.php:69: Kat 1.2
+20070119.120437:3: viewer/categories.php:69: Fernseher
+20070119.120437:3: viewer/categories.php:69: Desktop-PCs
+20070119.120437:3: viewer/categories.php:69: Radios
+20070119.120437:3: viewer/categories.php: Anzeige
+20070119.120438:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120438:3: startApplication.php:13:Sprache: de
+20070119.120438:3: startApplication.php:16:Session gestartet
+20070119.120438:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120438:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120438:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20070119.120438:3: DB-Anfrage akzeptiert
+20070119.120438:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20070119.120438:3: DB-Anfrage akzeptiert
+20070119.120438:3: viewer/categories.php:39: Kat 1.1
+20070119.120438:3: viewer/categories.php:39: Kat 1.2
+20070119.120438:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120438:3: DB-Anfrage akzeptiert
+20070119.120438:3: viewer/categories.php:69: Kat 1.1
+20070119.120438:3: viewer/categories.php:69: Kat 1.2
+20070119.120438:3: viewer/categories.php: Anzeige
+20070119.120442:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120442:3: startApplication.php:13:Sprache: de
+20070119.120442:3: startApplication.php:16:Session gestartet
+20070119.120442:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120442:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120442:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120442:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120442:3: startApplication.php:13:Sprache: de
+20070119.120442:3: startApplication.php:16:Session gestartet
+20070119.120442:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120442:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120442:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120442:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120442:3: startApplication.php:13:Sprache: de
+20070119.120442:3: startApplication.php:16:Session gestartet
+20070119.120442:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120442:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120442:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120442:3: DB-Anfrage akzeptiert
+20070119.120442:3: viewer/categories.php:39: Kat 1
+20070119.120442:3: viewer/categories.php:39: Kat 2
+20070119.120442:3: viewer/categories.php:39: Kat 3
+20070119.120442:3: viewer/categories.php:39: Kat 1.2
+20070119.120442:3: viewer/categories.php:39: Fernseher
+20070119.120442:3: viewer/categories.php:39: Desktop-PCs
+20070119.120442:3: viewer/categories.php:39: Radios
+20070119.120442:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120442:3: DB-Anfrage akzeptiert
+20070119.120442:3: viewer/categories.php:69: Kat 1
+20070119.120442:3: viewer/categories.php:69: Kat 2
+20070119.120442:3: viewer/categories.php:69: Kat 3
+20070119.120442:3: viewer/categories.php:69: Kat 1.2
+20070119.120442:3: viewer/categories.php:69: Fernseher
+20070119.120442:3: viewer/categories.php:69: Desktop-PCs
+20070119.120442:3: viewer/categories.php:69: Radios
+20070119.120442:3: viewer/categories.php: Anzeige
+20070119.120454:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120454:3: startApplication.php:13:Sprache: de
+20070119.120454:3: startApplication.php:16:Session gestartet
+20070119.120454:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120454:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120454:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120454:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120454:3: startApplication.php:13:Sprache: de
+20070119.120454:3: startApplication.php:16:Session gestartet
+20070119.120454:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120454:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120454:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120454:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120454:3: startApplication.php:13:Sprache: de
+20070119.120454:3: startApplication.php:16:Session gestartet
+20070119.120454:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120454:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120454:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120454:3: DB-Anfrage akzeptiert
+20070119.120454:3: viewer/categories.php:39: Kat 1
+20070119.120454:3: viewer/categories.php:39: Kat 2
+20070119.120454:3: viewer/categories.php:39: Kat 3
+20070119.120454:3: viewer/categories.php:39: Kat 1.2
+20070119.120454:3: viewer/categories.php:39: Fernseher
+20070119.120454:3: viewer/categories.php:39: Desktop-PCs
+20070119.120454:3: viewer/categories.php:39: Radios
+20070119.120454:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120454:3: DB-Anfrage akzeptiert
+20070119.120454:3: viewer/categories.php:69: Kat 1
+20070119.120454:3: viewer/categories.php:69: Kat 2
+20070119.120454:3: viewer/categories.php:69: Kat 3
+20070119.120454:3: viewer/categories.php:69: Kat 1.2
+20070119.120454:3: viewer/categories.php:69: Fernseher
+20070119.120454:3: viewer/categories.php:69: Desktop-PCs
+20070119.120454:3: viewer/categories.php:69: Radios
+20070119.120454:3: viewer/categories.php: Anzeige
+20070119.120456:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120456:3: startApplication.php:13:Sprache: de
+20070119.120456:3: startApplication.php:16:Session gestartet
+20070119.120456:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120456:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120456:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120456:3: DB-Anfrage akzeptiert
+20070119.120456:3: viewer/categories.php:39: Kat 1
+20070119.120456:3: viewer/categories.php:39: Kat 2
+20070119.120456:3: viewer/categories.php:39: Kat 3
+20070119.120456:3: viewer/categories.php:39: Kat 1.2
+20070119.120456:3: viewer/categories.php:39: Fernseher
+20070119.120456:3: viewer/categories.php:39: Desktop-PCs
+20070119.120456:3: viewer/categories.php:39: Radios
+20070119.120456:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120456:3: DB-Anfrage akzeptiert
+20070119.120456:3: viewer/categories.php:69: Kat 1
+20070119.120456:3: viewer/categories.php:69: Kat 2
+20070119.120456:3: viewer/categories.php:69: Kat 3
+20070119.120456:3: viewer/categories.php:69: Kat 1.2
+20070119.120456:3: viewer/categories.php:69: Fernseher
+20070119.120456:3: viewer/categories.php:69: Desktop-PCs
+20070119.120456:3: viewer/categories.php:69: Radios
+20070119.120456:3: viewer/categories.php: Anzeige
+20070119.120457:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120457:3: startApplication.php:13:Sprache: de
+20070119.120457:3: startApplication.php:16:Session gestartet
+20070119.120503:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120503:3: startApplication.php:13:Sprache: de
+20070119.120503:3: startApplication.php:16:Session gestartet
+20070119.120503:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'user'
+					AND password = 'wpppw'
+20070119.120503:3: DB-Anfrage akzeptiert
+20070119.120503:2: Benutzer angemeldet :User
+20070119.120503:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120503:3: DB-Anfrage akzeptiert
+20070119.120503:2: Benutzer angemeldet: User
+20070119.120503:2: Weitergeleitet zu: /user/categories.php?
+20070119.120503:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120503:3: startApplication.php:13:Sprache: de
+20070119.120503:3: startApplication.php:16:Session gestartet
+20070119.120503:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120503:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120503:3: DB-Anfrage akzeptiert
+20070119.120503:3: Nutzername :User
+20070119.120503:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120503:3: DB-Anfrage akzeptiert
+20070119.120503:3: Berechtigungen :1
+20070119.120503:3: Benutzer wiederhergestellt:User
+20070119.120503:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120503:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120503:3: DB-Anfrage akzeptiert
+20070119.120503:3: user/categories.php:39: Kat 1
+20070119.120503:3: user/categories.php:39: Kat 2
+20070119.120503:3: user/categories.php:39: Kat 3
+20070119.120503:3: user/categories.php:39: Kat 1.2
+20070119.120504:3: user/categories.php:39: Fernseher
+20070119.120504:3: user/categories.php:39: Desktop-PCs
+20070119.120504:3: user/categories.php:39: Radios
+20070119.120504:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120504:3: DB-Anfrage akzeptiert
+20070119.120504:3: user/categories.php:69: Kat 1
+20070119.120504:3: user/categories.php:69: Kat 2
+20070119.120504:3: user/categories.php:69: Kat 3
+20070119.120504:3: user/categories.php:69: Kat 1.2
+20070119.120504:3: user/categories.php:69: Fernseher
+20070119.120504:3: user/categories.php:69: Desktop-PCs
+20070119.120504:3: user/categories.php:69: Radios
+20070119.120504:3: user/categories.php: Anzeige
+20070119.120506:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120506:3: startApplication.php:13:Sprache: de
+20070119.120506:3: startApplication.php:16:Session gestartet
+20070119.120506:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120506:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120506:3: DB-Anfrage akzeptiert
+20070119.120506:3: Nutzername :User
+20070119.120506:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120506:3: DB-Anfrage akzeptiert
+20070119.120506:3: Berechtigungen :1
+20070119.120506:3: Benutzer wiederhergestellt:User
+20070119.120506:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120506:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 3
+20070119.120506:3: DB-Anfrage akzeptiert
+20070119.120506:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 3
+				ORDER BY sort_order
+20070119.120506:3: DB-Anfrage akzeptiert
+20070119.120506:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 3
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120506:3: DB-Anfrage akzeptiert
+20070119.120506:3: user/categories.php: Anzeige
+20070119.120507:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120507:3: startApplication.php:13:Sprache: de
+20070119.120507:3: startApplication.php:16:Session gestartet
+20070119.120507:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120507:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120507:3: DB-Anfrage akzeptiert
+20070119.120507:3: Nutzername :User
+20070119.120507:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120507:3: DB-Anfrage akzeptiert
+20070119.120507:3: Berechtigungen :1
+20070119.120507:3: Benutzer wiederhergestellt:User
+20070119.120507:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120507:3: user/viewProduct.php
+20070119.120507:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE products_id = 6
+20070119.120507:3: DB-Anfrage akzeptiert
+20070119.120508:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120508:3: startApplication.php:13:Sprache: de
+20070119.120508:3: startApplication.php:16:Session gestartet
+20070119.120508:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120508:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120508:3: DB-Anfrage akzeptiert
+20070119.120508:3: Nutzername :User
+20070119.120508:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120508:3: DB-Anfrage akzeptiert
+20070119.120508:3: Berechtigungen :1
+20070119.120508:3: Benutzer wiederhergestellt:User
+20070119.120508:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120508:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120508:3: DB-Anfrage akzeptiert
+20070119.120508:3: user/categories.php:39: Kat 1
+20070119.120508:3: user/categories.php:39: Kat 2
+20070119.120508:3: user/categories.php:39: Kat 3
+20070119.120508:3: user/categories.php:39: Kat 1.2
+20070119.120508:3: user/categories.php:39: Fernseher
+20070119.120508:3: user/categories.php:39: Desktop-PCs
+20070119.120508:3: user/categories.php:39: Radios
+20070119.120508:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120508:3: DB-Anfrage akzeptiert
+20070119.120508:3: user/categories.php:69: Kat 1
+20070119.120508:3: user/categories.php:69: Kat 2
+20070119.120508:3: user/categories.php:69: Kat 3
+20070119.120508:3: user/categories.php:69: Kat 1.2
+20070119.120508:3: user/categories.php:69: Fernseher
+20070119.120508:3: user/categories.php:69: Desktop-PCs
+20070119.120508:3: user/categories.php:69: Radios
+20070119.120508:3: user/categories.php: Anzeige
+20070119.120510:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120510:3: startApplication.php:13:Sprache: de
+20070119.120510:3: startApplication.php:16:Session gestartet
+20070119.120510:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120510:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120510:3: DB-Anfrage akzeptiert
+20070119.120510:3: Nutzername :User
+20070119.120510:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120510:3: DB-Anfrage akzeptiert
+20070119.120510:3: Berechtigungen :1
+20070119.120510:3: Benutzer wiederhergestellt:User
+20070119.120510:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120510:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 1
+20070119.120510:3: DB-Anfrage akzeptiert
+20070119.120510:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 1
+				ORDER BY sort_order
+20070119.120510:3: DB-Anfrage akzeptiert
+20070119.120510:3: user/categories.php:39: Kat 1.1
+20070119.120510:3: user/categories.php:39: Kat 1.2
+20070119.120510:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 1
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120510:3: DB-Anfrage akzeptiert
+20070119.120510:3: user/categories.php:69: Kat 1.1
+20070119.120510:3: user/categories.php:69: Kat 1.2
+20070119.120510:3: user/categories.php: Anzeige
+20070119.120514:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120514:3: startApplication.php:13:Sprache: de
+20070119.120514:3: startApplication.php:16:Session gestartet
+20070119.120514:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120514:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Nutzername :User
+20070119.120514:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Berechtigungen :1
+20070119.120514:3: Benutzer wiederhergestellt:User
+20070119.120514:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120514:2: Weitergeleitet zu: /user/index.php?
+20070119.120514:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120514:3: startApplication.php:13:Sprache: de
+20070119.120514:3: startApplication.php:16:Session gestartet
+20070119.120514:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120514:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Nutzername :User
+20070119.120514:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Berechtigungen :1
+20070119.120514:3: Benutzer wiederhergestellt:User
+20070119.120514:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120514:2: Weitergeleitet zu: /user/categories.php?
+20070119.120514:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120514:3: startApplication.php:13:Sprache: de
+20070119.120514:3: startApplication.php:16:Session gestartet
+20070119.120514:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120514:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Nutzername :User
+20070119.120514:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: Berechtigungen :1
+20070119.120514:3: Benutzer wiederhergestellt:User
+20070119.120514:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120514:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: user/categories.php:39: Kat 1
+20070119.120514:3: user/categories.php:39: Kat 2
+20070119.120514:3: user/categories.php:39: Kat 3
+20070119.120514:3: user/categories.php:39: Kat 1.2
+20070119.120514:3: user/categories.php:39: Fernseher
+20070119.120514:3: user/categories.php:39: Desktop-PCs
+20070119.120514:3: user/categories.php:39: Radios
+20070119.120514:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120514:3: DB-Anfrage akzeptiert
+20070119.120514:3: user/categories.php:69: Kat 1
+20070119.120514:3: user/categories.php:69: Kat 2
+20070119.120514:3: user/categories.php:69: Kat 3
+20070119.120514:3: user/categories.php:69: Kat 1.2
+20070119.120514:3: user/categories.php:69: Fernseher
+20070119.120514:3: user/categories.php:69: Desktop-PCs
+20070119.120514:3: user/categories.php:69: Radios
+20070119.120514:3: user/categories.php: Anzeige
+20070119.120523:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120523:3: startApplication.php:13:Sprache: de
+20070119.120523:3: startApplication.php:16:Session gestartet
+20070119.120523:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120523:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Nutzername :User
+20070119.120523:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Berechtigungen :1
+20070119.120523:3: Benutzer wiederhergestellt:User
+20070119.120523:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120523:2: Weitergeleitet zu: /user/index.php?
+20070119.120523:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120523:3: startApplication.php:13:Sprache: de
+20070119.120523:3: startApplication.php:16:Session gestartet
+20070119.120523:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120523:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Nutzername :User
+20070119.120523:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Berechtigungen :1
+20070119.120523:3: Benutzer wiederhergestellt:User
+20070119.120523:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120523:2: Weitergeleitet zu: /user/categories.php?
+20070119.120523:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120523:3: startApplication.php:13:Sprache: de
+20070119.120523:3: startApplication.php:16:Session gestartet
+20070119.120523:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120523:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Nutzername :User
+20070119.120523:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: Berechtigungen :1
+20070119.120523:3: Benutzer wiederhergestellt:User
+20070119.120523:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120523:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: user/categories.php:39: Kat 1
+20070119.120523:3: user/categories.php:39: Kat 2
+20070119.120523:3: user/categories.php:39: Kat 3
+20070119.120523:3: user/categories.php:39: Kat 1.2
+20070119.120523:3: user/categories.php:39: Fernseher
+20070119.120523:3: user/categories.php:39: Desktop-PCs
+20070119.120523:3: user/categories.php:39: Radios
+20070119.120523:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120523:3: DB-Anfrage akzeptiert
+20070119.120523:3: user/categories.php:69: Kat 1
+20070119.120523:3: user/categories.php:69: Kat 2
+20070119.120523:3: user/categories.php:69: Kat 3
+20070119.120523:3: user/categories.php:69: Kat 1.2
+20070119.120523:3: user/categories.php:69: Fernseher
+20070119.120523:3: user/categories.php:69: Desktop-PCs
+20070119.120523:3: user/categories.php:69: Radios
+20070119.120523:3: user/categories.php: Anzeige
+20070119.120525:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120525:3: startApplication.php:13:Sprache: de
+20070119.120525:3: startApplication.php:16:Session gestartet
+20070119.120525:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120525:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '5'
+20070119.120525:3: DB-Anfrage akzeptiert
+20070119.120525:3: Nutzername :User
+20070119.120525:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 2
+20070119.120525:3: DB-Anfrage akzeptiert
+20070119.120525:3: Berechtigungen :1
+20070119.120525:3: Benutzer wiederhergestellt:User
+20070119.120525:2: session.inc:13:Wiederhergestellter Benutzer: User
+20070119.120525:2: Benutzer abgemeldet: User
+20070119.120525:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120525:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120525:3: startApplication.php:13:Sprache: de
+20070119.120525:3: startApplication.php:16:Session gestartet
+20070119.120525:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120525:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120525:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120525:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120525:3: startApplication.php:13:Sprache: de
+20070119.120525:3: startApplication.php:16:Session gestartet
+20070119.120525:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120525:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120525:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120525:3: DB-Anfrage akzeptiert
+20070119.120525:3: viewer/categories.php:39: Kat 1
+20070119.120525:3: viewer/categories.php:39: Kat 2
+20070119.120525:3: viewer/categories.php:39: Kat 3
+20070119.120525:3: viewer/categories.php:39: Kat 1.2
+20070119.120525:3: viewer/categories.php:39: Fernseher
+20070119.120525:3: viewer/categories.php:39: Desktop-PCs
+20070119.120525:3: viewer/categories.php:39: Radios
+20070119.120525:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120525:3: DB-Anfrage akzeptiert
+20070119.120525:3: viewer/categories.php:69: Kat 1
+20070119.120525:3: viewer/categories.php:69: Kat 2
+20070119.120525:3: viewer/categories.php:69: Kat 3
+20070119.120525:3: viewer/categories.php:69: Kat 1.2
+20070119.120525:3: viewer/categories.php:69: Fernseher
+20070119.120525:3: viewer/categories.php:69: Desktop-PCs
+20070119.120525:3: viewer/categories.php:69: Radios
+20070119.120525:3: viewer/categories.php: Anzeige
+20070119.120529:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120529:3: startApplication.php:13:Sprache: de
+20070119.120529:3: startApplication.php:16:Session gestartet
+20070119.120534:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120534:3: startApplication.php:13:Sprache: de
+20070119.120534:3: startApplication.php:16:Session gestartet
+20070119.120534:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'lars'
+					AND password = 'wpppw'
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:2: Benutzer angemeldet :Lars
+20070119.120534:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:2: Benutzer angemeldet: Lars
+20070119.120534:2: Weitergeleitet zu: /admin/categories.php?
+20070119.120534:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120534:3: startApplication.php:13:Sprache: de
+20070119.120534:3: startApplication.php:16:Session gestartet
+20070119.120534:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120534:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:3: Nutzername :Lars
+20070119.120534:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:3: Berechtigungen :1
+20070119.120534:3: Benutzer wiederhergestellt:Lars
+20070119.120534:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120534:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:3: admin/categories.php:39: Kat 1
+20070119.120534:3: admin/categories.php:39: Kat 2
+20070119.120534:3: admin/categories.php:39: Kat 3
+20070119.120534:3: admin/categories.php:39: Kat 1.2
+20070119.120534:3: admin/categories.php:39: Fernseher
+20070119.120534:3: admin/categories.php:39: Desktop-PCs
+20070119.120534:3: admin/categories.php:39: Radios
+20070119.120534:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120534:3: DB-Anfrage akzeptiert
+20070119.120534:3: admin/categories.php:69: Kat 1
+20070119.120534:3: admin/categories.php:69: Kat 2
+20070119.120534:3: admin/categories.php:69: Kat 3
+20070119.120534:3: admin/categories.php:69: Kat 1.2
+20070119.120534:3: admin/categories.php:69: Fernseher
+20070119.120534:3: admin/categories.php:69: Desktop-PCs
+20070119.120534:3: admin/categories.php:69: Radios
+20070119.120534:3: admin/categories.php: Anzeige
+20070119.120536:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120536:3: startApplication.php:13:Sprache: de
+20070119.120536:3: startApplication.php:16:Session gestartet
+20070119.120536:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120536:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Nutzername :Lars
+20070119.120536:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Berechtigungen :1
+20070119.120536:3: Benutzer wiederhergestellt:Lars
+20070119.120536:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120536:2: Weitergeleitet zu: /admin/index.php?
+20070119.120536:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120536:3: startApplication.php:13:Sprache: de
+20070119.120536:3: startApplication.php:16:Session gestartet
+20070119.120536:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120536:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Nutzername :Lars
+20070119.120536:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Berechtigungen :1
+20070119.120536:3: Benutzer wiederhergestellt:Lars
+20070119.120536:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120536:2: Weitergeleitet zu: /admin/categories.php?
+20070119.120536:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120536:3: startApplication.php:13:Sprache: de
+20070119.120536:3: startApplication.php:16:Session gestartet
+20070119.120536:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120536:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Nutzername :Lars
+20070119.120536:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: Berechtigungen :1
+20070119.120536:3: Benutzer wiederhergestellt:Lars
+20070119.120536:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120536:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: admin/categories.php:39: Kat 1
+20070119.120536:3: admin/categories.php:39: Kat 2
+20070119.120536:3: admin/categories.php:39: Kat 3
+20070119.120536:3: admin/categories.php:39: Kat 1.2
+20070119.120536:3: admin/categories.php:39: Fernseher
+20070119.120536:3: admin/categories.php:39: Desktop-PCs
+20070119.120536:3: admin/categories.php:39: Radios
+20070119.120536:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120536:3: DB-Anfrage akzeptiert
+20070119.120536:3: admin/categories.php:69: Kat 1
+20070119.120536:3: admin/categories.php:69: Kat 2
+20070119.120536:3: admin/categories.php:69: Kat 3
+20070119.120536:3: admin/categories.php:69: Kat 1.2
+20070119.120536:3: admin/categories.php:69: Fernseher
+20070119.120536:3: admin/categories.php:69: Desktop-PCs
+20070119.120536:3: admin/categories.php:69: Radios
+20070119.120536:3: admin/categories.php: Anzeige
+20070119.120556:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120556:3: startApplication.php:13:Sprache: de
+20070119.120556:3: startApplication.php:16:Session gestartet
+20070119.120556:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120556:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120556:3: DB-Anfrage akzeptiert
+20070119.120556:3: Nutzername :Lars
+20070119.120556:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120556:3: DB-Anfrage akzeptiert
+20070119.120556:3: Berechtigungen :1
+20070119.120556:3: Benutzer wiederhergestellt:Lars
+20070119.120556:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120556:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120556:3: DB-Anfrage akzeptiert
+20070119.120556:3: admin/categories.php:39: Kat 1
+20070119.120556:3: admin/categories.php:39: Kat 2
+20070119.120556:3: admin/categories.php:39: Kat 3
+20070119.120556:3: admin/categories.php:39: Kat 1.2
+20070119.120556:3: admin/categories.php:39: Fernseher
+20070119.120556:3: admin/categories.php:39: Desktop-PCs
+20070119.120556:3: admin/categories.php:39: Radios
+20070119.120556:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120556:3: DB-Anfrage akzeptiert
+20070119.120556:3: admin/categories.php:69: Kat 1
+20070119.120556:3: admin/categories.php:69: Kat 2
+20070119.120556:3: admin/categories.php:69: Kat 3
+20070119.120556:3: admin/categories.php:69: Kat 1.2
+20070119.120556:3: admin/categories.php:69: Fernseher
+20070119.120556:3: admin/categories.php:69: Desktop-PCs
+20070119.120556:3: admin/categories.php:69: Radios
+20070119.120556:3: admin/categories.php: Anzeige
+20070119.120558:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120558:3: startApplication.php:13:Sprache: de
+20070119.120558:3: startApplication.php:16:Session gestartet
+20070119.120558:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120558:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120558:3: DB-Anfrage akzeptiert
+20070119.120558:3: Nutzername :Lars
+20070119.120558:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120558:3: DB-Anfrage akzeptiert
+20070119.120558:3: Berechtigungen :1
+20070119.120558:3: Benutzer wiederhergestellt:Lars
+20070119.120558:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120558:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120558:3: DB-Anfrage akzeptiert
+20070119.120558:3: admin/categories.php:39: Kat 1
+20070119.120558:3: admin/categories.php:39: Kat 2
+20070119.120558:3: admin/categories.php:39: Kat 3
+20070119.120558:3: admin/categories.php:39: Kat 1.2
+20070119.120558:3: admin/categories.php:39: Fernseher
+20070119.120558:3: admin/categories.php:39: Desktop-PCs
+20070119.120558:3: admin/categories.php:39: Radios
+20070119.120558:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120558:3: DB-Anfrage akzeptiert
+20070119.120558:3: admin/categories.php:69: Kat 1
+20070119.120558:3: admin/categories.php:69: Kat 2
+20070119.120558:3: admin/categories.php:69: Kat 3
+20070119.120558:3: admin/categories.php:69: Kat 1.2
+20070119.120558:3: admin/categories.php:69: Fernseher
+20070119.120558:3: admin/categories.php:69: Desktop-PCs
+20070119.120558:3: admin/categories.php:69: Radios
+20070119.120558:3: admin/categories.php: Anzeige
+20070119.120608:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120608:3: startApplication.php:13:Sprache: de
+20070119.120608:3: startApplication.php:16:Session gestartet
+20070119.120608:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120608:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Nutzername :Lars
+20070119.120608:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Berechtigungen :1
+20070119.120608:3: Benutzer wiederhergestellt:Lars
+20070119.120608:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120608:2: Weitergeleitet zu: /admin/index.php?
+20070119.120608:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120608:3: startApplication.php:13:Sprache: de
+20070119.120608:3: startApplication.php:16:Session gestartet
+20070119.120608:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120608:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Nutzername :Lars
+20070119.120608:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Berechtigungen :1
+20070119.120608:3: Benutzer wiederhergestellt:Lars
+20070119.120608:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120608:2: Weitergeleitet zu: /admin/categories.php?
+20070119.120608:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120608:3: startApplication.php:13:Sprache: de
+20070119.120608:3: startApplication.php:16:Session gestartet
+20070119.120608:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120608:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Nutzername :Lars
+20070119.120608:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: Berechtigungen :1
+20070119.120608:3: Benutzer wiederhergestellt:Lars
+20070119.120608:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120608:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: admin/categories.php:39: Kat 1
+20070119.120608:3: admin/categories.php:39: Kat 2
+20070119.120608:3: admin/categories.php:39: Kat 3
+20070119.120608:3: admin/categories.php:39: Kat 1.2
+20070119.120608:3: admin/categories.php:39: Fernseher
+20070119.120608:3: admin/categories.php:39: Desktop-PCs
+20070119.120608:3: admin/categories.php:39: Radios
+20070119.120608:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120608:3: DB-Anfrage akzeptiert
+20070119.120608:3: admin/categories.php:69: Kat 1
+20070119.120608:3: admin/categories.php:69: Kat 2
+20070119.120608:3: admin/categories.php:69: Kat 3
+20070119.120608:3: admin/categories.php:69: Kat 1.2
+20070119.120608:3: admin/categories.php:69: Fernseher
+20070119.120608:3: admin/categories.php:69: Desktop-PCs
+20070119.120608:3: admin/categories.php:69: Radios
+20070119.120608:3: admin/categories.php: Anzeige
+20070119.120614:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120614:3: startApplication.php:13:Sprache: de
+20070119.120614:3: startApplication.php:16:Session gestartet
+20070119.120614:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120614:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Nutzername :Lars
+20070119.120614:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Berechtigungen :1
+20070119.120614:3: Benutzer wiederhergestellt:Lars
+20070119.120614:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120614:2: Weitergeleitet zu: /admin/index.php?
+20070119.120614:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120614:3: startApplication.php:13:Sprache: de
+20070119.120614:3: startApplication.php:16:Session gestartet
+20070119.120614:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120614:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Nutzername :Lars
+20070119.120614:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Berechtigungen :1
+20070119.120614:3: Benutzer wiederhergestellt:Lars
+20070119.120614:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120614:2: Weitergeleitet zu: /admin/categories.php?
+20070119.120614:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120614:3: startApplication.php:13:Sprache: de
+20070119.120614:3: startApplication.php:16:Session gestartet
+20070119.120614:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120614:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Nutzername :Lars
+20070119.120614:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: Berechtigungen :1
+20070119.120614:3: Benutzer wiederhergestellt:Lars
+20070119.120614:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120614:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: admin/categories.php:39: Kat 1
+20070119.120614:3: admin/categories.php:39: Kat 2
+20070119.120614:3: admin/categories.php:39: Kat 3
+20070119.120614:3: admin/categories.php:39: Kat 1.2
+20070119.120614:3: admin/categories.php:39: Fernseher
+20070119.120614:3: admin/categories.php:39: Desktop-PCs
+20070119.120614:3: admin/categories.php:39: Radios
+20070119.120614:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120614:3: DB-Anfrage akzeptiert
+20070119.120614:3: admin/categories.php:69: Kat 1
+20070119.120614:3: admin/categories.php:69: Kat 2
+20070119.120614:3: admin/categories.php:69: Kat 3
+20070119.120614:3: admin/categories.php:69: Kat 1.2
+20070119.120614:3: admin/categories.php:69: Fernseher
+20070119.120614:3: admin/categories.php:69: Desktop-PCs
+20070119.120614:3: admin/categories.php:69: Radios
+20070119.120614:3: admin/categories.php: Anzeige
+20070119.120617:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120617:3: startApplication.php:13:Sprache: de
+20070119.120617:3: startApplication.php:16:Session gestartet
+20070119.120617:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120617:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120617:3: DB-Anfrage akzeptiert
+20070119.120617:3: Nutzername :Lars
+20070119.120617:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120617:3: DB-Anfrage akzeptiert
+20070119.120617:3: Berechtigungen :1
+20070119.120617:3: Benutzer wiederhergestellt:Lars
+20070119.120617:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120617:2: Benutzer abgemeldet: Lars
+20070119.120617:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120617:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120617:3: startApplication.php:13:Sprache: de
+20070119.120617:3: startApplication.php:16:Session gestartet
+20070119.120617:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120617:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120617:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120617:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120617:3: startApplication.php:13:Sprache: de
+20070119.120617:3: startApplication.php:16:Session gestartet
+20070119.120617:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120617:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120617:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120617:3: DB-Anfrage akzeptiert
+20070119.120617:3: viewer/categories.php:39: Kat 1
+20070119.120617:3: viewer/categories.php:39: Kat 2
+20070119.120617:3: viewer/categories.php:39: Kat 3
+20070119.120617:3: viewer/categories.php:39: Kat 1.2
+20070119.120617:3: viewer/categories.php:39: Fernseher
+20070119.120617:3: viewer/categories.php:39: Desktop-PCs
+20070119.120617:3: viewer/categories.php:39: Radios
+20070119.120617:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120617:3: DB-Anfrage akzeptiert
+20070119.120617:3: viewer/categories.php:69: Kat 1
+20070119.120617:3: viewer/categories.php:69: Kat 2
+20070119.120617:3: viewer/categories.php:69: Kat 3
+20070119.120617:3: viewer/categories.php:69: Kat 1.2
+20070119.120617:3: viewer/categories.php:69: Fernseher
+20070119.120617:3: viewer/categories.php:69: Desktop-PCs
+20070119.120617:3: viewer/categories.php:69: Radios
+20070119.120617:3: viewer/categories.php: Anzeige
+20070119.120619:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120619:3: startApplication.php:13:Sprache: de
+20070119.120619:3: startApplication.php:16:Session gestartet
+20070119.120619:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120619:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120619:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120619:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120619:3: startApplication.php:13:Sprache: de
+20070119.120619:3: startApplication.php:16:Session gestartet
+20070119.120619:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120619:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120619:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120619:3: DB-Anfrage akzeptiert
+20070119.120619:3: viewer/categories.php:39: Kat 1
+20070119.120619:3: viewer/categories.php:39: Kat 2
+20070119.120619:3: viewer/categories.php:39: Kat 3
+20070119.120619:3: viewer/categories.php:39: Kat 1.2
+20070119.120619:3: viewer/categories.php:39: Fernseher
+20070119.120619:3: viewer/categories.php:39: Desktop-PCs
+20070119.120619:3: viewer/categories.php:39: Radios
+20070119.120619:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120619:3: DB-Anfrage akzeptiert
+20070119.120619:3: viewer/categories.php:69: Kat 1
+20070119.120619:3: viewer/categories.php:69: Kat 2
+20070119.120619:3: viewer/categories.php:69: Kat 3
+20070119.120619:3: viewer/categories.php:69: Kat 1.2
+20070119.120619:3: viewer/categories.php:69: Fernseher
+20070119.120619:3: viewer/categories.php:69: Desktop-PCs
+20070119.120619:3: viewer/categories.php:69: Radios
+20070119.120619:3: viewer/categories.php: Anzeige
+20070119.120620:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120620:3: startApplication.php:13:Sprache: de
+20070119.120620:3: startApplication.php:16:Session gestartet
+20070119.120624:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120624:3: startApplication.php:13:Sprache: de
+20070119.120624:3: startApplication.php:16:Session gestartet
+20070119.120624:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'admin'
+					AND password = 'wpppw'
+20070119.120624:3: DB-Anfrage akzeptiert
+20070119.120624:2: Benutzer konnte nicht angemeldet werden: admin
+20070119.120624:2: Weitergeleitet zu: /user/login.php?error=failed&camefrom=categories.php
+20070119.120624:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120624:3: startApplication.php:13:Sprache: de
+20070119.120624:3: startApplication.php:16:Session gestartet
+20070119.120628:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120628:3: startApplication.php:13:Sprache: de
+20070119.120628:3: startApplication.php:16:Session gestartet
+20070119.120628:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE name = 'lars'
+					AND password = 'wpppw'
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:2: Benutzer angemeldet :Lars
+20070119.120628:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:2: Benutzer angemeldet: Lars
+20070119.120628:2: Weitergeleitet zu: /admin/categories.php?
+20070119.120628:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120628:3: startApplication.php:13:Sprache: de
+20070119.120628:3: startApplication.php:16:Session gestartet
+20070119.120628:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120628:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:3: Nutzername :Lars
+20070119.120628:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:3: Berechtigungen :1
+20070119.120628:3: Benutzer wiederhergestellt:Lars
+20070119.120628:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120628:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:3: admin/categories.php:39: Kat 1
+20070119.120628:3: admin/categories.php:39: Kat 2
+20070119.120628:3: admin/categories.php:39: Kat 3
+20070119.120628:3: admin/categories.php:39: Kat 1.2
+20070119.120628:3: admin/categories.php:39: Fernseher
+20070119.120628:3: admin/categories.php:39: Desktop-PCs
+20070119.120628:3: admin/categories.php:39: Radios
+20070119.120628:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120628:3: DB-Anfrage akzeptiert
+20070119.120628:3: admin/categories.php:69: Kat 1
+20070119.120628:3: admin/categories.php:69: Kat 2
+20070119.120628:3: admin/categories.php:69: Kat 3
+20070119.120628:3: admin/categories.php:69: Kat 1.2
+20070119.120628:3: admin/categories.php:69: Fernseher
+20070119.120628:3: admin/categories.php:69: Desktop-PCs
+20070119.120628:3: admin/categories.php:69: Radios
+20070119.120628:3: admin/categories.php: Anzeige
+20070119.120649:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120649:3: startApplication.php:13:Sprache: de
+20070119.120649:3: startApplication.php:16:Session gestartet
+20070119.120649:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120649:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120649:3: DB-Anfrage akzeptiert
+20070119.120649:3: Nutzername :Lars
+20070119.120649:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120649:3: DB-Anfrage akzeptiert
+20070119.120649:3: Berechtigungen :1
+20070119.120649:3: Benutzer wiederhergestellt:Lars
+20070119.120649:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120649:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+20070119.120649:3: DB-Anfrage akzeptiert
+20070119.120649:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120649:3: DB-Anfrage akzeptiert
+20070119.120649:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120649:3: DB-Anfrage akzeptiert
+20070119.120651:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120651:3: startApplication.php:13:Sprache: de
+20070119.120651:3: startApplication.php:16:Session gestartet
+20070119.120651:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120651:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120651:3: Nutzername :Lars
+20070119.120651:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120651:3: Berechtigungen :1
+20070119.120651:3: Benutzer wiederhergestellt:Lars
+20070119.120651:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120651:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+				WHERE orders_id = 1
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120651:3: DB-Anfrage: SELECT
+				*
+				FROM order_items
+				WHERE orders_id = 1
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120651:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 2
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120651:3: DB-Anfrage: SELECT
+				*
+				FROM users
+				WHERE users_id = 2
+20070119.120651:3: DB-Anfrage akzeptiert
+20070119.120705:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120705:3: startApplication.php:13:Sprache: de
+20070119.120705:3: startApplication.php:16:Session gestartet
+20070119.120705:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120705:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120705:3: DB-Anfrage akzeptiert
+20070119.120705:3: Nutzername :Lars
+20070119.120705:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120705:3: DB-Anfrage akzeptiert
+20070119.120705:3: Berechtigungen :1
+20070119.120705:3: Benutzer wiederhergestellt:Lars
+20070119.120705:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120705:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20070119.120705:3: DB-Anfrage akzeptiert
+20070119.120706:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120706:3: startApplication.php:13:Sprache: de
+20070119.120706:3: startApplication.php:16:Session gestartet
+20070119.120706:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120706:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120706:3: DB-Anfrage akzeptiert
+20070119.120706:3: Nutzername :Lars
+20070119.120706:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120706:3: DB-Anfrage akzeptiert
+20070119.120706:3: Berechtigungen :1
+20070119.120706:3: Benutzer wiederhergestellt:Lars
+20070119.120706:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120706:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+20070119.120706:3: DB-Anfrage akzeptiert
+20070119.120706:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120706:3: DB-Anfrage akzeptiert
+20070119.120706:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120706:3: DB-Anfrage akzeptiert
+20070119.120707:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120707:3: startApplication.php:13:Sprache: de
+20070119.120707:3: startApplication.php:16:Session gestartet
+20070119.120707:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120707:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120707:3: Nutzername :Lars
+20070119.120707:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120707:3: Berechtigungen :1
+20070119.120707:3: Benutzer wiederhergestellt:Lars
+20070119.120707:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120707:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+				WHERE orders_id = 1
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120707:3: DB-Anfrage: SELECT
+				*
+				FROM order_items
+				WHERE orders_id = 1
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120707:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 2
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120707:3: DB-Anfrage: SELECT
+				*
+				FROM users
+				WHERE users_id = 2
+20070119.120707:3: DB-Anfrage akzeptiert
+20070119.120708:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120708:3: startApplication.php:13:Sprache: de
+20070119.120708:3: startApplication.php:16:Session gestartet
+20070119.120708:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120708:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120708:3: DB-Anfrage akzeptiert
+20070119.120708:3: Nutzername :Lars
+20070119.120708:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120708:3: DB-Anfrage akzeptiert
+20070119.120708:3: Berechtigungen :1
+20070119.120708:3: Benutzer wiederhergestellt:Lars
+20070119.120708:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120708:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+20070119.120708:3: DB-Anfrage akzeptiert
+20070119.120708:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120708:3: DB-Anfrage akzeptiert
+20070119.120708:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120708:3: DB-Anfrage akzeptiert
+20070119.120709:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120709:3: startApplication.php:13:Sprache: de
+20070119.120709:3: startApplication.php:16:Session gestartet
+20070119.120709:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120709:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: Nutzername :Lars
+20070119.120709:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: Berechtigungen :1
+20070119.120709:3: Benutzer wiederhergestellt:Lars
+20070119.120709:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120709:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+				WHERE orders_id = 2
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: DB-Anfrage: SELECT
+				*
+				FROM order_items
+				WHERE orders_id = 2
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 2
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 4
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 6
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120709:3: DB-Anfrage: SELECT
+				*
+				FROM users
+				WHERE users_id = 2
+20070119.120709:3: DB-Anfrage akzeptiert
+20070119.120836:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120836:3: startApplication.php:13:Sprache: de
+20070119.120836:3: startApplication.php:16:Session gestartet
+20070119.120836:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120836:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: Nutzername :Lars
+20070119.120836:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: Berechtigungen :1
+20070119.120836:3: Benutzer wiederhergestellt:Lars
+20070119.120836:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120836:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+				WHERE orders_id = 2
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: DB-Anfrage: SELECT
+				*
+				FROM order_items
+				WHERE orders_id = 2
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 2
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 4
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 6
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120836:3: DB-Anfrage: SELECT
+				*
+				FROM users
+				WHERE users_id = 2
+20070119.120836:3: DB-Anfrage akzeptiert
+20070119.120838:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120838:3: startApplication.php:13:Sprache: de
+20070119.120838:3: startApplication.php:16:Session gestartet
+20070119.120838:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120838:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120838:3: DB-Anfrage akzeptiert
+20070119.120838:3: Nutzername :Lars
+20070119.120838:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120838:3: DB-Anfrage akzeptiert
+20070119.120838:3: Berechtigungen :1
+20070119.120838:3: Benutzer wiederhergestellt:Lars
+20070119.120838:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120838:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120838:3: DB-Anfrage akzeptiert
+20070119.120838:3: admin/categories.php:39: Kat 1
+20070119.120838:3: admin/categories.php:39: Kat 2
+20070119.120838:3: admin/categories.php:39: Kat 3
+20070119.120838:3: admin/categories.php:39: Kat 1.2
+20070119.120838:3: admin/categories.php:39: Fernseher
+20070119.120838:3: admin/categories.php:39: Desktop-PCs
+20070119.120838:3: admin/categories.php:39: Radios
+20070119.120838:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120838:3: DB-Anfrage akzeptiert
+20070119.120838:3: admin/categories.php:69: Kat 1
+20070119.120838:3: admin/categories.php:69: Kat 2
+20070119.120838:3: admin/categories.php:69: Kat 3
+20070119.120838:3: admin/categories.php:69: Kat 1.2
+20070119.120838:3: admin/categories.php:69: Fernseher
+20070119.120838:3: admin/categories.php:69: Desktop-PCs
+20070119.120838:3: admin/categories.php:69: Radios
+20070119.120838:3: admin/categories.php: Anzeige
+20070119.120840:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120840:3: startApplication.php:13:Sprache: de
+20070119.120840:3: startApplication.php:16:Session gestartet
+20070119.120840:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120840:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120840:3: DB-Anfrage akzeptiert
+20070119.120840:3: Nutzername :Lars
+20070119.120840:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120840:3: DB-Anfrage akzeptiert
+20070119.120840:3: Berechtigungen :1
+20070119.120840:3: Benutzer wiederhergestellt:Lars
+20070119.120840:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120840:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 2
+20070119.120840:3: DB-Anfrage akzeptiert
+20070119.120840:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 2
+				ORDER BY sort_order
+20070119.120840:3: DB-Anfrage akzeptiert
+20070119.120840:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 2
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120840:3: DB-Anfrage akzeptiert
+20070119.120840:3: admin/categories.php: Anzeige
+20070119.120841:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120841:3: startApplication.php:13:Sprache: de
+20070119.120841:3: startApplication.php:16:Session gestartet
+20070119.120841:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120841:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120841:3: DB-Anfrage akzeptiert
+20070119.120841:3: Nutzername :Lars
+20070119.120841:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120841:3: DB-Anfrage akzeptiert
+20070119.120841:3: Berechtigungen :1
+20070119.120841:3: Benutzer wiederhergestellt:Lars
+20070119.120841:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120841:3: admin/addProduct.php: get-action=edit
+20070119.120841:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 4
+20070119.120841:3: DB-Anfrage akzeptiert
+20070119.120844:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120844:3: startApplication.php:13:Sprache: de
+20070119.120844:3: startApplication.php:16:Session gestartet
+20070119.120844:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120844:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120844:3: DB-Anfrage akzeptiert
+20070119.120844:3: Nutzername :Lars
+20070119.120844:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120844:3: DB-Anfrage akzeptiert
+20070119.120844:3: Berechtigungen :1
+20070119.120844:3: Benutzer wiederhergestellt:Lars
+20070119.120844:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120844:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120844:3: DB-Anfrage akzeptiert
+20070119.120844:3: admin/categories.php:39: Kat 1
+20070119.120844:3: admin/categories.php:39: Kat 2
+20070119.120844:3: admin/categories.php:39: Kat 3
+20070119.120844:3: admin/categories.php:39: Kat 1.2
+20070119.120844:3: admin/categories.php:39: Fernseher
+20070119.120844:3: admin/categories.php:39: Desktop-PCs
+20070119.120844:3: admin/categories.php:39: Radios
+20070119.120844:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120844:3: DB-Anfrage akzeptiert
+20070119.120844:3: admin/categories.php:69: Kat 1
+20070119.120844:3: admin/categories.php:69: Kat 2
+20070119.120844:3: admin/categories.php:69: Kat 3
+20070119.120844:3: admin/categories.php:69: Kat 1.2
+20070119.120844:3: admin/categories.php:69: Fernseher
+20070119.120844:3: admin/categories.php:69: Desktop-PCs
+20070119.120844:3: admin/categories.php:69: Radios
+20070119.120844:3: admin/categories.php: Anzeige
+20070119.120845:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120845:3: startApplication.php:13:Sprache: de
+20070119.120845:3: startApplication.php:16:Session gestartet
+20070119.120845:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120845:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120845:3: DB-Anfrage akzeptiert
+20070119.120845:3: Nutzername :Lars
+20070119.120845:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120845:3: DB-Anfrage akzeptiert
+20070119.120845:3: Berechtigungen :1
+20070119.120845:3: Benutzer wiederhergestellt:Lars
+20070119.120845:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120845:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 8
+20070119.120845:3: DB-Anfrage akzeptiert
+20070119.120845:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 8
+				ORDER BY sort_order
+20070119.120845:3: DB-Anfrage akzeptiert
+20070119.120845:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 8
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120845:3: DB-Anfrage akzeptiert
+20070119.120845:3: admin/categories.php: Anzeige
+20070119.120846:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120846:3: startApplication.php:13:Sprache: de
+20070119.120846:3: startApplication.php:16:Session gestartet
+20070119.120846:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120846:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120846:3: DB-Anfrage akzeptiert
+20070119.120846:3: Nutzername :Lars
+20070119.120846:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120846:3: DB-Anfrage akzeptiert
+20070119.120846:3: Berechtigungen :1
+20070119.120846:3: Benutzer wiederhergestellt:Lars
+20070119.120846:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120846:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120846:3: DB-Anfrage akzeptiert
+20070119.120846:3: admin/categories.php:39: Kat 1
+20070119.120846:3: admin/categories.php:39: Kat 2
+20070119.120846:3: admin/categories.php:39: Kat 3
+20070119.120846:3: admin/categories.php:39: Kat 1.2
+20070119.120846:3: admin/categories.php:39: Fernseher
+20070119.120846:3: admin/categories.php:39: Desktop-PCs
+20070119.120846:3: admin/categories.php:39: Radios
+20070119.120846:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120846:3: DB-Anfrage akzeptiert
+20070119.120846:3: admin/categories.php:69: Kat 1
+20070119.120846:3: admin/categories.php:69: Kat 2
+20070119.120846:3: admin/categories.php:69: Kat 3
+20070119.120846:3: admin/categories.php:69: Kat 1.2
+20070119.120846:3: admin/categories.php:69: Fernseher
+20070119.120846:3: admin/categories.php:69: Desktop-PCs
+20070119.120846:3: admin/categories.php:69: Radios
+20070119.120846:3: admin/categories.php: Anzeige
+20070119.120847:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120847:3: startApplication.php:13:Sprache: de
+20070119.120847:3: startApplication.php:16:Session gestartet
+20070119.120847:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120847:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120847:3: DB-Anfrage akzeptiert
+20070119.120847:3: Nutzername :Lars
+20070119.120847:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120847:3: DB-Anfrage akzeptiert
+20070119.120847:3: Berechtigungen :1
+20070119.120847:3: Benutzer wiederhergestellt:Lars
+20070119.120847:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120847:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE categories_id = 7
+20070119.120847:3: DB-Anfrage akzeptiert
+20070119.120847:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 7
+				ORDER BY sort_order
+20070119.120847:3: DB-Anfrage akzeptiert
+20070119.120847:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 7
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120847:3: DB-Anfrage akzeptiert
+20070119.120847:3: admin/categories.php: Anzeige
+20070119.120848:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120848:3: startApplication.php:13:Sprache: de
+20070119.120848:3: startApplication.php:16:Session gestartet
+20070119.120848:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120848:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120848:3: DB-Anfrage akzeptiert
+20070119.120848:3: Nutzername :Lars
+20070119.120848:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120848:3: DB-Anfrage akzeptiert
+20070119.120848:3: Berechtigungen :1
+20070119.120848:3: Benutzer wiederhergestellt:Lars
+20070119.120848:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120848:3: admin/addProduct.php: get-action=edit
+20070119.120848:3: DB-Anfrage: SELECT
+					*
+					FROM products
+					WHERE products_id = 117
+20070119.120848:3: DB-Anfrage akzeptiert
+20070119.120849:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120849:3: startApplication.php:13:Sprache: de
+20070119.120849:3: startApplication.php:16:Session gestartet
+20070119.120849:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120849:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120849:3: DB-Anfrage akzeptiert
+20070119.120849:3: Nutzername :Lars
+20070119.120849:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120849:3: DB-Anfrage akzeptiert
+20070119.120849:3: Berechtigungen :1
+20070119.120849:3: Benutzer wiederhergestellt:Lars
+20070119.120849:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120849:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120849:3: DB-Anfrage akzeptiert
+20070119.120849:3: admin/categories.php:39: Kat 1
+20070119.120849:3: admin/categories.php:39: Kat 2
+20070119.120849:3: admin/categories.php:39: Kat 3
+20070119.120849:3: admin/categories.php:39: Kat 1.2
+20070119.120849:3: admin/categories.php:39: Fernseher
+20070119.120849:3: admin/categories.php:39: Desktop-PCs
+20070119.120849:3: admin/categories.php:39: Radios
+20070119.120849:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120849:3: DB-Anfrage akzeptiert
+20070119.120849:3: admin/categories.php:69: Kat 1
+20070119.120849:3: admin/categories.php:69: Kat 2
+20070119.120849:3: admin/categories.php:69: Kat 3
+20070119.120849:3: admin/categories.php:69: Kat 1.2
+20070119.120849:3: admin/categories.php:69: Fernseher
+20070119.120849:3: admin/categories.php:69: Desktop-PCs
+20070119.120849:3: admin/categories.php:69: Radios
+20070119.120849:3: admin/categories.php: Anzeige
+20070119.120851:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120851:3: startApplication.php:13:Sprache: de
+20070119.120851:3: startApplication.php:16:Session gestartet
+20070119.120851:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120851:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120851:3: DB-Anfrage akzeptiert
+20070119.120851:3: Nutzername :Lars
+20070119.120851:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120851:3: DB-Anfrage akzeptiert
+20070119.120851:3: Berechtigungen :1
+20070119.120851:3: Benutzer wiederhergestellt:Lars
+20070119.120851:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120851:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20070119.120851:3: DB-Anfrage akzeptiert
+20070119.120854:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120854:3: startApplication.php:13:Sprache: de
+20070119.120854:3: startApplication.php:16:Session gestartet
+20070119.120854:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120854:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120854:3: Nutzername :Lars
+20070119.120854:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120854:3: Berechtigungen :1
+20070119.120854:3: Benutzer wiederhergestellt:Lars
+20070119.120854:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120854:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120854:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120854:3: Nutzername :Lars
+20070119.120854:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120854:3: Berechtigungen :1
+20070119.120854:3: Benutzer wiederhergestellt:Lars
+20070119.120854:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120854:3: admin/editUser.php: get-action=edit
+20070119.120854:3: DB-Anfrage: SELECT
+				u.name,
+				u.lastname,
+				u.email,
+				r.name as rolename,
+				u.role_id,
+				u.active,
+				u.bill_name,
+				u.bill_street,
+				u.bill_postcode,
+				u.bill_city,
+				u.bill_state,
+				u.ship_name,
+				u.ship_street,
+				u.ship_postcode,
+				u.ship_city,
+				u.ship_state,
+				u.bank_name,
+				u.bank_iban,
+				u.bank_number,
+				u.bank_account
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+				AND u.users_id = 1
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120854:3: DB-Anfrage: SELECT
+					role_id,
+					name
+					FROM roles
+20070119.120854:3: DB-Anfrage akzeptiert
+20070119.120856:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120856:3: startApplication.php:13:Sprache: de
+20070119.120856:3: startApplication.php:16:Session gestartet
+20070119.120856:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120856:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120856:3: DB-Anfrage akzeptiert
+20070119.120856:3: Nutzername :Lars
+20070119.120856:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120856:3: DB-Anfrage akzeptiert
+20070119.120856:3: Berechtigungen :1
+20070119.120856:3: Benutzer wiederhergestellt:Lars
+20070119.120856:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120856:3: DB-Anfrage: SELECT
+				u.users_id,
+				u.name,
+				u.lastname,
+				r.name as rolename,
+				r.deletable,
+				u.active
+				FROM users u, roles r
+				WHERE u.role_id=r.role_id
+20070119.120856:3: DB-Anfrage akzeptiert
+20070119.120858:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120858:3: startApplication.php:13:Sprache: de
+20070119.120858:3: startApplication.php:16:Session gestartet
+20070119.120858:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120858:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120858:3: DB-Anfrage akzeptiert
+20070119.120858:3: Nutzername :Lars
+20070119.120858:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120858:3: DB-Anfrage akzeptiert
+20070119.120858:3: Berechtigungen :1
+20070119.120858:3: Benutzer wiederhergestellt:Lars
+20070119.120858:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120858:3: DB-Anfrage: SELECT
+				*
+				FROM orders
+20070119.120858:3: DB-Anfrage akzeptiert
+20070119.120858:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120858:3: DB-Anfrage akzeptiert
+20070119.120858:3: DB-Anfrage: SELECT 
+					name,
+					lastname
+					FROM users
+					WHERE users_id = 2
+20070119.120858:3: DB-Anfrage akzeptiert
+20070119.120900:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120900:3: startApplication.php:13:Sprache: de
+20070119.120900:3: startApplication.php:16:Session gestartet
+20070119.120900:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120900:3: DB-Anfrage: SELECT
+					*
+					FROM users
+					WHERE users_id = '4'
+20070119.120900:3: DB-Anfrage akzeptiert
+20070119.120900:3: Nutzername :Lars
+20070119.120900:3: DB-Anfrage: SELECT 
+						*
+						FROM roles
+						WHERE role_id = 1
+20070119.120900:3: DB-Anfrage akzeptiert
+20070119.120900:3: Berechtigungen :1
+20070119.120900:3: Benutzer wiederhergestellt:Lars
+20070119.120900:2: session.inc:13:Wiederhergestellter Benutzer: Lars
+20070119.120900:2: Benutzer abgemeldet: Lars
+20070119.120900:2: Weitergeleitet zu: /viewer/index.php?
+20070119.120900:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120900:3: startApplication.php:13:Sprache: de
+20070119.120900:3: startApplication.php:16:Session gestartet
+20070119.120900:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120900:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120900:2: Weitergeleitet zu: /viewer/categories.php?
+20070119.120900:3: startApplication.php:8:Datenbankverbindung hergestellt
+20070119.120900:3: startApplication.php:13:Sprache: de
+20070119.120900:3: startApplication.php:16:Session gestartet
+20070119.120900:3: session.inc:8:Versuche User wiederherzustellen
+20070119.120900:2: session.inc:16:Kein Benutzer angemeldet
+20070119.120900:3: DB-Anfrage: SELECT
+				*
+				FROM categories
+				WHERE parent = 0
+				ORDER BY sort_order
+20070119.120900:3: DB-Anfrage akzeptiert
+20070119.120900:3: viewer/categories.php:39: Kat 1
+20070119.120900:3: viewer/categories.php:39: Kat 2
+20070119.120900:3: viewer/categories.php:39: Kat 3
+20070119.120900:3: viewer/categories.php:39: Kat 1.2
+20070119.120900:3: viewer/categories.php:39: Fernseher
+20070119.120900:3: viewer/categories.php:39: Desktop-PCs
+20070119.120900:3: viewer/categories.php:39: Radios
+20070119.120900:3: DB-Anfrage: SELECT
+				*
+				FROM products
+				WHERE categories_id = 0
+				AND deleted = 0
+				ORDER BY sort_order
+20070119.120900:3: DB-Anfrage akzeptiert
+20070119.120900:3: viewer/categories.php:69: Kat 1
+20070119.120900:3: viewer/categories.php:69: Kat 2
+20070119.120900:3: viewer/categories.php:69: Kat 3
+20070119.120900:3: viewer/categories.php:69: Kat 1.2
+20070119.120900:3: viewer/categories.php:69: Fernseher
+20070119.120900:3: viewer/categories.php:69: Desktop-PCs
+20070119.120900:3: viewer/categories.php:69: Radios
+20070119.120900:3: viewer/categories.php: Anzeige

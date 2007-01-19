@@ -1,0 +1,19 @@
+<? include('header.html') ?>
+
+	<table class="frame_table" border="0">
+		<TR>
+			<td class="title_cell" colspan="2">
+				<? include('template/title.html') ?>
+			</td>
+		</TR>
+		<TR>
+			<TD class="menu_cell">
+				<? include('template/menu.html') ?>
+			</TD>
+			<TD class="content_cell">
+				<? include($_CONTENT) ?>
+			</TD>
+		</TR>
+	</table>
+
+<? include('footer.html') ?>
