@@ -49,6 +49,19 @@
 				<?=formatPrice($_TPL['price'])?>
 			</TD>
 		</TR>
+		<tr>
+			<td>
+				<?=$_LANG['piece_number']?>
+			</td><td>
+				<form action="viewProduct.php" method="post" enctype="text/plain">
+					<input name="count" type="text" size="2" maxlength="3" value="1">
+					<input type="submit" value="<?=$_LANG['into_basket']?>" class="button">
+					(TODO: ValueCheck)
+					<input name="pid" type="hidden" value="<?=$_TPL['ID']?>">
+					<input name="action" type="hidden" value="into_basket">
+				</form>
+			</td>
+		</tr>
 	</table>
 <? }
 		else{
