@@ -118,6 +118,22 @@ class User {
 			return false;
 		}
 	}
+
+	function getID(){
+		return $this->id;
+	}
+
+	function getName(){
+		return $this->name;
+	}
+
+	function getLastname(){
+		return $this->lastname;
+	}
+
+	function getEmail(){
+		return $this->email;
+	}
 }
 
 ?>
