@@ -4,8 +4,12 @@ session_start();
 
 include('../includes/includes.inc');
 include('../includes/startApplication.php');
-
-
+/*
+// wenn nicht Logout:
+if(! (isset($_GET['action']) && $_GET['action']=='logout')){
+	include('../includes/functions/verifyviewer.inc'); // Login nur anzeigen, wenn noch nicht eingeloggt
+}
+*/
 $LOG = new Log();
 $tpl = new TemplateEngine("template/login.html","template/frame_login.html",$lang["user_login"]);
 
@@ -20,14 +24,14 @@ if (isset($_POST['action'])) {
 		
 		$user = loginUser($sign, $password);	// User-Objekt holen
 
-		if($user != null && $user->getRole() == 2){	// Falls Login "User" ist
+		if($user != null && $user->checkPermissions(1,0)){	// Falls Login "User" ist
 			if ($user!= null && $forward!='') {
 				redirectURI('/user/'.$forward);
 			} elseif ($user!= null && $forward=='') {
 				redirectURI('/user/categories.php');
 			}
 		} 
-		if($user != null && $user->getRole() == 1){	// Falls Login "Admin" ist
+		if($user != null && $user->checkPermissions(1,1)){	// Falls Login "Admin" ist
 			if ($user!= null && $forward!='') {
 				redirectURI('/admin/'.$forward);
 			} elseif ($user!= null && $forward=='') {
