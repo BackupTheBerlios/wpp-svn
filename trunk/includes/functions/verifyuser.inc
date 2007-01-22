@@ -1,24 +1,18 @@
 <?php
-// Check für Zugangsberechtigung ADMIN
+// Check für Zugangsberechtigung USER
 $user = restoreUser();
 
-/*
-$uri=$_SERVER['REQUEST_URI'];
-//$getVars = echo $_SERVER[QUERY_STRING];	// Get-Variablen holen
-echo $uri;
-*/
-
-if ($user !=null) {	// wenn Session wiederhergestellt
-	if ($user->getRole()!=2) {	// wenn nicht USER
-		if ($user->getRole()==1) {	// wenn ADMIN
-			redirectURI("/admin/index.php");
-		}
-		else{
-			redirectURI("/viewer/index.php");
-		}
-	}
-}
-else{	// wenn keine Session wiederhergestellt
+if ($user==null) {	// wenn VIEWER
 	redirectURI("/viewer/index.php");
 }
+else{ // wenn Session wiederhergestellt
+	if ($user->checkPermissions(1,1)) {	// wenn ADMIN
+		redirectURI("/admin/index.php");
+	}
+	if (!$user->checkPermissions(1,0)) {// wenn kein USER, dann VIEWER
+		redirectURI("/viewer/index.php");
+	}
+}
+// Sonst als USER weiter
+
 ?>
