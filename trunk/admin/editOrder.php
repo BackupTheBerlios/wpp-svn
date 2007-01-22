@@ -52,14 +52,14 @@ while ($item = DB_fetchArray($items_query)) {
 	$items[] = array(
 			"id" => $product['products_id'],
 			"name" => $product['name'],
-			"price" => formatPrice($product['price']),
+			"price" => $product['price'],
 			"count" => $item['count'],
-			"price_total" => formatPrice($product['price']*$item['count'])
+			"price_total" => $product['price']*$item['count']
 			);
 	$price_all += $product['price']*$item['count'];
 }
 $tpl->assign('items',$items);
-$tpl->assign('price_all', formatPrice($price_all));
+$tpl->assign('price_all', $price_all);
 
 //Daten zum Nuter
 $user_query = DB_query("SELECT
