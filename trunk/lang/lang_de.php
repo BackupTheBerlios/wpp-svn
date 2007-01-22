@@ -231,6 +231,8 @@ $lang = array(
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
+		"into_basket" => "In den Warenkorb",
+		"piece_number"=>"St&uuml;ckzahl:"
 		//"view" => "Ansehen"
 	)
 );
