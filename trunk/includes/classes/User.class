@@ -107,7 +107,6 @@ class User {
 		session_destroy();
 	}
 	
-	// wahrscheinlich nicht korrekt:
 	function checkPermissions($read_content=0,$write_content=0,$purchase=0,$read_orders=0,$write_orders=0) {
 		if ($this->read_content>=$read_content &&
 			$this->write_content>=$write_content && 
@@ -118,10 +117,6 @@ class User {
 		} else {
 			return false;
 		}
-	}
-
-	function getRole(){
-		return $this->role;
 	}
 }
 
