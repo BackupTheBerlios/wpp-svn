@@ -129,8 +129,8 @@ $tpl->assign('basket_array_pid',$basketPID);
 $tpl->assign('basket_array_product',$basketProducts);
 
 $tpl->assign('menu',$menu);
-$tpl->assign('user_name',$user->getName);
-$tpl->assign('user_lastname',$user->lastname);
+$tpl->assign('user_name',$user->getName());
+$tpl->assign('user_lastname',$user->getLastname());
 
 $tpl->display();
 
