@@ -238,6 +238,17 @@ $lang = array(
 		"into_basket" => "In den Warenkorb",
 		"piece_number"=>"St&uuml;ckzahl:"
 		//"view" => "Ansehen"
+	),
+	"user_till" => array(
+		"till" => "Kasse",
+		"your_basket" => "Ihr Warenkorb:",
+		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
+		"remove" => "entfernen",
+		"product" => "Produkt",
+		"count" => "Anzahl",
+		"price" => "Einzelpreis",
+		"price-total" => "Gesamtpreis",
+		"agree_order" => "Bestellung best&auml;tigen"
 	)
 );
 ?>
