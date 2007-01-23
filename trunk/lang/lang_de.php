@@ -183,7 +183,11 @@ $lang = array(
 		"category" => "Kategorien",
 		"users" => "Benutzer",
 		"orders" => "Bestellungen",
-		"logout" => "Abmelden"
+		"logout" => "Abmelden",
+		"your_basket" => "Ihr Warenkorb:",
+		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
+		"go_to_till" => "zur Kasse",
+		"remove" => "entfernen"
 	),
 	"user_title" => array(
 		"title_img" => "images/title.jpg"		,
