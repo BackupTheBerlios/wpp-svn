@@ -167,7 +167,7 @@ table.content_table {
 }
 
 td.heading_cell {
-	background-color: #D5DFFF;
+	background-color: #99bbdd;
 	font-family: verdana;
 	font-weight: bold;
 	font-size: 12px;
@@ -175,7 +175,7 @@ td.heading_cell {
 }
 
 td.chapter_heading {
-	background-color: #d5dfff;
+	background-color: #99bbdd;
 	font-family: verdana;
 	font-weight: bold;
 	font-size: 12px;
@@ -242,7 +242,7 @@ select {
 td.price-all {
 	font-size: 14px;
 	padding-top: 3px;
-	background-color: #d5dfff;
+	background-color: #99bbdd;
 	text-align: left;
 	font-style: italic;
 	font-weight: bold;
@@ -257,4 +257,23 @@ span.post_comma {
 	font-size: 10px;
 	text-decoration:underline;
 	vertical-align:super;
+}
+
+/* Kasse */
+
+td.agree_order{
+	background-color: #99bbdd;
+	text-align:center;
+}
+
+a.agree_order {
+	color: #DDF8DD;
+	font-size: 20px;
+	font-weight:bold;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+table.agree_order {
+ 	width: 50%; 
 }

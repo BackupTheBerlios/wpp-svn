@@ -21,8 +21,8 @@ if (isset($_GET['catID'])) {
 
 $tpl->assign('catID',$requestedCategory);
 
+// Aus Warenkorb löschen:
 if (isset($_GET['action'])){
-	// Aus Warenkorb löschen:
 	if($_GET['action'] == "removeFromBasket"){
 		$bid=$_GET['bID'];	// BasketID
 		$remove_query = DB_query("	
