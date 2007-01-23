@@ -18,7 +18,6 @@ $LOG->write('3', 'user/viewProduct.php');
 $pID = $_GET['pID'];
 $tpl->assign('ID',$pID);
 
-/*
 // In den Warenkorb:
 if (isset($_POST['action'])){
 	$action = $_POST['action'];
@@ -28,16 +27,15 @@ if (isset($_POST['action'])){
 		$count = $_POST['count'];
 		$date = formatDate();
 
-		$res=DB_query("INSERT INTO basket (0,$pid,$uid,$date,$count)");
+		$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$count)");
 		if($res){
-			echo "Erfolgreich in den Warenkorb eingetragen.";
+			$LOG->write('3', 'In den Warenkorb eingetragen.');
 		}
 		else{
-			echo "gescheitert!";
+			$LOG->write('3', 'user/viewProduct.php');
 		}
 	}
 }
-*/
 
 //Produktdaten
 $product_query = DB_query("SELECT
@@ -56,6 +54,37 @@ $tpl->assign('stock',$product['stock']);
 $tpl->assign('price',$product['price']);
 //$tpl->assign('deleted',$product['deleted']);
 //$tpl->assign('error',$_GET['error']);
+
+// Warenkorb des Users erstellen				
+$userid=$_SESSION['user'];													
+$basket_query = DB_query("	
+	SELECT
+	b.products_id, b.count, p.name, b.basket_id
+	FROM basket b, products p
+	WHERE b.users_id = $userid
+	AND p.products_id = b.products_id
+	ORDER BY b.create_time
+");
+$basketCount = array();
+$basketPID = array();
+$basketProducts = array();
+while ($line = DB_fetchArray($basket_query)) {
+	$basketBID[] = $line['basket_id'];
+	$basketCount[] = $line['count'];
+	$basketPID[] = $line['products_id'];
+	$basketProducts[] = $line['name'];
+
+}
+
+$tpl->assign('basket_array_bid',$basketBID);
+$tpl->assign('basket_array_count',$basketCount);
+$tpl->assign('basket_array_pid',$basketPID);
+$tpl->assign('basket_array_product',$basketProducts);
+
+$tpl->assign('menu',$menu);
+$tpl->assign('user_name',$user->getName);
+$tpl->assign('user_lastname',$user->lastname);
+
 
 $tpl->display();
 
