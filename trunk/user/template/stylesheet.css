@@ -15,6 +15,29 @@ td.odd {
 	padding-top: 3px;
 }
 
+td.bar {
+	background-color: #99bbdd;
+	vertical-align: top;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+td.remove_even {
+	background-color: #e6f4ff;
+	vertical-align: top;
+	text-align: right;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+td.remove_odd {
+	background-color: #ddeeff;
+	vertical-align: top;
+	text-align: right;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
 /* Kategorien: */
 td.cat_even {
 	background-color: #99bbdd;
@@ -214,6 +237,7 @@ select {
 	font-size: 10px;
 	width: 300px;
 }
+
 
 td.price-all {
 	font-size: 14px;

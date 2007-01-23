@@ -5,13 +5,64 @@
 
 <table class="menu_table">
 	<TR>
-		<TD class="odd">
+		<TD class="odd" colspan="3">
 			<a href="categories.php" class="menu"><?=$LANG['category']?></a>
 		</TD>
 	</TR>
 	<TR>
-		<TD class="even">
+		<TD class="even" colspan="3">
 			<a href="login.php?action=logout" class="menu"><?=$LANG['logout']?></a>
 		</TD>
 	</TR>
+	<TR>
+		<TD colspan="2">
+			&nbsp;
+		</TD>
+	</TR>
+<?
+	$i=-1;
+	if(count($_TPL['basket_array_pid'])==0){
+		echo"
+			<TR>
+				<TD class='even' colspan='3'>
+					".$LANG['your_basket_is_empty']."
+				</TD>
+			</TR>
+		";
+	}
+	else{
+		echo"
+			<TR>
+				<TD class='bar' colspan='3'>
+					".$LANG['your_basket']."
+				</TD>
+			</TR>
+		";
+	}
+	foreach ($_TPL['basket_array_bid'] as $bid){
+		$i++;
+		echo"
+			<tr>
+				<td class='".($i%2==0?"odd":"even")."'>
+					".$_TPL['basket_array_count'][$i]."
+				</td><td class='".($i%2==0?"odd":"even")."' width='100%'>
+					<a href='viewProduct.php?pID=".$_TPL['basket_array_pid'][$i]."' class='menu' >".$_TPL['basket_array_product'][$i]."</a>
+				</td><td class='".($i%2==0?"remove_odd":"remove_even")."'>
+					<a href='categories.php?action=removeFromBasket&bID=".$bid."' class='menu' >".$LANG['remove']."</a>
+				</td>
+			</tr>
+		";
+	}
+	if($i>=0){
+		echo"
+			<TR>
+				<TD class='bar' colspan='3'>
+					<a href='TODO_zur_Kasse_mit_uid' class='menu' >".$LANG['go_to_till']."</a>
+				</TD>
+			</TR>
+		";
+	}
+	
+?>
+
 </table>

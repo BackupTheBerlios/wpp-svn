@@ -53,7 +53,7 @@
 			<td>
 				<?=$_LANG['piece_number']?>
 			</td><td>
-				<form action="viewProduct.php" method="post" enctype="text/plain">
+				<form action="viewProduct.php?pID=<?=$_TPL['ID']?>" method="post">
 					<input name="count" type="text" size="2" maxlength="3" value="1">
 					<input type="submit" value="<?=$_LANG['into_basket']?>" class="button">
 					(TODO: ValueCheck)
