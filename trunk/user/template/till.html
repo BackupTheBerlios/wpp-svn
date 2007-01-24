@@ -1,0 +1,72 @@
+<!-- Menüliste -->
+
+<? include('../lang/lang_de.php');
+   $LANG = $lang['user_till']; ?>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
+	<TR>
+		<TD class="chapter_heading" colspan="5">
+			<?=$_LANG['products']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="heading_cell">
+			<?=$_LANG['count']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['product']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['price']?>
+		</TD>
+		<TD class="heading_cell">
+			<?=$_LANG['price-total']?>
+		</TD>
+		<td class="heading_cell">
+			&nbsp;
+		</td>
+	</TR>
+	
+	<? $i=-1;foreach ($_TPL['basket_array_bid'] as $bid) { ?>
+	<? $i++;if ($i%2==0) {$class="odd";} else {$class="even";} ?>
+	<TR>
+		<TD class="<?=$class?>">
+			<?=$_TPL['basket_array_count'][$i]?>
+		</TD>
+		<TD class="<?=$class?>">
+			<a href="viewProduct.php?pID=<?=$_TPL['basket_array_pid'][$i]?>" class="menu">
+				<?=$_TPL['basket_array_product'][$i]?>
+			</a>
+		</TD>
+		<TD class="<?=$class?>">
+			<?=formatPrice($_TPL['basket_array_single_prices'][$i])?>
+		</TD>
+		<TD class="<?=$class?>">
+			<?=formatPrice($_TPL['basket_array_sum_prices'][$i])?>
+		</TD>
+		<td class="<?=$class?>">
+			<a href='till.php?action=removeFromBasket&bID=$bid' class='menu' ><?=$LANG['remove']?></a>
+		</td>		
+	</TR>
+	<? } ?>
+	
+	<TR>
+		<TD class="price-all" colspan="3">
+			<?=$_LANG['price-total']?>
+		</TD>
+		<TD class="price-all">
+			<?=formatPrice($_TPL['basket_array_sum_all'])?>
+		</TD>
+		<td class="price-all">
+			&nbsp;
+		</td>
+	</TR>
+</table><br/>
+<br/>
+<table class="agree_order">
+	<tr>
+		<td	 class="agree_order">
+			<a href="TODO_Bestellung_bestätigen" class="agree_order"><?=$LANG['agree_order']?></a>
+		</td>
+	</tr>
+</table>
