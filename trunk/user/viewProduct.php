@@ -79,7 +79,6 @@ while ($line = DB_fetchArray($basket_query)) {
 	$basketCount[] = $line['count'];
 	$basketPID[] = $line['products_id'];
 	$basketProducts[] = $line['name'];
-
 }
 
 $tpl->assign('basket_array_bid',$basketBID);
