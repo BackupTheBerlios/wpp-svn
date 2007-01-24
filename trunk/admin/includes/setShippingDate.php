@@ -8,7 +8,8 @@ $order_id = $_GET['id'];
 
 $shipping_date = formatDate();
 DB_query("UPDATE orders SET
-			shipping_date = '".$shipping_date."'
+			shipping_date = '".$shipping_date."',
+			shipped = 1
 			WHERE orders_id = ".$order_id);
 
 $date_query = DB_query("SELECT shipping_date
