@@ -6,7 +6,10 @@
 <table class="content_table" cellpadding="0" cellspacing="0">
 	<TR>
 		<TD class="chapter_heading" colspan="5">
-			<?=$_LANG['products']?>
+		<?
+		if(count($_TPL['basket_array_bid'])>0){
+			echo $_LANG['your_basket'];
+		?>
 		</TD>
 	</TR>
 	<TR>
@@ -45,7 +48,7 @@
 			<?=formatPrice($_TPL['basket_array_sum_prices'][$i])?>
 		</TD>
 		<td class="<?=$class?>">
-			<a href='till.php?action=removeFromBasket&bID=$bid' class='menu' ><?=$LANG['remove']?></a>
+			<a href='till.php?action=removeFromBasket&bID=<?=$bid?>' class='menu' ><?=$LANG['remove']?></a>
 		</td>		
 	</TR>
 	<? } ?>
@@ -66,7 +69,20 @@
 <table class="agree_order">
 	<tr>
 		<td	 class="agree_order">
-			<a href="TODO_Bestellung_bestätigen" class="agree_order"><?=$LANG['agree_order']?></a>
+			<form name="agreeOrder" action="till.php" method="post">
+				<input name="action" type="hidden" value="agreeOrder">
+				<input name="userid" type="hidden" value="<?=$_TPL['user_id']?>">
+				<input name="bids" type="hidden" value="<?=$_TPL['bids']?>">
+				<input name="pids" type="hidden" value="<?=$_TPL['pids']?>">
+				<input name="counts" type="hidden" value="<?=$_TPL['counts']?>">
+				<a href="javascript:document.agreeOrder.submit();" class="agree_order"><?=$LANG['agree_order']?></a>
+			</form>
+		<?
+			}
+			else{
+				echo $_LANG['your_basket_is_empty'];
+			}
+		?>
 		</td>
 	</tr>
 </table>
