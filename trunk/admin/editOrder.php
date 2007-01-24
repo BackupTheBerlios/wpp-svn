@@ -35,6 +35,20 @@ $order = DB_fetchArray($order_query);
 $tpl->assign('orderDate',$order['date']);
 $tpl->assign('shippingDate', $order['shipping_date']);
 $tpl->assign('orderid', $order_id);
+$tpl->assign('bill_name',$order['bill_name']);
+$tpl->assign('bill_street',$order['bill_street']);
+$tpl->assign('bill_postcode',$order['bill_postcode']);
+$tpl->assign('bill_city',$order['bill_city']);
+$tpl->assign('bill_state',$order['bill_state']);
+$tpl->assign('ship_name',$order['ship_name']);
+$tpl->assign('ship_street',$order['ship_street']);
+$tpl->assign('ship_postcode',$order['ship_postcode']);
+$tpl->assign('ship_city',$order['ship_city']);
+$tpl->assign('ship_state',$order['ship_state']);
+$tpl->assign('bank_name',$order['bank_name']);
+$tpl->assign('bank_iban',$order['bank_iban']);
+$tpl->assign('bank_number',$order['bank_number']);
+$tpl->assign('bank_account',$order['bank_account']);
 
 //Alle bestellten Artikel finden
 $items_query = DB_query("SELECT
@@ -61,9 +75,9 @@ while ($item = DB_fetchArray($items_query)) {
 $tpl->assign('items',$items);
 $tpl->assign('price_all', $price_all);
 
-//Daten zum Nuter
+//Daten zum Nutzer
 $user_query = DB_query("SELECT
-				*
+				name, lastname
 				FROM users
 				WHERE users_id = ".$order['users_id']);
 $user_data = DB_fetchArray($user_query);
