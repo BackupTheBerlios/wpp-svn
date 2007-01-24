@@ -83,12 +83,30 @@ if (isset($_POST['action'])){
 			$i=-1;
 			foreach ($pidsArray as $pid){
 				$i++;
+				// Versuch, Eintrag neu zu schreiben...
 				$order_items_query = DB_query("	
 					INSERT
 					INTO order_items
 					VALUES
 					($orderid, $pid, ".$countsArray[$i].")
 				");
+				// Wenn erfolglos: mehrere gleiche Produkte in der Liste -> Count Aufaddieren 
+				if($order_items_query!=1){
+					$order_items_query_2 = DB_query("	
+						SELECT count
+						FROM order_items
+						WHERE orders_id=$orderid 
+						AND products_id=$pid
+					");
+					$zeile=DB_fetchArray($order_items_query_2);
+					$summe=$zeile['count']+$countsArray[$i];
+					$order_items_query_3 = DB_query("	
+						UPDATE order_items
+						SET count = $summe					
+						WHERE orders_id=$orderid 
+						AND products_id=$pid
+					");
+				}
 				// bestellte Waren aus Warenkorb löschen
 				$basket_query = DB_query("	
 					DELETE
