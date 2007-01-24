@@ -17,7 +17,7 @@ function checkInput($input = '', $constraint = '') {
 	} elseif ($constraint == 'blz') { //12345678
 		$regexp = '[\d]{8}';
 	} elseif ($constraint == 'banknum') {
-		$constraint = '[\d]{3,10}]';
+		$regexp = '[\d]{3,10}';
 	} else {
 		$regexp = $constraint;
 	}
