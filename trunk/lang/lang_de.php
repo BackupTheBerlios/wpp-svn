@@ -231,7 +231,8 @@ $lang = array(
 		"into_basket" => "In den Warenkorb",
 		"piece_number" => "St&uuml;ckzahl:",
 		"no_permission" => "Sie haben keine Berechtigung hierzu.",
-		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann."
+		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann.",
+		"stock<count" => "Es sind nicht genug Exemplare vorr&auml;tig. Bitte verringern Sie die St&uuml;ckzahl."
 	),
 	"user_till" => array(
 		"till" => "Kasse",
