@@ -89,7 +89,9 @@ if (isset($_POST['action'])) {
 	$tpl->assign('active',$category['active']);
 	$tpl->assign('parent',$category['parent']);
 	$tpl->assign('error',$_GET['error']);
-	
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
+
 	$tpl->display();
 	
 } elseif ($_GET['action']=='delete') {
@@ -111,7 +113,9 @@ if (isset($_POST['action'])) {
 	$tpl->assign('catID',$catID);
 	$tpl->assign('action','add');
 	$tpl->assign('error',$_GET['error']);
-	
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
+
 	$tpl->display();
 }
 

@@ -9,6 +9,12 @@ $user = restoreUser();
 if ($user ==null || !$user->checkPermissions(1)) {
 	redirectURI("/viewer/index.php");
 }
+if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
+	$isAdmin=1;
+}
+else{
+	$isAdmin=0;
+}
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["user_categories"]);
@@ -131,6 +137,7 @@ $tpl->assign('basket_array_product',$basketProducts);
 $tpl->assign('menu',$menu);
 $tpl->assign('user_name',$user->getName());
 $tpl->assign('user_lastname',$user->getLastname());
+$tpl->assign('is_admin',$isAdmin);
 
 $tpl->display();
 

@@ -5,6 +5,14 @@ include('../includes/startApplication.php');
 
 //include('../includes/functions/verifyviewer.inc');
 
+$user = restoreUser();
+if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
+	$isAdmin=1;
+}
+else{
+	$isAdmin=0;
+}
+
 $LOG = new Log();
 $tpl = new TemplateEngine("template/categories.html","template/frame.html",$lang["viewer_categories"]);
 
@@ -87,6 +95,7 @@ for ($i=0;$i<sizeof($products);$i++) {
 
 
 $tpl->assign('menu',$menu);
+$tpl->assign('is_admin',$isAdmin);
 
 $tpl->display();
 

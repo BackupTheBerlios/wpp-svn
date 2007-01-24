@@ -11,7 +11,18 @@
 	</TR>
 	<TR>
 		<TD>
-			<?=$LANG['not_logged_in']?><span style="position:relative; left: 50px;"><?=$LANG['registration']?></span>
+			<?
+				echo
+					$LANG['not_logged_in']
+				;
+				if($_TPL['is_admin']=="1"){	// wenn Admin-Rolle, dann Link zum Wechsel in Admin-Sicht anzeigen
+					echo "
+						<span style='position:relative; left: 50px;'>
+							<a href='../admin/categories.php'>".$LANG['admin_level']."</a>
+						</span>
+					";
+				}
+			?>
 		</TD>
 	</TR>
 </table>

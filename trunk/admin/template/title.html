@@ -11,7 +11,18 @@
 	</TR>
 	<TR>
 		<TD>
-			<? echo $LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!<span style='position:relative; left: 50px;'>".$LANG['you_are_administrator']."</span>";?> 
+			<? 
+				echo 
+					$LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!
+					<span style='position:relative; left: 50px;'>
+						".$LANG['you_are_administrator']."
+					</span><span style='position:relative; left: 100px;'>
+						<a href='../user/categories.php'>".$LANG['user_level']."</a>
+					</span><span style='position:relative; left: 150px;'>
+						<a href='../viewer/categories.php'>".$LANG['viewer_level']."</a>
+					</span>
+				";
+			?> 
 		</TD>
 	</TR>
 </table>

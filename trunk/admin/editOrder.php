@@ -73,6 +73,8 @@ $tpl->assign('user',$user_data);
 if ($user->checkPermissions(0,0,0,1,1)) {
 	$tpl->assign('can_change',1);
 }
+$tpl->assign('user_name',$user->getName());
+$tpl->assign('user_lastname',$user->getLastname());
 
 $tpl->display();
 

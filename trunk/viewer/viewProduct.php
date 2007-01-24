@@ -5,6 +5,14 @@ include('../includes/startApplication.php');
 
 //include('../includes/functions/verifyviewer.inc');
 
+$user = restoreUser();
+if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
+	$isAdmin=1;
+}
+else{
+	$isAdmin=0;
+}
+
 $LOG = new Log();
 $tpl = new TemplateEngine("template/viewProduct.html","template/frame.html",$lang["viewer_viewProduct"]);
 
@@ -28,8 +36,8 @@ $tpl->assign('image_small',$product['image_small']);
 $tpl->assign('image_big',$product['image_big']);
 $tpl->assign('stock',$product['stock']);
 $tpl->assign('price',$product['price']);
-//$tpl->assign('deleted',$product['deleted']);
-//$tpl->assign('error',$_GET['error']);
+
+$tpl->assign('is_admin',$isAdmin);
 
 $tpl->display();
 

@@ -109,6 +109,8 @@ if (isset($_POST['action'])) {
 			"name" => $role['name']);
 	}
 	$tpl->assign('roleslist',$roles);
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
 
 	$tpl->display();
 
@@ -138,8 +140,11 @@ if (isset($_POST['action'])) {
 	}
 	$tpl->assign('roleslist',$roles);
 	
-
 	$tpl->assign('action','add');
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
+
+
 	$tpl->display();
 	
 }

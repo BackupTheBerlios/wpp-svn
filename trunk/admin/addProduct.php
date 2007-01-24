@@ -153,6 +153,8 @@ if (isset($_POST['action'])) {
 	$tpl->assign('price',$product['price']);
 	$tpl->assign('deleted',$product['deleted']);
 	$tpl->assign('error',$_GET['error']);
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
 	
 	$tpl->display();
 	
@@ -177,7 +179,9 @@ if (isset($_POST['action'])) {
 	$tpl->assign('ID',$ID);
 	$tpl->assign('action','add');
 	$tpl->assign('error',$_GET['error']);
-	
+	$tpl->assign('user_name',$user->getName());
+	$tpl->assign('user_lastname',$user->getLastname());
+
 	$tpl->display();
 }
 

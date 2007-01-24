@@ -39,6 +39,8 @@ while ($users = DB_fetchArray($users_query)) {
 }
 
 $tpl->assign('users',$users_list);
+$tpl->assign('user_name',$user->getName());
+$tpl->assign('user_lastname',$user->getLastname());
 
 $tpl->display();
 

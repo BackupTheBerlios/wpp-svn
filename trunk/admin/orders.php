@@ -26,13 +26,13 @@ while ($orders = DB_fetchArray($orders_query)) {
 					lastname
 					FROM users
 					WHERE users_id = ".$orders['users_id']);
-	$user = DB_fetchArray($user_query);
+	$users = DB_fetchArray($user_query);
 	$orders_list[] = array(
 		"id" => $orders['orders_id'],
 		"date" => $orders['date'],
 		"items_id" => $orders['order_items_id'],
 		"users_id" => $orders['users_id'],
-		"username" => $user['name']." ".$user['lastname'],
+		"username" => $users['name']." ".$users['lastname'],
 		"shipping_date" => $orders['shipping_date'],
 		"shipped" => $orders['shipped']
 	);
@@ -40,6 +40,8 @@ while ($orders = DB_fetchArray($orders_query)) {
 }
 
 $tpl->assign('orders',$orders_list);
+$tpl->assign('user_name',$user->getName());
+$tpl->assign('user_lastname',$user->getLastname());
 
 $tpl->display();
 

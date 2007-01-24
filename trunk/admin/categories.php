@@ -92,8 +92,8 @@ for ($i=0;$i<sizeof($products);$i++) {
 }
 
 $tpl->assign('menu',$menu);
-$tpl->assign('user_name',$user->name);
-$tpl->assign('user_lastname',$user->lastname);
+$tpl->assign('user_name',$user->getName());
+$tpl->assign('user_lastname',$user->getLastname());
 
 $tpl->display();
 
