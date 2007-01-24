@@ -96,6 +96,20 @@ CREATE TABLE `orders` (
   `users_id` int(11) NOT NULL,
   `shipping_date` datetime,
   `shipped` tinyint(1) NOT NULL,
+  `bill_name` char(255) NOT NULL,
+  `bill_street` char(255) NOT NULL,
+  `bill_postcode` char(255) NOT NULL,
+  `bill_city` char(255) NOT NULL,
+  `bill_state` char(255) NOT NULL,
+  `ship_name` char(255) NOT NULL,
+  `ship_street` char(255) NOT NULL,
+  `ship_postcode` char(255) NOT NULL,
+  `ship_city` char(255) NOT NULL,
+  `ship_state` char(255) NOT NULL,
+  `bank_number` char(255) NOT NULL,
+  `bank_iban` char(255) NOT NULL,
+  `bank_name` char(255) NOT NULL,
+  `bank_account` char(255) NOT NULL,
   PRIMARY KEY  (`orders_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -160,9 +174,9 @@ INSERT INTO users VALUES(0,'peter','müller','test','studium@luzip.de',2,1,'',''
 INSERT INTO users VALUES(0,'Lars','Schröder','wpppw','safuser@web.de',1,1,'','','','','','','','','','','','','','');
 INSERT INTO users VALUES(0,'User','Schröder','wpppw','safuser@web.de',2,1,'','','','','','','','','','','','','','');
 
-INSERT INTO orders VALUES(0,20061201123456,2,20061203123456,1);
+INSERT INTO orders VALUES(0,20061201123456,2,20061203123456,1,'','','','','','','','','','','','','','');
 INSERT INTO order_items VALUES(1,2,5);
-INSERT INTO orders VALUES(0,20061227,2,NULL,2);
+INSERT INTO orders VALUES(0,20061227,2,NULL,2,'','','','','','','','','','','','','','');
 INSERT INTO order_items VALUES(2,2,3);
 INSERT INTO order_items VALUES(2,4,1);
 INSERT INTO order_items VALUES(2,6,2);
