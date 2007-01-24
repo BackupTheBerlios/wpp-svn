@@ -17,6 +17,8 @@ class User {
 	var $email = null;
 	var $id = null;
 	
+	var $userdata = null;
+	
 	function restore($id) {
 	
 		$LOG = new Log();
@@ -27,6 +29,7 @@ class User {
 		if (mysql_num_rows($user_query)==1) {
 			
 			$userdata = DB_fetchArray($user_query);
+			$this->userdata = $userdata;
 			//Get user information
 			$this->id = $userdata['users_id'];
 			$this->name = $userdata['name'];	
@@ -67,6 +70,7 @@ class User {
 					AND password = '".$password."'");
 		if (mysql_num_rows($user_query)==1) {
 			$userdata = DB_fetchArray($user_query);
+			$this->userdata = $userdata;
 			//Get user information
 			$this->id = $userdata['users_id'];
 			$this->name = $userdata['name'];	
