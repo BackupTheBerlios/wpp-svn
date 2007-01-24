@@ -55,13 +55,29 @@ if (isset($_POST['action'])){
 
 		$date = formatDate();
 		$userid=$_POST['userid'];
+		$userdata=getUserOrderData($userid);
 
 		if(count($bidsArray)>0){	// wenn Warenkorb nicht leer war
 			$order_query = DB_query("	
 				INSERT
 				INTO orders
 				VALUES
-				(0, $date, $userid, null, 0)
+				(0, $date, $userid, null, 0,
+				'".$userdata['bill_name']."',
+				'".$userdata['bill_street']."',
+				'".$userdata['bill_postcode']."',
+				'".$userdata['bill_city']."',
+				'".$userdata['bill_state']."',
+				'".$userdata['ship_name']."',
+				'".$userdata['ship_street']."',
+				'".$userdata['ship_postcode']."',
+				'".$userdata['ship_city']."',
+				'".$userdata['ship_state']."',
+				'".$userdata['bank_number']."',
+				'".$userdata['bank_iban']."',
+				'".$userdata['bank_name']."',
+				'".$userdata['bank_account']."'
+				)
 			");
 			$orderid=mysql_insert_id();	// letzte ID des AutoIncrement holen
 			$i=-1;
