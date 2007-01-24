@@ -46,6 +46,47 @@ function editUser() {
 			WHERE users_id=".$_POST['uID']);
 }
 
+function editSelfUser() {
+
+	checkInput($_POST['lastname'],'string');
+	checkInput($_POST['email'],'email');
+	// Passwort in aufrufendem Skript gecheckt.
+	checkInput($_POST['bill_name'],'string');
+	checkInput($_POST['bill_street'],'street');
+	checkInput($_POST['bill_postcode'],'plz');
+	checkInput($_POST['bill_city'],'string');
+	checkInput($_POST['bill_state'],'string');
+	checkInput($_POST['ship_name'],'string');
+	checkInput($_POST['ship_street'],'street');
+	checkInput($_POST['ship_postcode'],'plz');
+	checkInput($_POST['ship_city'],'string');
+	checkInput($_POST['ship_state'],'string');
+	checkInput($_POST['bank_name'],'string');
+	checkInput($_POST['bank_iban'],'blz');
+	checkInput($_POST['bank_number'],'banknum');
+	checkInput($_POST['bank_account'],'string');
+	
+	DB_query("UPDATE users SET 
+			lastname='".$_POST['lastname']."',
+			email='".$_POST['email']."',
+			password='".$_POST['password']."',
+			bill_name='".$_POST['bill_name']."',
+			bill_street='".$_POST['bill_street']."',
+			bill_postcode='".$_POST['bill_postcode']."',
+			bill_city='".$_POST['bill_city']."',
+			bill_state='".$_POST['bill_state']."',
+			ship_name='".$_POST['ship_name']."',
+			ship_street='".$_POST['ship_street']."',
+			ship_postcode='".$_POST['ship_postcode']."',
+			ship_city='".$_POST['ship_city']."',
+			ship_state='".$_POST['ship_state']."',
+			bank_name='".$_POST['bank_name']."',
+			bank_iban='".$_POST['bank_iban']."',
+			bank_number='".$_POST['bank_number']."',
+			bank_account='".$_POST['bank_account']."'
+			WHERE users_id=".$_POST['uID']);
+}
+
 function deleteUser() {
 	
 
