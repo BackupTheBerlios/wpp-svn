@@ -122,4 +122,25 @@ function addUser() {
 
 }
 
+function getUserOrderData($uid) {
+	$query = DB_query("select 
+				bill_name,
+				bill_street,
+				bill_postcode,
+				bill_city,
+				bill_state,
+				ship_name,
+				ship_street,
+				ship_postcode,
+				ship_city,
+				ship_state,
+				bank_name,
+				bank_iban,
+				bank_number,
+				bank_account
+				from users where users_id = ".$uid);
+	$arr = DB_fetchArray($query);
+	return $arr;
+	
+}
 ?>
