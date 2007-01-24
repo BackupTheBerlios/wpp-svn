@@ -125,7 +125,9 @@ if (isset($_POST['action'])) {
 		$LOG->write('2', 'Produkt '.$_POST['ID'].' geändert, neue ID='.mysql_insert_id());
 	
 		$parent = $cat;
-//		redirectURI('/admin/categories.php','catID='.$parent);		
+		redirectURI('/admin/categories.php');		
+	
+	//	redirectURI('/admin/categories.php','catID='.$parent);		
 	}
 	
 } elseif ($_GET['action']=='edit') {
