@@ -217,30 +217,21 @@ $lang = array(
 	),
 	"user_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		//"addCategory" => "Kategorie hinzuf&uuml;gen",
-		//"addProduct" => "Produkt hinzuf&uuml;gen",
-		//"edit" => "Bearbeiten",
-		//"delete" => "L&ouml;schen",
 		"parentDirectory" => "..",
 		"category" => "Kategorie",
-		//"type" => "Typ",
 		"name" => "Beschreibung",
-		//"options" => "Optionen"		
 	),
 	"user_viewProduct" => array(
 		"name" => "Name",
 		"description" => "Beschreibung",
-		//"active" => "Aktiviert?",
-		//"sort_order" => "Sortierungsreihenfolge",
-		//"submit" => "&Auml;ndern",
-		//"reset" => "Abbrechen",
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
 		"into_basket" => "In den Warenkorb",
-		"piece_number"=>"St&uuml;ckzahl:"
-		//"view" => "Ansehen"
+		"piece_number" => "St&uuml;ckzahl:",
+		"no_permission" => "Sie haben keine Berechtigung hierzu.",
+		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann."
 	),
 	"user_till" => array(
 		"till" => "Kasse",
