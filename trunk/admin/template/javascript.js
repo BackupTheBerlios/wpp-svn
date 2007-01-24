@@ -1,9 +1,8 @@
 function checkInputs() {
 	err_val = 0;
-	alert(document.getElementById("errorbox").childNodes.length);
-	for (var j=0;j<document.getElementById("errorbox").childNodes.length;j++) {
-		var k = document.getElementById("errorbox").removeChild(document.getElementById("errorbox").childNodes[0]);
-		alert(k.nodeValue);
+	len = document.getElementById("errorbox").childNodes.length;
+	for (var j=0;j<len;j++) {
+		document.getElementById("errorbox").removeChild(document.getElementById("errorbox").childNodes[0]);
 	}
 	for (var i=0;i<fields.length;i++) {
 		//alert(fields[i][0]+" "+fields[i][1]+" "+document.getElementById(fields[i][0]).value);
