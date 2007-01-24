@@ -1,6 +1,6 @@
 function checkInputs() {
 	err_val = 0;
-	len = document.getElementById("errorbox").childNodes.length;
+	len = document.getElementById("errorbox").childNodes.length
 	for (var j=0;j<len;j++) {
 		document.getElementById("errorbox").removeChild(document.getElementById("errorbox").childNodes[0]);
 	}
