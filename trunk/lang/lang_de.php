@@ -132,7 +132,9 @@ $lang = array(
 	"admin_title" => array(
 		"title_img" => "images/title.jpg",
 		"hello" => "Hallo, ",
-		"you_are_administrator" => "Sie sind Administrator"
+		"you_are_administrator" => "Sie sind Administrator",
+		"user_level" => "User-Sicht",
+		"viewer_level" => "Besucher-Sicht"
 	),
 
 /*___________________________________________________________________
@@ -172,7 +174,7 @@ $lang = array(
 	"viewer_title" => array(
 		"title_img" => "images/title.jpg",
 		"not_logged_in" => "Sie sind nicht angemeldet.",
-		"registration" => "Registrieren Sie sich."
+		"admin_level" => "Admin-Sicht"
 	),
 /*___________________________________________________________________
 
@@ -191,7 +193,8 @@ $lang = array(
 	),
 	"user_title" => array(
 		"title_img" => "images/title.jpg"		,
-		"hello" => "Hallo, "
+		"hello" => "Hallo, ",
+		"admin_level" => "Admin-Sicht"
 	),
 	"user_categories" => array(
 		"categories" => "Kategorien und Produkte",
