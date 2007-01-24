@@ -16,7 +16,14 @@
 			<?=$_LANG['name']?>
 		</TD>
 		<TD class="odd">
-			<input type="string" name="name" value="<?=$_TPL['name']?>" class="string" id="name">
+			<?
+				if ($_TPL['action']=='editSelf'){
+					echo $_TPL['name']; 
+				}
+				else{
+					echo "<input type='string' name='name' value='".$_TPL['name']."' class='string' id='name'>"; 
+				}
+			?>
 		</TD>
 	</TR>
 	<TR>
@@ -27,6 +34,29 @@
 			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string" id="lastname">
 		</TD>
 	</TR>
+	<? 
+		if ($_TPL['action']=='editSelf'){
+	?>
+	<tr>
+	<TD class="odd">
+			<?=$_LANG['password']?>
+		</TD>
+		<TD class="odd">
+			<input type="password" name="password" value="<?=$_TPL['password']?>" class="string">
+		</TD>
+	</tr>
+	<tr>
+	<TD class="even">
+			<?=$_LANG['repeat_password']?>
+		</TD>
+		<TD class="even">
+			<input type="password" name="repeatPassword" value="<?=$_TPL['password']?>" class="string">
+		</TD>
+	</tr>
+	<?
+		}
+		else{	
+	?>
 	<TR>
 		<TD class="odd">
 			<?=$_LANG['active']?>
@@ -59,6 +89,7 @@
 			</select>
 		</TD>
 	</TR>
+	<? } ?>
 	<TR>
 		<TD class="odd">
 			<?=$_LANG['email']?>
@@ -192,6 +223,11 @@
 	</TR>
 	<TR>
 		<TD class="errorbox" colspan="2" id="errorbox">
+			<?
+				if($_TPL['password_error']==1){
+					echo $_LANG['unequal_passwords'];
+				}
+			?>
 		</TD>
 	</TR>
 	<TR>
