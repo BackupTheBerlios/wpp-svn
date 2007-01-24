@@ -32,13 +32,26 @@ if (isset($_POST['action'])){
 		$uid = $user->getID();
 		$count = $_POST['count'];
 		$date = formatDate();
-
-		$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$count)");
-		if($res){
-			$LOG->write('3', 'In den Warenkorb eingetragen.');
+					
+		// aktuellen Stock mit gewünschter Anzahl vergleichen												
+		$count_query = DB_query("	
+			SELECT
+			stock
+			FROM products
+			WHERE products_id = $pid
+			AND stock>=$count		
+		");
+		if(mysql_num_rows($count_query)==1){
+			$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$count)");
+			if($res){
+				$LOG->write('3', 'In den Warenkorb eingetragen.');
+			}
+			else{
+				$LOG->write('3', 'user/viewProduct.php');
+			}
 		}
 		else{
-			$LOG->write('3', 'user/viewProduct.php');
+			$tpl->assign('error','stock<count');
 		}
 	}
 }

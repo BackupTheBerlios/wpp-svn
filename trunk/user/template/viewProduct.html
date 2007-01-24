@@ -70,9 +70,29 @@
 				<?=$_LANG['basket_vs_stock']?>
 			</td>
 		</tr>
+	</table><br/>
+	<br/>
+	<table class='error'>
+		<tr>
+			<td>
+				<?
+					if($_TPL['error']=='stock<count'){
+						echo $_LANG['stock<count'];
+					}
+				?>
+			</td>
+		</tr>
 	</table>
 <? }
 		else{
-			echo $_LANG['no_permission'];
+			echo"
+				<table class='error'>
+					<tr>
+						<td>
+							".$_LANG['no_permission']."
+						</td>
+					</tr>
+				</table>
+			";
 		}
  ?>
