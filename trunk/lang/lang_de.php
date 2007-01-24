@@ -2,6 +2,7 @@
 
 $lang = array(
 	"admin_menu" => array(
+		"own_settings" => "Eigene Einstellungen",
 		"category" => "Kategorien",
 		"users" => "Benutzer",
 		"orders" => "Bestellungen",
@@ -89,7 +90,10 @@ $lang = array(
 		"editUser" => "Benutzer bearbeiten",
 		"bill-data" => "Rechnungsdaten",
 		"ship-data" => "Versanddaten",
-		"user-data" => "Benutzerdaten"
+		"user-data" => "Benutzerdaten",
+		"password" => "Passwort",
+		"repeat_password" => "Passwort wiederholen",
+		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
 	),
 	"admin_orders" => array(
 		"orders" => "Bestellungen",
