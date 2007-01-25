@@ -87,6 +87,7 @@ $basket_query = DB_query("
 $basketCount = array();
 $basketPID = array();
 $basketProducts = array();
+$basketBID = array();
 while ($line = DB_fetchArray($basket_query)) {
 	$basketBID[] = $line['basket_id'];
 	$basketCount[] = $line['count'];

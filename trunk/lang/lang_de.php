@@ -147,7 +147,8 @@ $lang = array(
 		"bill_street" => "Bitte geben Sie eine gültige Adresse ein!",
 		"bill_postcode" => "Bitte geben Sie eine gültige Postleitzahl ein!",
 		"bill_city" => "Bitte geben Sie einen gültigen Namen ein!",
-		"bill_state" => "Bitte geben Sie einen gültigen Namen ein!"
+		"bill_state" => "Bitte geben Sie einen gültigen Namen ein!",
+		"count" => "Bitte geben Sie eine gültige Anzahl ein!"
 	),
 	"admin_title" => array(
 		"title_img" => "images/title.jpg",

@@ -18,6 +18,8 @@ function checkInput($input = '', $constraint = '') {
 		$regexp = '[\d]{8}';
 	} elseif ($constraint == 'banknum') {
 		$regexp = '[\d]{3,10}';
+	} elseif ($constraint == 'posint') {
+		$regexp = '[1-9][\d]*';
 	} else {
 		$regexp = $constraint;
 	}

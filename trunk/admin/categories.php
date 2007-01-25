@@ -65,7 +65,8 @@ while ($line = DB_fetchArray($products_query)) {
 			"id" => $line['products_id'],
 			"name" => $line['name'],
 			"description" => $line['description'],
-			"active" => $line['active']);
+			"active" => $line['active'],
+			"stock" => $line['stock']);
 	$products[] = $list;
 }
 
@@ -88,6 +89,11 @@ for ($i=0;$i<sizeof($products);$i++) {
 			"id" => $products[$i]["id"],
 			"active" => $products[$i]["active"]
 	);
+	if ($products[$i]["stock"]<PRODUCTS_STOCK_LOW) {
+		$entry["stocklow"]='1';
+	} else {
+		$entry["stocklow"]='0';
+	}
 	$menu[] = $entry;
 }
 

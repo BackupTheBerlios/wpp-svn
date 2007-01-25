@@ -53,8 +53,8 @@
 			<td>
 				<?=$_LANG['piece_number']?>
 			</td><td>
-				<form action="viewProduct.php?pID=<?=$_TPL['ID']?>" method="post">
-					<input name="count" type="text" size="2" maxlength="3" value="1">
+				<form action="viewProduct.php?pID=<?=$_TPL['ID']?>" method="post" onsubmit="return checkInputs();">
+					<input name="count" type="text" size="2" maxlength="3" value="1" id="count">
 					<input type="submit" value="<?=$_LANG['into_basket']?>" class="button">
 					(TODO: ValueCheck)
 					<input name="pid" type="hidden" value="<?=$_TPL['ID']?>">
@@ -72,7 +72,7 @@
 		</tr>
 	</table><br/>
 	<br/>
-	<table class='error'>
+	<table class='error' id='errorbox'>
 		<tr>
 			<td>
 				<?
@@ -83,6 +83,10 @@
 			</td>
 		</tr>
 	</table>
+<script language="JavaScript">
+	fields = new Array(new Array('count','posint'));
+</script>
+	
 <? }
 		else{
 			echo"
