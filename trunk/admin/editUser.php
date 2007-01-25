@@ -203,7 +203,6 @@ if (isset($_POST['action'])) {
 
 	$tpl->assign('user_name',$user->getName());
 	$tpl->assign('user_lastname',$user->getLastname());
-
 	$tpl->display();
 
 	// Löschvorgang:

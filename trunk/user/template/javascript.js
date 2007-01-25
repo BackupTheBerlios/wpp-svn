@@ -8,9 +8,9 @@ function checkInputs() {
 		
 		if (httpRequest.responseText != 'true') {
 				err_val += 1;
-				//alert(httpRequest.responseText+err_val);
-				document.getElementById("errorbox").appendChild(document.createTextNode(httpRequest.responseText));
-				document.getElementById("errorbox").appendChild(document.createElement("br"));
+				document.getElementById(fields[i][0]).parentElement.appendChild(document.createElement("br"));
+				document.getElementById(fields[i][0]).parentElement.appendChild(document.createTextNode(httpRequest.responseText));
+				document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#FFE5DD';
 		}
 	}
 	if (err_val>0) {

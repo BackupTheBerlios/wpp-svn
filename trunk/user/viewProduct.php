@@ -60,7 +60,9 @@ if (isset($_POST['action'])){
 $product_query = DB_query("SELECT
 				*
 				FROM products
-				WHERE products_id = ".$pID);
+				WHERE products_id = ".$pID."
+				ORDER BY sort_order, name
+				");
 $product = DB_fetchArray($product_query);
 
 $tpl->assign('name',$product['name']);
@@ -84,6 +86,7 @@ $basket_query = DB_query("
 	AND p.products_id = b.products_id
 	ORDER BY b.create_time
 ");
+$basketPID = array();
 $basketCount = array();
 $basketPID = array();
 $basketProducts = array();

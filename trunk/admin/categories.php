@@ -40,7 +40,7 @@ $children_query = DB_query("SELECT
 				*
 				FROM categories
 				WHERE parent = ".$requestedCategory."
-				ORDER BY sort_order");
+				ORDER BY sort_order, name");
 $children = array();
 while ($line = DB_fetchArray($children_query)) {
 	$list = array(
@@ -58,7 +58,7 @@ $products_query = DB_query("SELECT
 				FROM products
 				WHERE categories_id = ".$requestedCategory."
 				AND deleted = 0
-				ORDER BY sort_order");
+				ORDER BY sort_order, name");
 $products = array();
 while ($line = DB_fetchArray($products_query)) {
 	$list = array(

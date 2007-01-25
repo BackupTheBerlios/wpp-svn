@@ -25,7 +25,9 @@ $tpl->assign('ID',$pID);
 $product_query = DB_query("SELECT
 				*
 				FROM products
-				WHERE products_id = ".$pID);
+				WHERE products_id = ".$pID."
+				ORDER BY sort_order, name
+				");
 $product = DB_fetchArray($product_query);
 
 $tpl->assign('name',$product['name']);

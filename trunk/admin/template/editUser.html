@@ -18,7 +18,7 @@
 		<TD class="odd">
 			<?
 				if ($_TPL['action']=='editSelf'){
-					echo $_TPL['name']; 
+ 					echo $_TPL['user_name']; // Hier Username, da Name nicht beim Fehlercheck übertragen wird, da kein Eingabefeld. 
 				}
 				else{
 					echo "<input type='string' name='name' value='".$_TPL['name']."' class='string' id='name'>"; 
