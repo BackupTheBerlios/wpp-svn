@@ -184,4 +184,37 @@ function getUserOrderData($uid) {
 	return $arr;
 	
 }
+
+function restoreUserBasket($userid) {
+// Warenkorb des Users erstellen				
+	//$userid=$_SESSION['user'];													
+	$basket_query = DB_query("	
+		SELECT
+		b.products_id, b.count, p.name, b.basket_id
+		FROM basket b, products p
+		WHERE b.users_id = $userid
+		AND p.products_id = b.products_id
+		ORDER BY b.create_time
+	");
+	$basketBID = array();
+	$basketCount = array();
+	$basketPID = array();
+	$basketProducts = array();
+	//$basketBID = array();
+	while ($line = DB_fetchArray($basket_query)) {
+		$basketBID[] = $line['basket_id'];
+		$basketCount[] = $line['count'];
+		$basketPID[] = $line['products_id'];
+		$basketProducts[] = $line['name'];
+	
+	}
+	
+	$ret = array("basket_array_bid" =>$basketBID,
+			"basket_array_count"=>$basketCount,
+			"basket_array_pid"=>$basketPID,
+			"basket_array_product"=>$basketProducts);
+			
+	return $ret;
+}
+
 ?>

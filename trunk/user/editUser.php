@@ -16,32 +16,12 @@ $tpl = new TemplateEngine("template/editUser.html","template/frame.html",$lang["
 
 // Warenkorb des Users erstellen				
 $userid=$_SESSION['user'];													
-$basket_query = DB_query("	
-	SELECT
-	b.products_id, b.count, p.name, b.basket_id
-	FROM basket b, products p
-	WHERE b.users_id = $userid
-	AND p.products_id = b.products_id
-	ORDER BY b.create_time
-");
-$basketBID = array();
-$basketCount = array();
-$basketPID = array();
-$basketProducts = array();
-$basketBID = array();
-while ($line = DB_fetchArray($basket_query)) {
-	$basketBID[] = $line['basket_id'];
-	$basketCount[] = $line['count'];
-	$basketPID[] = $line['products_id'];
-	$basketProducts[] = $line['name'];
+$basket=restoreUserBasket($userid);
 
-}
-
-$tpl->assign('basket_array_bid',$basketBID);
-$tpl->assign('basket_array_count',$basketCount);
-$tpl->assign('basket_array_pid',$basketPID);
-$tpl->assign('basket_array_product',$basketProducts);
-
+$tpl->assign('basket_array_bid',$basket["basket_array_bid"]);
+$tpl->assign('basket_array_count',$basket["basket_array_count"]);
+$tpl->assign('basket_array_pid',$basket["basket_array_pid"]);
+$tpl->assign('basket_array_product',$basket["basket_array_product"]);
 
 if (isset($_POST['action'])) {
 
