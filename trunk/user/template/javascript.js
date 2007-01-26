@@ -1,16 +1,27 @@
 function checkInputs() {
 	err_val = 0;
 	for (var i=0;i<fields.length;i++) {
-		//alert(fields[i][0]+" "+fields[i][1]+" "+document.getElementById(fields[i][0]).value);
 		httpRequest = new XMLHttpRequest();
 		httpRequest.open("GET", "../includes/ajax/checkInput.php?input="+document.getElementById(fields[i][0]).value+"&constraint="+fields[i][1]+"&id="+fields[i][0], false);
 		httpRequest.send(null);
-		
-		if (httpRequest.responseText != 'true') {
-				err_val += 1;
-				document.getElementById(fields[i][0]).parentElement.appendChild(document.createElement("br"));
-				document.getElementById(fields[i][0]).parentElement.appendChild(document.createTextNode(httpRequest.responseText));
-				document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#FFE5DD';
+
+		if (httpRequest.responseText == 'true') {	// Für alle korrekten Eingaben: alte Fehlermeldungen löschen
+			if(document.getElementById(fields[i][0]).parentElement.lastChild.nodeValue==null){	// wenn Fehlermeldung existiert (nur dann ist letzter Knoten NULL und nicht nur leer (""))
+				// Fehlermeldung leeren
+				document.getElementById(fields[i][0]).parentElement.removeChild(document.getElementById(fields[i][0]).parentElement.lastChild); // <div> samt Fehlermeldung entfernen
+				document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#e1efff';	// Farbe (annähernd) zurück setzen
+			}
+		}
+		else {	// Wenn Fehler bei Eingabe gefunden:
+			err_val += 1;
+			if(document.getElementById(fields[i][0]).parentElement.lastChild.nodeValue==null){	// wenn Fehlermeldung existiert (nur dann ist letzter Knoten NULL und nicht nur leer (""))
+				// Fehlermeldung leeren
+				document.getElementById(fields[i][0]).parentElement.removeChild(document.getElementById(fields[i][0]).parentElement.lastChild); // <div> samt Fehlermeldung entfernen
+			}
+			var node = document.createElement("div");	 // Zeilenumbruch, <br/> geht nicht.
+			node.appendChild(document.createTextNode(httpRequest.responseText));
+			document.getElementById(fields[i][0]).parentElement.appendChild(node);
+			document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#FFE5DD';
 		}
 	}
 	if (err_val>0) {
@@ -18,7 +29,6 @@ function checkInputs() {
 	} else {
 		return true;
 	}
-	
 }
 
 function setShippingDate(id) {

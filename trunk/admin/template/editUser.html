@@ -1,6 +1,5 @@
 <h1><?=$_LANG['editUser']?></h1>
-
-<form action="editUser.php" method="post" onsubmit="return checkInputs();">
+<form action="editUser.php" method="post" onsubmit="return checkInputs();" id="edit_user">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['uID']?>" name="uID">
 
@@ -238,9 +237,8 @@
 	</TR>
 </table>
 </form>
-<script language="JavaScript">
-	fields = new Array(new Array('name','string'),
-				new Array('lastname','string'),
+<script type="text/javascript">
+	fields = new Array(	new Array('lastname','string'),
 				new Array('email','email'),
 				new Array('bill_name','string'),
 				new Array('bill_street','string'),
