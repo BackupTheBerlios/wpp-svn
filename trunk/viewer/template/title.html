@@ -5,8 +5,8 @@
 
 <table class="title_table">
 	<TR>
-		<TD>
-			<a href="../viewer/index.php"><img src="<?=$LANG['title_img']?>"></a>
+		<TD class="title_table_cell">
+			&nbsp;
 		</TD>
 	</TR>
 	<TR>
@@ -15,11 +15,12 @@
 				echo
 					$LANG['not_logged_in']
 				;
-				if($_TPL['is_admin']=="1"){	// wenn Admin-Rolle, dann Link zum Wechsel in Admin-Sicht anzeigen
+				if($_TPL['is_admin']=="1"){	// wenn Admin-Rolle, dann Link zum Wechsel in andere Sichten anzeigen
 					echo "
-						<span style='position:relative; left: 50px;'>
-							<a href='../admin/categories.php'>".$LANG['admin_level']."</a>
-						</span>
+						<input type='button' class='buttonView' value='".$LANG['admin_level']."' onclick=\"javascript:window.location.href = '../admin/categories.php'\" style='top:20px;'>
+						<input type='button' class='buttonView' value='".$LANG['orderer_level']."' onclick=\"javascript:window.location.href = '../orderer/categories.php'\" style='top:40px;'>
+						<input type='button' class='buttonView' value='".$LANG['user_level']."' onclick=\"javascript:window.location.href = '../user/categories.php'\" style='top:60px;'>
+						<input type='button' class='buttonViewActive' value='".$LANG['viewer_level']."' style='top:80px;'>
 					";
 				}
 			?>

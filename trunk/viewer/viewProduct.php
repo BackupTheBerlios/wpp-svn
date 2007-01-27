@@ -11,6 +11,12 @@ if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
 }
 else{
 	$isAdmin=0;
+	if ($user !=null && $user->checkPermissions(0,0,0,1,1)) {	// wenn ORDERER
+		redirectURI("/orderer/index.php");
+	}
+	if ($user !=null && $user->checkPermissions(0,0,1)) {	// wenn USER
+		redirectURI("/user/index.php");
+	}
 }
 
 $LOG = new Log();

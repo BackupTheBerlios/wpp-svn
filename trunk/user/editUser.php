@@ -6,8 +6,17 @@ include('../includes/startApplication.php');
 //include('../includes/functions/verifyuser.inc');
 
 $user = restoreUser();
-if ($user ==null || !$user->checkPermissions(1)) {
-	redirectURI("/user/login.php","camefrom=index.php");
+if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
+	$isAdmin=1;
+}
+else{
+	$isAdmin=0;
+	if ($user !=null && $user->checkPermissions(0,0,0,1,1)) {	// wenn ORDERER
+		redirectURI("/orderer/index.php");
+	}
+	if ($user ==null || !$user->checkPermissions(1)) {
+		redirectURI("/user/login.php","camefrom=index.php");
+	}
 }
 
 $LOG = new Log();
@@ -118,6 +127,7 @@ elseif ($_GET['action']=='editSelf') {
 
 	$tpl->assign('user_name',$user->getName());
 	$tpl->assign('user_lastname',$user->getLastname());
+	$tpl->assign('is_admin',$isAdmin);
 	$tpl->display();
 
 }

@@ -9,7 +9,12 @@ function checkInputs() {
 			if(document.getElementById(fields[i][0]).parentElement.lastChild.nodeValue==null){	// wenn Fehlermeldung existiert (nur dann ist letzter Knoten NULL und nicht nur leer (""))
 				// Fehlermeldung leeren
 				document.getElementById(fields[i][0]).parentElement.removeChild(document.getElementById(fields[i][0]).parentElement.lastChild); // <div> samt Fehlermeldung entfernen
-				document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#e1efff';	// Farbe (annähernd) zurück setzen
+				if(document.getElementsByTagName("form")[0].id=="into_basket"){	// Sonderbehandlung, weil's schöner aussieht.
+					document.getElementById(fields[i][0]).parentElement.parentElement.style.backgroundColor='#e1efff';	// Farbe (annähernd) zurück setzen
+				}
+				else{
+					document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#e1efff'; // Farbe (annähernd) zurück setzen
+				}
 			}
 		}
 		else {	// Wenn Fehler bei Eingabe gefunden:
@@ -21,7 +26,12 @@ function checkInputs() {
 			var node = document.createElement("div");	 // Zeilenumbruch, <br/> geht nicht.
 			node.appendChild(document.createTextNode(httpRequest.responseText));
 			document.getElementById(fields[i][0]).parentElement.appendChild(node);
-			document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#FFE5DD';
+			if(document.getElementsByTagName("form")[0].id=="into_basket"){	// Sonderbehandlung, weil's schöner aussieht.
+				document.getElementById(fields[i][0]).parentElement.parentElement.style.backgroundColor='#ffeeaa';
+			}
+			else{
+				document.getElementById(fields[i][0]).parentElement.style.backgroundColor='#ffeeaa';
+			}
 		}
 	}
 	if (err_val>0) {

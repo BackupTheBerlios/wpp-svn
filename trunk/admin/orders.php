@@ -7,7 +7,7 @@ include('../includes/startApplication.php');
 
 
 $user = restoreUser();
-if ($user == null || !$user->checkPermissions(0,0,0,1,0)) {
+if ($user == null || !$user->checkPermissions(1,1)) {
 	redirectURI("/admin/login.php","camefrom=orders.php");
 }
 
@@ -17,7 +17,9 @@ $tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["ad
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT
 				*
-				FROM orders");
+				FROM orders
+				ORDER BY date
+			");
 $orders_list = array();
 
 while ($orders = DB_fetchArray($orders_query)) {

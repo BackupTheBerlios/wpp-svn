@@ -85,9 +85,10 @@ $lang = array(
 		"reset" => "Abbrechen",
 		"admin" => "Administrator",
 		"customer" => "Kunde",
-		"order_manager" => "Bestellung",
+		"order_manager" => "Bestell-Personal",
 		"userlist" => "Benutzer",
 		"editUser" => "Benutzer bearbeiten",
+		"editSelf" => "Eigene Einstellungen",
 		"bill-data" => "Rechnungsdaten",
 		"ship-data" => "Versanddaten",
 		"user-data" => "Benutzerdaten",
@@ -151,11 +152,12 @@ $lang = array(
 		"count" => "Bitte geben Sie eine gültige Anzahl ein!"
 	),
 	"admin_title" => array(
-		"title_img" => "images/title.jpg",
 		"hello" => "Hallo, ",
 		"you_are_administrator" => "Sie sind Administrator",
-		"user_level" => "User-Sicht",
-		"viewer_level" => "Besucher-Sicht"
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
 	),
 
 /*___________________________________________________________________
@@ -165,37 +167,28 @@ $lang = array(
 */
 	"viewer_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		//"addCategory" => "Kategorie hinzuf&uuml;gen",
-		//"addProduct" => "Produkt hinzuf&uuml;gen",
-		//"edit" => "Bearbeiten",
-		//"delete" => "L&ouml;schen",
 		"parentDirectory" => "..",
 		"category" => "Kategorie",
-		//"type" => "Typ",
-		"name" => "Beschreibung",
-		//"options" => "Optionen"		
+		"name" => "Beschreibung"
 	),
 	"viewer_viewProduct" => array(
 		"name" => "Name",
 		"description" => "Beschreibung",
-		//"active" => "Aktiviert?",
-		//"sort_order" => "Sortierungsreihenfolge",
-		//"submit" => "&Auml;ndern",
-		//"reset" => "Abbrechen",
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
-		"price" => "Preis",
-		//"view" => "Ansehen"
+		"price" => "Preis"
 	),
 	"viewer_menu" => array(
 		"category" => "Kategorien",
 		"login" => "Anmelden"
 	),
 	"viewer_title" => array(
-		"title_img" => "images/title.jpg",
 		"not_logged_in" => "Sie sind nicht angemeldet.",
-		"admin_level" => "Admin-Sicht"
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
 	),
 /*___________________________________________________________________
 
@@ -214,9 +207,11 @@ $lang = array(
 		"remove" => "entfernen"
 	),
 	"user_title" => array(
-		"title_img" => "images/title.jpg"		,
 		"hello" => "Hallo, ",
-		"admin_level" => "Admin-Sicht"
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
 	),
 	"user_categories" => array(
 		"categories" => "Kategorien und Produkte",
@@ -284,6 +279,108 @@ $lang = array(
 		"reset" => "Abbrechen",
 		"userlist" => "Benutzer",
 		"editUser" => "Benutzer bearbeiten",
+		"editSelf" => "Eigene Einstellungen",
+		"bill-data" => "Rechnungsdaten",
+		"ship-data" => "Versanddaten",
+		"user-data" => "Benutzerdaten",
+		"password" => "Passwort",
+		"repeat_password" => "Passwort wiederholen",
+		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
+	),
+/*___________________________________________________________________
+
+	ORDERER:
+  ___________________________________________________________________
+*/
+	"orderer_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		"parentDirectory" => "..",
+		"category" => "Kategorie",
+		"name" => "Beschreibung"
+	),
+	"orderer_viewProduct" => array(
+		"name" => "Name",
+		"description" => "Beschreibung",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
+		"stock" => "Lagerbestand",
+		"price" => "Preis"
+	),
+	"orderer_menu" => array(
+		"category" => "Kategorien",
+		"login" => "Anmelden"
+	),
+	"orderer_title" => array(
+		"hello" => "Hallo, ",
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
+	),
+	"orderer_orders" => array(
+		"orders" => "Bestellungen",
+		"number" => "Nr.",
+		"name" => "Kundenname",
+		"order-date" => "Bestelldatum",
+		"shipping-date" => "Lieferdatum",
+		"order-details" => "Details zur Bestellung",
+		"user" => "Besteller",
+		"products" => "Bestellte Artikel",
+		"product" => "Produkt",
+		"count" => "Anzahl",
+		"price" => "Einzelpreis",
+		"price-total" => "Gesamtpreis",
+		"ordershipped" => "Bestellung versandt",
+		"bill_name" => "Rechnung: Name",
+		"bill_street" => "Rechnungs-Adresse",
+		"bill_postcode" => "Rechnungs-PLZ",
+		"bill_city" => "Rechnungs-Stadt",
+		"bill_state" => "Rechnungs-Land",
+		"ship_name" => "Lieferungsname",
+		"ship_street" => "Lieferungsadresse",
+		"ship_postcode" => "Lieferungs-PLZ",
+		"ship_city" => "Lieferungs-Stadt",
+		"ship_state" => "Lieferungs-Staat",
+		"bank_name" => "Bankname",
+		"bank_iban" => "BLZ",
+		"bank_number" => "Kontonummer",
+		"bank_account" => "Kontoinhaber",
+		"bill-data" => "Rechnungsdaten",
+		"ship-data" => "Versanddaten"
+	),
+	"orderer_users" =>array(
+		"edit" => "Bearbeiten",
+		"delete" => "Nutzer l&ouml;schen",
+		"add" => "Nutzer hinzuf&uuml;gen",
+		"name" => "Name",
+		"lastname" => "Nachname",
+		"email" => "eMail-Adresse",
+		"rolename" => "Kontoart",
+		"deletable" => "",
+		"active" => "Aktiv",
+		"bill_name" => "Rechnung: Name",
+		"bill_street" => "Rechnungs-Adresse",
+		"bill_postcode" => "Rechnungs-PLZ",
+		"bill_city" => "Rechnungs-Stadt",
+		"bill_state" => "Rechnungs-Land",
+		"ship_name" => "Lieferungsname",
+		"ship_street" => "Lieferungsadresse",
+		"ship_postcode" => "Lieferungs-PLZ",
+		"ship_city" => "Lieferungs-Stadt",
+		"ship_state" => "Lieferungs-Staat",
+		"bank_name" => "Bankname",
+		"bank_iban" => "BLZ",
+		"bank_number" => "Kontonummer",
+		"bank_account" => "Kontoinhaber",
+		"submit" => "&Auml;nderungen &uuml;bernehmen",
+		"reset" => "Abbrechen",
+		"admin" => "Administrator",
+		"customer" => "Kunde",
+		"order_manager" => "Bestell-Personal",
+		"userlist" => "Benutzer",
+		"editUser" => "Benutzer bearbeiten",
+		"editSelf" => "Eigene Einstellungen",
+		"viewUser" => "Benutzer ansehen",
 		"bill-data" => "Rechnungsdaten",
 		"ship-data" => "Versanddaten",
 		"user-data" => "Benutzerdaten",

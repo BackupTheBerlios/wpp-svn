@@ -1,4 +1,4 @@
-<h1><?=$_LANG['editUser']?></h1>
+<h1><? echo ($_TPL['action']=='editSelf'?$_LANG['editSelf']:$_LANG['editUser'])?></h1>
 <form action="editUser.php" method="post" onsubmit="return checkInputs();" id="edit_user">
 <input type="hidden" value="<?=$_TPL['action']?>" name="action">
 <input type="hidden" value="<?=$_TPL['uID']?>" name="uID">

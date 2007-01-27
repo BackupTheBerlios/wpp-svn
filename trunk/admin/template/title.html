@@ -5,22 +5,19 @@
 
 <table class="title_table">
 	<TR>
-		<TD>
-			<a href="../viewer/index.php"><img src="<?=$LANG['title_img']?>"></a>
+		<TD class="title_table_cell">
+			&nbsp;
 		</TD>
 	</TR>
 	<TR>
 		<TD>
 			<? 
 				echo 
-					$LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!
-					<span style='position:relative; left: 50px;'>
-						".$LANG['you_are_administrator']."
-					</span><span style='position:relative; left: 100px;'>
-						<a href='../user/categories.php'>".$LANG['user_level']."</a>
-					</span><span style='position:relative; left: 150px;'>
-						<a href='../viewer/categories.php'>".$LANG['viewer_level']."</a>
-					</span>
+					$LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!<span style='padding-left: 50px;'>".$LANG['you_are_administrator']."
+						<input type='button' class='buttonViewActive' value='".$LANG['admin_level']."' style='top:20px;'>
+						<input type='button' class='buttonView' value='".$LANG['orderer_level']."' onclick=\"javascript:window.location.href = '../orderer/categories.php'\" style='top:40px;'>
+						<input type='button' class='buttonView' value='".$LANG['user_level']."' onclick=\"javascript:window.location.href = '../user/categories.php'\" style='top:60px;'>
+						<input type='button' class='buttonView' value='".$LANG['viewer_level']."' onclick=\"javascript:window.location.href = '../viewer/categories.php'\" style='top:80px;'>	
 				";
 			?> 
 		</TD>

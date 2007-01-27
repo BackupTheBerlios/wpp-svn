@@ -13,6 +13,9 @@ if ($user ==null || !$user->checkPermissions(1,1)) {
 $LOG = new Log();
 $tpl = new TemplateEngine("template/editUser.html","template/frame.html",$lang["admin_users"]);
 
+
+
+
 if (isset($_POST['action'])) {
 
 	$LOG->write('3', 'admin/editUser.php: action set');

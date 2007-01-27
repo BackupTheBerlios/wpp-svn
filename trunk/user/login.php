@@ -24,20 +24,31 @@ if (isset($_POST['action'])) {
 		
 		$user = loginUser($sign, $password);	// User-Objekt holen
 
-		if($user != null && $user->checkPermissions(1,0)){	// Falls Login "User" ist
-			if ($user!= null && $forward!='') {
-				redirectURI('/user/'.$forward);
-			} elseif ($user!= null && $forward=='') {
-				redirectURI('/user/categories.php');
-			}
-		} 
 		if($user != null && $user->checkPermissions(1,1)){	// Falls Login "Admin" ist
+			$LOG->write('2','user/login.php: ist Admin');
 			if ($user!= null && $forward!='') {
 				redirectURI('/admin/'.$forward);
 			} elseif ($user!= null && $forward=='') {
 				redirectURI('/admin/categories.php');
 			}
 		}
+		if($user != null && $user->checkPermissions(0,0,0,1,1)){	// Falls Login "Orderer" ist
+			$LOG->write('2','user/login.php: ist Orderer');
+			if ($user!= null && $forward!='') {
+				redirectURI('/orderer/'.$forward);
+			} elseif ($user!= null && $forward=='') {
+				redirectURI('/orderer/categories.php');
+			}
+		}  
+		if($user != null && $user->checkPermissions(0,0,1)){	// Falls Login "User" ist
+			$LOG->write('2','user/login.php: ist User');
+			if ($user!= null && $forward!='') {
+				redirectURI('/user/'.$forward);
+			} elseif ($user!= null && $forward=='') {
+				redirectURI('/user/categories.php');
+			}
+		}
+
 		if ($user == null && $forward!='') {	// allgemeine Fehlerbehandlung
 			redirectURI('/user/login.php','error=failed&camefrom='.$forward);
 		} 

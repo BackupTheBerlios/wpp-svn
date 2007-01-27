@@ -50,10 +50,10 @@
 			</TD>
 		</TR>
 		<tr>
-			<td>
+			<td class="cat_even">
 				<?=$_LANG['piece_number']?>
 			</td>
-			<td>
+			<td class="cat_even">
 				<form action="viewProduct.php?pID=<?=$_TPL['ID']?>" method="post" onsubmit="return checkInputs();" id="into_basket">
 					<input name="pid" type="hidden" value="<?=$_TPL['ID']?>">
 					<input name="action" type="hidden" value="into_basket">
@@ -63,10 +63,10 @@
 			</td>			
 		</tr>
 		<tr>
-			<td>
+			<td class="even">
 				&nbsp;
 			</td>
-			<td>
+			<td class="even">
 				<?=$_LANG['basket_vs_stock']?>
 			</td>
 		</tr>

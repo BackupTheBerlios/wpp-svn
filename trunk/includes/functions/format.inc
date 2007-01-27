@@ -7,9 +7,10 @@ function formatPrice($value) {
 }
 
 function formatDate($value = '') {
-	
 	return date("YmdHis");
-
 }
 
+function viewDate($date){
+	return date_format($date,"d.m.Y, h:i:s");
+}	
 ?>
