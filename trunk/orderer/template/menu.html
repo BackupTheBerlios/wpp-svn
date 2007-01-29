@@ -1,0 +1,32 @@
+<!-- Menüliste -->
+
+<? include('../lang/lang_de.php');
+   $LANG = $lang['user_menu']; ?>
+
+<table class="menu_table">
+	<TR>
+		<TD class="odd" colspan="3">
+			<a href="editUser.php?action=editSelf" class="menu"><?=$LANG['own_settings']?></a>
+		</TD>
+	</TR>	
+	<TR>
+		<TD class="even" colspan="3">
+			&nbsp;
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd" colspan="3">
+			<a href="categories.php" class="menu"><?=$LANG['category']?></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even" colspan="3">
+			<a href="orders.php" class="menu"><?=$LANG['orders']?></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd" colspan="3">
+			<a href="../user/login.php?action=logout" class="menu"><?=$LANG['logout']?></a>
+		</TD>
+	</TR>
+</table>

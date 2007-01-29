@@ -1,0 +1,213 @@
+<h1><? echo ($_TPL['action']=='editSelf'?$_LANG['editSelf']:$_LANG['editUser'])?></h1>
+
+<form action="editUser.php" method="post" onsubmit="return checkInputs();" id="edit_user">
+<input type="hidden" value="<?=$_TPL['action']?>" name="action">
+<input type="hidden" value="<?=$_TPL['uID']?>" name="uID">
+
+
+<table class="content_table" cellpadding="0" cellspacing="0">
+	<TR>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['user-data']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['name']?>
+		</TD>
+		<TD class="odd">
+			<?=$_TPL['user_name']; // Hier Username, da Name nicht beim Fehlercheck übertragen wird, da kein Eingabefeld.
+			?> 
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['lastname']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="lastname" value="<?=$_TPL['lastname']?>" class="string" id="lastname">
+		</TD>
+	</TR>
+	<tr>
+		<TD class="odd">
+			<?=$_LANG['password']?>
+		</TD>
+		<TD class="odd">
+			<input type="password" name="password" value="<?=$_TPL['password']?>" class="string">
+		</TD>
+	</tr>
+	<tr>
+		<TD class="even">
+			<?=$_LANG['repeat_password']?>
+		</TD>
+		<TD class="even">
+			<input type="password" name="repeatPassword" value="<?=$_TPL['password']?>" class="string">
+		</TD>
+	</tr>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['email']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="email" value="<?=$_TPL['email']?>" class="string" id="email">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['bill-data']?>
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['bill_name']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="bill_name" value="<?=$_TPL['bill_name']?>" class="string" id="bill_name">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['bill_street']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="bill_street" value="<?=$_TPL['bill_street']?>" class="string" id="bill_street">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['bill_postcode']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="bill_postcode" value="<?=$_TPL['bill_postcode']?>" class="string" id="bill_postcode">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['bill_city']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="bill_city" value="<?=$_TPL['bill_city']?>" class="string" id="bill_city">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['bill_state']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="bill_state" value="<?=$_TPL['bill_state']?>" class="string" id="bill_state">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="chapter_heading" colspan="2">
+			<?=$_LANG['ship-data']?>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['ship_name']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="ship_name" value="<?=$_TPL['ship_name']?>" class="string" id="ship_name">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['ship_street']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="ship_street" value="<?=$_TPL['ship_street']?>" class="string" id="ship_street">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['ship_postcode']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="ship_postcode" value="<?=$_TPL['ship_postcode']?>" class="string" id="ship_postcode">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['ship_city']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="ship_city" value="<?=$_TPL['ship_city']?>" class="string" id="ship_city">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['ship_state']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="ship_state" value="<?=$_TPL['ship_state']?>" class="string" id="ship_state">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['bank_number']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="bank_number" value="<?=$_TPL['bank_number']?>" class="string" id="bank_number">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['bank_iban']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="bank_iban" value="<?=$_TPL['bank_iban']?>" class="string" id="bank_iban">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="even">
+			<?=$_LANG['bank_name']?>
+		</TD>
+		<TD class="even">
+			<input type="string" name="bank_name" value="<?=$_TPL['bank_name']?>" class="string" id="bank_name">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="odd">
+			<?=$_LANG['bank_account']?>
+		</TD>
+		<TD class="odd">
+			<input type="string" name="bank_account" value="<?=$_TPL['bank_account']?>" class="string" id="bank_account">
+		</TD>
+	</TR>
+	<TR>
+		<TD class="errorbox" colspan="2" id="errorbox">
+			<?
+				if($_TPL['password_error']==1){
+					echo $_LANG['unequal_passwords'];
+				}
+			?>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan="2" class="optionbox">
+			<input type="submit" value="<?=$_LANG['submit']?>" class="button">
+			<input type="button" value="<?=$_LANG['reset']?>" class="button" onclick="javascript:history.back();">
+		</TD>
+	</TR>
+</table>
+</form>
+<script type="text/javascript">
+	fields = new Array(	new Array('lastname','string'),
+				new Array('email','email'),
+				new Array('bill_name','string'),
+				new Array('bill_street','string'),
+				new Array('bill_postcode','int'),
+				new Array('bill_city','string'),
+				new Array('bill_state','string'),
+				new Array('ship_name','string'),
+				new Array('ship_street','string'),
+				new Array('ship_postcode','int'),
+				new Array('ship_city','string'),
+				new Array('ship_state','string'),
+				new Array('bank_name','string'),
+				new Array('bank_account','string'),
+				new Array('bank_number','banknum'),
+				new Array('bank_iban','blz'));
+
+</script>

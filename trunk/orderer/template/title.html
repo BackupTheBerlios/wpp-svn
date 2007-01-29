@@ -1,0 +1,29 @@
+<!-- Titel-Frame -->
+
+<? include('../lang/lang_de.php');
+   $LANG = $lang['orderer_title']; ?>
+
+<table class="title_table">
+	<TR>
+		<TD class="title_table_cell">
+			&nbsp;
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<? 
+				echo
+					$LANG['hello'].$_TPL['user_name']." ".$_TPL['user_lastname']."!
+				";
+				if($_TPL['is_admin']=="1"){	// wenn Admin-Rolle, dann Link zum Wechsel in andere Sichten anzeigen
+					echo "
+						<input type='button' class='buttonView' value='".$LANG['admin_level']."' onclick=\"javascript:window.location.href = '../admin/categories.php'\" style='top:20px;'>
+						<input type='button' class='buttonViewActive' value='".$LANG['orderer_level']."' style='top:40px;'>
+						<input type='button' class='buttonView' value='".$LANG['user_level']."' onclick=\"javascript:window.location.href = '../user/categories.php'\" style='top:60px;'>
+						<input type='button' class='buttonView' value='".$LANG['viewer_level']."' onclick=\"javascript:window.location.href = '../viewer/categories.php'\" style='top:80px;'>	
+					";
+				}
+			?>
+		</TD>
+	</TR>
+</table>

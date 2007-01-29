@@ -1,0 +1,48 @@
+
+<h1><?=$_LANG['categories']?></h1>
+
+<table class="content_table" cellpadding="0" cellspacing="0">
+
+	<? if ($_TPL['parent']!=null) { ?>
+		<TR>
+			<TD>
+				<a href="categories.php?catID=<?=$_TPL['parent']?>" class="menu"><?=$_LANG['parentDirectory']?></a>
+			</TD>
+		</TR>
+	<? } ?>
+	<? $i=0;foreach ($_TPL['menu'] as $line) { ?>
+	<? $i++;
+	if ($line['type']==='category') { 
+		if ($i%2==0) {$class="cat_even";} else {$class="cat_odd";}?>
+		<TR>
+			<TD class="<?=$class?>">
+				<? if ($line['active']=='1') { ?>
+					<a href="categories.php?catID=<?=$line['id']?>" class="menu">
+						<?=$line['name']?>
+					</a>
+				<? } else { ?>
+					<a href="javascript:" class="menu_inactive">
+						<?=$line['name']?>
+					</a>
+				<? } ?>
+			</TD>
+		</TR>
+	<? } elseif ($line['type']==='product')  {
+		if ($i%2==0) {$class="even";} else {$class="odd";}?>
+		<TR>
+			<TD class="<?=$class?>">
+				<? if ($line['active']=='1') { ?>
+					<a href="viewProduct.php?pID=<?=$line['id']?>" class="menu">
+						<?=$line['name']?>
+					</a>
+				<? } else { ?>
+					<a href="javascript:" class="menu_inactive">	
+						<?=$line['name']?>
+					</a>
+				<? } ?>
+			</TD>
+		</TR>
+	<? } ?>
+	<? } ?>
+	
+</table>

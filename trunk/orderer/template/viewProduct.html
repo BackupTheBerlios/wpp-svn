@@ -1,0 +1,65 @@
+<h1><?=$_LANG['viewProduct']?></h1>
+
+<?
+	// nur anzeigbar , falls aktiviert (gilt für jeden; Admin kann es mittels Edit einsehen)
+	if($_TPL['active']=='1'){
+?>
+	<table class="content_table" cellpadding="0" cellspacing="0">
+		<TR>
+			<TD class="even">
+				<?=$_LANG['name']?>
+			</TD>
+			<TD class="even">
+				<?=$_TPL['name']?>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="odd">
+				<?=$_LANG['description']?>
+			</TD>
+			<TD class="odd">
+				<?=$_TPL['description']?>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="even">
+				<?=$_LANG['image_small']?>
+			</TD>
+			<TD class="even">
+				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
+					<img src="<?=$_TPL['image_small']?>">
+				<? } ?>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="odd">
+				<?=$_LANG['image_big']?>
+			</TD>
+			<TD class="odd">
+				<? if ($_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
+					<img src="<?=$_TPL['image_big']?>">
+				<? } ?> TODO: evtl. nur Azeigbar, wenn Vorschau-Bild angeklickt
+			</TD>
+		</TR>
+		<TR>
+			<TD class="even">
+				<?=$_LANG['price']?>
+			</TD>
+			<TD class="even">
+				<?=formatPrice($_TPL['price'])?>
+			</TD>
+		</TR>
+	</table>
+<? }
+		else{
+			echo"
+				<table class='error'>
+					<tr>
+						<td>
+							".$_LANG['no_permission']."
+						</td>
+					</tr>
+				</table>
+			";
+		}
+ ?>
