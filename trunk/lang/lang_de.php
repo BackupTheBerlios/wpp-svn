@@ -14,7 +14,7 @@ $lang = array(
 		"addProduct" => "Produkt hinzuf&uuml;gen",
 		"edit" => "Bearbeiten",
 		"delete" => "L&ouml;schen",
-		"parentDirectory" => "..",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
 		"category" => "Kategorie",
 		"product" => "Produkt",
 		"type" => "Typ",
@@ -167,7 +167,7 @@ $lang = array(
 */
 	"viewer_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		"parentDirectory" => "..",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
 		"category" => "Kategorie",
 		"name" => "Beschreibung"
 	),
@@ -219,7 +219,7 @@ $lang = array(
 		"addProduct" => "Produkt hinzuf&uuml;gen",
 		"edit" => "Bearbeiten",
 		"delete" => "L&ouml;schen",
-		"parentDirectory" => "..",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
 		"category" => "Kategorie",
 		"type" => "Typ",
 		"name" => "Beschreibung",
@@ -294,7 +294,7 @@ $lang = array(
 */
 	"orderer_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		"parentDirectory" => "..",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
 		"category" => "Kategorie",
 		"name" => "Beschreibung"
 	),

@@ -15,6 +15,12 @@ td {
 	font-size: 12px;
 }
 
+td.parent_dir {
+	background-color: #99bbdd;
+	height: 20px;
+	padding-top:5px;
+}
+
 td.even {
 	background-color: #e6f4ff;
 }
