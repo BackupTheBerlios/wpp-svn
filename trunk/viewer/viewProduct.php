@@ -32,6 +32,7 @@ $product_query = DB_query("SELECT
 				*
 				FROM products
 				WHERE products_id = ".$pID."
+				AND deleted = 0
 				ORDER BY sort_order, name
 				");
 $product = DB_fetchArray($product_query);

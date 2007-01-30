@@ -28,12 +28,13 @@ if (isset($_POST['ordershipped'])) {
 
 //Alle Details zu der Bestellung finden
 $order_query = DB_query("SELECT
-				*
+				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date,
+				DATE_FORMAT(shipping_date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_shipping_date
 				FROM orders
 				WHERE orders_id = ".$order_id);
 $order = DB_fetchArray($order_query);
-$tpl->assign('orderDate',$order['date']);
-$tpl->assign('shippingDate', $order['shipping_date']);
+$tpl->assign('orderDate',$order['formated_date']);
+$tpl->assign('shippingDate', $order['formated_shipping_date']);
 $tpl->assign('orderid', $order_id);
 $tpl->assign('bill_name',$order['bill_name']);
 $tpl->assign('bill_street',$order['bill_street']);

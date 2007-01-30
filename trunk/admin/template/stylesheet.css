@@ -271,6 +271,12 @@ input.button {
 	border: 1px solid #aac2dd;
 }
 
+input.button_ordershipped {
+	font-size: 12px;
+	background-color: #ffcc00;
+	border: 1px solid #ddaa00;
+}
+
 select {
 	font-size: 10px;
 	width: 300px;

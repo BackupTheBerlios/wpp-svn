@@ -1,7 +1,8 @@
 <!-- Menüliste -->
 
 <? include('../lang/lang_de.php');
-   $LANG = $lang['user_till']; ?>
+   $LANG = $lang['user_till'];
+ ?>
 
 <table class="content_table" cellpadding="0" cellspacing="0">
 	<TR>
@@ -63,21 +64,40 @@
 		<td class="price-all">
 			&nbsp;
 		</td>
-	</TR>
-</table><br/>
-<br/>
-<table class="agree_order">
-	<tr>
-		<td	 class="agree_order">
-			<form name="agreeOrder" action="till.php" method="post">
-				<input name="action" type="hidden" value="agreeOrder">
-				<input name="userid" type="hidden" value="<?=$_TPL['user_id']?>">
-				<input name="bids" type="hidden" value="<?=$_TPL['bids']?>">
-				<input name="pids" type="hidden" value="<?=$_TPL['pids']?>">
-				<input name="counts" type="hidden" value="<?=$_TPL['counts']?>">
-				<a href="javascript:document.agreeOrder.submit();" class="agree_order"><?=$LANG['agree_order']?></a>
-			</form>
-		<?
+	</tr>
+		<?	if($_TPL['error']!= null){
+					echo "
+						<tr>
+							<TD class='errorbox' colspan='5' id='errorbox'>
+								".($_TPL['error_capacity']==1?$_LANG['capacity_exceeded_again']."<br/>":"").
+								$_LANG['follow-up_stock_errors']."<br/><br/>
+					";
+					foreach ($_TPL['error'] AS $zeile){
+						echo $zeile['product_name'].": ".$zeile['product_count']." ".$_LANG['pieces_in_basket'].", ".$_LANG['pieces_available'].": ".$zeile['product_stock'].							
+						"<br/>";
+					}
+					echo "
+								<br/>".$_LANG['please_remove']."						
+							</td>
+						</tr>
+					";
+				}
+				else{
+					echo"
+						<tr>
+							<td	class='optionbox' colspan='5'>
+								<form name='agreeOrder' action='till.php' method='post'>
+									<input name='action' type='hidden' value='agreeOrder'>
+									<input name='userid' type='hidden' value='".$_TPL['user_id']."'>
+									<input name='bids' type='hidden' value='".$_TPL['bids']."'>
+									<input name='pids' type='hidden' value='".$_TPL['pids']."'>
+									<input name='counts' type='hidden' value='".$_TPL['counts']."'>
+									<input type='submit' class='button' value='".$LANG['agree_order']."'>	
+								</form>
+							</td>
+						</tr>
+					";
+				}	
 			}
 			else{
 				echo $_LANG['your_basket_is_empty'];

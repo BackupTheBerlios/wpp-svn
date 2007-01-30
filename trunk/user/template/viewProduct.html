@@ -1,7 +1,7 @@
 <h1><?=$_LANG['viewProduct']?></h1>
 
 <?
-	// nur anzeigbar , falls aktiviert (gilt für jeden; Admin kann es mittels Edit einsehen)
+	// nur anzeigbar , falls aktiviert (und laut SQL-Abfrage auch nicht gelöscht) (gilt für jeden; Admin kann es mittels Edit einsehen)
 	if($_TPL['active']=='1'){
 ?>
 	<table class="content_table" cellpadding="0" cellspacing="0">
@@ -90,10 +90,12 @@
 <? }
 		else{
 			echo"
-				<table class='error'>
+				<table>
 					<tr>
-						<td>
-							".$_LANG['no_permission']."
+						<td class='error'>
+							".$_LANG['no_permission']."<br/><br/>
+							".$_LANG['try_to_refresh']."<br/><br/>
+							<input type='button' class='button' value='".$_LANG['refresh_view']."' onclick='javascript:window.location.href=\"index.php\";'>
 						</td>
 					</tr>
 				</table>

@@ -25,13 +25,33 @@ $tpl = new TemplateEngine("template/till.html","template/frame.html",$lang["user
 
 $LOG->write('3', 'user/till.php');
 
-//$tpl->assign('ID',$pID);
+$fehler_kapazitaetKurzVorSpeicherung = 0; // Flag, dass nach Betätigung des Absende-Buttons schon wieder Kapazität überschritten wird (zwischenzeitliche Änderung)
 
 
-// TODO: prod.stock checken, und auch runtersetzen.
+/*___________________________________________________
+	
+				>>>>>>			und auch runtersetzen: UNTEN    <<<<<<<<
+	___________________________________________________
+*/
 
+
+// Basket-, ProduktIDs und Anzahlen aus $_POST als Arrays darstellen
+if(isset($_POST['bids']) && isset($_POST['pids']) && isset($_POST['counts'])){
+	$bids=$_POST['bids'];
+	$ablageArray=explode(";",$bids);	// wieder Array aus Liste erzeugen.
+	$bidsArray=array_slice($ablageArray,0,count($ablageArray)-1);
+
+	$pids=$_POST['pids'];
+	$ablageArray=explode(";",$pids);	// wieder Array aus Liste erzeugen.
+	$pidsArray=array_slice($ablageArray,0,count($ablageArray)-1);
+
+	$counts=$_POST['counts'];
+	$ablageArray=explode(";",$counts);	// wieder Array aus Liste erzeugen.
+	$countsArray=array_slice($ablageArray,0,count($ablageArray)-1);
+}
+
+// aus Warenkorb löschen:
 if (isset($_GET['action'])){
-	// aus Warenkorb löschen:
 	if($_GET['action'] == "removeFromBasket"){
 		$bid=$_GET['bID'];	// BasketID
 		$remove_query = DB_query("	
@@ -41,25 +61,43 @@ if (isset($_GET['action'])){
 		");
 	}
 }
-if (isset($_POST['action'])){
-	// in Kasse bestätigt. -> Bestellung 
-	if($_POST['action'] == "agreeOrder"){
-		$bids=$_POST['bids'];
-		$ablageArray=explode(";",$bids);	// wieder Array aus Liste erzeugen.
-		$bidsArray=array_slice($ablageArray,0,count($ablageArray)-1);
 
-		$pids=$_POST['pids'];
-		$ablageArray=explode(";",$pids);	// wieder Array aus Liste erzeugen.
-		$pidsArray=array_slice($ablageArray,0,count($ablageArray)-1);
+// in Kasse bestätigt. -> Bestellung 
+if (isset($_POST['action']) && $_POST['action'] == "agreeOrder"){
+	$date = formatDate();
+	$userid=$_POST['userid'];
+	$userdata=getUserOrderData($userid);
 
-		$counts=$_POST['counts'];
-		$ablageArray=explode(";",$counts);	// wieder Array aus Liste erzeugen.
-		$countsArray=array_slice($ablageArray,0,count($ablageArray)-1);
+	// nochmals checken, ob Produktanzahl noch verfügbar ist
+	$fehlerArray = array();	// für Fehlermeldung, wenn Produktkapazität überschritten															
+	$countsPerProductArray = array();			
+	$productStock = array();
+	$productName = array();
+	for ($i = 0; $i<count($pidsArray);$i++){					
+		// Anzahl pro Produkt aufaddieren:													
+		$countsPerProductArray[$i] += $countsArray[$i];
+		// Product.stock ermitteln:
+		$productCount_query = DB_query("	
+			SELECT
+			stock, name
+			FROM products
+			WHERE products_id = ".$pidsArray[$i]."
+		");
+		$zeile = DB_fetchArray($productCount_query);
+		$productStock[$i]=$zeile['stock'];	
+		$productName[$i]=$zeile['name'];	
+	
+		// Kapazität mit Warenkorb-Inhalt vergleichen und Infos für Fehlermeldungen bereitstellen:
+		if($countsPerProductArray[$i] > $productStock[$i]){
+			$fehlerArray[$i]['product_name'] = $productName[$i];
+			$fehlerArray[$i]['product_count'] = $countsPerProductArray[$i];
+			$fehlerArray[$i]['product_stock'] = $productStock[$i];
+			$fehler_kapazitaetKurzVorSpeicherung = 1;
+		}
+	}
+	// fertig gecheckt.
 
-		$date = formatDate();
-		$userid=$_POST['userid'];
-		$userdata=getUserOrderData($userid);
-
+	if($fehler_kapazitaetKurzVorSpeicherung==0){
 		if(count($bidsArray)>0){	// wenn Warenkorb nicht leer war
 			$order_query = DB_query("	
 				INSERT
@@ -152,7 +190,7 @@ for($i=0;$i<count($basketBID);$i++){	// Um zu gewährleisten, dass nur das in de
 	$PIDlist.=$basketPID[$i].";";	// Liste der ProduktIDs zusammen stellen, die beim Bestellen übergeben wird.
 	$countList.=$basketCount[$i].";";	// Liste der Produkt-Anzahlen zusammen stellen, die beim Bestellen übergeben wird.
 	$BIDlist.=$basketBID[$i].";";	// Liste der BasketIDs zusammen stellen, die beim Bestellen übergeben wird.
-}	
+}
 $tpl->assign('basket_array_bid',$basketBID);
 $tpl->assign('basket_array_count',$basketCount);
 $tpl->assign('basket_array_pid',$basketPID);
@@ -164,10 +202,44 @@ $tpl->assign('bids',$BIDlist);		//CSV
 $tpl->assign('pids',$PIDlist);		//CSV
 $tpl->assign('counts',$countList);	//CSV
 
+if($fehler_kapazitaetKurzVorSpeicherung == 0){	// Wenn nicht bereits obige Fehlerbehandlung greift.
+	// Product.stock checken (über alle potentiellen Bestellungen)
+	$fehlerArray = array();	// für Fehlermeldung, wenn Produktkapazität überschritten															
+	$countsPerProductArray = array();			
+	$productStock = array();
+	$productName = array();
+	$i=-1;	
+	foreach ($basketPID AS $pid){					
+		$i++;			
+		// Anzahl pro Produkt aufaddieren:													
+		$countsPerProductArray[$pid] += $basketCount[$i];
+		// Product.stock ermitteln:
+		$productCount_query = DB_query("	
+			SELECT
+			stock, name
+			FROM products
+			WHERE products_id = $pid
+		");
+		$zeile = DB_fetchArray($productCount_query);
+		$productStock[$pid]=$zeile['stock'];	
+		$productName[$pid]=$zeile['name'];	
+		// Kapazität mit Warenkorb-Inhalt vergleichen und Infos für Fehlermeldungen bereitstellen:
+		if($countsPerProductArray[$pid] > $productStock[$pid]){
+			$fehlerArray[$pid]['product_name'] = $productName[$pid];
+			$fehlerArray[$pid]['product_count'] = $countsPerProductArray[$pid];
+			$fehlerArray[$pid]['product_stock'] = $productStock[$pid];
+		}
+	}
+}
+
+
+
 $tpl->assign('user_name',$user->getName());
 $tpl->assign('user_lastname',$user->getLastname());
 $tpl->assign('user_id',$user->getID());
 $tpl->assign('is_admin',$isAdmin);
+$tpl->assign('error',$fehlerArray);
+$tpl->assign('error_capacity',$fehler_kapazitaetKurzVorSpeicherung);
 
 $tpl->display();
 ?>

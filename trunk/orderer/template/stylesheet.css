@@ -38,6 +38,12 @@ td.cat_odd {
 	background-color: #89afd5;
 }
 
+/* Vorsicht-Meldung: */
+td.caution {
+	background-color: #ffeeaa;
+
+}
+
 /* frame */
 
 body {
@@ -269,6 +275,12 @@ input.button {
 	font-size: 12px;
 	background-color: #ddeeff;
 	border: 1px solid #aac2dd;
+}
+
+input.button_ordershipped {
+	font-size: 12px;
+	background-color: #ffcc00;
+	border: 1px solid #ddaa00;
 }
 
 select {

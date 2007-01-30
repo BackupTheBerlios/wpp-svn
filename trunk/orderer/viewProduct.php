@@ -12,6 +12,12 @@ if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
 else{
 	$isAdmin=0;
 }
+if ($user !=null && $user->checkPermissions(0,0,0,1)) {	// falls Orderer-Rechte
+	$isOrderer=1;
+}
+else{
+	$isOrderer=0;
+}
 
 $LOG = new Log();
 $tpl = new TemplateEngine("template/viewProduct.html","template/frame.html",$lang["orderer_viewProduct"]);
@@ -34,6 +40,7 @@ $tpl->assign('name',$product['name']);
 $tpl->assign('description',$product['description']);
 //$tpl->assign('sort_order',$product['sort_order']);
 $tpl->assign('active',$product['active']); // zur Unterscheidung, ob anzeigbar, weiterhin mitliefern
+$tpl->assign('deleted',$product['deleted']);
 $tpl->assign('image_small',$product['image_small']);
 $tpl->assign('image_big',$product['image_big']);
 $tpl->assign('stock',$product['stock']);
@@ -42,6 +49,7 @@ $tpl->assign('price',$product['price']);
 $tpl->assign('user_name',$user->getName());
 $tpl->assign('user_lastname',$user->getLastname());
 $tpl->assign('is_admin',$isAdmin);
+$tpl->assign('is_orderer',$isOrderer);
 
 $tpl->display();
 

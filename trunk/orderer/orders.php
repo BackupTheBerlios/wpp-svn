@@ -7,23 +7,16 @@ include('../includes/startApplication.php');
 
 
 $user = restoreUser();
-if ($user == null || !$user->checkPermissions(0,0,0,1,1)) {
-	redirectURI("/user/login.php","camefrom=orders.php");
-}
-
-if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
-	$isAdmin=1;
-}
-else{
-	$isAdmin=0;
+if ($user == null || !$user->checkPermissions(1,1)) {
+	redirectURI("/admin/login.php","camefrom=orders.php");
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["orderer_orders"]);
+$tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["admin_orders"]);
 
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT
-				*
+				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date
 				FROM orders
 				ORDER BY date
 			");
@@ -38,7 +31,7 @@ while ($orders = DB_fetchArray($orders_query)) {
 	$users = DB_fetchArray($user_query);
 	$orders_list[] = array(
 		"id" => $orders['orders_id'],
-		"date" => $orders['date'],
+		"date" => $orders['formated_date'],
 		"items_id" => $orders['order_items_id'],
 		"users_id" => $orders['users_id'],
 		"username" => $users['name']." ".$users['lastname'],
@@ -51,7 +44,6 @@ while ($orders = DB_fetchArray($orders_query)) {
 $tpl->assign('orders',$orders_list);
 $tpl->assign('user_name',$user->getName());
 $tpl->assign('user_lastname',$user->getLastname());
-$tpl->assign('is_admin',$isAdmin);
 
 $tpl->display();
 

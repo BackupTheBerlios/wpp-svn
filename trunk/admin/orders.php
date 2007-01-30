@@ -16,7 +16,7 @@ $tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["ad
 
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT
-				*
+				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date
 				FROM orders
 				ORDER BY date
 			");
@@ -31,7 +31,7 @@ while ($orders = DB_fetchArray($orders_query)) {
 	$users = DB_fetchArray($user_query);
 	$orders_list[] = array(
 		"id" => $orders['orders_id'],
-		"date" => $orders['date'],
+		"date" => $orders['formated_date'],
 		"items_id" => $orders['order_items_id'],
 		"users_id" => $orders['users_id'],
 		"username" => $users['name']." ".$users['lastname'],

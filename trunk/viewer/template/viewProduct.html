@@ -52,6 +52,14 @@
 	</table>
 <? }
 		else{
-			echo "TODO: Sie haben keine Berechtigung hierzu.";
+			echo"
+				<table>
+					<tr>
+						<td class='error'>
+							".$_LANG['no_permission']."<br/><br/>
+						</td>
+					</tr>
+				</table>
+			";
 		}
  ?>

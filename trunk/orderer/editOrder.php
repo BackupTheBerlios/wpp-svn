@@ -6,19 +6,12 @@ include('../includes/startApplication.php');
 //include('../includes/functions/verifyadmin.inc');
 
 $user = restoreUser();
-if ($user ==null || !$user->checkPermissions(0,0,0,1,1)) {
-	redirectURI("/user/login.php","camefrom=editOrder.php");
-}
-
-if ($user !=null && $user->checkPermissions(1,1)) {	// falls Admin-Rechte
-	$isAdmin=1;
-}
-else{
-	$isAdmin=0;
+if ($user ==null || !$user->checkPermissions(1,1)) {
+	redirectURI("/admin/login.php","camefrom=editOrder.php");
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["orderer_orders"]);
+$tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["admin_orders"]);
 
 
 $order_id = $_GET['id'];
@@ -35,12 +28,13 @@ if (isset($_POST['ordershipped'])) {
 
 //Alle Details zu der Bestellung finden
 $order_query = DB_query("SELECT
-				*
+				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date,
+				DATE_FORMAT(shipping_date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_shipping_date
 				FROM orders
 				WHERE orders_id = ".$order_id);
 $order = DB_fetchArray($order_query);
-$tpl->assign('orderDate',$order['date']);
-$tpl->assign('shippingDate', $order['shipping_date']);
+$tpl->assign('orderDate',$order['formated_date']);
+$tpl->assign('shippingDate', $order['formated_shipping_date']);
 $tpl->assign('orderid', $order_id);
 $tpl->assign('bill_name',$order['bill_name']);
 $tpl->assign('bill_street',$order['bill_street']);
@@ -91,13 +85,12 @@ $user_data = DB_fetchArray($user_query);
 $tpl->assign('user',$user_data);
 
 
-if ($user->checkPermissions(0,0,0,0,1)) {
+if ($user->checkPermissions(0,0,0,1,1)) {
 	$tpl->assign('can_change',1);
 }
 $tpl->assign('user_id',$user->getID());
 $tpl->assign('user_name',$user->getName());
 $tpl->assign('user_lastname',$user->getLastname());
-$tpl->assign('is_admin',$isAdmin);
 
 $tpl->display();
 

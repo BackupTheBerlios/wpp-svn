@@ -167,7 +167,7 @@ $lang = array(
 */
 	"viewer_categories" => array(
 		"categories" => "Kategorien und Produkte",
-		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9' border='0'>",
 		"category" => "Kategorie",
 		"name" => "Beschreibung"
 	),
@@ -177,7 +177,8 @@ $lang = array(
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
-		"price" => "Preis"
+		"price" => "Preis",
+		"no_permission" => "Sie haben keine Berechtigung hierzu."
 	),
 	"viewer_menu" => array(
 		"category" => "Kategorien",
@@ -242,6 +243,8 @@ $lang = array(
 		"into_basket" => "In den Warenkorb",
 		"piece_number" => "St&uuml;ckzahl:",
 		"no_permission" => "Sie haben keine Berechtigung hierzu.",
+		"try_to_refresh" => "M&ouml;glicherweise wurde Ihr gew&auml;hltes Produkt gerade modifiziert. Sie k&ouml;nnen nun versuchen, diese Seite zu aktualisieren und Ihren Vorgang noch einmal ausf&uuml;hren.",
+		"refresh_view" => "Ansicht erneuern",
 		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann.",
 		"stock<count" => "Es sind nicht genug Exemplare vorr&auml;tig. Bitte verringern Sie die St&uuml;ckzahl."
 	),
@@ -254,7 +257,12 @@ $lang = array(
 		"count" => "Anzahl",
 		"price" => "Einzelpreis",
 		"price-total" => "Gesamtpreis",
-		"agree_order" => "Bestellung best&auml;tigen"
+		"agree_order" => "Bestellung best&auml;tigen",
+		"capacity_exceeded_again" => "Mittlerweile hat sich die Produktkapazit&auml;t verringert.",
+		"follow-up_stock_errors" => "Zu folgenden Produkten sind nicht genug Exemplare vorr&auml;tig:",
+		"pieces_in_basket" => "St&uuml;ck im Warenkorb",
+		"pieces_available" => "verf&uuml;gbare St&uuml;ckzahl",
+		"please_remove" => "Bitte entfernen Sie ensprechende Warenkorb-Inhalte."
 	),
 	"user_users" => array(
 		"edit" => "Bearbeiten",
@@ -304,7 +312,10 @@ $lang = array(
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
 		"stock" => "Lagerbestand",
-		"price" => "Preis"
+		"price" => "Preis",
+		"caution" => "Achtung",
+		"is_deactivated" => "Dieser Eintrag ist deaktiviert.",
+		"is_deleted" => "Dieser Eintrag ist gel&ouml;scht."
 	),
 	"orderer_menu" => array(
 		"category" => "Kategorien",

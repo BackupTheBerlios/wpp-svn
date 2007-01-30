@@ -118,11 +118,21 @@ if (isset($_POST['action'])) {
 					'".$createtime."',
 					".$sortorder.")
 					");
+
+		$neueID=mysql_insert_id();
+
 		DB_query("UPDATE products SET
 					deleted=1
 					where products_id=".$_POST['ID']);
 		
-		$LOG->write('2', 'Produkt '.$_POST['ID'].' geändert, neue ID='.mysql_insert_id());
+		// noch in Warenkörben alte IDs zu neuen IDs ändern.
+		DB_query("
+			UPDATE basket
+			SET products_id = ".$neueID."
+			WHERE products_id = ".$_POST['ID']
+		);
+
+		$LOG->write('2', 'Produkt '.$_POST['ID'].' geändert, neue ID='.$neueID);
 	
 		$parent = $cat;
 		redirectURI('/admin/categories.php');		

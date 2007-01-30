@@ -1,10 +1,26 @@
 <h1><?=$_LANG['viewProduct']?></h1>
 
 <?
-	// nur anzeigbar , falls aktiviert (gilt für jeden; Admin kann es mittels Edit einsehen)
-	if($_TPL['active']=='1'){
+	// Nur Orderer und Admin dürfen gelöschte oder deaktivierte Produkte sehen.
+	
+	if(($_TPL['active']=='1' && $_TPL['deleted']=='0') || $_TPL['is_admin']=='1' || $_TPL['is_orderer'] == '1'){
 ?>
 	<table class="content_table" cellpadding="0" cellspacing="0">
+	<?
+		if($_TPL['active']=='0' || $_TPL['deleted']=='1'){
+			echo"
+				<tr>
+					<td class='caution' colspan='2'>
+						<br/>
+						".$_LANG['caution'].":<br/><br/>
+						".($_TPL['active']=='0'?$_LANG['is_deactivated']:'').($_TPL['active']=='0' && $_TPL['deleted']=='1'?"<br/>":"").
+						($_TPL['deleted']=='1'?$_LANG['is_deleted']:'')."
+						<br/><br/>
+					</td>
+				</tr>
+			";
+		}
+	?>
 		<TR>
 			<TD class="even">
 				<?=$_LANG['name']?>

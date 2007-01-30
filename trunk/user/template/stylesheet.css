@@ -29,6 +29,33 @@ td.odd {
 	background-color: #ddeeff;
 }
 
+/* Warenkorb links: */
+td.count_even {
+	background-color: #e6f4ff;
+	text-align:right;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+td.count_odd {
+	background-color: #ddeeff;
+	text-align:right;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+td.remove_even {
+	background-color: #e6f4ff;
+	text-align:right;
+	padding-left:3px;
+}
+
+td.remove_odd {
+	background-color: #ddeeff;
+	text-align:right;
+	padding-left:3px;
+}
+
 /* Kategorien: */
 td.cat_even {
 	background-color: #99bbdd;
@@ -268,6 +295,12 @@ input.checkbox {
 input.button {
 	font-size: 12px;
 	background-color: #ddeeff;
+	border: 1px solid #aac2dd;
+}
+
+input.button_ordershipped {
+	font-size: 12px;
+	background-color: #99bbdd;
 	border: 1px solid #aac2dd;
 }
 
