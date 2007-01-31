@@ -199,6 +199,22 @@ table.content_table {
 	padding:2px;
 }
 
+col.content_table_1 {
+
+}
+
+col.content_table_2 {
+
+}
+
+col.content_table_3 {
+
+}
+
+col.content_table_4 {
+
+}
+
 td.heading_cell {
 	background-color: #337799;
 	font-family: verdana;
@@ -275,6 +291,10 @@ input.button_ordershipped {
 	font-size: 12px;
 	background-color: #ffcc00;
 	border: 1px solid #ddaa00;
+}
+
+input.file {
+	width: 300px;
 }
 
 select {

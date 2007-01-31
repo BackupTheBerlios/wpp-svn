@@ -54,3 +54,7 @@ function setShippingDate(id) {
 		}
 	}
 }
+
+function showPicture(bild){
+	fenster = window.open(bild, "", "width=400,height=300,left=100,top=100,toolbar=no,status=no,menubar=no,location=no");
+}

@@ -226,6 +226,14 @@ table.content_table {
 	padding:2px;
 }
 
+col.content_table_1 {
+
+}
+
+col.content_table_2 {
+	width:75%;
+}
+
 td.heading_cell {
 	background-color: #337799;
 	font-family: verdana;

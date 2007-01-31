@@ -183,6 +183,32 @@ if (isset($_POST['action'])) {
 	$parent = $_GET['parent'];
 	redirectURI('/admin/categories.php','catID='.$parent);
 
+} elseif ($_GET['action']=='deleteImage') {		// Bild löschen
+
+	$LOG->write('3', 'admin/addCategory.php: get-action=deleteImage');
+
+	$bild_http=urldecode($_GET['img']);
+
+	// http://localhost/wpp aus Bild-URI entfernen:
+	$bild = str_replace(HTTP_HOSTNAME, "", $bild_http);
+
+	// alle Vorkommen der Bild-URI ersetzen, da Bild gelöscht wird.
+
+	DB_query("
+		UPDATE products
+		SET image_small='kein Bild'
+		WHERE image_small='$bild_http'
+	");
+	DB_query("
+		UPDATE products
+		SET image_big='kein Bild'
+		WHERE image_big='$bild_http'
+	");
+	unlink(WPP_BASE.$bild);
+	
+	// neu anzeigen:
+	redirectURI('/admin/addProduct.php','action=edit&pID='.$_GET['pID']);
+
 } else {
 
 	$LOG->write('3', 'admin/addProduct.php: get-action=none');

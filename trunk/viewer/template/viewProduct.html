@@ -5,6 +5,10 @@
 	if($_TPL['active']=='1'){
 ?>
 	<table class="content_table" cellpadding="0" cellspacing="0">
+    <colgroup>
+      <col class="content_table_1">
+      <col class="content_table_2">
+    </colgroup>
 		<TR>
 			<TD class="even">
 				<?=$_LANG['name']?>
@@ -23,29 +27,29 @@
 		</TR>
 		<TR>
 			<TD class="even">
-				<?=$_LANG['image_small']?>
+				<?
+					echo $_LANG['product_image'];
+					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { 
+						echo "<br/><br/>(".$_LANG['click_to_enlarge'].")";
+					}
+				?>
 			</TD>
 			<TD class="even">
 				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
-					<img src="<?=$_TPL['image_small']?>">
-				<? } ?>
+					<a href="javascript:showPicture('<?=$_TPL['image_big']?>');" title="<?=$_LANG['click_to_enlarge']?>"><img src="<?=$_TPL['image_small']?>" border='0'></a>
+				<? 
+					}
+					else{
+						echo $_LANG['no_image'];
+					}
+				 ?>
 			</TD>
 		</TR>
 		<TR>
 			<TD class="odd">
-				<?=$_LANG['image_big']?>
-			</TD>
-			<TD class="odd">
-				<? if ($_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
-					<img src="<?=$_TPL['image_big']?>">
-				<? } ?> TODO: evtl. nur Azeigbar, wenn Vorschau-Bild angeklickt
-			</TD>
-		</TR>
-		<TR>
-			<TD class="even">
 				<?=$_LANG['price']?>
 			</TD>
-			<TD class="even">
+			<TD class="odd">
 				<?=formatPrice($_TPL['price'])?>
 			</TD>
 		</TR>

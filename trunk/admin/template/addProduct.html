@@ -5,6 +5,12 @@
 <input type="hidden" value="<?=$_TPL['ID']?>" name="ID">
 
 <table class="content_table" cellpadding="0" cellspacing="0">
+    <colgroup>
+      <col class="content_table_1">
+      <col class="content_table_2">
+      <col class="content_table_3">
+      <col class="content_table_4">
+    </colgroup>
 	<TR>
 		<TD class="even">
 			<?=$_LANG['name']?>
@@ -46,21 +52,25 @@
 			<?=$_LANG['image_small']?>
 		</TD>
 		<TD class="even">
-			<input type="file" name="image_small">
+			<input type="file" class="file" name="image_small">
 			<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
-				<img src="<?=$_TPL['image_small']?>">
-			<? } ?> TODO: LEEREN-Button
+				<br/>
+				<img src="<?=$_TPL['image_small']?>"><br/>
+				<input type="button" value="<?=$_LANG['delete_image']?>" class="button" onclick="javascript:window.location.href='addProduct.php?action=deleteImage&pID=<?=$_TPL['ID']?>&img=<?=urlencode($_TPL['image_small'])?>';">
+			<? } ?>
 		</TD>
 	</TR>
 	<TR>
 		<TD class="odd">
-			<?=$_LANG['image_big']?>
+			<?=$_LANG['product_image']?>
 		</TD>
 		<TD class="odd">
-			<input type="file" name="image_big">
+			<input type="file" class="file" name="image_big">
 			<? if ($_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
-				<img src="<?=$_TPL['image_big']?>">
-			<? } ?> TODO: LEEREN-Button
+				<br/>
+				<img src="<?=$_TPL['image_big']?>"><br/>
+				<input type="button" value="<?=$_LANG['delete_image']?>" class="button" onclick="javascript:window.location.href='addProduct.php?action=deleteImage&pID=<?=$_TPL['ID']?>&img=<?=urlencode($_TPL['image_big'])?>';">
+			<? } ?>
 		</TD>
 	</TR>
 	<TR>

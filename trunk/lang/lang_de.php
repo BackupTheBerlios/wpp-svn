@@ -42,6 +42,8 @@ $lang = array(
 		"reset" => "Abbrechen",
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
+		"product_image" => "Produkt-Bild",
+		"delete_image" => "Bild l&ouml;schen",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
 		"name_error" => "Bitte geben Sie einen gültigen Namen ein!",
@@ -162,141 +164,6 @@ $lang = array(
 
 /*___________________________________________________________________
 
-	VIEWER:
-  ___________________________________________________________________
-*/
-	"viewer_categories" => array(
-		"categories" => "Kategorien und Produkte",
-		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9' border='0'>",
-		"category" => "Kategorie",
-		"name" => "Beschreibung"
-	),
-	"viewer_viewProduct" => array(
-		"name" => "Name",
-		"description" => "Beschreibung",
-		"image_small" => "Vorschau-Bild",
-		"image_big" => "Detail-Bild",
-		"stock" => "Lagerbestand",
-		"price" => "Preis",
-		"no_permission" => "Sie haben keine Berechtigung hierzu."
-	),
-	"viewer_menu" => array(
-		"category" => "Kategorien",
-		"login" => "Anmelden"
-	),
-	"viewer_title" => array(
-		"not_logged_in" => "Sie sind nicht angemeldet.",
-		"admin_level" => "Administrator",
-		"orderer_level" => "Bestell-Personal",
-		"user_level" => "Benutzer",
-		"viewer_level" => "Besucher"
-	),
-/*___________________________________________________________________
-
-	USER:
-  ___________________________________________________________________
-*/
-	"user_menu" => array(
-		"own_settings" => "Eigene Einstellungen",
-		"category" => "Kategorien",
-		"users" => "Benutzer",
-		"orders" => "Bestellungen",
-		"logout" => "Abmelden",
-		"your_basket" => "Ihr Warenkorb:",
-		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
-		"go_to_till" => "zur Kasse",
-		"remove" => "entfernen"
-	),
-	"user_title" => array(
-		"hello" => "Hallo, ",
-		"admin_level" => "Administrator",
-		"orderer_level" => "Bestell-Personal",
-		"user_level" => "Benutzer",
-		"viewer_level" => "Besucher"
-	),
-	"user_categories" => array(
-		"categories" => "Kategorien und Produkte",
-		"addCategory" => "Kategorie hinzuf&uuml;gen",
-		"addProduct" => "Produkt hinzuf&uuml;gen",
-		"edit" => "Bearbeiten",
-		"delete" => "L&ouml;schen",
-		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
-		"category" => "Kategorie",
-		"type" => "Typ",
-		"name" => "Beschreibung",
-		"options" => "Optionen"		
-	),
-	"user_login" => array(
-		"user_login" => "Login",
-		"name" => "Ihr Name",
-		"password" => "Ihr Passwort",
-		"failed" => "Anmeldung fehlgeschlagen",
-		"login" => "Anmelden"
-	),
-	"user_viewProduct" => array(
-		"name" => "Name",
-		"description" => "Beschreibung",
-		"image_small" => "Vorschau-Bild",
-		"image_big" => "Detail-Bild",
-		"stock" => "Lagerbestand",
-		"price" => "Preis",
-		"into_basket" => "In den Warenkorb",
-		"piece_number" => "St&uuml;ckzahl:",
-		"no_permission" => "Sie haben keine Berechtigung hierzu.",
-		"try_to_refresh" => "M&ouml;glicherweise wurde Ihr gew&auml;hltes Produkt gerade modifiziert. Sie k&ouml;nnen nun versuchen, diese Seite zu aktualisieren und Ihren Vorgang noch einmal ausf&uuml;hren.",
-		"refresh_view" => "Ansicht erneuern",
-		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann.",
-		"stock<count" => "Es sind nicht genug Exemplare vorr&auml;tig. Bitte verringern Sie die St&uuml;ckzahl."
-	),
-	"user_till" => array(
-		"till" => "Kasse",
-		"your_basket" => "Ihr Warenkorb:",
-		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
-		"remove" => "entfernen",
-		"product" => "Produkt",
-		"count" => "Anzahl",
-		"price" => "Einzelpreis",
-		"price-total" => "Gesamtpreis",
-		"agree_order" => "Bestellung best&auml;tigen",
-		"capacity_exceeded_again" => "Mittlerweile hat sich die Produktkapazit&auml;t verringert.",
-		"follow-up_stock_errors" => "Zu folgenden Produkten sind nicht genug Exemplare vorr&auml;tig:",
-		"pieces_in_basket" => "St&uuml;ck im Warenkorb",
-		"pieces_available" => "verf&uuml;gbare St&uuml;ckzahl",
-		"please_remove" => "Bitte entfernen Sie ensprechende Warenkorb-Inhalte."
-	),
-	"user_users" => array(
-		"edit" => "Bearbeiten",
-		"name" => "Name",
-		"lastname" => "Nachname",
-		"email" => "eMail-Adresse",
-		"bill_name" => "Rechnung: Name",
-		"bill_street" => "Rechnungs-Adresse",
-		"bill_postcode" => "Rechnungs-PLZ",
-		"bill_city" => "Rechnungs-Stadt",
-		"bill_state" => "Rechnungs-Land",
-		"ship_name" => "Lieferungsname",
-		"ship_street" => "Lieferungsadresse",
-		"ship_postcode" => "Lieferungs-PLZ",
-		"ship_city" => "Lieferungs-Stadt",
-		"ship_state" => "Lieferungs-Staat",
-		"bank_name" => "Bankname",
-		"bank_iban" => "BLZ",
-		"bank_number" => "Kontonummer",
-		"bank_account" => "Kontoinhaber",
-		"submit" => "&Auml;nderungen &uuml;bernehmen",
-		"reset" => "Abbrechen",
-		"userlist" => "Benutzer",
-		"editUser" => "Benutzer bearbeiten",
-		"editSelf" => "Eigene Einstellungen",
-		"bill-data" => "Rechnungsdaten",
-		"ship-data" => "Versanddaten",
-		"user-data" => "Benutzerdaten",
-		"password" => "Passwort",
-		"repeat_password" => "Passwort wiederholen",
-		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
-	),
-/*___________________________________________________________________
-
 	ORDERER:
   ___________________________________________________________________
 */
@@ -311,6 +178,9 @@ $lang = array(
 		"description" => "Beschreibung",
 		"image_small" => "Vorschau-Bild",
 		"image_big" => "Detail-Bild",
+		"product_image" => "Produkt-Bild",
+		"click_to_enlarge" => "Zum Vergr&ouml;&szlig;ern anklicken!",
+		"no_image" => "Es ist kein Bild verf&uuml;gbar.",
 		"stock" => "Lagerbestand",
 		"price" => "Preis",
 		"caution" => "Achtung",
@@ -398,6 +268,150 @@ $lang = array(
 		"password" => "Passwort",
 		"repeat_password" => "Passwort wiederholen",
 		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
+	),
+
+/*___________________________________________________________________
+
+	USER:
+  ___________________________________________________________________
+*/
+	"user_menu" => array(
+		"own_settings" => "Eigene Einstellungen",
+		"category" => "Kategorien",
+		"users" => "Benutzer",
+		"orders" => "Bestellungen",
+		"logout" => "Abmelden",
+		"your_basket" => "Ihr Warenkorb:",
+		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
+		"go_to_till" => "zur Kasse",
+		"remove" => "entfernen"
+	),
+	"user_title" => array(
+		"hello" => "Hallo, ",
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
+	),
+	"user_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		"addCategory" => "Kategorie hinzuf&uuml;gen",
+		"addProduct" => "Produkt hinzuf&uuml;gen",
+		"edit" => "Bearbeiten",
+		"delete" => "L&ouml;schen",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9'>",
+		"category" => "Kategorie",
+		"type" => "Typ",
+		"name" => "Beschreibung",
+		"options" => "Optionen"		
+	),
+	"user_login" => array(
+		"user_login" => "Login",
+		"name" => "Ihr Name",
+		"password" => "Ihr Passwort",
+		"failed" => "Anmeldung fehlgeschlagen",
+		"login" => "Anmelden"
+	),
+	"user_viewProduct" => array(
+		"name" => "Name",
+		"description" => "Beschreibung",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
+		"product_image" => "Produkt-Bild",
+		"click_to_enlarge" => "Zum Vergr&ouml;&szlig;ern anklicken!",
+		"no_image" => "Es ist kein Bild verf&uuml;gbar.",
+		"stock" => "Lagerbestand",
+		"price" => "Preis",
+		"into_basket" => "In den Warenkorb",
+		"piece_number" => "St&uuml;ckzahl:",
+		"no_permission" => "Sie haben keine Berechtigung hierzu.",
+		"try_to_refresh" => "M&ouml;glicherweise wurde Ihr gew&auml;hltes Produkt gerade modifiziert. Sie k&ouml;nnen nun versuchen, diese Seite zu aktualisieren und Ihren Vorgang noch einmal ausf&uuml;hren.",
+		"refresh_view" => "Ansicht erneuern",
+		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann.",
+		"stock<count" => "Es sind nicht genug Exemplare vorr&auml;tig. Bitte verringern Sie die St&uuml;ckzahl."
+	),
+	"user_till" => array(
+		"till" => "Kasse",
+		"your_basket" => "Ihr Warenkorb:",
+		"your_basket_is_empty" => "Ihr Warenkorb ist leer.",
+		"remove" => "entfernen",
+		"product" => "Produkt",
+		"count" => "Anzahl",
+		"price" => "Einzelpreis",
+		"price-total" => "Gesamtpreis",
+		"agree_order" => "Bestellung best&auml;tigen",
+		"capacity_exceeded_again" => "Mittlerweile hat sich die Produktkapazit&auml;t verringert.",
+		"follow-up_stock_errors" => "Zu folgenden Produkten sind nicht genug Exemplare vorr&auml;tig:",
+		"pieces_in_basket" => "St&uuml;ck im Warenkorb",
+		"pieces_available" => "verf&uuml;gbare St&uuml;ckzahl",
+		"please_remove" => "Bitte entfernen Sie ensprechende Warenkorb-Inhalte."
+	),
+	"user_users" => array(
+		"edit" => "Bearbeiten",
+		"name" => "Name",
+		"lastname" => "Nachname",
+		"email" => "eMail-Adresse",
+		"bill_name" => "Rechnung: Name",
+		"bill_street" => "Rechnungs-Adresse",
+		"bill_postcode" => "Rechnungs-PLZ",
+		"bill_city" => "Rechnungs-Stadt",
+		"bill_state" => "Rechnungs-Land",
+		"ship_name" => "Lieferungsname",
+		"ship_street" => "Lieferungsadresse",
+		"ship_postcode" => "Lieferungs-PLZ",
+		"ship_city" => "Lieferungs-Stadt",
+		"ship_state" => "Lieferungs-Staat",
+		"bank_name" => "Bankname",
+		"bank_iban" => "BLZ",
+		"bank_number" => "Kontonummer",
+		"bank_account" => "Kontoinhaber",
+		"submit" => "&Auml;nderungen &uuml;bernehmen",
+		"reset" => "Abbrechen",
+		"userlist" => "Benutzer",
+		"editUser" => "Benutzer bearbeiten",
+		"editSelf" => "Eigene Einstellungen",
+		"bill-data" => "Rechnungsdaten",
+		"ship-data" => "Versanddaten",
+		"user-data" => "Benutzerdaten",
+		"password" => "Passwort",
+		"repeat_password" => "Passwort wiederholen",
+		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
+	),
+
+/*___________________________________________________________________
+
+	VIEWER:
+  ___________________________________________________________________
+*/
+	"viewer_categories" => array(
+		"categories" => "Kategorien und Produkte",
+		"parentDirectory" => "<img src='images/parent_dir.gif' width='17' heigth='9' border='0'>",
+		"category" => "Kategorie",
+		"name" => "Beschreibung"
+	),
+	"viewer_viewProduct" => array(
+		"name" => "Name",
+		"description" => "Beschreibung",
+		"image_small" => "Vorschau-Bild",
+		"image_big" => "Detail-Bild",
+		"product_image" => "Produkt-Bild",
+		"click_to_enlarge" => "Zum Vergr&ouml;&szlig;ern anklicken!",
+		"no_image" => "Es ist kein Bild verf&uuml;gbar.",
+		"stock" => "Lagerbestand",
+		"price" => "Preis",
+		"no_permission" => "Sie haben keine Berechtigung hierzu."
+	),
+	"viewer_menu" => array(
+		"category" => "Kategorien",
+		"login" => "Anmelden"
+	),
+	"viewer_title" => array(
+		"not_logged_in" => "Sie sind nicht angemeldet.",
+		"admin_level" => "Administrator",
+		"orderer_level" => "Bestell-Personal",
+		"user_level" => "Benutzer",
+		"viewer_level" => "Besucher"
 	)
+
 );
 ?>
