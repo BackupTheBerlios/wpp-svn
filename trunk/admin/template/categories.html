@@ -58,14 +58,14 @@
 				<?=$_LANG['product'] ?>
 			</TD>
 			<TD class="<?=$class?>">
-				<? if ($line['stocklow']=='1') { ?>
-					!
-				<? } ?>
 				<? if ($line['active']=='1') { ?>
 					<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="menu">
 						<?=$line['name']?>
 					</a>
-				<? } else { ?>
+				<? if ($line['stocklow']=='1') { 
+							echo "<span class='stocklow'>".$_LANG['stocklow'].$line['stock']."</span>";
+						}
+				 	} else { ?>
 					<a href="addProduct.php?action=edit&pID=<?=$line['id']?>" class="menu_inactive">
 						<?=$line['name']?>
 					</a>

@@ -19,7 +19,8 @@ $lang = array(
 		"product" => "Produkt",
 		"type" => "Typ",
 		"name" => "Beschreibung",
-		"options" => "Optionen"		
+		"options" => "Optionen",		
+		"stocklow" => "kritische Lagerkapazit&auml;t: "
 	),
 	"admin_addCategories" => array(
 		"editCategorie" => "Kategorie bearbeiten",

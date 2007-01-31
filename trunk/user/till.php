@@ -155,6 +155,32 @@ if (isset($_POST['action']) && $_POST['action'] == "agreeOrder"){
 					WHERE basket_id=".$bidsArray[$i]."
 				");
 			}
+
+			// Product.stock runtersetzen:
+			// 		zunächst festgeschriebene neue Orders auslesen: 
+			$order_query = DB_query("		
+				SELECT products_id, count
+				FROM order_items
+				WHERE orders_id=$orderid
+			");
+			while ($zeile=DB_fetchArray($order_query)){
+				$pid=$zeile['products_id'];
+				$count=$zeile['count'];
+				// stock auslesen
+				$order_query_2 = DB_query("			
+					SELECT stock
+					FROM products
+					WHERE products_id=$pid
+				");
+				$zeile=DB_fetchArray($order_query_2);
+				$stock=$zeile['stock'];
+				// anpassen
+				DB_query("		
+					UPDATE products
+					SET stock=".($stock-$count)."
+					WHERE products_id=$pid 
+				");
+			}
 		}
 	}
 }

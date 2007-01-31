@@ -42,6 +42,14 @@
 		</TR>
 		<TR>
 			<TD class="even">
+				<?=$_LANG['stock']?>
+			</TD>
+			<TD class="even">
+				<?=$_TPL['stock']?>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="odd">
 				<?
 					echo $_LANG['product_image'];
 					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { 
@@ -49,7 +57,7 @@
 					}
 				?>
 			</TD>
-			<TD class="even">
+			<TD class="odd">
 				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
 					<a href="javascript:showPicture('<?=$_TPL['image_big']?>');" title="<?=$_LANG['click_to_enlarge']?>"><img src="<?=$_TPL['image_small']?>" border='0'></a>
 				<? 
@@ -65,10 +73,10 @@
 			</TD>
 		</TR>
 		<TR>
-			<TD class="odd">
+			<TD class="even">
 				<?=$_LANG['price']?>
 			</TD>
-			<TD class="odd">
+			<TD class="even">
 				<?=formatPrice($_TPL['price'])?>
 			</TD>
 		</TR>

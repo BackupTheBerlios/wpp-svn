@@ -215,6 +215,13 @@ col.content_table_4 {
 
 }
 
+span.stocklow {
+	background-color: #ffeeaa;
+	padding-left:10px;
+	padding-right: 10px;
+	margin-left:10px;
+}
+
 td.heading_cell {
 	background-color: #337799;
 	font-family: verdana;

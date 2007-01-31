@@ -51,7 +51,6 @@ while ($line = DB_fetchArray($children_query)) {
 	$children[] = $list;
 }
 
-
 //Produkte in der Kategorie ermitteln
 $products_query = DB_query("SELECT
 				*
@@ -69,6 +68,7 @@ while ($line = DB_fetchArray($products_query)) {
 			"stock" => $line['stock']);
 	$products[] = $list;
 }
+
 
 //Menu erstellen
 $menu = array();
@@ -91,6 +91,7 @@ for ($i=0;$i<sizeof($products);$i++) {
 	);
 	if ($products[$i]["stock"]<PRODUCTS_STOCK_LOW) {
 		$entry["stocklow"]='1';
+		$entry["stock"]=$products[$i]["stock"];
 	} else {
 		$entry["stocklow"]='0';
 	}
