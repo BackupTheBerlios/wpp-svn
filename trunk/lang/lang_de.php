@@ -328,7 +328,16 @@ $lang = array(
 		"try_to_refresh" => "M&ouml;glicherweise wurde Ihr gew&auml;hltes Produkt gerade modifiziert. Sie k&ouml;nnen nun versuchen, diese Seite zu aktualisieren und Ihren Vorgang noch einmal ausf&uuml;hren.",
 		"refresh_view" => "Ansicht erneuern",
 		"basket_vs_stock" => "Beachten Sie, dass die verf&uuml;gbare St&uuml;ckzahl bis zu Ihrer endg&uuml;ltigen Bestellung variieren kann.",
-		"stock<count" => "Es sind nicht genug Exemplare vorr&auml;tig. Bitte verringern Sie die St&uuml;ckzahl."
+		"count>stock" => "Ihr Warenkorb enth&auml;lt bereits ohne Ihre zus&auml;tzliche Auswahl eine zu gro&szlig;e St&uuml;ckzahl vom Produkt",
+		"countTry>stock" => "Es sind nicht genug Exemplare vorr&auml;tig.",
+		"pieces_are_available" => "St&uuml;ck sind verf&uuml;gbar.",
+		"please_decrease" => "Bitte verringern Sie die St&uuml;ckzahl.",
+		"please_remove" => "Bitte entfernen Sie ensprechende Warenkorb-Inhalte.",
+		"count+countTry>stock[1]" => "Ihr Warenkorb enth&auml;lt bereits",
+		"count+countTry>stock[2]" => "-mal das Produkt",
+		"count+countTry>stock[3]" => "Mit",
+		"count+countTry>stock[4]" => "weiteren Exemplaren &uuml;berschreiten Sie die verf&uuml;gbare St&uuml;ckzahl von",
+		"count+countTry>stock[5]" => "Bitte reduzieren Sie Ihre Auswahl."
 	),
 	"user_till" => array(
 		"till" => "Kasse",

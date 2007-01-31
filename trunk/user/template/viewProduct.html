@@ -29,15 +29,19 @@
 			<TD class="even">
 				<?
 					echo $_LANG['product_image'];
-					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { 
+					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { 
 						echo "<br/><br/>(".$_LANG['click_to_enlarge'].")";
 					}
 				?>
 			</TD>
 			<TD class="even">
-				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
+				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
 					<a href="javascript:showPicture('<?=$_TPL['image_big']?>');" title="<?=$_LANG['click_to_enlarge']?>"><img src="<?=$_TPL['image_small']?>" border='0'></a>
 				<? 
+					}
+					elseif($_TPL['image_big']=='' || strtolower($_TPL['image_big'])=='kein bild'){?>
+						<img src="<?=$_TPL['image_small']?>" border='0'>
+					<?
 					}
 					else{
 						echo $_LANG['no_image'];
@@ -76,12 +80,44 @@
 		</tr>
 	</table><br/>
 	<br/>
-	<table class='error' id='errorbox'>
+	<table>
 		<tr>
-			<td>
+			<td class='errorbox'>
 				<?
-					if($_TPL['error']=='stock<count'){
-						echo $_LANG['stock<count'];
+					if($_TPL['error']!=null){
+						// Warenkorb bereits zu voll:
+						if($_TPL['error']['count']>$_TPL['error']['stock']){
+							echo 
+								$_LANG['count>stock']." &bdquo;".$_TPL['error']['name']."&rdquo;.<br/>".
+								$_TPL['error']['stock']." ".
+								$_LANG['pieces_are_available']."<br/>".
+								$_LANG['please_remove']
+							;
+						}
+						// Produkt-Kapazität würde überschritten werden:
+						elseif ($_TPL['error']['count']+$_TPL['error']['countTry']>$_TPL['error']['stock']){
+							if($_TPL['error']['countTry']>$_TPL['error']['stock']){	// wenn Eingabe Stock überschreitet
+								echo 
+									$_LANG['countTry>stock']." ".
+									$_TPL['error']['stock']." ".
+									$_LANG['pieces_are_available']."<br/>".
+									$_LANG['please_decrease']
+								;
+							}
+							else{
+								echo
+									$_LANG['count+countTry>stock[1]']." ".
+									$_TPL['error']['count'].
+									$_LANG['count+countTry>stock[2]'].
+									" &bdquo;".$_TPL['error']['name']."&rdquo;. ".
+									$_LANG['count+countTry>stock[3]']." ".
+									$_TPL['error']['countTry']." ".
+									$_LANG['count+countTry>stock[4]']." ".
+									$_TPL['error']['stock']."<br/>".
+									$_LANG['count+countTry>stock[5]']
+								;
+							}
+						}
 					}
 				?>
 			</td>

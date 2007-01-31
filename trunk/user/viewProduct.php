@@ -33,29 +33,52 @@ if (isset($_POST['action'])){
 	if($action =="into_basket"){
 		$pid = $_POST['pid'];
 		$uid = $user->getID();
-		$count = $_POST['count'];
 		$date = formatDate();
-					
-		// aktuellen Stock mit gewünschter Anzahl vergleichen												
-		$count_query = DB_query("	
+
+		// Product.stock zu der PID der aktuellen Aktion checken 
+		$fehlerArray = array();	// für Fehlermeldung, wenn Produktkapazität überschritten															
+
+		$countTry = $_POST['count'];	// angeforderte Menge, die in den Warenkorb hinzugefügt werden soll
+		$count = 0;
+		$stock = 0;
+		$name = null;
+		// verfügbare Anzahl für dieses Produkt:
+		$productStock_query = DB_query("	
 			SELECT
-			stock
+			stock, name
 			FROM products
-			WHERE products_id = $pid
-			AND stock>=$count		
+			WHERE products_id = $pid 
 		");
-		if(mysql_num_rows($count_query)==1){
-			$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$count)");
+		$zeile = DB_fetchArray($productStock_query);
+		$stock=$zeile['stock'];
+		$name=$zeile['name'];
+
+		// Anzahl aller Produkte im Warenkorb mit dieser PID ermitteln und aufsummieren 
+		$productCount_query = DB_query("	
+			SELECT
+			count
+			FROM basket
+			WHERE products_id = $pid
+		");
+		while($zeile = DB_fetchArray($productCount_query)){
+			$count+=$zeile['count'];
+		}
+
+		if($count+$countTry>$stock){	// Wenn bisheriger Warenkorb-Inhalt mit dieser PID plus angeforderte Menge größer als verfügbare Kapazität ist:
+			$fehlerArray['name']=$name;
+			$fehlerArray['count']=$count;
+			$fehlerArray['countTry']=$countTry;
+			$fehlerArray['stock']=$stock;	
+		}
+		$tpl->assign('error',$fehlerArray);
+
+		if($fehlerArray == null){
+			// in den Warenkorb eintragen
+			$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$countTry)");
 			if($res){
 				$LOG->write('3', 'In den Warenkorb eingetragen.');
 			}
-			else{
-				$LOG->write('3', 'user/viewProduct.php');
-			}
-		}
-		else{
-			$tpl->assign('error','stock<count');
-		}
+		}	
 	}
 }
 

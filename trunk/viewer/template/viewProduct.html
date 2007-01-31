@@ -29,15 +29,19 @@
 			<TD class="even">
 				<?
 					echo $_LANG['product_image'];
-					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { 
+					if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { 
 						echo "<br/><br/>(".$_LANG['click_to_enlarge'].")";
 					}
 				?>
 			</TD>
 			<TD class="even">
-				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild') { ?>
+				<? if ($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild' && $_TPL['image_big']!='' && strtolower($_TPL['image_big'])!='kein bild') { ?>
 					<a href="javascript:showPicture('<?=$_TPL['image_big']?>');" title="<?=$_LANG['click_to_enlarge']?>"><img src="<?=$_TPL['image_small']?>" border='0'></a>
 				<? 
+					}
+					elseif($_TPL['image_big']=='' || strtolower($_TPL['image_big'])=='kein bild'){?>
+						<img src="<?=$_TPL['image_small']?>" border='0'>
+					<?
 					}
 					else{
 						echo $_LANG['no_image'];
