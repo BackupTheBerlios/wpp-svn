@@ -39,7 +39,7 @@
 					<a href="javascript:showPicture('<?=$_TPL['image_big']?>');" title="<?=$_LANG['click_to_enlarge']?>"><img src="<?=$_TPL['image_small']?>" border='0'></a>
 				<? 
 					}
-					elseif($_TPL['image_big']=='' || strtolower($_TPL['image_big'])=='kein bild'){?>
+					elseif($_TPL['image_small']!='' && strtolower($_TPL['image_small'])!='kein bild'){?>
 						<img src="<?=$_TPL['image_small']?>" border='0'>
 					<?
 					}
