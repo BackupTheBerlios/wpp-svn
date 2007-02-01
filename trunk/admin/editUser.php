@@ -14,8 +14,6 @@ $LOG = new Log();
 $tpl = new TemplateEngine("template/editUser.html","template/frame.html",$lang["admin_users"]);
 
 
-
-
 if (isset($_POST['action'])) {
 
 	$LOG->write('3', 'admin/editUser.php: action set');
@@ -23,13 +21,47 @@ if (isset($_POST['action'])) {
 	if ($_POST['action']=='add') {
 		$LOG->write('3', 'admin/editUser.php: action=add');
 		
-		if ($_POST['active']=='on') {$active=1;}
-		else {$active=0;}
-		
-		addUser();
-		
-		$LOG->write('2', 'Nutzer '.mysql_insert_id().' hinzugefügt');
-		redirectURI('/admin/users.php');
+		if($_POST['password']==$_POST['repeatPassword']){
+			addUser();	
+			$LOG->write('2', 'Nutzer '.mysql_insert_id().' hinzugefügt');
+			redirectURI('/admin/users.php');
+		}
+		else{	// falsche Passwortwiederholung
+			$passwordError="1";
+			$tpl->assign('action','add');
+			$tpl->assign('uID','');
+			$tpl->assign('password_error',$passwordError);
+			$tpl->assign('name',$_POST['name']);
+			$tpl->assign('lastname',$_POST['lastname']);
+			$tpl->assign('email',$_POST['email']);
+			$tpl->assign('bill_name',$_POST['bill_name']);
+			$tpl->assign('bill_street',$_POST['bill_street']);
+			$tpl->assign('bill_postcode',$_POST['bill_postcode']);
+			$tpl->assign('bill_city',$_POST['bill_city']);
+			$tpl->assign('bill_state',$_POST['bill_state']);
+			$tpl->assign('ship_name',$_POST['ship_name']);
+			$tpl->assign('ship_street',$_POST['ship_street']);
+			$tpl->assign('ship_postcode',$_POST['ship_postcode']);
+			$tpl->assign('ship_city',$_POST['ship_city']);
+			$tpl->assign('ship_state',$_POST['ship_state']);
+			$tpl->assign('bank_number',$_POST['bank_number']);
+			$tpl->assign('bank_iban',$_POST['bank_iban']);
+			$tpl->assign('bank_name',$_POST['bank_name']);
+			$tpl->assign('bank_account',$_POST['bank_account']);
+			//Alle Rollen
+			$roles_query = DB_query("SELECT
+							role_id,
+							name
+							FROM roles");
+			$roles = array();
+			while ($role = DB_fetchArray($roles_query)) {
+				$roles[] = array(
+					"id" => $role['role_id'],
+					"name" => $role['name']);
+			}
+			$tpl->assign('roleslist',$roles);
+			$tpl->display();
+		}
 	}
 	
 	elseif ($_POST['action']=='edit') {

@@ -6,19 +6,19 @@ include('../includes/startApplication.php');
 //include('../includes/functions/verifyadmin.inc');
 
 $user = restoreUser();
-if ($user ==null || !$user->checkPermissions(1,1)) {
+if ($user ==null || !$user->checkPermissions(0,0,0,1,1)) {
 	redirectURI("/admin/login.php","camefrom=editOrder.php");
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["admin_orders"]);
+$tpl = new TemplateEngine("template/editOrder.html","template/frame.html",$lang["orderer_orders"]);
 
 
 $order_id = $_GET['id'];
 
 if (isset($_POST['ordershipped'])) {
 	
-	$shipping_date = formatDate();
+	$shipping_date = actualDate();
 	DB_query("UPDATE orders SET
 			shipping_date = '".$shipping_date."'
 			WHERE orders_id = ".$order_id);
@@ -28,8 +28,8 @@ if (isset($_POST['ordershipped'])) {
 
 //Alle Details zu der Bestellung finden
 $order_query = DB_query("SELECT
-				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date,
-				DATE_FORMAT(shipping_date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_shipping_date
+				*, UNIX_TIMESTAMP(date) AS formated_date,
+				UNIX_TIMESTAMP(shipping_date) AS formated_shipping_date
 				FROM orders
 				WHERE orders_id = ".$order_id);
 $order = DB_fetchArray($order_query);

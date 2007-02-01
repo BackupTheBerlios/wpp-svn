@@ -34,7 +34,7 @@
 		</TD>
 	</TR>
 	<? 
-		if ($_TPL['action']=='editSelf'){
+		if ($_TPL['action']=='editSelf' || $_TPL['action']=='add'){
 	?>
 	<tr>
 	<TD class="odd">
@@ -54,7 +54,7 @@
 	</tr>
 	<?
 		}
-		else{	
+		if ($_TPL['action']!='editSelf') {	
 	?>
 	<TR>
 		<TD class="odd">

@@ -7,16 +7,16 @@ include('../includes/startApplication.php');
 
 
 $user = restoreUser();
-if ($user == null || !$user->checkPermissions(1,1)) {
+if ($user == null || !$user->checkPermissions(0,0,0,1,1)) {
 	redirectURI("/admin/login.php","camefrom=orders.php");
 }
 
 $LOG = new Log();
-$tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["admin_orders"]);
+$tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["orderer_orders"]);
 
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT
-				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date
+				*, UNIX_TIMESTAMP(date) AS formated_date
 				FROM orders
 				ORDER BY date
 			");

@@ -74,10 +74,12 @@ if (isset($_POST['action'])){
 
 		if($fehlerArray == null){
 			// in den Warenkorb eintragen
-			$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$countTry)");
-			if($res){
-				$LOG->write('3', 'In den Warenkorb eingetragen.');
-			}
+//			for ($i=0;$i<$countTry;$i++) {
+				$res=DB_query("INSERT INTO basket VALUES (0,$pid,$uid,$date,$countTry)");
+				if($res){
+					$LOG->write('3', 'In den Warenkorb eingetragen.');
+				}
+//			}
 		}	
 	}
 }

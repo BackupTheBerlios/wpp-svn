@@ -100,9 +100,10 @@ $lang = array(
 		"unequal_passwords" => "Die eingegebenen Passw&ouml;rter stimmen nicht &uuml;berein."
 	),
 	"admin_orders" => array(
+		"fdate" => "H:i:s d.m.Y",
 		"orders" => "Bestellungen",
 		"number" => "Nr.",
-		"name" => "Kundenname",
+		"name" => "Produktname",
 		"order-date" => "Bestelldatum",
 		"shipping-date" => "Lieferdatum",
 		"order-details" => "Details zur Bestellung",
@@ -200,9 +201,10 @@ $lang = array(
 		"viewer_level" => "Besucher"
 	),
 	"orderer_orders" => array(
+		"fdate" => "H:i:s d.m.Y",
 		"orders" => "Bestellungen",
 		"number" => "Nr.",
-		"name" => "Kundenname",
+		"name" => "Produktname",
 		"order-date" => "Bestelldatum",
 		"shipping-date" => "Lieferdatum",
 		"order-details" => "Details zur Bestellung",

@@ -23,10 +23,12 @@ td.parent_dir {
 
 td.even {
 	background-color: #e6f4ff;
+	vertical-align: top;
 }
 
 td.odd {
 	background-color: #ddeeff;
+	vertical-align: top;
 }
 
 /* Kategorien: */

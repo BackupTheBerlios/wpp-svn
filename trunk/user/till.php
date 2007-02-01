@@ -64,7 +64,7 @@ if (isset($_GET['action'])){
 
 // in Kasse bestätigt. -> Bestellung 
 if (isset($_POST['action']) && $_POST['action'] == "agreeOrder"){
-	$date = formatDate();
+	$date = actualDate();
 	$userid=$_POST['userid'];
 	$userdata=getUserOrderData($userid);
 

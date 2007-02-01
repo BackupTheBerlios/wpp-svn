@@ -16,7 +16,7 @@ $tpl = new TemplateEngine("template/orders.html","template/frame.html",$lang["ad
 
 //Alle Bestellungen finden
 $orders_query = DB_query("SELECT
-				*, DATE_FORMAT(date,'%d.%m.%Y, %H:%i:%s Uhr') AS formated_date
+				*, UNIX_TIMESTAMP(date) AS formated_date
 				FROM orders
 				ORDER BY date
 			");

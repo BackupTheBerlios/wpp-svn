@@ -6,7 +6,7 @@ include('../../includes/startApplication.php');
 
 $order_id = $_GET['id'];
 
-$shipping_date = formatDate();
+$shipping_date = actualDate();
 DB_query("UPDATE orders SET
 			shipping_date = '".$shipping_date."',
 			shipped = 1

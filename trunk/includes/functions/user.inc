@@ -141,7 +141,7 @@ function addUser() {
 			0,
 			'".$_POST['name']."',
 			'".$_POST['lastname']."',
-			'',
+			'".$_POST['password']."',
 			'".$_POST['email']."',
 			'".$_POST['role_id']."',
 			".$active.",
