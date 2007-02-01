@@ -33,7 +33,7 @@ if (isset($_POST['action'])){
 	if($action =="into_basket"){
 		$pid = $_POST['pid'];
 		$uid = $user->getID();
-		$date = formatDate();
+		$date = actualDate();
 
 		// Product.stock zu der PID der aktuellen Aktion checken 
 		$fehlerArray = array();	// für Fehlermeldung, wenn Produktkapazität überschritten															

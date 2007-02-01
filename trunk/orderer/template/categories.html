@@ -20,10 +20,6 @@
 					<a href="categories.php?catID=<?=$line['id']?>" class="menu">
 						<?=$line['name']?>
 					</a>
-				<? } else { ?>
-					<a href="javascript:" class="menu_inactive">
-						<?=$line['name']?>
-					</a>
 				<? } ?>
 			</TD>
 		</TR>
@@ -33,10 +29,6 @@
 			<TD class="<?=$class?>">
 				<? if ($line['active']=='1') { ?>
 					<a href="viewProduct.php?pID=<?=$line['id']?>" class="menu">
-						<?=$line['name']?>
-					</a>
-				<? } else { ?>
-					<a href="javascript:" class="menu_inactive">	
 						<?=$line['name']?>
 					</a>
 				<? } ?>

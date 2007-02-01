@@ -131,15 +131,6 @@ CREATE TABLE `basket` (
   PRIMARY KEY ( `basket_id` , `products_id` )
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
 /*Beispieldaten*/;
 
 INSERT INTO categories VALUES(0,'Kat 1',0,1,'Beschreibung 1',1);
@@ -169,10 +160,7 @@ INSERT INTO roles VALUES(0,'customer',1,0,1,1,0,0);
 INSERT INTO roles VALUES(0,'order_manager',1,0,0,0,1,1);
 
 INSERT INTO users VALUES(0,'andre','flechs','test','studium@luzip.de',1,1,'','','','','','','','','','','','','','');
-INSERT INTO users VALUES(0,'hans','meier','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
-INSERT INTO users VALUES(0,'peter','müller','test','studium@luzip.de',2,1,'','','','','','','','','','','','','','');
 INSERT INTO users VALUES(0,'Lars','Schröder','wpppw','safuser@web.de',1,1,'','','','','','','','','','','','','','');
-INSERT INTO users VALUES(0,'User','Schröder','wpppw','safuser@web.de',2,1,'','','','','','','','','','','','','','');
 
 INSERT INTO orders VALUES(0,20061201123456,2,20061203123456,1,'','','','','','','','','','','','','','');
 INSERT INTO order_items VALUES(1,2,5);
